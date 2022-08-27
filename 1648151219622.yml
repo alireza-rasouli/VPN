@@ -9,7 +9,7 @@
 mixed-port: 7890
 allow-lan: true
 mode: Rule
-log-level: info
+log-level: silent
 ipv6: false
 dns:
   enable: true
