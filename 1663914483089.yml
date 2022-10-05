@@ -30,125 +30,125 @@ external-controller: 127.0.0.1:9090
 proxies:
 
 proxy-groups:
-  - name: 全局选择
+  - name: Mode
     type: select
     proxies:
-      - 延迟最低
-      - 选择国家
-      - 选择节点
-      - 失败切换
-      - 负载均衡
-  - name: 选择国家
+      - Lowest latency
+      - Country
+      - Manual Selection
+      - Failover
+      - Load balance
+  - name: Country
     type: select
     proxies:
-      - 🇨🇳 中国
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - 🇨🇦 加拿大
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚
-      - 🇨🇭 瑞士
-      - 🇩🇪 德国
-      - 🇫🇷 法国
-      - 🇬🇧 英国
-      - 🇳🇱 荷兰
-      - 其他国家
-  - name: 选择节点
+      - 🇨🇳 China
+      - 🇯🇵 Japan
+      - 🇸🇬 Singapore
+      - 🇺🇸 USA
+      - 🇨🇦 Canada
+      - 🇷🇺 Russia
+      - 🇦🇺 Austrailia
+      - 🇨🇭 Switzerland
+      - 🇩🇪 Germany
+      - 🇫🇷 France
+      - 🇬🇧 UK
+      - 🇳🇱 Netherlands
+      - Other
+  - name: Manual Selection
     type: select
     use:
       - all
-  - name: 🇨🇳 中国
+  - name: 🇨🇳 China
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - cn
-  - name: 🇯🇵 日本
+  - name: 🇯🇵 Japan
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - jp
-  - name: 🇸🇬 新加坡
+  - name: 🇸🇬 Singapore
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - sg
-  - name: 🇺🇸 美国
+  - name: 🇺🇸 USA
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - us
-  - name: 🇨🇦 加拿大
+  - name: 🇨🇦 Canada
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ca
-  - name: 🇷🇺 俄罗斯
+  - name: 🇷🇺 Russia
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ru
-  - name: 🇦🇺 澳大利亚
+  - name: 🇦🇺 Austrailia
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - au
-  - name: 🇨🇭 瑞士
+  - name: 🇨🇭 Switzerland
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ch
-  - name: 🇩🇪 德国
+  - name: 🇩🇪 Germany
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - de
-  - name: 🇫🇷 法国
+  - name: 🇫🇷 France
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - fr
-  - name: 🇬🇧 英国
+  - name: 🇬🇧 UK
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - gb
-  - name: 🇳🇱 荷兰
+  - name: 🇳🇱 Netherlands
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - nl
-  - name: 其他国家
+  - name: Other
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - others
-  - name: 延迟最低
+  - name: Lowest latency
     type: url-test
     use:
       - all
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: 负载均衡
+  - name: Load balance
     type: load-balance
     use:
       - all
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: 失败切换
+  - name: Failover
     type: fallback
     use:
       - all
@@ -280,549 +280,549 @@ rules:
   - RULE-SET,iran,DIRECT
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
-  - DOMAIN-SUFFIX,ampproject.org,全局选择
-  - DOMAIN-SUFFIX,appspot.com,全局选择
-  - DOMAIN-SUFFIX,blogger.com,全局选择
-  - DOMAIN-SUFFIX,getoutline.org,全局选择
-  - DOMAIN-SUFFIX,gvt0.com,全局选择
-  - DOMAIN-SUFFIX,gvt1.com,全局选择
-  - DOMAIN-SUFFIX,gvt3.com,全局选择
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,全局选择
-  - DOMAIN-KEYWORD,google,全局选择
-  - DOMAIN-KEYWORD,blogspot,全局选择
-  - DOMAIN-SUFFIX,onedrive.live.com,全局选择
-  - DOMAIN-SUFFIX,xboxlive.com,全局选择
-  - DOMAIN-SUFFIX,cdninstagram.com,全局选择
-  - DOMAIN-SUFFIX,fb.com,全局选择
-  - DOMAIN-SUFFIX,fb.me,全局选择
-  - DOMAIN-SUFFIX,fbaddins.com,全局选择
-  - DOMAIN-SUFFIX,fbcdn.net,全局选择
-  - DOMAIN-SUFFIX,fbsbx.com,全局选择
-  - DOMAIN-SUFFIX,fbworkmail.com,全局选择
-  - DOMAIN-SUFFIX,instagram.com,全局选择
-  - DOMAIN-SUFFIX,m.me,全局选择
-  - DOMAIN-SUFFIX,messenger.com,全局选择
-  - DOMAIN-SUFFIX,oculus.com,全局选择
-  - DOMAIN-SUFFIX,oculuscdn.com,全局选择
-  - DOMAIN-SUFFIX,rocksdb.org,全局选择
-  - DOMAIN-SUFFIX,whatsapp.com,全局选择
-  - DOMAIN-SUFFIX,whatsapp.net,全局选择
-  - DOMAIN-KEYWORD,facebook,全局选择
-  - IP-CIDR,3.123.36.126/32,全局选择,no-resolve
-  - IP-CIDR,35.157.215.84/32,全局选择,no-resolve
-  - IP-CIDR,35.157.217.255/32,全局选择,no-resolve
-  - IP-CIDR,52.58.209.134/32,全局选择,no-resolve
-  - IP-CIDR,54.93.124.31/32,全局选择,no-resolve
-  - IP-CIDR,54.162.243.80/32,全局选择,no-resolve
-  - IP-CIDR,54.173.34.141/32,全局选择,no-resolve
-  - IP-CIDR,54.235.23.242/32,全局选择,no-resolve
-  - IP-CIDR,169.45.248.118/32,全局选择,no-resolve
-  - DOMAIN-SUFFIX,pscp.tv,全局选择
-  - DOMAIN-SUFFIX,periscope.tv,全局选择
-  - DOMAIN-SUFFIX,t.co,全局选择
-  - DOMAIN-SUFFIX,twimg.co,全局选择
-  - DOMAIN-SUFFIX,twimg.com,全局选择
-  - DOMAIN-SUFFIX,twitpic.com,全局选择
-  - DOMAIN-SUFFIX,vine.co,全局选择
-  - DOMAIN-KEYWORD,twitter,全局选择
-  - DOMAIN-SUFFIX,t.me,全局选择
-  - DOMAIN-SUFFIX,tdesktop.com,全局选择
-  - DOMAIN-SUFFIX,telegra.ph,全局选择
-  - DOMAIN-SUFFIX,telegram.me,全局选择
-  - DOMAIN-SUFFIX,telegram.org,全局选择
-  - IP-CIDR,91.108.4.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.8.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.12.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.16.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.56.0/22,全局选择,no-resolve
-  - IP-CIDR,149.154.160.0/20,全局选择,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,全局选择,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,全局选择,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,全局选择,no-resolve
-  - DOMAIN-SUFFIX,line.me,全局选择
-  - DOMAIN-SUFFIX,line-apps.com,全局选择
-  - DOMAIN-SUFFIX,line-scdn.net,全局选择
-  - DOMAIN-SUFFIX,naver.jp,全局选择
-  - IP-CIDR,103.2.30.0/23,全局选择,no-resolve
-  - IP-CIDR,125.209.208.0/20,全局选择,no-resolve
-  - IP-CIDR,147.92.128.0/17,全局选择,no-resolve
-  - IP-CIDR,203.104.144.0/21,全局选择,no-resolve
-  - DOMAIN-SUFFIX,4shared.com,全局选择
-  - DOMAIN-SUFFIX,520cc.cc,全局选择
-  - DOMAIN-SUFFIX,881903.com,全局选择
-  - DOMAIN-SUFFIX,9cache.com,全局选择
-  - DOMAIN-SUFFIX,9gag.com,全局选择
-  - DOMAIN-SUFFIX,abc.com,全局选择
-  - DOMAIN-SUFFIX,abc.net.au,全局选择
-  - DOMAIN-SUFFIX,abebooks.com,全局选择
-  - DOMAIN-SUFFIX,amazon.co.jp,全局选择
-  - DOMAIN-SUFFIX,apigee.com,全局选择
-  - DOMAIN-SUFFIX,apk-dl.com,全局选择
-  - DOMAIN-SUFFIX,apkfind.com,全局选择
-  - DOMAIN-SUFFIX,apkmirror.com,全局选择
-  - DOMAIN-SUFFIX,apkmonk.com,全局选择
-  - DOMAIN-SUFFIX,apkpure.com,全局选择
-  - DOMAIN-SUFFIX,aptoide.com,全局选择
-  - DOMAIN-SUFFIX,archive.is,全局选择
-  - DOMAIN-SUFFIX,archive.org,全局选择
-  - DOMAIN-SUFFIX,arte.tv,全局选择
-  - DOMAIN-SUFFIX,artstation.com,全局选择
-  - DOMAIN-SUFFIX,arukas.io,全局选择
-  - DOMAIN-SUFFIX,ask.com,全局选择
-  - DOMAIN-SUFFIX,avg.com,全局选择
-  - DOMAIN-SUFFIX,avgle.com,全局选择
-  - DOMAIN-SUFFIX,badoo.com,全局选择
-  - DOMAIN-SUFFIX,bandwagonhost.com,全局选择
-  - DOMAIN-SUFFIX,bbc.com,全局选择
-  - DOMAIN-SUFFIX,behance.net,全局选择
-  - DOMAIN-SUFFIX,bibox.com,全局选择
-  - DOMAIN-SUFFIX,biggo.com.tw,全局选择
-  - DOMAIN-SUFFIX,binance.com,全局选择
-  - DOMAIN-SUFFIX,bitcointalk.org,全局选择
-  - DOMAIN-SUFFIX,bitfinex.com,全局选择
-  - DOMAIN-SUFFIX,bitmex.com,全局选择
-  - DOMAIN-SUFFIX,bit-z.com,全局选择
-  - DOMAIN-SUFFIX,bloglovin.com,全局选择
-  - DOMAIN-SUFFIX,bloomberg.cn,全局选择
-  - DOMAIN-SUFFIX,bloomberg.com,全局选择
-  - DOMAIN-SUFFIX,blubrry.com,全局选择
-  - DOMAIN-SUFFIX,book.com.tw,全局选择
-  - DOMAIN-SUFFIX,booklive.jp,全局选择
-  - DOMAIN-SUFFIX,books.com.tw,全局选择
-  - DOMAIN-SUFFIX,boslife.net,全局选择
-  - DOMAIN-SUFFIX,box.com,全局选择
-  - DOMAIN-SUFFIX,businessinsider.com,全局选择
-  - DOMAIN-SUFFIX,bwh1.net,全局选择
-  - DOMAIN-SUFFIX,castbox.fm,全局选择
-  - DOMAIN-SUFFIX,cbc.ca,全局选择
-  - DOMAIN-SUFFIX,cdw.com,全局选择
-  - DOMAIN-SUFFIX,change.org,全局选择
-  - DOMAIN-SUFFIX,channelnewsasia.com,全局选择
-  - DOMAIN-SUFFIX,ck101.com,全局选择
-  - DOMAIN-SUFFIX,clarionproject.org,全局选择
-  - DOMAIN-SUFFIX,clyp.it,全局选择
-  - DOMAIN-SUFFIX,cna.com.tw,全局选择
-  - DOMAIN-SUFFIX,comparitech.com,全局选择
-  - DOMAIN-SUFFIX,conoha.jp,全局选择
-  - DOMAIN-SUFFIX,crucial.com,全局选择
-  - DOMAIN-SUFFIX,cts.com.tw,全局选择
-  - DOMAIN-SUFFIX,cw.com.tw,全局选择
-  - DOMAIN-SUFFIX,cyberctm.com,全局选择
-  - DOMAIN-SUFFIX,dailymotion.com,全局选择
-  - DOMAIN-SUFFIX,dailyview.tw,全局选择
-  - DOMAIN-SUFFIX,daum.net,全局选择
-  - DOMAIN-SUFFIX,daumcdn.net,全局选择
-  - DOMAIN-SUFFIX,dcard.tw,全局选择
-  - DOMAIN-SUFFIX,deepdiscount.com,全局选择
-  - DOMAIN-SUFFIX,depositphotos.com,全局选择
-  - DOMAIN-SUFFIX,deviantart.com,全局选择
-  - DOMAIN-SUFFIX,disconnect.me,全局选择
-  - DOMAIN-SUFFIX,discordapp.com,全局选择
-  - DOMAIN-SUFFIX,discordapp.net,全局选择
-  - DOMAIN-SUFFIX,disqus.com,全局选择
-  - DOMAIN-SUFFIX,dlercloud.com,全局选择
-  - DOMAIN-SUFFIX,dns2go.com,全局选择
-  - DOMAIN-SUFFIX,dowjones.com,全局选择
-  - DOMAIN-SUFFIX,dropbox.com,全局选择
-  - DOMAIN-SUFFIX,dropboxusercontent.com,全局选择
-  - DOMAIN-SUFFIX,duckduckgo.com,全局选择
-  - DOMAIN-SUFFIX,dw.com,全局选择
-  - DOMAIN-SUFFIX,dynu.com,全局选择
-  - DOMAIN-SUFFIX,earthcam.com,全局选择
-  - DOMAIN-SUFFIX,ebookservice.tw,全局选择
-  - DOMAIN-SUFFIX,economist.com,全局选择
-  - DOMAIN-SUFFIX,edgecastcdn.net,全局选择
-  - DOMAIN-SUFFIX,edu,全局选择
-  - DOMAIN-SUFFIX,elpais.com,全局选择
-  - DOMAIN-SUFFIX,enanyang.my,全局选择
-  - DOMAIN-SUFFIX,encyclopedia.com,全局选择
-  - DOMAIN-SUFFIX,esoir.be,全局选择
-  - DOMAIN-SUFFIX,etherscan.io,全局选择
-  - DOMAIN-SUFFIX,euronews.com,全局选择
-  - DOMAIN-SUFFIX,evozi.com,全局选择
-  - DOMAIN-SUFFIX,feedly.com,全局选择
-  - DOMAIN-SUFFIX,firech.at,全局选择
-  - DOMAIN-SUFFIX,flickr.com,全局选择
-  - DOMAIN-SUFFIX,flitto.com,全局选择
-  - DOMAIN-SUFFIX,foreignpolicy.com,全局选择
-  - DOMAIN-SUFFIX,全局选择browser.org,全局选择
-  - DOMAIN-SUFFIX,全局选择wechat.com,全局选择
-  - DOMAIN-SUFFIX,全局选择weibo.com,全局选择
-  - DOMAIN-SUFFIX,friday.tw,全局选择
-  - DOMAIN-SUFFIX,ftchinese.com,全局选择
-  - DOMAIN-SUFFIX,ftimg.net,全局选择
-  - DOMAIN-SUFFIX,gate.io,全局选择
-  - DOMAIN-SUFFIX,getlantern.org,全局选择
-  - DOMAIN-SUFFIX,getsync.com,全局选择
-  - DOMAIN-SUFFIX,globalvoices.org,全局选择
-  - DOMAIN-SUFFIX,goo.ne.jp,全局选择
-  - DOMAIN-SUFFIX,goodreads.com,全局选择
-  - DOMAIN-SUFFIX,gov,全局选择
-  - DOMAIN-SUFFIX,gov.tw,全局选择
-  - DOMAIN-SUFFIX,greatfire.org,全局选择
-  - DOMAIN-SUFFIX,gumroad.com,全局选择
-  - DOMAIN-SUFFIX,hbg.com,全局选择
-  - DOMAIN-SUFFIX,heroku.com,全局选择
-  - DOMAIN-SUFFIX,hightail.com,全局选择
-  - DOMAIN-SUFFIX,hk01.com,全局选择
-  - DOMAIN-SUFFIX,hkbf.org,全局选择
-  - DOMAIN-SUFFIX,hkbookcity.com,全局选择
-  - DOMAIN-SUFFIX,hkej.com,全局选择
-  - DOMAIN-SUFFIX,hket.com,全局选择
-  - DOMAIN-SUFFIX,hkgolden.com,全局选择
-  - DOMAIN-SUFFIX,hootsuite.com,全局选择
-  - DOMAIN-SUFFIX,hudson.org,全局选择
-  - DOMAIN-SUFFIX,hyread.com.tw,全局选择
-  - DOMAIN-SUFFIX,ibtimes.com,全局选择
-  - DOMAIN-SUFFIX,i-cable.com,全局选择
-  - DOMAIN-SUFFIX,icij.org,全局选择
-  - DOMAIN-SUFFIX,icoco.com,全局选择
-  - DOMAIN-SUFFIX,imgur.com,全局选择
-  - DOMAIN-SUFFIX,initiummall.com,全局选择
-  - DOMAIN-SUFFIX,insecam.org,全局选择
-  - DOMAIN-SUFFIX,ipfs.io,全局选择
-  - DOMAIN-SUFFIX,issuu.com,全局选择
-  - DOMAIN-SUFFIX,istockphoto.com,全局选择
-  - DOMAIN-SUFFIX,japantimes.co.jp,全局选择
-  - DOMAIN-SUFFIX,jiji.com,全局选择
-  - DOMAIN-SUFFIX,jinx.com,全局选择
-  - DOMAIN-SUFFIX,jkforum.net,全局选择
-  - DOMAIN-SUFFIX,joinmastodon.org,全局选择
-  - DOMAIN-SUFFIX,justmysocks.net,全局选择
-  - DOMAIN-SUFFIX,justpaste.it,全局选择
-  - DOMAIN-SUFFIX,kakao.com,全局选择
-  - DOMAIN-SUFFIX,kakaocorp.com,全局选择
-  - DOMAIN-SUFFIX,kik.com,全局选择
-  - DOMAIN-SUFFIX,kobo.com,全局选择
-  - DOMAIN-SUFFIX,kobobooks.com,全局选择
-  - DOMAIN-SUFFIX,kodingen.com,全局选择
-  - DOMAIN-SUFFIX,lemonde.fr,全局选择
-  - DOMAIN-SUFFIX,lepoint.fr,全局选择
-  - DOMAIN-SUFFIX,lihkg.com,全局选择
-  - DOMAIN-SUFFIX,listennotes.com,全局选择
-  - DOMAIN-SUFFIX,livestream.com,全局选择
-  - DOMAIN-SUFFIX,logmein.com,全局选择
-  - DOMAIN-SUFFIX,mail.ru,全局选择
-  - DOMAIN-SUFFIX,mailchimp.com,全局选择
-  - DOMAIN-SUFFIX,marc.info,全局选择
-  - DOMAIN-SUFFIX,matters.news,全局选择
-  - DOMAIN-SUFFIX,maying.co,全局选择
-  - DOMAIN-SUFFIX,medium.com,全局选择
-  - DOMAIN-SUFFIX,mega.nz,全局选择
-  - DOMAIN-SUFFIX,mil,全局选择
-  - DOMAIN-SUFFIX,mingpao.com,全局选择
-  - DOMAIN-SUFFIX,mobile01.com,全局选择
-  - DOMAIN-SUFFIX,myspace.com,全局选择
-  - DOMAIN-SUFFIX,myspacecdn.com,全局选择
-  - DOMAIN-SUFFIX,nanyang.com,全局选择
-  - DOMAIN-SUFFIX,naver.com,全局选择
-  - DOMAIN-SUFFIX,neowin.net,全局选择
-  - DOMAIN-SUFFIX,newstapa.org,全局选择
-  - DOMAIN-SUFFIX,nexitally.com,全局选择
-  - DOMAIN-SUFFIX,nhk.or.jp,全局选择
-  - DOMAIN-SUFFIX,nicovideo.jp,全局选择
-  - DOMAIN-SUFFIX,nii.ac.jp,全局选择
-  - DOMAIN-SUFFIX,nikkei.com,全局选择
-  - DOMAIN-SUFFIX,nofile.io,全局选择
-  - DOMAIN-SUFFIX,now.com,全局选择
-  - DOMAIN-SUFFIX,nrk.no,全局选择
-  - DOMAIN-SUFFIX,nyt.com,全局选择
-  - DOMAIN-SUFFIX,nytchina.com,全局选择
-  - DOMAIN-SUFFIX,nytcn.me,全局选择
-  - DOMAIN-SUFFIX,nytco.com,全局选择
-  - DOMAIN-SUFFIX,nytimes.com,全局选择
-  - DOMAIN-SUFFIX,nytimg.com,全局选择
-  - DOMAIN-SUFFIX,nytlog.com,全局选择
-  - DOMAIN-SUFFIX,nytstyle.com,全局选择
-  - DOMAIN-SUFFIX,ok.ru,全局选择
-  - DOMAIN-SUFFIX,okex.com,全局选择
-  - DOMAIN-SUFFIX,on.cc,全局选择
-  - DOMAIN-SUFFIX,orientaldaily.com.my,全局选择
-  - DOMAIN-SUFFIX,overcast.fm,全局选择
-  - DOMAIN-SUFFIX,paltalk.com,全局选择
-  - DOMAIN-SUFFIX,pao-pao.net,全局选择
-  - DOMAIN-SUFFIX,parsevideo.com,全局选择
-  - DOMAIN-SUFFIX,pbxes.com,全局选择
-  - DOMAIN-SUFFIX,pcdvd.com.tw,全局选择
-  - DOMAIN-SUFFIX,pchome.com.tw,全局选择
-  - DOMAIN-SUFFIX,pcloud.com,全局选择
-  - DOMAIN-SUFFIX,picacomic.com,全局选择
-  - DOMAIN-SUFFIX,pinimg.com,全局选择
-  - DOMAIN-SUFFIX,pixiv.net,全局选择
-  - DOMAIN-SUFFIX,player.fm,全局选择
-  - DOMAIN-SUFFIX,plurk.com,全局选择
-  - DOMAIN-SUFFIX,po18.tw,全局选择
-  - DOMAIN-SUFFIX,potato.im,全局选择
-  - DOMAIN-SUFFIX,potatso.com,全局选择
-  - DOMAIN-SUFFIX,prism-break.org,全局选择
-  - DOMAIN-SUFFIX,proxifier.com,全局选择
-  - DOMAIN-SUFFIX,pt.im,全局选择
-  - DOMAIN-SUFFIX,pts.org.tw,全局选择
-  - DOMAIN-SUFFIX,pubu.com.tw,全局选择
-  - DOMAIN-SUFFIX,pubu.tw,全局选择
-  - DOMAIN-SUFFIX,pureapk.com,全局选择
-  - DOMAIN-SUFFIX,quora.com,全局选择
-  - DOMAIN-SUFFIX,quoracdn.net,全局选择
-  - DOMAIN-SUFFIX,rakuten.co.jp,全局选择
-  - DOMAIN-SUFFIX,readingtimes.com.tw,全局选择
-  - DOMAIN-SUFFIX,readmoo.com,全局选择
-  - DOMAIN-SUFFIX,redbubble.com,全局选择
-  - DOMAIN-SUFFIX,reddit.com,全局选择
-  - DOMAIN-SUFFIX,redditmedia.com,全局选择
-  - DOMAIN-SUFFIX,resilio.com,全局选择
-  - DOMAIN-SUFFIX,reuters.com,全局选择
-  - DOMAIN-SUFFIX,reutersmedia.net,全局选择
-  - DOMAIN-SUFFIX,rfi.fr,全局选择
-  - DOMAIN-SUFFIX,rixcloud.com,全局选择
-  - DOMAIN-SUFFIX,roadshow.hk,全局选择
-  - DOMAIN-SUFFIX,scmp.com,全局选择
-  - DOMAIN-SUFFIX,scribd.com,全局选择
-  - DOMAIN-SUFFIX,seatguru.com,全局选择
-  - DOMAIN-SUFFIX,shadowsocks.org,全局选择
-  - DOMAIN-SUFFIX,shopee.tw,全局选择
-  - DOMAIN-SUFFIX,slideshare.net,全局选择
-  - DOMAIN-SUFFIX,softfamous.com,全局选择
-  - DOMAIN-SUFFIX,soundcloud.com,全局选择
-  - DOMAIN-SUFFIX,ssrcloud.org,全局选择
-  - DOMAIN-SUFFIX,startpage.com,全局选择
-  - DOMAIN-SUFFIX,steamcommunity.com,全局选择
-  - DOMAIN-SUFFIX,steemit.com,全局选择
-  - DOMAIN-SUFFIX,steemitwallet.com,全局选择
-  - DOMAIN-SUFFIX,t66y.com,全局选择
-  - DOMAIN-SUFFIX,tapatalk.com,全局选择
-  - DOMAIN-SUFFIX,teco-hk.org,全局选择
-  - DOMAIN-SUFFIX,teco-mo.org,全局选择
-  - DOMAIN-SUFFIX,teddysun.com,全局选择
-  - DOMAIN-SUFFIX,textnow.me,全局选择
-  - DOMAIN-SUFFIX,theguardian.com,全局选择
-  - DOMAIN-SUFFIX,theinitium.com,全局选择
-  - DOMAIN-SUFFIX,thetvdb.com,全局选择
-  - DOMAIN-SUFFIX,tineye.com,全局选择
-  - DOMAIN-SUFFIX,torproject.org,全局选择
-  - DOMAIN-SUFFIX,tumblr.com,全局选择
-  - DOMAIN-SUFFIX,turbobit.net,全局选择
-  - DOMAIN-SUFFIX,tutanota.com,全局选择
-  - DOMAIN-SUFFIX,tvboxnow.com,全局选择
-  - DOMAIN-SUFFIX,udn.com,全局选择
-  - DOMAIN-SUFFIX,unseen.is,全局选择
-  - DOMAIN-SUFFIX,upmedia.mg,全局选择
-  - DOMAIN-SUFFIX,uptodown.com,全局选择
-  - DOMAIN-SUFFIX,urbandictionary.com,全局选择
-  - DOMAIN-SUFFIX,ustream.tv,全局选择
-  - DOMAIN-SUFFIX,uwants.com,全局选择
-  - DOMAIN-SUFFIX,v2ray.com,全局选择
-  - DOMAIN-SUFFIX,viber.com,全局选择
-  - DOMAIN-SUFFIX,videopress.com,全局选择
-  - DOMAIN-SUFFIX,vimeo.com,全局选择
-  - DOMAIN-SUFFIX,voachinese.com,全局选择
-  - DOMAIN-SUFFIX,voanews.com,全局选择
-  - DOMAIN-SUFFIX,voxer.com,全局选择
-  - DOMAIN-SUFFIX,vzw.com,全局选择
-  - DOMAIN-SUFFIX,w3schools.com,全局选择
-  - DOMAIN-SUFFIX,washingtonpost.com,全局选择
-  - DOMAIN-SUFFIX,wattpad.com,全局选择
-  - DOMAIN-SUFFIX,whoer.net,全局选择
-  - DOMAIN-SUFFIX,wikimapia.org,全局选择
-  - DOMAIN-SUFFIX,wikipedia.org,全局选择
-  - DOMAIN-SUFFIX,wikiquote.org,全局选择
-  - DOMAIN-SUFFIX,wikiwand.com,全局选择
-  - DOMAIN-SUFFIX,winudf.com,全局选择
-  - DOMAIN-SUFFIX,wire.com,全局选择
-  - DOMAIN-SUFFIX,wordpress.com,全局选择
-  - DOMAIN-SUFFIX,workflow.is,全局选择
-  - DOMAIN-SUFFIX,worldcat.org,全局选择
-  - DOMAIN-SUFFIX,wsj.com,全局选择
-  - DOMAIN-SUFFIX,wsj.net,全局选择
-  - DOMAIN-SUFFIX,xhamster.com,全局选择
-  - DOMAIN-SUFFIX,xn--90wwvt03e.com,全局选择
-  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,全局选择
-  - DOMAIN-SUFFIX,xnxx.com,全局选择
-  - DOMAIN-SUFFIX,xvideos.com,全局选择
-  - DOMAIN-SUFFIX,yahoo.com,全局选择
-  - DOMAIN-SUFFIX,yandex.ru,全局选择
-  - DOMAIN-SUFFIX,ycombinator.com,全局选择
-  - DOMAIN-SUFFIX,yesasia.com,全局选择
-  - DOMAIN-SUFFIX,yes-news.com,全局选择
-  - DOMAIN-SUFFIX,yomiuri.co.jp,全局选择
-  - DOMAIN-SUFFIX,you-get.org,全局选择
-  - DOMAIN-SUFFIX,zaobao.com,全局选择
-  - DOMAIN-SUFFIX,zb.com,全局选择
-  - DOMAIN-SUFFIX,zello.com,全局选择
-  - DOMAIN-SUFFIX,zeronet.io,全局选择
-  - DOMAIN-SUFFIX,zoom.us,全局选择
-  - DOMAIN-KEYWORD,github,全局选择
-  - DOMAIN-KEYWORD,jav,全局选择
-  - DOMAIN-KEYWORD,pinterest,全局选择
-  - DOMAIN-KEYWORD,porn,全局选择
-  - DOMAIN-KEYWORD,wikileaks,全局选择
-  - DOMAIN-SUFFIX,apartmentratings.com,全局选择
-  - DOMAIN-SUFFIX,apartments.com,全局选择
-  - DOMAIN-SUFFIX,bankmobilevibe.com,全局选择
-  - DOMAIN-SUFFIX,bing.com,全局选择
-  - DOMAIN-SUFFIX,booktopia.com.au,全局选择
-  - DOMAIN-SUFFIX,cccat.io,全局选择
-  - DOMAIN-SUFFIX,centauro.com.br,全局选择
-  - DOMAIN-SUFFIX,clearsurance.com,全局选择
-  - DOMAIN-SUFFIX,costco.com,全局选择
-  - DOMAIN-SUFFIX,crackle.com,全局选择
-  - DOMAIN-SUFFIX,depositphotos.cn,全局选择
-  - DOMAIN-SUFFIX,dish.com,全局选择
-  - DOMAIN-SUFFIX,dmm.co.jp,全局选择
-  - DOMAIN-SUFFIX,dmm.com,全局选择
-  - DOMAIN-SUFFIX,dnvod.tv,全局选择
-  - DOMAIN-SUFFIX,esurance.com,全局选择
-  - DOMAIN-SUFFIX,extmatrix.com,全局选择
-  - DOMAIN-SUFFIX,fastpic.ru,全局选择
-  - DOMAIN-SUFFIX,flipboard.com,全局选择
-  - DOMAIN-SUFFIX,fnac.be,全局选择
-  - DOMAIN-SUFFIX,fnac.com,全局选择
-  - DOMAIN-SUFFIX,funkyimg.com,全局选择
-  - DOMAIN-SUFFIX,fxnetworks.com,全局选择
-  - DOMAIN-SUFFIX,gettyimages.com,全局选择
-  - DOMAIN-SUFFIX,go.com,全局选择
-  - DOMAIN-SUFFIX,here.com,全局选择
-  - DOMAIN-SUFFIX,jcpenney.com,全局选择
-  - DOMAIN-SUFFIX,jiehua.tv,全局选择
-  - DOMAIN-SUFFIX,mailfence.com,全局选择
-  - DOMAIN-SUFFIX,nationwide.com,全局选择
-  - DOMAIN-SUFFIX,nbc.com,全局选择
-  - DOMAIN-SUFFIX,nexon.com,全局选择
-  - DOMAIN-SUFFIX,nordstrom.com,全局选择
-  - DOMAIN-SUFFIX,nordstromimage.com,全局选择
-  - DOMAIN-SUFFIX,nordstromrack.com,全局选择
-  - DOMAIN-SUFFIX,superpages.com,全局选择
-  - DOMAIN-SUFFIX,target.com,全局选择
-  - DOMAIN-SUFFIX,thinkgeek.com,全局选择
-  - DOMAIN-SUFFIX,tracfone.com,全局选择
-  - DOMAIN-SUFFIX,unity3d.com,全局选择
-  - DOMAIN-SUFFIX,uploader.jp,全局选择
-  - DOMAIN-SUFFIX,vevo.com,全局选择
-  - DOMAIN-SUFFIX,viu.tv,全局选择
-  - DOMAIN-SUFFIX,vk.com,全局选择
-  - DOMAIN-SUFFIX,vsco.co,全局选择
-  - DOMAIN-SUFFIX,xfinity.com,全局选择
-  - DOMAIN-SUFFIX,zattoo.com,全局选择
-  - DOMAIN,testflight.apple.com,全局选择
-  - DOMAIN-SUFFIX,appsto.re,全局选择
-  - DOMAIN,books.itunes.apple.com,全局选择
-  - DOMAIN,hls.itunes.apple.com,全局选择
-  - DOMAIN,apps.apple.com,全局选择
-  - DOMAIN,itunes.apple.com,全局选择
-  - DOMAIN,api-glb-sea.smoot.apple.com,全局选择
-  - DOMAIN,lookup-api.apple.com,全局选择
-  - DOMAIN-SUFFIX,abc.xyz,全局选择
-  - DOMAIN-SUFFIX,android.com,全局选择
-  - DOMAIN-SUFFIX,androidify.com,全局选择
-  - DOMAIN-SUFFIX,dialogflow.com,全局选择
-  - DOMAIN-SUFFIX,autodraw.com,全局选择
-  - DOMAIN-SUFFIX,capitalg.com,全局选择
-  - DOMAIN-SUFFIX,certificate-transparency.org,全局选择
-  - DOMAIN-SUFFIX,chrome.com,全局选择
-  - DOMAIN-SUFFIX,chromeexperiments.com,全局选择
-  - DOMAIN-SUFFIX,chromestatus.com,全局选择
-  - DOMAIN-SUFFIX,chromium.org,全局选择
-  - DOMAIN-SUFFIX,creativelab5.com,全局选择
-  - DOMAIN-SUFFIX,debug.com,全局选择
-  - DOMAIN-SUFFIX,deepmind.com,全局选择
-  - DOMAIN-SUFFIX,firebaseio.com,全局选择
-  - DOMAIN-SUFFIX,getmdl.io,全局选择
-  - DOMAIN-SUFFIX,ggpht.com,全局选择
-  - DOMAIN-SUFFIX,gmail.com,全局选择
-  - DOMAIN-SUFFIX,gmodules.com,全局选择
-  - DOMAIN-SUFFIX,godoc.org,全局选择
-  - DOMAIN-SUFFIX,golang.org,全局选择
-  - DOMAIN-SUFFIX,gstatic.com,全局选择
-  - DOMAIN-SUFFIX,gv.com,全局选择
-  - DOMAIN-SUFFIX,gwtproject.org,全局选择
-  - DOMAIN-SUFFIX,itasoftware.com,全局选择
-  - DOMAIN-SUFFIX,madewithcode.com,全局选择
-  - DOMAIN-SUFFIX,material.io,全局选择
-  - DOMAIN-SUFFIX,polymer-project.org,全局选择
-  - DOMAIN-SUFFIX,admin.recaptcha.net,全局选择
-  - DOMAIN-SUFFIX,recaptcha.net,全局选择
-  - DOMAIN-SUFFIX,shattered.io,全局选择
-  - DOMAIN-SUFFIX,synergyse.com,全局选择
-  - DOMAIN-SUFFIX,tensorflow.org,全局选择
-  - DOMAIN-SUFFIX,tfhub.dev,全局选择
-  - DOMAIN-SUFFIX,tiltbrush.com,全局选择
-  - DOMAIN-SUFFIX,waveprotocol.org,全局选择
-  - DOMAIN-SUFFIX,waymo.com,全局选择
-  - DOMAIN-SUFFIX,webmproject.org,全局选择
-  - DOMAIN-SUFFIX,webrtc.org,全局选择
-  - DOMAIN-SUFFIX,whatbrowser.org,全局选择
-  - DOMAIN-SUFFIX,widevine.com,全局选择
-  - DOMAIN-SUFFIX,x.company,全局选择
-  - DOMAIN-SUFFIX,youtu.be,全局选择
-  - DOMAIN-SUFFIX,yt.be,全局选择
-  - DOMAIN-SUFFIX,ytimg.com,全局选择
-  - DOMAIN-SUFFIX,1drv.com,全局选择
-  - DOMAIN-SUFFIX,1drv.ms,全局选择
-  - DOMAIN-SUFFIX,blob.core.windows.net,全局选择
-  - DOMAIN-SUFFIX,livefilestore.com,全局选择
-  - DOMAIN-SUFFIX,onedrive.com,全局选择
-  - DOMAIN-SUFFIX,storage.live.com,全局选择
-  - DOMAIN-SUFFIX,storage.msn.com,全局选择
-  - DOMAIN,oneclient.sfx.ms,全局选择
-  - DOMAIN-SUFFIX,0rz.tw,全局选择
-  - DOMAIN-SUFFIX,4bluestones.biz,全局选择
-  - DOMAIN-SUFFIX,9bis.net,全局选择
-  - DOMAIN-SUFFIX,allconnected.co,全局选择
-  - DOMAIN-SUFFIX,aol.com,全局选择
-  - DOMAIN-SUFFIX,bcc.com.tw,全局选择
-  - DOMAIN-SUFFIX,bit.ly,全局选择
-  - DOMAIN-SUFFIX,bitshare.com,全局选择
-  - DOMAIN-SUFFIX,blog.jp,全局选择
-  - DOMAIN-SUFFIX,blogimg.jp,全局选择
-  - DOMAIN-SUFFIX,blogtd.org,全局选择
-  - DOMAIN-SUFFIX,broadcast.co.nz,全局选择
-  - DOMAIN-SUFFIX,camfrog.com,全局选择
-  - DOMAIN-SUFFIX,cfos.de,全局选择
-  - DOMAIN-SUFFIX,citypopulation.de,全局选择
-  - DOMAIN-SUFFIX,cloudfront.net,全局选择
-  - DOMAIN-SUFFIX,ctitv.com.tw,全局选择
-  - DOMAIN-SUFFIX,cuhk.edu.hk,全局选择
-  - DOMAIN-SUFFIX,cusu.hk,全局选择
-  - DOMAIN-SUFFIX,discord.gg,全局选择
-  - DOMAIN-SUFFIX,discuss.com.hk,全局选择
-  - DOMAIN-SUFFIX,dropboxapi.com,全局选择
-  - DOMAIN-SUFFIX,duolingo.cn,全局选择
-  - DOMAIN-SUFFIX,edditstatic.com,全局选择
-  - DOMAIN-SUFFIX,flickriver.com,全局选择
-  - DOMAIN-SUFFIX,focustaiwan.tw,全局选择
-  - DOMAIN-SUFFIX,全局选择.fr,全局选择
-  - DOMAIN-SUFFIX,gigacircle.com,全局选择
-  - DOMAIN-SUFFIX,hk-pub.com,全局选择
-  - DOMAIN-SUFFIX,hosting.co.uk,全局选择
-  - DOMAIN-SUFFIX,hwcdn.net,全局选择
-  - DOMAIN-SUFFIX,ifixit.com,全局选择
-  - DOMAIN-SUFFIX,iphone4hongkong.com,全局选择
-  - DOMAIN-SUFFIX,iphonetaiwan.org,全局选择
-  - DOMAIN-SUFFIX,iptvbin.com,全局选择
-  - DOMAIN-SUFFIX,linksalpha.com,全局选择
-  - DOMAIN-SUFFIX,manyvids.com,全局选择
-  - DOMAIN-SUFFIX,myactimes.com,全局选择
-  - DOMAIN-SUFFIX,newsblur.com,全局选择
-  - DOMAIN-SUFFIX,now.im,全局选择
-  - DOMAIN-SUFFIX,nowe.com,全局选择
-  - DOMAIN-SUFFIX,redditlist.com,全局选择
-  - DOMAIN-SUFFIX,s3.amazonaws.com,全局选择
-  - DOMAIN-SUFFIX,signal.org,全局选择
-  - DOMAIN-SUFFIX,smartmailcloud.com,全局选择
-  - DOMAIN-SUFFIX,sparknotes.com,全局选择
-  - DOMAIN-SUFFIX,streetvoice.com,全局选择
-  - DOMAIN-SUFFIX,supertop.co,全局选择
-  - DOMAIN-SUFFIX,tv.com,全局选择
-  - DOMAIN-SUFFIX,typepad.com,全局选择
-  - DOMAIN-SUFFIX,udnbkk.com,全局选择
-  - DOMAIN-SUFFIX,urbanairship.com,全局选择
-  - DOMAIN-SUFFIX,whispersystems.org,全局选择
-  - DOMAIN-SUFFIX,wikia.com,全局选择
-  - DOMAIN-SUFFIX,wn.com,全局选择
-  - DOMAIN-SUFFIX,wolframalpha.com,全局选择
-  - DOMAIN-SUFFIX,x-art.com,全局选择
-  - DOMAIN-SUFFIX,yimg.com,全局选择
-  - DOMAIN,api.steampowered.com,全局选择
-  - DOMAIN,store.steampowered.com,全局选择
+  - DOMAIN-SUFFIX,ampproject.org,Mode
+  - DOMAIN-SUFFIX,appspot.com,Mode
+  - DOMAIN-SUFFIX,blogger.com,Mode
+  - DOMAIN-SUFFIX,getoutline.org,Mode
+  - DOMAIN-SUFFIX,gvt0.com,Mode
+  - DOMAIN-SUFFIX,gvt1.com,Mode
+  - DOMAIN-SUFFIX,gvt3.com,Mode
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Mode
+  - DOMAIN-KEYWORD,google,Mode
+  - DOMAIN-KEYWORD,blogspot,Mode
+  - DOMAIN-SUFFIX,onedrive.live.com,Mode
+  - DOMAIN-SUFFIX,xboxlive.com,Mode
+  - DOMAIN-SUFFIX,cdninstagram.com,Mode
+  - DOMAIN-SUFFIX,fb.com,Mode
+  - DOMAIN-SUFFIX,fb.me,Mode
+  - DOMAIN-SUFFIX,fbaddins.com,Mode
+  - DOMAIN-SUFFIX,fbcdn.net,Mode
+  - DOMAIN-SUFFIX,fbsbx.com,Mode
+  - DOMAIN-SUFFIX,fbworkmail.com,Mode
+  - DOMAIN-SUFFIX,instagram.com,Mode
+  - DOMAIN-SUFFIX,m.me,Mode
+  - DOMAIN-SUFFIX,messenger.com,Mode
+  - DOMAIN-SUFFIX,oculus.com,Mode
+  - DOMAIN-SUFFIX,oculuscdn.com,Mode
+  - DOMAIN-SUFFIX,rocksdb.org,Mode
+  - DOMAIN-SUFFIX,whatsapp.com,Mode
+  - DOMAIN-SUFFIX,whatsapp.net,Mode
+  - DOMAIN-KEYWORD,facebook,Mode
+  - IP-CIDR,3.123.36.126/32,Mode,no-resolve
+  - IP-CIDR,35.157.215.84/32,Mode,no-resolve
+  - IP-CIDR,35.157.217.255/32,Mode,no-resolve
+  - IP-CIDR,52.58.209.134/32,Mode,no-resolve
+  - IP-CIDR,54.93.124.31/32,Mode,no-resolve
+  - IP-CIDR,54.162.243.80/32,Mode,no-resolve
+  - IP-CIDR,54.173.34.141/32,Mode,no-resolve
+  - IP-CIDR,54.235.23.242/32,Mode,no-resolve
+  - IP-CIDR,169.45.248.118/32,Mode,no-resolve
+  - DOMAIN-SUFFIX,pscp.tv,Mode
+  - DOMAIN-SUFFIX,periscope.tv,Mode
+  - DOMAIN-SUFFIX,t.co,Mode
+  - DOMAIN-SUFFIX,twimg.co,Mode
+  - DOMAIN-SUFFIX,twimg.com,Mode
+  - DOMAIN-SUFFIX,twitpic.com,Mode
+  - DOMAIN-SUFFIX,vine.co,Mode
+  - DOMAIN-KEYWORD,twitter,Mode
+  - DOMAIN-SUFFIX,t.me,Mode
+  - DOMAIN-SUFFIX,tdesktop.com,Mode
+  - DOMAIN-SUFFIX,telegra.ph,Mode
+  - DOMAIN-SUFFIX,telegram.me,Mode
+  - DOMAIN-SUFFIX,telegram.org,Mode
+  - IP-CIDR,91.108.4.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.8.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.12.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.16.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.56.0/22,Mode,no-resolve
+  - IP-CIDR,149.154.160.0/20,Mode,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,Mode,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,Mode,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,Mode,no-resolve
+  - DOMAIN-SUFFIX,line.me,Mode
+  - DOMAIN-SUFFIX,line-apps.com,Mode
+  - DOMAIN-SUFFIX,line-scdn.net,Mode
+  - DOMAIN-SUFFIX,naver.jp,Mode
+  - IP-CIDR,103.2.30.0/23,Mode,no-resolve
+  - IP-CIDR,125.209.208.0/20,Mode,no-resolve
+  - IP-CIDR,147.92.128.0/17,Mode,no-resolve
+  - IP-CIDR,203.104.144.0/21,Mode,no-resolve
+  - DOMAIN-SUFFIX,4shared.com,Mode
+  - DOMAIN-SUFFIX,520cc.cc,Mode
+  - DOMAIN-SUFFIX,881903.com,Mode
+  - DOMAIN-SUFFIX,9cache.com,Mode
+  - DOMAIN-SUFFIX,9gag.com,Mode
+  - DOMAIN-SUFFIX,abc.com,Mode
+  - DOMAIN-SUFFIX,abc.net.au,Mode
+  - DOMAIN-SUFFIX,abebooks.com,Mode
+  - DOMAIN-SUFFIX,amazon.co.jp,Mode
+  - DOMAIN-SUFFIX,apigee.com,Mode
+  - DOMAIN-SUFFIX,apk-dl.com,Mode
+  - DOMAIN-SUFFIX,apkfind.com,Mode
+  - DOMAIN-SUFFIX,apkmirror.com,Mode
+  - DOMAIN-SUFFIX,apkmonk.com,Mode
+  - DOMAIN-SUFFIX,apkpure.com,Mode
+  - DOMAIN-SUFFIX,aptoide.com,Mode
+  - DOMAIN-SUFFIX,archive.is,Mode
+  - DOMAIN-SUFFIX,archive.org,Mode
+  - DOMAIN-SUFFIX,arte.tv,Mode
+  - DOMAIN-SUFFIX,artstation.com,Mode
+  - DOMAIN-SUFFIX,arukas.io,Mode
+  - DOMAIN-SUFFIX,ask.com,Mode
+  - DOMAIN-SUFFIX,avg.com,Mode
+  - DOMAIN-SUFFIX,avgle.com,Mode
+  - DOMAIN-SUFFIX,badoo.com,Mode
+  - DOMAIN-SUFFIX,bandwagonhost.com,Mode
+  - DOMAIN-SUFFIX,bbc.com,Mode
+  - DOMAIN-SUFFIX,behance.net,Mode
+  - DOMAIN-SUFFIX,bibox.com,Mode
+  - DOMAIN-SUFFIX,biggo.com.tw,Mode
+  - DOMAIN-SUFFIX,binance.com,Mode
+  - DOMAIN-SUFFIX,bitcointalk.org,Mode
+  - DOMAIN-SUFFIX,bitfinex.com,Mode
+  - DOMAIN-SUFFIX,bitmex.com,Mode
+  - DOMAIN-SUFFIX,bit-z.com,Mode
+  - DOMAIN-SUFFIX,bloglovin.com,Mode
+  - DOMAIN-SUFFIX,bloomberg.cn,Mode
+  - DOMAIN-SUFFIX,bloomberg.com,Mode
+  - DOMAIN-SUFFIX,blubrry.com,Mode
+  - DOMAIN-SUFFIX,book.com.tw,Mode
+  - DOMAIN-SUFFIX,booklive.jp,Mode
+  - DOMAIN-SUFFIX,books.com.tw,Mode
+  - DOMAIN-SUFFIX,boslife.net,Mode
+  - DOMAIN-SUFFIX,box.com,Mode
+  - DOMAIN-SUFFIX,businessinsider.com,Mode
+  - DOMAIN-SUFFIX,bwh1.net,Mode
+  - DOMAIN-SUFFIX,castbox.fm,Mode
+  - DOMAIN-SUFFIX,cbc.ca,Mode
+  - DOMAIN-SUFFIX,cdw.com,Mode
+  - DOMAIN-SUFFIX,change.org,Mode
+  - DOMAIN-SUFFIX,channelnewsasia.com,Mode
+  - DOMAIN-SUFFIX,ck101.com,Mode
+  - DOMAIN-SUFFIX,clarionproject.org,Mode
+  - DOMAIN-SUFFIX,clyp.it,Mode
+  - DOMAIN-SUFFIX,cna.com.tw,Mode
+  - DOMAIN-SUFFIX,comparitech.com,Mode
+  - DOMAIN-SUFFIX,conoha.jp,Mode
+  - DOMAIN-SUFFIX,crucial.com,Mode
+  - DOMAIN-SUFFIX,cts.com.tw,Mode
+  - DOMAIN-SUFFIX,cw.com.tw,Mode
+  - DOMAIN-SUFFIX,cyberctm.com,Mode
+  - DOMAIN-SUFFIX,dailymotion.com,Mode
+  - DOMAIN-SUFFIX,dailyview.tw,Mode
+  - DOMAIN-SUFFIX,daum.net,Mode
+  - DOMAIN-SUFFIX,daumcdn.net,Mode
+  - DOMAIN-SUFFIX,dcard.tw,Mode
+  - DOMAIN-SUFFIX,deepdiscount.com,Mode
+  - DOMAIN-SUFFIX,depositphotos.com,Mode
+  - DOMAIN-SUFFIX,deviantart.com,Mode
+  - DOMAIN-SUFFIX,disconnect.me,Mode
+  - DOMAIN-SUFFIX,discordapp.com,Mode
+  - DOMAIN-SUFFIX,discordapp.net,Mode
+  - DOMAIN-SUFFIX,disqus.com,Mode
+  - DOMAIN-SUFFIX,dlercloud.com,Mode
+  - DOMAIN-SUFFIX,dns2go.com,Mode
+  - DOMAIN-SUFFIX,dowjones.com,Mode
+  - DOMAIN-SUFFIX,dropbox.com,Mode
+  - DOMAIN-SUFFIX,dropboxusercontent.com,Mode
+  - DOMAIN-SUFFIX,duckduckgo.com,Mode
+  - DOMAIN-SUFFIX,dw.com,Mode
+  - DOMAIN-SUFFIX,dynu.com,Mode
+  - DOMAIN-SUFFIX,earthcam.com,Mode
+  - DOMAIN-SUFFIX,ebookservice.tw,Mode
+  - DOMAIN-SUFFIX,economist.com,Mode
+  - DOMAIN-SUFFIX,edgecastcdn.net,Mode
+  - DOMAIN-SUFFIX,edu,Mode
+  - DOMAIN-SUFFIX,elpais.com,Mode
+  - DOMAIN-SUFFIX,enanyang.my,Mode
+  - DOMAIN-SUFFIX,encyclopedia.com,Mode
+  - DOMAIN-SUFFIX,esoir.be,Mode
+  - DOMAIN-SUFFIX,etherscan.io,Mode
+  - DOMAIN-SUFFIX,euronews.com,Mode
+  - DOMAIN-SUFFIX,evozi.com,Mode
+  - DOMAIN-SUFFIX,feedly.com,Mode
+  - DOMAIN-SUFFIX,firech.at,Mode
+  - DOMAIN-SUFFIX,flickr.com,Mode
+  - DOMAIN-SUFFIX,flitto.com,Mode
+  - DOMAIN-SUFFIX,foreignpolicy.com,Mode
+  - DOMAIN-SUFFIX,Modebrowser.org,Mode
+  - DOMAIN-SUFFIX,Modewechat.com,Mode
+  - DOMAIN-SUFFIX,Modeweibo.com,Mode
+  - DOMAIN-SUFFIX,friday.tw,Mode
+  - DOMAIN-SUFFIX,ftchinese.com,Mode
+  - DOMAIN-SUFFIX,ftimg.net,Mode
+  - DOMAIN-SUFFIX,gate.io,Mode
+  - DOMAIN-SUFFIX,getlantern.org,Mode
+  - DOMAIN-SUFFIX,getsync.com,Mode
+  - DOMAIN-SUFFIX,globalvoices.org,Mode
+  - DOMAIN-SUFFIX,goo.ne.jp,Mode
+  - DOMAIN-SUFFIX,goodreads.com,Mode
+  - DOMAIN-SUFFIX,gov,Mode
+  - DOMAIN-SUFFIX,gov.tw,Mode
+  - DOMAIN-SUFFIX,greatfire.org,Mode
+  - DOMAIN-SUFFIX,gumroad.com,Mode
+  - DOMAIN-SUFFIX,hbg.com,Mode
+  - DOMAIN-SUFFIX,heroku.com,Mode
+  - DOMAIN-SUFFIX,hightail.com,Mode
+  - DOMAIN-SUFFIX,hk01.com,Mode
+  - DOMAIN-SUFFIX,hkbf.org,Mode
+  - DOMAIN-SUFFIX,hkbookcity.com,Mode
+  - DOMAIN-SUFFIX,hkej.com,Mode
+  - DOMAIN-SUFFIX,hket.com,Mode
+  - DOMAIN-SUFFIX,hkgolden.com,Mode
+  - DOMAIN-SUFFIX,hootsuite.com,Mode
+  - DOMAIN-SUFFIX,hudson.org,Mode
+  - DOMAIN-SUFFIX,hyread.com.tw,Mode
+  - DOMAIN-SUFFIX,ibtimes.com,Mode
+  - DOMAIN-SUFFIX,i-cable.com,Mode
+  - DOMAIN-SUFFIX,icij.org,Mode
+  - DOMAIN-SUFFIX,icoco.com,Mode
+  - DOMAIN-SUFFIX,imgur.com,Mode
+  - DOMAIN-SUFFIX,initiummall.com,Mode
+  - DOMAIN-SUFFIX,insecam.org,Mode
+  - DOMAIN-SUFFIX,ipfs.io,Mode
+  - DOMAIN-SUFFIX,issuu.com,Mode
+  - DOMAIN-SUFFIX,istockphoto.com,Mode
+  - DOMAIN-SUFFIX,japantimes.co.jp,Mode
+  - DOMAIN-SUFFIX,jiji.com,Mode
+  - DOMAIN-SUFFIX,jinx.com,Mode
+  - DOMAIN-SUFFIX,jkforum.net,Mode
+  - DOMAIN-SUFFIX,joinmastodon.org,Mode
+  - DOMAIN-SUFFIX,justmysocks.net,Mode
+  - DOMAIN-SUFFIX,justpaste.it,Mode
+  - DOMAIN-SUFFIX,kakao.com,Mode
+  - DOMAIN-SUFFIX,kakaocorp.com,Mode
+  - DOMAIN-SUFFIX,kik.com,Mode
+  - DOMAIN-SUFFIX,kobo.com,Mode
+  - DOMAIN-SUFFIX,kobobooks.com,Mode
+  - DOMAIN-SUFFIX,kodingen.com,Mode
+  - DOMAIN-SUFFIX,lemonde.fr,Mode
+  - DOMAIN-SUFFIX,lepoint.fr,Mode
+  - DOMAIN-SUFFIX,lihkg.com,Mode
+  - DOMAIN-SUFFIX,listennotes.com,Mode
+  - DOMAIN-SUFFIX,livestream.com,Mode
+  - DOMAIN-SUFFIX,logmein.com,Mode
+  - DOMAIN-SUFFIX,mail.ru,Mode
+  - DOMAIN-SUFFIX,mailchimp.com,Mode
+  - DOMAIN-SUFFIX,marc.info,Mode
+  - DOMAIN-SUFFIX,matters.news,Mode
+  - DOMAIN-SUFFIX,maying.co,Mode
+  - DOMAIN-SUFFIX,medium.com,Mode
+  - DOMAIN-SUFFIX,mega.nz,Mode
+  - DOMAIN-SUFFIX,mil,Mode
+  - DOMAIN-SUFFIX,mingpao.com,Mode
+  - DOMAIN-SUFFIX,mobile01.com,Mode
+  - DOMAIN-SUFFIX,myspace.com,Mode
+  - DOMAIN-SUFFIX,myspacecdn.com,Mode
+  - DOMAIN-SUFFIX,nanyang.com,Mode
+  - DOMAIN-SUFFIX,naver.com,Mode
+  - DOMAIN-SUFFIX,neowin.net,Mode
+  - DOMAIN-SUFFIX,newstapa.org,Mode
+  - DOMAIN-SUFFIX,nexitally.com,Mode
+  - DOMAIN-SUFFIX,nhk.or.jp,Mode
+  - DOMAIN-SUFFIX,nicovideo.jp,Mode
+  - DOMAIN-SUFFIX,nii.ac.jp,Mode
+  - DOMAIN-SUFFIX,nikkei.com,Mode
+  - DOMAIN-SUFFIX,nofile.io,Mode
+  - DOMAIN-SUFFIX,now.com,Mode
+  - DOMAIN-SUFFIX,nrk.no,Mode
+  - DOMAIN-SUFFIX,nyt.com,Mode
+  - DOMAIN-SUFFIX,nytchina.com,Mode
+  - DOMAIN-SUFFIX,nytcn.me,Mode
+  - DOMAIN-SUFFIX,nytco.com,Mode
+  - DOMAIN-SUFFIX,nytimes.com,Mode
+  - DOMAIN-SUFFIX,nytimg.com,Mode
+  - DOMAIN-SUFFIX,nytlog.com,Mode
+  - DOMAIN-SUFFIX,nytstyle.com,Mode
+  - DOMAIN-SUFFIX,ok.ru,Mode
+  - DOMAIN-SUFFIX,okex.com,Mode
+  - DOMAIN-SUFFIX,on.cc,Mode
+  - DOMAIN-SUFFIX,orientaldaily.com.my,Mode
+  - DOMAIN-SUFFIX,overcast.fm,Mode
+  - DOMAIN-SUFFIX,paltalk.com,Mode
+  - DOMAIN-SUFFIX,pao-pao.net,Mode
+  - DOMAIN-SUFFIX,parsevideo.com,Mode
+  - DOMAIN-SUFFIX,pbxes.com,Mode
+  - DOMAIN-SUFFIX,pcdvd.com.tw,Mode
+  - DOMAIN-SUFFIX,pchome.com.tw,Mode
+  - DOMAIN-SUFFIX,pcloud.com,Mode
+  - DOMAIN-SUFFIX,picacomic.com,Mode
+  - DOMAIN-SUFFIX,pinimg.com,Mode
+  - DOMAIN-SUFFIX,pixiv.net,Mode
+  - DOMAIN-SUFFIX,player.fm,Mode
+  - DOMAIN-SUFFIX,plurk.com,Mode
+  - DOMAIN-SUFFIX,po18.tw,Mode
+  - DOMAIN-SUFFIX,potato.im,Mode
+  - DOMAIN-SUFFIX,potatso.com,Mode
+  - DOMAIN-SUFFIX,prism-break.org,Mode
+  - DOMAIN-SUFFIX,proxifier.com,Mode
+  - DOMAIN-SUFFIX,pt.im,Mode
+  - DOMAIN-SUFFIX,pts.org.tw,Mode
+  - DOMAIN-SUFFIX,pubu.com.tw,Mode
+  - DOMAIN-SUFFIX,pubu.tw,Mode
+  - DOMAIN-SUFFIX,pureapk.com,Mode
+  - DOMAIN-SUFFIX,quora.com,Mode
+  - DOMAIN-SUFFIX,quoracdn.net,Mode
+  - DOMAIN-SUFFIX,rakuten.co.jp,Mode
+  - DOMAIN-SUFFIX,readingtimes.com.tw,Mode
+  - DOMAIN-SUFFIX,readmoo.com,Mode
+  - DOMAIN-SUFFIX,redbubble.com,Mode
+  - DOMAIN-SUFFIX,reddit.com,Mode
+  - DOMAIN-SUFFIX,redditmedia.com,Mode
+  - DOMAIN-SUFFIX,resilio.com,Mode
+  - DOMAIN-SUFFIX,reuters.com,Mode
+  - DOMAIN-SUFFIX,reutersmedia.net,Mode
+  - DOMAIN-SUFFIX,rfi.fr,Mode
+  - DOMAIN-SUFFIX,rixcloud.com,Mode
+  - DOMAIN-SUFFIX,roadshow.hk,Mode
+  - DOMAIN-SUFFIX,scmp.com,Mode
+  - DOMAIN-SUFFIX,scribd.com,Mode
+  - DOMAIN-SUFFIX,seatguru.com,Mode
+  - DOMAIN-SUFFIX,shadowsocks.org,Mode
+  - DOMAIN-SUFFIX,shopee.tw,Mode
+  - DOMAIN-SUFFIX,slideshare.net,Mode
+  - DOMAIN-SUFFIX,softfamous.com,Mode
+  - DOMAIN-SUFFIX,soundcloud.com,Mode
+  - DOMAIN-SUFFIX,ssrcloud.org,Mode
+  - DOMAIN-SUFFIX,startpage.com,Mode
+  - DOMAIN-SUFFIX,steamcommunity.com,Mode
+  - DOMAIN-SUFFIX,steemit.com,Mode
+  - DOMAIN-SUFFIX,steemitwallet.com,Mode
+  - DOMAIN-SUFFIX,t66y.com,Mode
+  - DOMAIN-SUFFIX,tapatalk.com,Mode
+  - DOMAIN-SUFFIX,teco-hk.org,Mode
+  - DOMAIN-SUFFIX,teco-mo.org,Mode
+  - DOMAIN-SUFFIX,teddysun.com,Mode
+  - DOMAIN-SUFFIX,textnow.me,Mode
+  - DOMAIN-SUFFIX,theguardian.com,Mode
+  - DOMAIN-SUFFIX,theinitium.com,Mode
+  - DOMAIN-SUFFIX,thetvdb.com,Mode
+  - DOMAIN-SUFFIX,tineye.com,Mode
+  - DOMAIN-SUFFIX,torproject.org,Mode
+  - DOMAIN-SUFFIX,tumblr.com,Mode
+  - DOMAIN-SUFFIX,turbobit.net,Mode
+  - DOMAIN-SUFFIX,tutanota.com,Mode
+  - DOMAIN-SUFFIX,tvboxnow.com,Mode
+  - DOMAIN-SUFFIX,udn.com,Mode
+  - DOMAIN-SUFFIX,unseen.is,Mode
+  - DOMAIN-SUFFIX,upmedia.mg,Mode
+  - DOMAIN-SUFFIX,uptodown.com,Mode
+  - DOMAIN-SUFFIX,urbandictionary.com,Mode
+  - DOMAIN-SUFFIX,ustream.tv,Mode
+  - DOMAIN-SUFFIX,uwants.com,Mode
+  - DOMAIN-SUFFIX,v2ray.com,Mode
+  - DOMAIN-SUFFIX,viber.com,Mode
+  - DOMAIN-SUFFIX,videopress.com,Mode
+  - DOMAIN-SUFFIX,vimeo.com,Mode
+  - DOMAIN-SUFFIX,voachinese.com,Mode
+  - DOMAIN-SUFFIX,voanews.com,Mode
+  - DOMAIN-SUFFIX,voxer.com,Mode
+  - DOMAIN-SUFFIX,vzw.com,Mode
+  - DOMAIN-SUFFIX,w3schools.com,Mode
+  - DOMAIN-SUFFIX,washingtonpost.com,Mode
+  - DOMAIN-SUFFIX,wattpad.com,Mode
+  - DOMAIN-SUFFIX,whoer.net,Mode
+  - DOMAIN-SUFFIX,wikimapia.org,Mode
+  - DOMAIN-SUFFIX,wikipedia.org,Mode
+  - DOMAIN-SUFFIX,wikiquote.org,Mode
+  - DOMAIN-SUFFIX,wikiwand.com,Mode
+  - DOMAIN-SUFFIX,winudf.com,Mode
+  - DOMAIN-SUFFIX,wire.com,Mode
+  - DOMAIN-SUFFIX,wordpress.com,Mode
+  - DOMAIN-SUFFIX,workflow.is,Mode
+  - DOMAIN-SUFFIX,worldcat.org,Mode
+  - DOMAIN-SUFFIX,wsj.com,Mode
+  - DOMAIN-SUFFIX,wsj.net,Mode
+  - DOMAIN-SUFFIX,xhamster.com,Mode
+  - DOMAIN-SUFFIX,xn--90wwvt03e.com,Mode
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,Mode
+  - DOMAIN-SUFFIX,xnxx.com,Mode
+  - DOMAIN-SUFFIX,xvideos.com,Mode
+  - DOMAIN-SUFFIX,yahoo.com,Mode
+  - DOMAIN-SUFFIX,yandex.ru,Mode
+  - DOMAIN-SUFFIX,ycombinator.com,Mode
+  - DOMAIN-SUFFIX,yesasia.com,Mode
+  - DOMAIN-SUFFIX,yes-news.com,Mode
+  - DOMAIN-SUFFIX,yomiuri.co.jp,Mode
+  - DOMAIN-SUFFIX,you-get.org,Mode
+  - DOMAIN-SUFFIX,zaobao.com,Mode
+  - DOMAIN-SUFFIX,zb.com,Mode
+  - DOMAIN-SUFFIX,zello.com,Mode
+  - DOMAIN-SUFFIX,zeronet.io,Mode
+  - DOMAIN-SUFFIX,zoom.us,Mode
+  - DOMAIN-KEYWORD,github,Mode
+  - DOMAIN-KEYWORD,jav,Mode
+  - DOMAIN-KEYWORD,pinterest,Mode
+  - DOMAIN-KEYWORD,porn,Mode
+  - DOMAIN-KEYWORD,wikileaks,Mode
+  - DOMAIN-SUFFIX,apartmentratings.com,Mode
+  - DOMAIN-SUFFIX,apartments.com,Mode
+  - DOMAIN-SUFFIX,bankmobilevibe.com,Mode
+  - DOMAIN-SUFFIX,bing.com,Mode
+  - DOMAIN-SUFFIX,booktopia.com.au,Mode
+  - DOMAIN-SUFFIX,cccat.io,Mode
+  - DOMAIN-SUFFIX,centauro.com.br,Mode
+  - DOMAIN-SUFFIX,clearsurance.com,Mode
+  - DOMAIN-SUFFIX,costco.com,Mode
+  - DOMAIN-SUFFIX,crackle.com,Mode
+  - DOMAIN-SUFFIX,depositphotos.cn,Mode
+  - DOMAIN-SUFFIX,dish.com,Mode
+  - DOMAIN-SUFFIX,dmm.co.jp,Mode
+  - DOMAIN-SUFFIX,dmm.com,Mode
+  - DOMAIN-SUFFIX,dnvod.tv,Mode
+  - DOMAIN-SUFFIX,esurance.com,Mode
+  - DOMAIN-SUFFIX,extmatrix.com,Mode
+  - DOMAIN-SUFFIX,fastpic.ru,Mode
+  - DOMAIN-SUFFIX,flipboard.com,Mode
+  - DOMAIN-SUFFIX,fnac.be,Mode
+  - DOMAIN-SUFFIX,fnac.com,Mode
+  - DOMAIN-SUFFIX,funkyimg.com,Mode
+  - DOMAIN-SUFFIX,fxnetworks.com,Mode
+  - DOMAIN-SUFFIX,gettyimages.com,Mode
+  - DOMAIN-SUFFIX,go.com,Mode
+  - DOMAIN-SUFFIX,here.com,Mode
+  - DOMAIN-SUFFIX,jcpenney.com,Mode
+  - DOMAIN-SUFFIX,jiehua.tv,Mode
+  - DOMAIN-SUFFIX,mailfence.com,Mode
+  - DOMAIN-SUFFIX,nationwide.com,Mode
+  - DOMAIN-SUFFIX,nbc.com,Mode
+  - DOMAIN-SUFFIX,nexon.com,Mode
+  - DOMAIN-SUFFIX,nordstrom.com,Mode
+  - DOMAIN-SUFFIX,nordstromimage.com,Mode
+  - DOMAIN-SUFFIX,nordstromrack.com,Mode
+  - DOMAIN-SUFFIX,superpages.com,Mode
+  - DOMAIN-SUFFIX,target.com,Mode
+  - DOMAIN-SUFFIX,thinkgeek.com,Mode
+  - DOMAIN-SUFFIX,tracfone.com,Mode
+  - DOMAIN-SUFFIX,unity3d.com,Mode
+  - DOMAIN-SUFFIX,uploader.jp,Mode
+  - DOMAIN-SUFFIX,vevo.com,Mode
+  - DOMAIN-SUFFIX,viu.tv,Mode
+  - DOMAIN-SUFFIX,vk.com,Mode
+  - DOMAIN-SUFFIX,vsco.co,Mode
+  - DOMAIN-SUFFIX,xfinity.com,Mode
+  - DOMAIN-SUFFIX,zattoo.com,Mode
+  - DOMAIN,testflight.apple.com,Mode
+  - DOMAIN-SUFFIX,appsto.re,Mode
+  - DOMAIN,books.itunes.apple.com,Mode
+  - DOMAIN,hls.itunes.apple.com,Mode
+  - DOMAIN,apps.apple.com,Mode
+  - DOMAIN,itunes.apple.com,Mode
+  - DOMAIN,api-glb-sea.smoot.apple.com,Mode
+  - DOMAIN,lookup-api.apple.com,Mode
+  - DOMAIN-SUFFIX,abc.xyz,Mode
+  - DOMAIN-SUFFIX,android.com,Mode
+  - DOMAIN-SUFFIX,androidify.com,Mode
+  - DOMAIN-SUFFIX,dialogflow.com,Mode
+  - DOMAIN-SUFFIX,autodraw.com,Mode
+  - DOMAIN-SUFFIX,capitalg.com,Mode
+  - DOMAIN-SUFFIX,certificate-transparency.org,Mode
+  - DOMAIN-SUFFIX,chrome.com,Mode
+  - DOMAIN-SUFFIX,chromeexperiments.com,Mode
+  - DOMAIN-SUFFIX,chromestatus.com,Mode
+  - DOMAIN-SUFFIX,chromium.org,Mode
+  - DOMAIN-SUFFIX,creativelab5.com,Mode
+  - DOMAIN-SUFFIX,debug.com,Mode
+  - DOMAIN-SUFFIX,deepmind.com,Mode
+  - DOMAIN-SUFFIX,firebaseio.com,Mode
+  - DOMAIN-SUFFIX,getmdl.io,Mode
+  - DOMAIN-SUFFIX,ggpht.com,Mode
+  - DOMAIN-SUFFIX,gmail.com,Mode
+  - DOMAIN-SUFFIX,gmodules.com,Mode
+  - DOMAIN-SUFFIX,godoc.org,Mode
+  - DOMAIN-SUFFIX,golang.org,Mode
+  - DOMAIN-SUFFIX,gstatic.com,Mode
+  - DOMAIN-SUFFIX,gv.com,Mode
+  - DOMAIN-SUFFIX,gwtproject.org,Mode
+  - DOMAIN-SUFFIX,itasoftware.com,Mode
+  - DOMAIN-SUFFIX,madewithcode.com,Mode
+  - DOMAIN-SUFFIX,material.io,Mode
+  - DOMAIN-SUFFIX,polymer-project.org,Mode
+  - DOMAIN-SUFFIX,admin.recaptcha.net,Mode
+  - DOMAIN-SUFFIX,recaptcha.net,Mode
+  - DOMAIN-SUFFIX,shattered.io,Mode
+  - DOMAIN-SUFFIX,synergyse.com,Mode
+  - DOMAIN-SUFFIX,tensorflow.org,Mode
+  - DOMAIN-SUFFIX,tfhub.dev,Mode
+  - DOMAIN-SUFFIX,tiltbrush.com,Mode
+  - DOMAIN-SUFFIX,waveprotocol.org,Mode
+  - DOMAIN-SUFFIX,waymo.com,Mode
+  - DOMAIN-SUFFIX,webmproject.org,Mode
+  - DOMAIN-SUFFIX,webrtc.org,Mode
+  - DOMAIN-SUFFIX,whatbrowser.org,Mode
+  - DOMAIN-SUFFIX,widevine.com,Mode
+  - DOMAIN-SUFFIX,x.company,Mode
+  - DOMAIN-SUFFIX,youtu.be,Mode
+  - DOMAIN-SUFFIX,yt.be,Mode
+  - DOMAIN-SUFFIX,ytimg.com,Mode
+  - DOMAIN-SUFFIX,1drv.com,Mode
+  - DOMAIN-SUFFIX,1drv.ms,Mode
+  - DOMAIN-SUFFIX,blob.core.windows.net,Mode
+  - DOMAIN-SUFFIX,livefilestore.com,Mode
+  - DOMAIN-SUFFIX,onedrive.com,Mode
+  - DOMAIN-SUFFIX,storage.live.com,Mode
+  - DOMAIN-SUFFIX,storage.msn.com,Mode
+  - DOMAIN,oneclient.sfx.ms,Mode
+  - DOMAIN-SUFFIX,0rz.tw,Mode
+  - DOMAIN-SUFFIX,4bluestones.biz,Mode
+  - DOMAIN-SUFFIX,9bis.net,Mode
+  - DOMAIN-SUFFIX,allconnected.co,Mode
+  - DOMAIN-SUFFIX,aol.com,Mode
+  - DOMAIN-SUFFIX,bcc.com.tw,Mode
+  - DOMAIN-SUFFIX,bit.ly,Mode
+  - DOMAIN-SUFFIX,bitshare.com,Mode
+  - DOMAIN-SUFFIX,blog.jp,Mode
+  - DOMAIN-SUFFIX,blogimg.jp,Mode
+  - DOMAIN-SUFFIX,blogtd.org,Mode
+  - DOMAIN-SUFFIX,broadcast.co.nz,Mode
+  - DOMAIN-SUFFIX,camfrog.com,Mode
+  - DOMAIN-SUFFIX,cfos.de,Mode
+  - DOMAIN-SUFFIX,citypopulation.de,Mode
+  - DOMAIN-SUFFIX,cloudfront.net,Mode
+  - DOMAIN-SUFFIX,ctitv.com.tw,Mode
+  - DOMAIN-SUFFIX,cuhk.edu.hk,Mode
+  - DOMAIN-SUFFIX,cusu.hk,Mode
+  - DOMAIN-SUFFIX,discord.gg,Mode
+  - DOMAIN-SUFFIX,discuss.com.hk,Mode
+  - DOMAIN-SUFFIX,dropboxapi.com,Mode
+  - DOMAIN-SUFFIX,duolingo.cn,Mode
+  - DOMAIN-SUFFIX,edditstatic.com,Mode
+  - DOMAIN-SUFFIX,flickriver.com,Mode
+  - DOMAIN-SUFFIX,focustaiwan.tw,Mode
+  - DOMAIN-SUFFIX,Mode.fr,Mode
+  - DOMAIN-SUFFIX,gigacircle.com,Mode
+  - DOMAIN-SUFFIX,hk-pub.com,Mode
+  - DOMAIN-SUFFIX,hosting.co.uk,Mode
+  - DOMAIN-SUFFIX,hwcdn.net,Mode
+  - DOMAIN-SUFFIX,ifixit.com,Mode
+  - DOMAIN-SUFFIX,iphone4hongkong.com,Mode
+  - DOMAIN-SUFFIX,iphonetaiwan.org,Mode
+  - DOMAIN-SUFFIX,iptvbin.com,Mode
+  - DOMAIN-SUFFIX,linksalpha.com,Mode
+  - DOMAIN-SUFFIX,manyvids.com,Mode
+  - DOMAIN-SUFFIX,myactimes.com,Mode
+  - DOMAIN-SUFFIX,newsblur.com,Mode
+  - DOMAIN-SUFFIX,now.im,Mode
+  - DOMAIN-SUFFIX,nowe.com,Mode
+  - DOMAIN-SUFFIX,redditlist.com,Mode
+  - DOMAIN-SUFFIX,s3.amazonaws.com,Mode
+  - DOMAIN-SUFFIX,signal.org,Mode
+  - DOMAIN-SUFFIX,smartmailcloud.com,Mode
+  - DOMAIN-SUFFIX,sparknotes.com,Mode
+  - DOMAIN-SUFFIX,streetvoice.com,Mode
+  - DOMAIN-SUFFIX,supertop.co,Mode
+  - DOMAIN-SUFFIX,tv.com,Mode
+  - DOMAIN-SUFFIX,typepad.com,Mode
+  - DOMAIN-SUFFIX,udnbkk.com,Mode
+  - DOMAIN-SUFFIX,urbanairship.com,Mode
+  - DOMAIN-SUFFIX,whispersystems.org,Mode
+  - DOMAIN-SUFFIX,wikia.com,Mode
+  - DOMAIN-SUFFIX,wn.com,Mode
+  - DOMAIN-SUFFIX,wolframalpha.com,Mode
+  - DOMAIN-SUFFIX,x-art.com,Mode
+  - DOMAIN-SUFFIX,yimg.com,Mode
+  - DOMAIN,api.steampowered.com,Mode
+  - DOMAIN,store.steampowered.com,Mode
 
   - DOMAIN-SUFFIX,aaplimg.com,DIRECT
   - DOMAIN-SUFFIX,apple.co,DIRECT
@@ -837,200 +837,200 @@ rules:
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
 
-  - DOMAIN-SUFFIX,t.me,全局选择
-  - DOMAIN-SUFFIX,tdesktop.com,全局选择
-  - DOMAIN-SUFFIX,telegra.ph,全局选择
-  - DOMAIN-SUFFIX,telegram.me,全局选择
-  - DOMAIN-SUFFIX,telegram.org,全局选择
-  - IP-CIDR,91.108.4.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.8.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.12.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.16.0/22,全局选择,no-resolve
-  - IP-CIDR,91.108.56.0/22,全局选择,no-resolve
-  - IP-CIDR,149.154.160.0/20,全局选择,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,全局选择,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,全局选择,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,全局选择,no-resolve
+  - DOMAIN-SUFFIX,t.me,Mode
+  - DOMAIN-SUFFIX,tdesktop.com,Mode
+  - DOMAIN-SUFFIX,telegra.ph,Mode
+  - DOMAIN-SUFFIX,telegram.me,Mode
+  - DOMAIN-SUFFIX,telegram.org,Mode
+  - IP-CIDR,91.108.4.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.8.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.12.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.16.0/22,Mode,no-resolve
+  - IP-CIDR,91.108.56.0/22,Mode,no-resolve
+  - IP-CIDR,149.154.160.0/20,Mode,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,Mode,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,Mode,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,Mode,no-resolve
 
-  - DOMAIN-SUFFIX,googlevideo.com,全局选择
-  - DOMAIN-SUFFIX,youtube.com,全局选择
-  - DOMAIN,youtubei.googleapis.com,全局选择
+  - DOMAIN-SUFFIX,googlevideo.com,Mode
+  - DOMAIN-SUFFIX,youtube.com,Mode
+  - DOMAIN,youtubei.googleapis.com,Mode
 
-  - DOMAIN-SUFFIX,netflix.com,全局选择
-  - DOMAIN-SUFFIX,netflix.net,全局选择
-  - DOMAIN-SUFFIX,nflxext.com,全局选择
-  - DOMAIN-SUFFIX,nflximg.com,全局选择
-  - DOMAIN-SUFFIX,nflximg.net,全局选择
-  - DOMAIN-SUFFIX,nflxso.net,全局选择
-  - DOMAIN-SUFFIX,nflxvideo.net,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest0.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest1.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest2.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest3.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest4.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest5.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest6.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest7.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest8.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest9.com,全局选择
-  - IP-CIDR,23.246.0.0/18,全局选择,no-resolve
-  - IP-CIDR,37.77.184.0/21,全局选择,no-resolve
-  - IP-CIDR,45.57.0.0/17,全局选择,no-resolve
-  - IP-CIDR,64.120.128.0/17,全局选择,no-resolve
-  - IP-CIDR,66.197.128.0/17,全局选择,no-resolve
-  - IP-CIDR,108.175.32.0/20,全局选择,no-resolve
-  - IP-CIDR,192.173.64.0/18,全局选择,no-resolve
-  - IP-CIDR,198.38.96.0/19,全局选择,no-resolve
-  - IP-CIDR,198.45.48.0/20,全局选择,no-resolve
+  - DOMAIN-SUFFIX,netflix.com,Mode
+  - DOMAIN-SUFFIX,netflix.net,Mode
+  - DOMAIN-SUFFIX,nflxext.com,Mode
+  - DOMAIN-SUFFIX,nflximg.com,Mode
+  - DOMAIN-SUFFIX,nflximg.net,Mode
+  - DOMAIN-SUFFIX,nflxso.net,Mode
+  - DOMAIN-SUFFIX,nflxvideo.net,Mode
+  - DOMAIN-SUFFIX,netflixdnstest0.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest1.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest2.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest3.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest4.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest5.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest6.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest7.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest8.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest9.com,Mode
+  - IP-CIDR,23.246.0.0/18,Mode,no-resolve
+  - IP-CIDR,37.77.184.0/21,Mode,no-resolve
+  - IP-CIDR,45.57.0.0/17,Mode,no-resolve
+  - IP-CIDR,64.120.128.0/17,Mode,no-resolve
+  - IP-CIDR,66.197.128.0/17,Mode,no-resolve
+  - IP-CIDR,108.175.32.0/20,Mode,no-resolve
+  - IP-CIDR,192.173.64.0/18,Mode,no-resolve
+  - IP-CIDR,198.38.96.0/19,Mode,no-resolve
+  - IP-CIDR,198.45.48.0/20,Mode,no-resolve
 
-  - DOMAIN-SUFFIX,deezer.com,全局选择
-  - DOMAIN-SUFFIX,dzcdn.net,全局选择
-  - DOMAIN-SUFFIX,kkbox.com,全局选择
-  - DOMAIN-SUFFIX,kkbox.com.tw,全局选择
-  - DOMAIN-SUFFIX,kfs.io,全局选择
-  - DOMAIN-SUFFIX,joox.com,全局选择
-  - DOMAIN-SUFFIX,pandora.com,全局选择
-  - DOMAIN-SUFFIX,p-cdn.us,全局选择
-  - DOMAIN-SUFFIX,sndcdn.com,全局选择
-  - DOMAIN-SUFFIX,soundcloud.com,全局选择
-  - DOMAIN-SUFFIX,pscdn.co,全局选择
-  - DOMAIN-SUFFIX,scdn.co,全局选择
-  - DOMAIN-SUFFIX,spotify.com,全局选择
-  - DOMAIN-SUFFIX,spoti.fi,全局选择
-  - DOMAIN-KEYWORD,spotify.com,全局选择
-  - DOMAIN-KEYWORD,-spotify-com,全局选择
-  - DOMAIN-SUFFIX,tidal.com,全局选择
-  - DOMAIN-SUFFIX,c4assets.com,全局选择
-  - DOMAIN-SUFFIX,channel4.com,全局选择
-  - DOMAIN-SUFFIX,abema.io,全局选择
-  - DOMAIN-SUFFIX,ameba.jp,全局选择
-  - DOMAIN-SUFFIX,abema.tv,全局选择
-  - DOMAIN-SUFFIX,hayabusa.io,全局选择
-  - DOMAIN,abematv.akamaized.net,全局选择
-  - DOMAIN,ds-linear-abematv.akamaized.net,全局选择
-  - DOMAIN,ds-vod-abematv.akamaized.net,全局选择
-  - DOMAIN,linear-abematv.akamaized.net,全局选择
-  - DOMAIN-SUFFIX,aiv-cdn.net,全局选择
-  - DOMAIN-SUFFIX,aiv-delivery.net,全局选择
-  - DOMAIN-SUFFIX,amazonvideo.com,全局选择
-  - DOMAIN-SUFFIX,primevideo.com,全局选择
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,全局选择
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,全局选择
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,全局选择
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,全局选择
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,全局选择
-  - DOMAIN-KEYWORD,avoddashs,全局选择
-  - DOMAIN-SUFFIX,bahamut.com.tw,全局选择
-  - DOMAIN-SUFFIX,gamer.com.tw,全局选择
-  - DOMAIN,gamer-cds.cdn.hinet.net,全局选择
-  - DOMAIN,gamer2-cds.cdn.hinet.net,全局选择
-  - DOMAIN-SUFFIX,bbc.co.uk,全局选择
-  - DOMAIN-SUFFIX,bbci.co.uk,全局选择
-  - DOMAIN-KEYWORD,bbcfmt,全局选择
-  - DOMAIN-KEYWORD,uk-live,全局选择
-  - DOMAIN-SUFFIX,dazn.com,全局选择
-  - DOMAIN-SUFFIX,dazn-api.com,全局选择
-  - DOMAIN,d151l6v8er5bdm.cloudfront.net,全局选择
-  - DOMAIN-KEYWORD,voddazn,全局选择
-  - DOMAIN-SUFFIX,bamgrid.com,全局选择
-  - DOMAIN-SUFFIX,disney-plus.net,全局选择
-  - DOMAIN-SUFFIX,disneyplus.com,全局选择
-  - DOMAIN-SUFFIX,dssott.com,全局选择
-  - DOMAIN,cdn.registerdisney.go.com,全局选择
-  - DOMAIN-SUFFIX,encoretvb.com,全局选择
-  - DOMAIN,edge.api.brightcove.com,全局选择
-  - DOMAIN,bcbolt446c5271-a.akamaihd.net,全局选择
-  - DOMAIN-SUFFIX,fox.com,全局选择
-  - DOMAIN-SUFFIX,foxdcg.com,全局选择
-  - DOMAIN-SUFFIX,theplatform.com,全局选择
-  - DOMAIN-SUFFIX,uplynk.com,全局选择
-  - DOMAIN-SUFFIX,hbo.com,全局选择
-  - DOMAIN-SUFFIX,hbogo.com,全局选择
-  - DOMAIN-SUFFIX,hbonow.com,全局选择
-  - DOMAIN-SUFFIX,hbogoasia.com,全局选择
-  - DOMAIN-SUFFIX,hbogoasia.hk,全局选择
-  - DOMAIN,bcbolthboa-a.akamaihd.net,全局选择
-  - DOMAIN,players.brightcove.net,全局选择
-  - DOMAIN,s3-ap-southeast-1.amazonaws.com,全局选择
-  - DOMAIN,dai3fd1oh325y.cloudfront.net,全局选择
-  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,全局选择
-  - DOMAIN,hboasia1-i.akamaihd.net,全局选择
-  - DOMAIN,hboasia2-i.akamaihd.net,全局选择
-  - DOMAIN,hboasia3-i.akamaihd.net,全局选择
-  - DOMAIN,hboasia4-i.akamaihd.net,全局选择
-  - DOMAIN,hboasia5-i.akamaihd.net,全局选择
-  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,全局选择
-  - DOMAIN-SUFFIX,5itv.tv,全局选择
-  - DOMAIN-SUFFIX,ocnttv.com,全局选择
-  - DOMAIN-SUFFIX,hulu.com,全局选择
-  - DOMAIN-SUFFIX,huluim.com,全局选择
-  - DOMAIN-SUFFIX,hulustream.com,全局选择
-  - DOMAIN-SUFFIX,happyon.jp,全局选择
-  - DOMAIN-SUFFIX,hulu.jp,全局选择
-  - DOMAIN-SUFFIX,itv.com,全局选择
-  - DOMAIN-SUFFIX,itvstatic.com,全局选择
-  - DOMAIN,itvpnpmobile-a.akamaihd.net,全局选择
-  - DOMAIN-SUFFIX,kktv.com.tw,全局选择
-  - DOMAIN-SUFFIX,kktv.me,全局选择
-  - DOMAIN,kktv-theater.kk.stream,全局选择
-  - DOMAIN-SUFFIX,linetv.tw,全局选择
-  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,全局选择
-  - DOMAIN-SUFFIX,litv.tv,全局选择
-  - DOMAIN,litv全局选择mobile-hichannel.cdn.hinet.net,全局选择
-  - DOMAIN-SUFFIX,channel5.com,全局选择
-  - DOMAIN-SUFFIX,my5.tv,全局选择
-  - DOMAIN,d349g9zuie06uo.cloudfront.net,全局选择
-  - DOMAIN-SUFFIX,mytvsuper.com,全局选择
-  - DOMAIN-SUFFIX,tvb.com,全局选择
-  - DOMAIN-SUFFIX,netflix.com,全局选择
-  - DOMAIN-SUFFIX,netflix.net,全局选择
-  - DOMAIN-SUFFIX,nflxext.com,全局选择
-  - DOMAIN-SUFFIX,nflximg.com,全局选择
-  - DOMAIN-SUFFIX,nflximg.net,全局选择
-  - DOMAIN-SUFFIX,nflxso.net,全局选择
-  - DOMAIN-SUFFIX,nflxvideo.net,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest0.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest1.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest2.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest3.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest4.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest5.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest6.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest7.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest8.com,全局选择
-  - DOMAIN-SUFFIX,netflixdnstest9.com,全局选择
-  - IP-CIDR,23.246.0.0/18,全局选择,no-resolve
-  - IP-CIDR,37.77.184.0/21,全局选择,no-resolve
-  - IP-CIDR,45.57.0.0/17,全局选择,no-resolve
-  - IP-CIDR,64.120.128.0/17,全局选择,no-resolve
-  - IP-CIDR,66.197.128.0/17,全局选择,no-resolve
-  - IP-CIDR,108.175.32.0/20,全局选择,no-resolve
-  - IP-CIDR,192.173.64.0/18,全局选择,no-resolve
-  - IP-CIDR,198.38.96.0/19,全局选择,no-resolve
-  - IP-CIDR,198.45.48.0/20,全局选择,no-resolve
-  - DOMAIN-SUFFIX,dmc.nico,全局选择
-  - DOMAIN-SUFFIX,nicovideo.jp,全局选择
-  - DOMAIN-SUFFIX,nimg.jp,全局选择
-  - DOMAIN-SUFFIX,socdm.com,全局选择
-  - DOMAIN-SUFFIX,pbs.org,全局选择
-  - DOMAIN-SUFFIX,phncdn.com,全局选择
-  - DOMAIN-SUFFIX,pornhub.com,全局选择
-  - DOMAIN-SUFFIX,pornhubpremium.com,全局选择
-  - DOMAIN-SUFFIX,skyking.com.tw,全局选择
-  - DOMAIN,hamifans.emome.net,全局选择
-  - DOMAIN-SUFFIX,twitch.tv,全局选择
-  - DOMAIN-SUFFIX,twitchcdn.net,全局选择
-  - DOMAIN-SUFFIX,ttvnw.net,全局选择
-  - DOMAIN-SUFFIX,jtvnw.net,全局选择
-  - DOMAIN-SUFFIX,viu.com,全局选择
-  - DOMAIN-SUFFIX,viu.tv,全局选择
-  - DOMAIN,api.viu.now.com,全局选择
-  - DOMAIN,d1k2us671qcoau.cloudfront.net,全局选择
-  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,全局选择
-  - DOMAIN,dfp6rglgjqszk.cloudfront.net,全局选择
-  - DOMAIN-SUFFIX,googlevideo.com,全局选择
-  - DOMAIN-SUFFIX,youtube.com,全局选择
-  - DOMAIN,youtubei.googleapis.com,全局选择
+  - DOMAIN-SUFFIX,deezer.com,Mode
+  - DOMAIN-SUFFIX,dzcdn.net,Mode
+  - DOMAIN-SUFFIX,kkbox.com,Mode
+  - DOMAIN-SUFFIX,kkbox.com.tw,Mode
+  - DOMAIN-SUFFIX,kfs.io,Mode
+  - DOMAIN-SUFFIX,joox.com,Mode
+  - DOMAIN-SUFFIX,pandora.com,Mode
+  - DOMAIN-SUFFIX,p-cdn.us,Mode
+  - DOMAIN-SUFFIX,sndcdn.com,Mode
+  - DOMAIN-SUFFIX,soundcloud.com,Mode
+  - DOMAIN-SUFFIX,pscdn.co,Mode
+  - DOMAIN-SUFFIX,scdn.co,Mode
+  - DOMAIN-SUFFIX,spotify.com,Mode
+  - DOMAIN-SUFFIX,spoti.fi,Mode
+  - DOMAIN-KEYWORD,spotify.com,Mode
+  - DOMAIN-KEYWORD,-spotify-com,Mode
+  - DOMAIN-SUFFIX,tidal.com,Mode
+  - DOMAIN-SUFFIX,c4assets.com,Mode
+  - DOMAIN-SUFFIX,channel4.com,Mode
+  - DOMAIN-SUFFIX,abema.io,Mode
+  - DOMAIN-SUFFIX,ameba.jp,Mode
+  - DOMAIN-SUFFIX,abema.tv,Mode
+  - DOMAIN-SUFFIX,hayabusa.io,Mode
+  - DOMAIN,abematv.akamaized.net,Mode
+  - DOMAIN,ds-linear-abematv.akamaized.net,Mode
+  - DOMAIN,ds-vod-abematv.akamaized.net,Mode
+  - DOMAIN,linear-abematv.akamaized.net,Mode
+  - DOMAIN-SUFFIX,aiv-cdn.net,Mode
+  - DOMAIN-SUFFIX,aiv-delivery.net,Mode
+  - DOMAIN-SUFFIX,amazonvideo.com,Mode
+  - DOMAIN-SUFFIX,primevideo.com,Mode
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,Mode
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,Mode
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,Mode
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,Mode
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,Mode
+  - DOMAIN-KEYWORD,avoddashs,Mode
+  - DOMAIN-SUFFIX,bahamut.com.tw,Mode
+  - DOMAIN-SUFFIX,gamer.com.tw,Mode
+  - DOMAIN,gamer-cds.cdn.hinet.net,Mode
+  - DOMAIN,gamer2-cds.cdn.hinet.net,Mode
+  - DOMAIN-SUFFIX,bbc.co.uk,Mode
+  - DOMAIN-SUFFIX,bbci.co.uk,Mode
+  - DOMAIN-KEYWORD,bbcfmt,Mode
+  - DOMAIN-KEYWORD,uk-live,Mode
+  - DOMAIN-SUFFIX,dazn.com,Mode
+  - DOMAIN-SUFFIX,dazn-api.com,Mode
+  - DOMAIN,d151l6v8er5bdm.cloudfront.net,Mode
+  - DOMAIN-KEYWORD,voddazn,Mode
+  - DOMAIN-SUFFIX,bamgrid.com,Mode
+  - DOMAIN-SUFFIX,disney-plus.net,Mode
+  - DOMAIN-SUFFIX,disneyplus.com,Mode
+  - DOMAIN-SUFFIX,dssott.com,Mode
+  - DOMAIN,cdn.registerdisney.go.com,Mode
+  - DOMAIN-SUFFIX,encoretvb.com,Mode
+  - DOMAIN,edge.api.brightcove.com,Mode
+  - DOMAIN,bcbolt446c5271-a.akamaihd.net,Mode
+  - DOMAIN-SUFFIX,fox.com,Mode
+  - DOMAIN-SUFFIX,foxdcg.com,Mode
+  - DOMAIN-SUFFIX,theplatform.com,Mode
+  - DOMAIN-SUFFIX,uplynk.com,Mode
+  - DOMAIN-SUFFIX,hbo.com,Mode
+  - DOMAIN-SUFFIX,hbogo.com,Mode
+  - DOMAIN-SUFFIX,hbonow.com,Mode
+  - DOMAIN-SUFFIX,hbogoasia.com,Mode
+  - DOMAIN-SUFFIX,hbogoasia.hk,Mode
+  - DOMAIN,bcbolthboa-a.akamaihd.net,Mode
+  - DOMAIN,players.brightcove.net,Mode
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,Mode
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,Mode
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,Mode
+  - DOMAIN,hboasia1-i.akamaihd.net,Mode
+  - DOMAIN,hboasia2-i.akamaihd.net,Mode
+  - DOMAIN,hboasia3-i.akamaihd.net,Mode
+  - DOMAIN,hboasia4-i.akamaihd.net,Mode
+  - DOMAIN,hboasia5-i.akamaihd.net,Mode
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,Mode
+  - DOMAIN-SUFFIX,5itv.tv,Mode
+  - DOMAIN-SUFFIX,ocnttv.com,Mode
+  - DOMAIN-SUFFIX,hulu.com,Mode
+  - DOMAIN-SUFFIX,huluim.com,Mode
+  - DOMAIN-SUFFIX,hulustream.com,Mode
+  - DOMAIN-SUFFIX,happyon.jp,Mode
+  - DOMAIN-SUFFIX,hulu.jp,Mode
+  - DOMAIN-SUFFIX,itv.com,Mode
+  - DOMAIN-SUFFIX,itvstatic.com,Mode
+  - DOMAIN,itvpnpmobile-a.akamaihd.net,Mode
+  - DOMAIN-SUFFIX,kktv.com.tw,Mode
+  - DOMAIN-SUFFIX,kktv.me,Mode
+  - DOMAIN,kktv-theater.kk.stream,Mode
+  - DOMAIN-SUFFIX,linetv.tw,Mode
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,Mode
+  - DOMAIN-SUFFIX,litv.tv,Mode
+  - DOMAIN,litvModemobile-hichannel.cdn.hinet.net,Mode
+  - DOMAIN-SUFFIX,channel5.com,Mode
+  - DOMAIN-SUFFIX,my5.tv,Mode
+  - DOMAIN,d349g9zuie06uo.cloudfront.net,Mode
+  - DOMAIN-SUFFIX,mytvsuper.com,Mode
+  - DOMAIN-SUFFIX,tvb.com,Mode
+  - DOMAIN-SUFFIX,netflix.com,Mode
+  - DOMAIN-SUFFIX,netflix.net,Mode
+  - DOMAIN-SUFFIX,nflxext.com,Mode
+  - DOMAIN-SUFFIX,nflximg.com,Mode
+  - DOMAIN-SUFFIX,nflximg.net,Mode
+  - DOMAIN-SUFFIX,nflxso.net,Mode
+  - DOMAIN-SUFFIX,nflxvideo.net,Mode
+  - DOMAIN-SUFFIX,netflixdnstest0.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest1.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest2.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest3.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest4.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest5.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest6.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest7.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest8.com,Mode
+  - DOMAIN-SUFFIX,netflixdnstest9.com,Mode
+  - IP-CIDR,23.246.0.0/18,Mode,no-resolve
+  - IP-CIDR,37.77.184.0/21,Mode,no-resolve
+  - IP-CIDR,45.57.0.0/17,Mode,no-resolve
+  - IP-CIDR,64.120.128.0/17,Mode,no-resolve
+  - IP-CIDR,66.197.128.0/17,Mode,no-resolve
+  - IP-CIDR,108.175.32.0/20,Mode,no-resolve
+  - IP-CIDR,192.173.64.0/18,Mode,no-resolve
+  - IP-CIDR,198.38.96.0/19,Mode,no-resolve
+  - IP-CIDR,198.45.48.0/20,Mode,no-resolve
+  - DOMAIN-SUFFIX,dmc.nico,Mode
+  - DOMAIN-SUFFIX,nicovideo.jp,Mode
+  - DOMAIN-SUFFIX,nimg.jp,Mode
+  - DOMAIN-SUFFIX,socdm.com,Mode
+  - DOMAIN-SUFFIX,pbs.org,Mode
+  - DOMAIN-SUFFIX,phncdn.com,Mode
+  - DOMAIN-SUFFIX,pornhub.com,Mode
+  - DOMAIN-SUFFIX,pornhubpremium.com,Mode
+  - DOMAIN-SUFFIX,skyking.com.tw,Mode
+  - DOMAIN,hamifans.emome.net,Mode
+  - DOMAIN-SUFFIX,twitch.tv,Mode
+  - DOMAIN-SUFFIX,twitchcdn.net,Mode
+  - DOMAIN-SUFFIX,ttvnw.net,Mode
+  - DOMAIN-SUFFIX,jtvnw.net,Mode
+  - DOMAIN-SUFFIX,viu.com,Mode
+  - DOMAIN-SUFFIX,viu.tv,Mode
+  - DOMAIN,api.viu.now.com,Mode
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,Mode
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,Mode
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,Mode
+  - DOMAIN-SUFFIX,googlevideo.com,Mode
+  - DOMAIN-SUFFIX,youtube.com,Mode
+  - DOMAIN,youtubei.googleapis.com,Mode
   - DOMAIN-SUFFIX,biliapi.com,DIRECT
   - DOMAIN-SUFFIX,biliapi.net,DIRECT
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
@@ -1393,4 +1393,4 @@ rules:
   - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
 
-  - MATCH,全局选择
+  - MATCH,Mode
