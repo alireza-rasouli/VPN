@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://api.wcc.best/sub?target=surfboard&url=https%3A%2F%2Foss.v2rayse.com%2Fproxies%2Fdata%2F2022-11-29%2FfkzSc5.txt&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false interval=86400 strict=false
+#!MANAGED-CONFIG https://api.wcc.best/sub?target=surfboard&url=https%3A%2F%2Ftt.vg%2FpxVGm&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false interval=86400 strict=false
 
 [General]
 loglevel = notify
@@ -11,69 +11,112 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_3_1 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, skip-cert-verify=true, tfo=false
-🇩🇪 t.me/wbnet_🇩🇪_DE_德国_4 = vmess, 5.161.114.91, 26613, username=2c10a354-ca2d-4db3-d8f6-6f89f5117c9f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.161.114.91, ws-headers=Host:5.161.114.91, skip-cert-verify=true, tfo=false
-🇭🇰 t.me/wbnet_🇭🇰_HK_香港_6 = vmess, 165.154.5.235, 14444, username=0eb9d2fa-17d1-4276-af80-15323dc1dca5, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_9 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, skip-cert-verify=true, tfo=false
-🇩🇪 t.me/wbnet_🇩🇪_DE_德国_10 = vmess, 5.161.114.91, 26613, username=2c10a354-ca2d-4db3-d8f6-6f89f5117c9f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.161.114.91, ws-headers=Host:5.161.114.91, skip-cert-verify=true, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_11 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, ws-headers=Host:37.48.102.95, skip-cert-verify=true, tfo=false
-🇭🇰 t.me/wbnet_🇭🇰_HK_香港_12 = vmess, 165.154.5.235, 14444, username=0eb9d2fa-17d1-4276-af80-15323dc1dca5, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_15 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, skip-cert-verify=true, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_16 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, ws-headers=Host:37.48.102.95, skip-cert-verify=true, tfo=false
-🇭🇰 t.me/wbnet_🇭🇰_HK_香港_17 = vmess, 165.154.5.235, 14444, username=0eb9d2fa-17d1-4276-af80-15323dc1dca5, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_🇦🇿_AZ_阿塞拜疆_25 = ss, 94.20.154.26, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_🇬🇷_GR_希腊_30 = ss, 192.71.166.102, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_🇸🇮_SI_斯洛文尼亚_33 = ss, 192.71.244.150, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-🇩🇪 t.me/wbnet_🇩🇪_DE_德国_41 = ss, 185.104.184.78, 802, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇩🇪 t.me/wbnet_🇩🇪_DE_德国_43 = ss, 185.104.184.78, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_🇪🇨_EC_厄瓜多尔_46 = ss, 179.49.5.114, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-🇷🇺 t.me/wbnet_🇷🇺_RU_俄罗斯联邦_54 = ss, 92.223.109.126, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-🇬🇧 t.me/wbnet_🇬🇧_GB_英国_56 = ss, 78.129.253.9, 804, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇬🇧 t.me/wbnet_🇬🇧_GB_英国_57 = ss, 78.129.253.9, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇬🇧 t.me/wbnet_🇬🇧_GB_英国_58 = ss, 78.129.253.9, 807, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇬🇧 t.me/wbnet_🇬🇧_GB_英国_59 = ss, 78.129.253.9, 808, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_65 = ss, 172.99.188.99, 5000, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_66 = ss, 172.99.188.99, 5001, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false
-🇯🇵 t.me/wbnet_🇯🇵_JP_日本_69 = ss, 85.208.108.61, 443, encrypt-method=aes-256-gcm, password=pKEW8JPByTVTLtM, tfo=false
-🇭🇰 t.me/wbnet_🇭🇰_HK_香港_71 = ss, 148.66.56.98, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_73 = ss, 172.99.188.99, 6379, encrypt-method=aes-256-gcm, password=zDNVedRFPQexG9v, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_74 = ss, 172.99.188.99, 6679, encrypt-method=aes-256-gcm, password=TEzjfAYq2IjtuoS, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_75 = ss, 169.197.141.14, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false
-🇫🇷 t.me/wbnet_🇫🇷_FR_法国_2 = ss, 95.142.161.114, 855, encrypt-method=chacha20-ietf-poly1305, password=kI39OSMtUs2F, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_3_2 = vmess, 95.211.249.49, 41065, username=a81cc101-bc8b-4124-acc6-4b1eba08fefa, tls=false, vmess-aead=true, ws=true, ws-path=/dfgd55dg5dG, sni=95.211.249.49, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_6 = vmess, sg.multiport2.artunnel57.host, 80, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_8 = vmess, 159.223.30.153, 8081, username=c2743f4a-9590-4406-dc78-6ac98c12004a, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=159.223.30.153, skip-cert-verify=true, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_9 = vmess, 150.230.149.55, 6374, username=80f25361-877d-46d4-8404-f0dce1faf84f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=150.230.149.55, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_10 = vmess, sg.multiport2.artunnel57.host, 443, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_12 = trojan, sg.multiport2.artunnel57.host, 8000, password=trojan_tcp_tls, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_14 = vmess, 95.211.249.49, 41065, username=a81cc101-bc8b-4124-acc6-4b1eba08fefa, tls=false, vmess-aead=true, ws=true, ws-path=/dfgd55dg5dG, sni=95.211.249.49, skip-cert-verify=true, tfo=false
-🇫🇷 t.me/wbnet_🇫🇷_FR_法国_15 = trojan, 51.77.213.197, 443, password=973ed2e0-c4d8-4737-a093-71629148086d, sni=frt2.sshocean.net, skip-cert-verify=true, tfo=false
-🇦🇺 t.me/wbnet_🇦🇺_AU_澳大利亚_17 = vmess, 139.99.135.182, 80, username=e7df0582-d168-43af-bfff-90c25af7d085, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=139.99.135.182, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_18 = trojan, sg.multiport2.artunnel57.host, 8000, password=trojan_tcp_tls, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_19 = vmess, sg.multiport2.artunnel57.host, 80, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24 = vmess, sg.multiport2.artunnel57.host, 443, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_25 = vmess, sg.multiport2.artunnel57.host, 443, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_26 = vmess, 159.223.30.153, 8081, username=c2743f4a-9590-4406-dc78-6ac98c12004a, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=159.223.30.153, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_27 = vmess, sg.multiport2.artunnel57.host, 80, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_28 = trojan, sg.multiport2.artunnel57.host, 8000, password=trojan_tcp_tls, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇺🇸 t.me/wbnet_🇺🇸_US_美国_29 = vmess, 150.230.149.55, 6374, username=80f25361-877d-46d4-8404-f0dce1faf84f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=150.230.149.55, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30 = vmess, sg.multiport2.artunnel57.host, 443, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_31 = vmess, sg.multiport2.artunnel57.host, 80, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
-🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_32 = vmess, sg.multiport2.artunnel57.host, 80, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_1 = vmess, 95.211.249.49, 41065, username=a81cc101-bc8b-4124-acc6-4b1eba08fefa, tls=false, vmess-aead=true, ws=true, ws-path=/dfgd55dg5dG, sni=95.211.249.49, skip-cert-verify=true, tfo=false
+🇫🇷 t.me/wbnet_🇫🇷_FR_法国_2 = trojan, 51.77.213.197, 443, password=973ed2e0-c4d8-4737-a093-71629148086d, sni=frt2.sshocean.net, skip-cert-verify=true, tfo=false
+🇸🇪 t.me/wbnet_🇸🇪_SE_瑞典_3 = ss, 13.49.241.14, 27092, encrypt-method=chacha20-ietf-poly1305, password=pydQILh06AvJ, tfo=false
+🇯🇵 t.me/wbnet_🇯🇵_JP_日本_4 = ss, 85.208.108.61, 443, encrypt-method=aes-256-gcm, password=pKEW8JPByTVTLtM, tfo=false
+t.me/wbnet_🇺🇦_UA_乌克兰_5 = ss, 130.0.233.20, 31675, encrypt-method=aes-256-cfb, password=m7pZhBG, tfo=false
+🇮🇳 t.me/wbnet_🇮🇳_IN_印度_6 = ss, 134.209.158.149, 28260, encrypt-method=aes-256-cfb, password=d3b8321945c24105ae485662024620f6, tfo=false
+🇫🇷 t.me/wbnet_🇫🇷_FR_法国_7 = trojan, 51.77.213.197, 443, password=973ed2e0-c4d8-4737-a093-71629148086d, sni=frt2.sshocean.net, skip-cert-verify=true, tfo=false
+t.me/wbnet_🇮🇷_IR_伊朗_8 = vmess, apphtz.tarazo.lol, 80, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=apphtz.tarazo.lol, ws-headers=Host:apphtz.tarazo.lol, skip-cert-verify=true, tfo=false
+🇹🇷 t.me/wbnet_🇹🇷_TR_土耳其_9 = ss, 107.150.94.26, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇲🇰_MK_前南马其顿_10 = ss, 46.183.185.15, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇺🇦_UA_乌克兰_11 = ss, 130.0.233.20, 31675, encrypt-method=aes-256-cfb, password=m7pZhBG, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_12 = ss, 78.129.253.9, 809, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_13 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_14 = ss, 78.129.253.9, 809, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_15 = vmess, news.microsoft.com, 443, username=40d496a6-ceeb-4096-baeb-4cc52b205621, tls=true, vmess-aead=true, ws=true, ws-path=/ECTCJ0DF, sni=news.microsoft.com, ws-headers=Host:lg1.trump2023.us, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_16 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
+t.me/wbnet_🇺🇦_UA_乌克兰_17 = ss, 130.0.233.20, 31675, encrypt-method=aes-256-cfb, password=m7pZhBG, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_18 = ss, 172.99.188.99, 2376, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
+🇸🇪 t.me/wbnet_🇸🇪_SE_瑞典_19 = ss, 13.49.241.14, 27092, encrypt-method=chacha20-ietf-poly1305, password=pydQILh06AvJ, tfo=false
+🇮🇱 t.me/wbnet_🇮🇱_IL_以色列_20 = ss, 31.133.100.49, 50000, encrypt-method=aes-256-cfb, password=3135771619, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_21 = vmess, 51.81.220.195, 80, username=6fea1649-425b-4092-bf53-29792152c925, tls=false, vmess-aead=true, ws=true, ws-path=/sshkit/Variu88/634dab7abadf1/, sni=51.81.220.195, skip-cert-verify=true, tfo=false
+🇯🇵 t.me/wbnet_🇯🇵_JP_日本_22 = vmess, 18.183.7.142, 20312, username=10c0bf3e-9d0d-4a32-9e32-151aa8e46330, tls=false, vmess-aead=true, ws=true, ws-path=/cctv13/hd.m3u8, sni=18.183.7.142, skip-cert-verify=true, tfo=false
+🇭🇰 t.me/wbnet_🇭🇰_HK_香港_23 = trojan, 1030hk99.fans8.xyz, 21512, password=03b5ded3-2ec2-407d-b327-71048098c803, sni=1030hk99.fans8.xyz, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24 = vmess, cf.ultrayuki.me, 2053, username=7cdfca78-b048-4358-8574-9c52a2beae68, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cf.ultrayuki.me, ws-headers=Host:do2.ultrayuki.me, skip-cert-verify=true, tfo=false
+🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_25 = vmess, 104.248.80.136, 80, username=df756db8-a7de-4ff9-a847-d2632bd021e2, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=104.248.80.136, skip-cert-verify=true, tfo=false
+🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_26 = ss, 130.162.53.215, 24576, encrypt-method=aes-256-gcm, password=VdaItKYmFf, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_27 = vmess, 162.55.214.110, 51549, username=6399ab58-b7ce-4d24-be9e-92c581c93b44, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=162.55.214.110, skip-cert-verify=true, tfo=false
+🇭🇰 t.me/wbnet_🇭🇰_HK_香港_28 = vmess, 165.154.5.235, 14444, username=0eb9d2fa-17d1-4276-af80-15323dc1dca5, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_29 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30 = vmess, sg.multiport2.artunnel57.host, 443, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_31 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
+🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_32 = ss, 178.162.164.199, 20465, encrypt-method=chacha20-ietf-poly1305, password=WphSnIFpWtJj, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_33 = vmess, news.microsoft.com, 2083, username=1ffeca67-a2bc-471b-b138-369d6762967d, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=news.microsoft.com, ws-headers=Host:30.tehvp.xyz, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_34 = vmess, sg.multiport2.artunnel57.host, 80, username=aa168ae4-8923-49c8-a33e-d89b6a508a35, tls=false, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_35 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_36 = vmess, sg.multiport2.artunnel57.host, 80, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_37 = trojan, sg.multiport2.artunnel57.host, 443, password=c9e8c4b9-ad3a-4481-9e89-c6d03c8a830d, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_38 = trojan, sg.multiport2.artunnel57.host, 8000, password=trojan_tcp_tls, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇷🇺 t.me/wbnet_🇷🇺_RU_俄罗斯联邦_39 = vmess, 95.163.243.235, 13936, username=eeca7f96-8255-453e-c000-46d0396e77a8, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_40 = vmess, xvpu.de, 443, username=d1ac0e8b-94ec-455b-a2e9-6767904c6c87, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=xvpu.de, ws-headers=Host:xvpu.de, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_41 = vmess, xvpu.de, 443, username=d1ac0e8b-94ec-455b-a2e9-6767904c6c87, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=xvpu.de, ws-headers=Host:xvpu.de, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_42 = vmess, 3.20.57.234, 8081, username=06308f91-26be-4340-e455-069520a42910, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=3.20.57.234, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_43 = vmess, sg.multiport2.artunnel57.host, 443, username=c853de7a-9291-4604-a6f7-3791914e540e, tls=true, vmess-aead=true, ws=true, ws-path=/vmess/, sni=sg.multiport2.artunnel57.host, ws-headers=Host:sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_44 = vmess, 37.48.102.95, 42066, username=147e8924-4079-4125-be5f-15b3d0462c4d, tls=false, vmess-aead=true, ws=true, ws-path=/dgfdrg5GB5t5er, sni=37.48.102.95, ws-headers=Host:37.48.102.95, skip-cert-verify=true, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_45 = trojan, t1.samsung.bforward2.uk, 443, password=67e200f1-4ff5-42ca-8425-3f16f7986c29, sni=t1.samsung.bforward2.uk, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_46 = vmess, xvpu.de, 443, username=d1ac0e8b-94ec-455b-a2e9-6767904c6c87, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=xvpu.de, ws-headers=Host:xvpu.de, skip-cert-verify=true, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_47 = trojan, sg.multiport2.artunnel57.host, 80, password=c9e8c4b9-ad3a-4481-9e89-c6d03c8a830d, sni=sg.multiport2.artunnel57.host, skip-cert-verify=true, tfo=false
+🇺🇸 t.me/wbnet_🇺🇸_US_美国_48 = vmess, xvpu.de, 443, username=d1ac0e8b-94ec-455b-a2e9-6767904c6c87, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=xvpu.de, ws-headers=Host:xvpu.de, skip-cert-verify=true, tfo=false
+🇻🇳 t.me/wbnet_🇻🇳_VN_越南_49 = ss, 103.163.218.2, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇦🇿_AZ_阿塞拜疆_50 = ss, 94.20.154.26, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇲🇰_MK_前南马其顿_51 = ss, 46.183.185.15, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇬🇷_GR_希腊_52 = ss, 192.71.166.102, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇺🇦_UA_乌克兰_53 = ss, 130.0.233.20, 31675, encrypt-method=aes-256-cfb, password=m7pZhBG, tfo=false
+🇰🇷 t.me/wbnet_🇰🇷_KR_韩国_54 = ss, 158.247.194.72, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇪🇪_EE_爱沙尼亚_55 = ss, 37.252.5.234, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇯🇵 t.me/wbnet_🇯🇵_JP_日本_56 = ss, 85.208.108.22, 8888, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false
+t.me/wbnet_🇺🇾_UY_乌拉圭_57 = ss, 179.27.200.28, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_58 = ss, 185.104.184.78, 801, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_59 = ss, 185.104.184.78, 804, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_60 = ss, 185.104.184.78, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_61 = ss, 185.104.184.78, 806, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_62 = ss, 185.104.184.78, 810, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+t.me/wbnet_63 = ss, 103.172.116.5, 9064, encrypt-method=aes-256-cfb, password=cp8pRSUAyLhTfVWH, tfo=false
+t.me/wbnet_64 = ss, 103.172.116.5, 9001, encrypt-method=aes-256-cfb, password=UkXRsXvR6buDMG2Y, tfo=false
+t.me/wbnet_65 = ss, 103.172.116.5, 9025, encrypt-method=aes-256-cfb, password=XPtzA9sCug3SPR4c, tfo=false
+t.me/wbnet_66 = ss, 103.172.116.5, 9003, encrypt-method=aes-256-cfb, password=JdmRK9gMEqFgs8nP, tfo=false
+🇫🇮 t.me/wbnet_🇫🇮_FI_芬兰_67 = ss, 185.77.217.217, 443, encrypt-method=chacha20-ietf-poly1305, password=qYAt85SFGV56, tfo=false
+🇯🇵 t.me/wbnet_🇯🇵_JP_日本_68 = ss, 85.208.108.22, 443, encrypt-method=aes-256-gcm, password=pKEW8JPByTVTLtM, tfo=false
+🇫🇷 t.me/wbnet_🇫🇷_FR_法国_69 = ss, 217.70.189.155, 443, encrypt-method=chacha20-ietf-poly1305, password=eJZJAeK3S9st, tfo=false
+t.me/wbnet_70 = ss, 103.172.116.5, 9005, encrypt-method=aes-256-cfb, password=ZET59LF6DvCC8KVt, tfo=false
+t.me/wbnet_71 = ss, 103.172.116.5, 9011, encrypt-method=aes-256-cfb, password=M3t2ZEQcMGRWBjRa, tfo=false
+t.me/wbnet_72 = ss, 103.172.116.5, 9014, encrypt-method=aes-256-cfb, password=KnJGad3FqTvjqbaX, tfo=false
+t.me/wbnet_73 = ss, 103.172.116.5, 9019, encrypt-method=aes-256-cfb, password=GA9KzeEgvfxNrgmM, tfo=false
+t.me/wbnet_74 = ss, 103.172.116.5, 9020, encrypt-method=aes-256-cfb, password=BNmAXXxAHYpTRdzu, tfo=false
+t.me/wbnet_75 = ss, 103.172.116.5, 9027, encrypt-method=aes-256-cfb, password=EXN3S3eQpjE7EJu8, tfo=false
+t.me/wbnet_76 = ss, 103.172.116.5, 9030, encrypt-method=aes-256-cfb, password=GeregetR8cvQHzYr, tfo=false
+t.me/wbnet_77 = ss, 103.172.116.5, 9057, encrypt-method=aes-256-cfb, password=wjTugX3ZtHMB9c3Z, tfo=false
+t.me/wbnet_78 = ss, 103.172.116.5, 9073, encrypt-method=aes-256-cfb, password=daFYagqDdBdA6VTX, tfo=false
+🇩🇪 t.me/wbnet_🇩🇪_DE_德国_79 = ss, 185.104.184.78, 811, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇲🇾 t.me/wbnet_🇲🇾_MY_马来西亚_80 = ss, 123.253.34.235, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇧🇪 t.me/wbnet_🇧🇪_BE_比利时_81 = ss, 192.71.249.108, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_82 = ss, 81.90.189.41, 800, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_83 = ss, 81.90.189.41, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_84 = ss, 81.90.189.41, 809, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+t.me/wbnet_🇱🇺_LU_卢森堡_85 = ss, 146.185.248.22, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+t.me/wbnet_🇮🇸_IS_冰岛_86 = ss, 37.235.49.152, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_87 = ss, 78.129.253.9, 800, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_88 = ss, 78.129.253.9, 801, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_89 = ss, 78.129.253.9, 806, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+🇬🇧 t.me/wbnet_🇬🇧_GB_英国_90 = ss, 78.129.253.9, 808, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+t.me/wbnet_🇪🇪_EE_爱沙尼亚_91 = ss, 45.136.198.122, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+🇩🇰 t.me/wbnet_🇩🇰_DK_丹麦_92 = ss, 192.36.27.94, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
 TW = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_3_1,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_4,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_6,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_9,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_10,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_11,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_12,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_15,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_16,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_17,t.me/wbnet_🇦🇿_AZ_阿塞拜疆_25,t.me/wbnet_🇬🇷_GR_希腊_30,t.me/wbnet_🇸🇮_SI_斯洛文尼亚_33,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_41,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_43,t.me/wbnet_🇪🇨_EC_厄瓜多尔_46,🇷🇺 t.me/wbnet_🇷🇺_RU_俄罗斯联邦_54,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_56,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_57,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_58,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_59,🇺🇸 t.me/wbnet_🇺🇸_US_美国_65,🇺🇸 t.me/wbnet_🇺🇸_US_美国_66,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_69,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_71,🇺🇸 t.me/wbnet_🇺🇸_US_美国_73,🇺🇸 t.me/wbnet_🇺🇸_US_美国_74,🇺🇸 t.me/wbnet_🇺🇸_US_美国_75,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_2,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_3_2,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_6,🇺🇸 t.me/wbnet_🇺🇸_US_美国_8,🇺🇸 t.me/wbnet_🇺🇸_US_美国_9,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_10,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_12,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_14,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_15,🇦🇺 t.me/wbnet_🇦🇺_AU_澳大利亚_17,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_18,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_19,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_25,🇺🇸 t.me/wbnet_🇺🇸_US_美国_26,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_27,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_28,🇺🇸 t.me/wbnet_🇺🇸_US_美国_29,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_31,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_32
+Proxies = select,HK,SG,JP,US,TW,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_1,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_2,🇸🇪 t.me/wbnet_🇸🇪_SE_瑞典_3,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_4,t.me/wbnet_🇺🇦_UA_乌克兰_5,🇮🇳 t.me/wbnet_🇮🇳_IN_印度_6,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_7,t.me/wbnet_🇮🇷_IR_伊朗_8,🇹🇷 t.me/wbnet_🇹🇷_TR_土耳其_9,t.me/wbnet_🇲🇰_MK_前南马其顿_10,t.me/wbnet_🇺🇦_UA_乌克兰_11,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_12,🇺🇸 t.me/wbnet_🇺🇸_US_美国_13,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_14,🇺🇸 t.me/wbnet_🇺🇸_US_美国_15,🇺🇸 t.me/wbnet_🇺🇸_US_美国_16,t.me/wbnet_🇺🇦_UA_乌克兰_17,🇺🇸 t.me/wbnet_🇺🇸_US_美国_18,🇸🇪 t.me/wbnet_🇸🇪_SE_瑞典_19,🇮🇱 t.me/wbnet_🇮🇱_IL_以色列_20,🇺🇸 t.me/wbnet_🇺🇸_US_美国_21,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_22,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_23,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_25,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_26,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_27,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_28,🇺🇸 t.me/wbnet_🇺🇸_US_美国_29,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30,🇺🇸 t.me/wbnet_🇺🇸_US_美国_31,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_32,🇺🇸 t.me/wbnet_🇺🇸_US_美国_33,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_34,🇺🇸 t.me/wbnet_🇺🇸_US_美国_35,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_36,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_37,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_38,🇷🇺 t.me/wbnet_🇷🇺_RU_俄罗斯联邦_39,🇺🇸 t.me/wbnet_🇺🇸_US_美国_40,🇺🇸 t.me/wbnet_🇺🇸_US_美国_41,🇺🇸 t.me/wbnet_🇺🇸_US_美国_42,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_43,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_44,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_45,🇺🇸 t.me/wbnet_🇺🇸_US_美国_46,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_47,🇺🇸 t.me/wbnet_🇺🇸_US_美国_48,🇻🇳 t.me/wbnet_🇻🇳_VN_越南_49,t.me/wbnet_🇦🇿_AZ_阿塞拜疆_50,t.me/wbnet_🇲🇰_MK_前南马其顿_51,t.me/wbnet_🇬🇷_GR_希腊_52,t.me/wbnet_🇺🇦_UA_乌克兰_53,🇰🇷 t.me/wbnet_🇰🇷_KR_韩国_54,t.me/wbnet_🇪🇪_EE_爱沙尼亚_55,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_56,t.me/wbnet_🇺🇾_UY_乌拉圭_57,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_58,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_59,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_60,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_61,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_62,t.me/wbnet_63,t.me/wbnet_64,t.me/wbnet_65,t.me/wbnet_66,🇫🇮 t.me/wbnet_🇫🇮_FI_芬兰_67,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_68,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_69,t.me/wbnet_70,t.me/wbnet_71,t.me/wbnet_72,t.me/wbnet_73,t.me/wbnet_74,t.me/wbnet_75,t.me/wbnet_76,t.me/wbnet_77,t.me/wbnet_78,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_79,🇲🇾 t.me/wbnet_🇲🇾_MY_马来西亚_80,🇧🇪 t.me/wbnet_🇧🇪_BE_比利时_81,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_82,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_83,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_84,t.me/wbnet_🇱🇺_LU_卢森堡_85,t.me/wbnet_🇮🇸_IS_冰岛_86,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_87,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_88,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_89,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_90,t.me/wbnet_🇪🇪_EE_爱沙尼亚_91,🇩🇰 t.me/wbnet_🇩🇰_DK_丹麦_92
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
 Netflix = select,Proxies,HK,SG,JP,US,TW
 Netease = select,DIRECT,Proxies
 HKMTMedia = select,DIRECT,Proxies,HK,TW
-HK = select,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_6,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_12,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_17,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_71
-SG = select,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_6,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_10,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_12,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_18,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_19,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_25,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_27,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_28,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_31,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_32
-JP = select,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_69
-US = select,🇺🇸 t.me/wbnet_🇺🇸_US_美国_65,🇺🇸 t.me/wbnet_🇺🇸_US_美国_66,🇺🇸 t.me/wbnet_🇺🇸_US_美国_73,🇺🇸 t.me/wbnet_🇺🇸_US_美国_74,🇺🇸 t.me/wbnet_🇺🇸_US_美国_75,🇺🇸 t.me/wbnet_🇺🇸_US_美国_8,🇺🇸 t.me/wbnet_🇺🇸_US_美国_9,🇺🇸 t.me/wbnet_🇺🇸_US_美国_26,🇺🇸 t.me/wbnet_🇺🇸_US_美国_29
+HK = select,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_23,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_28
+SG = select,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_24,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_30,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_34,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_36,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_37,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_38,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_43,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_47,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_82,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_83,🇸🇬 t.me/wbnet_🇸🇬_SG_新加坡_84
+JP = select,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_4,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_22,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_56,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_68
+US = select,🇺🇸 t.me/wbnet_🇺🇸_US_美国_13,🇺🇸 t.me/wbnet_🇺🇸_US_美国_15,🇺🇸 t.me/wbnet_🇺🇸_US_美国_16,🇺🇸 t.me/wbnet_🇺🇸_US_美国_18,🇺🇸 t.me/wbnet_🇺🇸_US_美国_21,🇺🇸 t.me/wbnet_🇺🇸_US_美国_29,🇺🇸 t.me/wbnet_🇺🇸_US_美国_31,🇺🇸 t.me/wbnet_🇺🇸_US_美国_33,🇺🇸 t.me/wbnet_🇺🇸_US_美国_35,🇺🇸 t.me/wbnet_🇺🇸_US_美国_40,🇺🇸 t.me/wbnet_🇺🇸_US_美国_41,🇺🇸 t.me/wbnet_🇺🇸_US_美国_42,🇺🇸 t.me/wbnet_🇺🇸_US_美国_46,🇺🇸 t.me/wbnet_🇺🇸_US_美国_48
 
 [Rule]
 DOMAIN-SUFFIX,17gouwuba.com,REJECT
