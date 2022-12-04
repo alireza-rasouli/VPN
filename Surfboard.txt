@@ -1,11 +1,11 @@
-#!MANAGED-CONFIG http://127.0.0.1:25500/sub?target=surfboard&url=https%3A%2F%2Ftt.vg%2FJTNiU&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false interval=86400 strict=false
+#!MANAGED-CONFIG https://raw.githubusercontent.com/alireza-rasouli/VPN/main/Surfboard.txt interval=86400 strict=false
 
 [General]
 loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 ipv6 = false
-dns-server = system, 223.5.5.5
+dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 exclude-simple-hostnames = true
 enhanced-mode-by-rule = true
 
@@ -80,6 +80,7 @@ t.me/wbnet_🇺🇦_UA_乌克兰_1 = ss, 130.0.233.20, 31675, encrypt-method=aes
 🐟 漏网之鱼 = select,🚀 节点选择,🎯 全球直连,♻️ 自动选择,t.me/wbnet_🇺🇦_UA_乌克兰_1,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_2,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_3,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_4,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_5,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_6,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_7,🇺🇸 t.me/wbnet_🇺🇸_US_美国_8,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_9,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_10,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_11,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_12,🇺🇸 t.me/wbnet_🇺🇸_US_美国_13,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_14,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_15,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_16,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_17,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_18,🇧🇪 t.me/wbnet_🇧🇪_BE_比利时_19,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_20,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_21,🇫🇷 t.me/wbnet_🇫🇷_FR_法国_22,🇺🇸 t.me/wbnet_🇺🇸_US_美国_23,🇺🇸 t.me/wbnet_🇺🇸_US_美国_24,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_25,🇺🇸 t.me/wbnet_🇺🇸_US_美国_26,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_27,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_28,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_29,🇧🇪 t.me/wbnet_🇧🇪_BE_比利时_30,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_31,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_32,🇯🇵 t.me/wbnet_🇯🇵_JP_日本_33,🇫🇮 t.me/wbnet_🇫🇮_FI_芬兰_34,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_35,🇫🇮 t.me/wbnet_🇫🇮_FI_芬兰_36,🇬🇧 t.me/wbnet_🇬🇧_GB_英国_37,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_38,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_39,🇺🇸 t.me/wbnet_🇺🇸_US_美国_40,🇻🇳 t.me/wbnet_🇻🇳_VN_越南_41,🇺🇸 t.me/wbnet_🇺🇸_US_美国_42,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_43,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_44,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_45,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_46,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_47,🇭🇰 t.me/wbnet_🇭🇰_HK_香港_48,🇨🇦 t.me/wbnet_🇨🇦_CA_加拿大_49,🇺🇸 t.me/wbnet_🇺🇸_US_美国_50,🇫🇮 t.me/wbnet_🇫🇮_FI_芬兰_51,🇰🇷 t.me/wbnet_🇰🇷_KR_韩国_52,🇩🇪 t.me/wbnet_🇩🇪_DE_德国_53,🇳🇱 t.me/wbnet_🇳🇱_NL_荷兰_54
 
 [Rule]
+GEOIP,IR,DIRECT
 DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
 DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
