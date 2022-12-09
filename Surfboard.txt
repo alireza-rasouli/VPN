@@ -11,63 +11,28 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-t.me/wbnet_1 = trojan, trs09.bolab.net, 443, password=7a566d21dfcd0f12490275fd3dd3cfc4, skip-cert-verify=true, tfo=false
-t.me/wbnet_2 = trojan, trs17.bolab.net, 22, password=40c89b10235c40321e7a3cef82b53a03, skip-cert-verify=true, tfo=false
-t.me/wbnet_3 = trojan, trs16.bolab.net, 22, password=40c89b10235c40321e7a3cef82b53a03, skip-cert-verify=true, tfo=false
-t.me/wbnet_4 = vmess, 167.235.250.53, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=167.235.250.53, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_5 = trojan, ca.stablize.top, 443, password=8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify=true, tfo=false
-t.me/wbnet_6 = trojan, sg.stablize.top, 443, password=1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify=true, tfo=false
-t.me/wbnet_7 = trojan, jp.stablize.top, 443, password=8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify=true, tfo=false
-t.me/wbnet_8 = vmess, cdn1.soft9821.gq, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.soft9821.gq, ws-headers=Host:cdn1.soft9821.gq, skip-cert-verify=true, tfo=false
-t.me/wbnet_9 = vmess, 167.235.250.53, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=167.235.250.53, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_10 = vmess, 49.12.190.19, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=49.12.190.19, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_11 = vmess, 49.12.190.19, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=49.12.190.19, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_12 = vmess, 165.22.229.248, 80, username=6b7261aa-1dea-4ab4-8e96-fa726b5a9feb, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=165.22.229.248, ws-headers=Host:165.22.229.248, skip-cert-verify=true, tfo=false
-t.me/wbnet_13 = vmess, cdn1.soft9821.gq, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.soft9821.gq, ws-headers=Host:cdn1.soft9821.gq, skip-cert-verify=true, tfo=false
-t.me/wbnet_14 = ss, 148.66.56.98, 804, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_15 = vmess, 167.235.250.53, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=167.235.250.53, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_16 = vmess, huclouds.ml, 5505, username=69801534-3870-4d14-9d07-6f65da593da4, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=huclouds.ml, ws-headers=Host:huclouds.ml, skip-cert-verify=true, tfo=false
-t.me/wbnet_17 = vmess, 206.81.31.184, 6245, username=9d39cb34-5261-43fb-b0f8-4f8a22b10f15, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=206.81.31.184, skip-cert-verify=true, tfo=false
-t.me/wbnet_18 = ss, 148.66.56.98, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_20 = vmess, 54.180.121.223, 5505, username=69801534-3870-4d14-9d07-6f65da593da4, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=54.180.121.223, skip-cert-verify=true, tfo=false
-t.me/wbnet_21 = vmess, 165.154.5.235, 14444, username=0eb9d2fa-17d1-4276-af80-15323dc1dca5, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_22 = vmess, 128.1.134.126, 6666, username=7fb3b571-cda8-40f6-c9e6-db9765ea8faa, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_23 = vmess, vsg1.0bad.com, 443, username=927094d3-d678-4763-8591-e240d0bcae87, tls=true, vmess-aead=true, ws=true, ws-path=/chat, sni=vsg1.0bad.com, ws-headers=Host:vsg1.0bad.com, skip-cert-verify=true, tfo=false
-t.me/wbnet_24 = vmess, 00000000000000000000000000000000000000000000000000000000000035a.rui77.com, 12356, username=f3fda0c6-4025-4da7-82b4-88423d9ec489, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_25 = vmess, 152.69.197.60, 1069, username=ac8e26fe-8150-4b60-ae64-82fc77eba2cf, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_26 = vmess, 00000000000000000000000000000000000000000000000000000000000036a.rui77.com, 12356, username=1617ff1b-4e85-4a8a-81c3-511b3c2efad8, tls=false, vmess-aead=true, skip-cert-verify=true, tfo=false
-t.me/wbnet_27 = trojan, t2.google.bforward2.uk, 443, password=784d5c1f-69d8-4967-bc61-426983744ee5, skip-cert-verify=true, tfo=false
-t.me/wbnet_28 = trojan, de.stablize.top, 443, password=1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify=true, tfo=false
-t.me/wbnet_29 = trojan, sg.stablize.top, 443, password=1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify=true, tfo=false
-t.me/wbnet_30 = trojan, ca.stablize.top, 443, password=1bf16b43-0ad5-4512-a0e8-34bb8966278e, skip-cert-verify=true, tfo=false
-t.me/wbnet_31 = trojan, trs17.bolab.net, 22, password=40c89b10235c40321e7a3cef82b53a03, skip-cert-verify=true, tfo=false
-t.me/wbnet_32 = trojan, trs16.bolab.net, 22, password=40c89b10235c40321e7a3cef82b53a03, skip-cert-verify=true, tfo=false
-t.me/wbnet_33 = trojan, youtube-bai-piao-wang-zhe-usa.98848.xyz, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, skip-cert-verify=true, tfo=false
-t.me/wbnet_34 = ss, 103.163.218.2, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_35 = ss, 62.109.22.113, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_36 = ss, 134.209.158.149, 28260, encrypt-method=aes-256-cfb, password=d3b8321945c24105ae485662024620f6, tfo=false
-t.me/wbnet_37 = ss, 213.183.53.182, 9037, encrypt-method=aes-256-cfb, password=TN2YqghxeFDKZfLU, tfo=false
-t.me/wbnet_38 = ss, 185.104.184.78, 804, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_39 = ss, 185.104.184.78, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_40 = ss, 138.59.16.146, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_41 = ss, 172.107.208.200, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_42 = ss, 92.223.109.126, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_43 = ss, 78.129.253.9, 801, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_44 = ss, 78.129.253.9, 803, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_45 = ss, 78.129.253.9, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_46 = ss, 78.129.253.9, 810, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_47 = ss, 78.129.253.9, 811, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
-t.me/wbnet_48 = ss, 45.136.198.122, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_49 = ss, 192.36.27.94, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
-t.me/wbnet_50 = ss, 172.99.188.99, 2375, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
-t.me/wbnet_51 = ss, 172.99.188.99, 2376, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
-t.me/wbnet_52 = ss, 172.99.188.99, 5000, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false
-t.me/wbnet_53 = ss, 172.99.188.99, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false
-t.me/wbnet_54 = ss, 13.49.241.14, 27092, encrypt-method=chacha20-ietf-poly1305, password=pydQILh06AvJ, tfo=false
-t.me/wbnet_55 = ss, 85.208.108.61, 443, encrypt-method=aes-256-gcm, password=pKEW8JPByTVTLtM, tfo=false
-t.me/wbnet_56 = ss, 31.133.100.49, 50000, encrypt-method=aes-256-cfb, password=3135771619, tfo=false
-t.me/wbnet_57 = ss, 172.99.188.99, 6679, encrypt-method=aes-256-gcm, password=TEzjfAYq2IjtuoS, tfo=false
-t.me/wbnet_58 = ss, 172.99.188.99, 7001, encrypt-method=aes-256-gcm, password=RexnBgU7EV5ADxG, tfo=false
+t.me/wbnet_1 = vmess, cdn1.soft9821.gq, 443, username=32e418ce-843c-44d6-85a2-1f17488cb262, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.soft9821.gq, ws-headers=Host:cdn1.soft9821.gq, skip-cert-verify=true, tfo=false
+t.me/wbnet_2 = trojan, trojan-ctb-sg01.globalssh.xyz, 443, password=123456, sni=trojan-ctb-sg01.globalssh.xyz, skip-cert-verify=true, tfo=false
+t.me/wbnet_3 = vmess, 152.228.217.34, 80, username=dc04a953-ab18-4b76-8c75-7d172c896795, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=152.228.217.34, ws-headers=Host:152.228.217.34, skip-cert-verify=true, tfo=false
+t.me/wbnet_4 = trojan, 51.195.219.173, 443, password=2f15a54f-ab63-4efb-bb73-b3e029b647e5, sni=ukt1.sshocean.net, skip-cert-verify=true, tfo=false
+t.me/wbnet_5 = vmess, 51.158.231.4, 80, username=e7129b5d-1be6-4130-a0bb-267bd2c58500, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.158.231.4, ws-headers=Host:51.158.231.4, skip-cert-verify=true, tfo=false
+t.me/wbnet_6 = vmess, site.serverdns.space, 50129, username=ead928b7-0521-47ac-bcc0-6f3fcb40998e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=site.serverdns.space, ws-headers=Host:site.serverdns.space, skip-cert-verify=true, tfo=false
+t.me/wbnet_7 = trojan, sg-01.tiktokcdn.top, 443, password=bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni=sg-01.tiktokcdn.top, skip-cert-verify=true, tfo=false
+t.me/wbnet_8 = vmess, 139.84.226.230, 80, username=23ca6ebf-5962-4742-92bc-add0ff36a17f, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=139.84.226.230, ws-headers=Host:vahid-spacer.tk, skip-cert-verify=true, tfo=false
+t.me/wbnet_9 = vmess, 135.181.35.31, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=135.181.35.31, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
+t.me/wbnet_10 = vmess, 5.249.160.226, 80, username=d32f6fa3-437e-47dd-add0-f5e2e529791f, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=5.249.160.226, ws-headers=Host:vahid-spacer.tk, skip-cert-verify=true, tfo=false
+t.me/wbnet_11 = vmess, 128.14.162.48, 443, username=5f64fa65-7b14-49c5-954d-aa15c6bfcacd, tls=true, vmess-aead=true, ws=true, ws-path=/dongtaiwang.com, sni=128.14.162.48, ws-headers=Host:clash6.ssr-free.xyz, skip-cert-verify=true, tfo=false
+t.me/wbnet_12 = vmess, 15.204.207.28, 80, username=d5c96874-3c3f-4978-8973-cbc6cb96cb47, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=15.204.207.28, ws-headers=Host:15.204.207.28, skip-cert-verify=true, tfo=false
+t.me/wbnet_13 = vmess, 51.81.220.195, 80, username=6fea1649-425b-4092-bf53-29792152c925, tls=false, vmess-aead=true, ws=true, ws-path=/sshkit/Variu88/634dab7abadf1/, sni=51.81.220.195, skip-cert-verify=true, tfo=false
+t.me/wbnet_14 = vmess, mame.cyber-nigga.pro, 80, username=e09c15e1-db01-4748-ed81-7e385c779ffc, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=mame.cyber-nigga.pro, ws-headers=Host:mame.cyber-nigga.pro, skip-cert-verify=true, tfo=false
+t.me/wbnet_15 = vmess, 46.245.74.43, 26526, username=b95a9b6e-94ab-424c-8eea-669215ef9c5d, tls=false, vmess-aead=true, ws=true, ws-path=/vpnserver, sni=46.245.74.43, skip-cert-verify=true, tfo=false
+t.me/wbnet_16 = vmess, 15.204.31.63, 80, username=ee9f4b3b-0bf7-4316-8b10-650a9e706aad, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=15.204.31.63, ws-headers=Host:vahid-spacer.tk, skip-cert-verify=true, tfo=false
+t.me/wbnet_17 = vmess, cdn2.soft98.download, 443, username=5283a4d0-fecc-4f4a-fa51-ae2f62ea6183, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cdn2.soft98.download, ws-headers=Host:cdn2.soft98.download, skip-cert-verify=true, tfo=false
+t.me/wbnet_18 = vmess, 5.161.125.97, 8081, username=24d2dcb8-9670-4905-f35b-61df65bdfe84, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.161.125.97, skip-cert-verify=true, tfo=false
+t.me/wbnet_22 = vmess, server1.internetgateway.website, 443, username=33f27e84-cca3-423c-b4bc-1b189a6639b7, tls=true, vmess-aead=false, ws=true, ws-path=/media, sni=server1.internetgateway.website, ws-headers=Host:server1.internetgateway.website, skip-cert-verify=true, tfo=false
+t.me/wbnet_23 = vmess, sea.caspian.cf, 2053, username=f3072c34-08fd-422a-afd3-ec3f693cbdf9, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=sea.caspian.cf, ws-headers=Host:sea.caspian.cf, skip-cert-verify=true, tfo=false
+t.me/wbnet_24 = vmess, 85.17.5.150, 36306, username=4070fdde-43d5-4b3f-dbcf-7751c77e4bf6, tls=false, vmess-aead=true, ws=true, ws-path=/Af5645tr, sni=85.17.5.150, ws-headers=Host:85.17.5.150, skip-cert-verify=true, tfo=false
+t.me/wbnet_25 = vmess, cdn2.soft98.download, 8443, username=41e41e46-9bdb-4666-ae89-754c4cc8255b, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cdn2.soft98.download, ws-headers=Host:cdn2.soft98.download, skip-cert-verify=true, tfo=false
 HK = direct
 SG = direct
 TW = direct
@@ -75,7 +40,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,t.me/wbnet_1,t.me/wbnet_2,t.me/wbnet_3,t.me/wbnet_4,t.me/wbnet_5,t.me/wbnet_6,t.me/wbnet_7,t.me/wbnet_8,t.me/wbnet_9,t.me/wbnet_10,t.me/wbnet_11,t.me/wbnet_12,t.me/wbnet_13,t.me/wbnet_14,t.me/wbnet_15,t.me/wbnet_16,t.me/wbnet_17,t.me/wbnet_18,t.me/wbnet_20,t.me/wbnet_21,t.me/wbnet_22,t.me/wbnet_23,t.me/wbnet_24,t.me/wbnet_25,t.me/wbnet_26,t.me/wbnet_27,t.me/wbnet_28,t.me/wbnet_29,t.me/wbnet_30,t.me/wbnet_31,t.me/wbnet_32,t.me/wbnet_33,t.me/wbnet_34,t.me/wbnet_35,t.me/wbnet_36,t.me/wbnet_37,t.me/wbnet_38,t.me/wbnet_39,t.me/wbnet_40,t.me/wbnet_41,t.me/wbnet_42,t.me/wbnet_43,t.me/wbnet_44,t.me/wbnet_45,t.me/wbnet_46,t.me/wbnet_47,t.me/wbnet_48,t.me/wbnet_49,t.me/wbnet_50,t.me/wbnet_51,t.me/wbnet_52,t.me/wbnet_53,t.me/wbnet_54,t.me/wbnet_55,t.me/wbnet_56,t.me/wbnet_57,t.me/wbnet_58
+Proxies = select,HK,SG,JP,US,TW,t.me/wbnet_1,t.me/wbnet_2,t.me/wbnet_3,t.me/wbnet_4,t.me/wbnet_5,t.me/wbnet_6,t.me/wbnet_7,t.me/wbnet_8,t.me/wbnet_9,t.me/wbnet_10,t.me/wbnet_11,t.me/wbnet_12,t.me/wbnet_13,t.me/wbnet_14,t.me/wbnet_15,t.me/wbnet_16,t.me/wbnet_17,t.me/wbnet_18,t.me/wbnet_22,t.me/wbnet_23,t.me/wbnet_24,t.me/wbnet_25
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
