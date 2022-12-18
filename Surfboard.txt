@@ -11,31 +11,50 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub_1 = ss, 38.91.101.242, 1034, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false
-vpnclub_2 = vmess, cdn1.parshost.site, 80, username=ff2cc50d-d579-49a8-9560-cb5eaa33612f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.parshost.site, ws-headers=Host:cdn1.parshost.site, skip-cert-verify=true, tfo=false
-vpnclub_3 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
-vpnclub_4 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false
-vpnclub_5 = ss, 38.91.102.72, 2376, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
-vpnclub_6 = vmess, 51.159.2.152, 8880, username=a2ecce43-c6fb-4978-8b1d-8018ddd9faf4, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_7 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_8 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false
-vpnclub_9 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_10 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
-vpnclub_11 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false
-vpnclub_12 = vmess, cf-lt.sharecentre.online, 443, username=20e92881-5fb4-4b05-bc77-57929476dc69, tls=true, vmess-aead=true, ws=true, ws-path=/shirker, sni=cf-lt.sharecentre.online, ws-headers=Host:sg-gcore.sharecentre.online, skip-cert-verify=true, tfo=false
-vpnclub_13 = trojan, youtube-bai-piao-wang-zhe-usa.98848.xyz, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, skip-cert-verify=true, tfo=false
-vpnclub_14 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
-vpnclub_15 = trojan, trojan-ctb-sg01.globalssh.xyz, 443, password=123456, skip-cert-verify=true, tfo=false
-vpnclub_16 = vmess, cdn1.parshost.site, 80, username=ff2cc50d-d579-49a8-9560-cb5eaa33612f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.parshost.site, ws-headers=Host:cdn1.parshost.site, skip-cert-verify=true, tfo=false
-vpnclub_17 = ss, 38.91.102.72, 2376, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
-vpnclub_18 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_19 = ss, 38.91.101.242, 1034, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false
-vpnclub_20 = ss, 82.145.41.125, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false
-vpnclub_21 = ss, ak1584.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false
-vpnclub_22 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false
-vpnclub_24 = vmess, 49.12.184.152, 443, username=3819d60e-221e-4a3c-ad10-b9b2bd016ad5, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=49.12.184.152, skip-cert-verify=true, tfo=false
-vpnclub_26 = vmess, 51.75.160.126, 80, username=ed2c7ae0-e199-4f98-ada0-8f5fdc80ca8d, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.75.160.126, ws-headers=Host:51.75.160.126, skip-cert-verify=true, tfo=false
-vpnclub_27 = vmess, 195.201.150.160, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=195.201.150.160, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_1 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_2 = ss, 38.91.102.124, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false
+vpnclub  اینترنت بدون مرز_3 = ss, 38.91.101.242, 1034, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false
+vpnclub  اینترنت بدون مرز_4 = vmess, 182.16.1.194, 80, username=00a1da14-d55f-5f75-e346-79b985e1a723, tls=false, vmess-aead=true, ws=true, ws-path=/opt/video/images, sni=182.16.1.194, ws-headers=Host:182.16.1.194, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_7 = vmess, 168.119.154.221, 80, username=fca445fc-fcf5-48e1-9e96-c7c384579b0d, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.154.221, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_8 = vmess, 13.125.5.159, 43417, username=b5b5209f-bcbd-4bac-b044-0d179698c62d, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=13.125.5.159, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_9 = vmess, 168.119.154.221, 80, username=fca445fc-fcf5-48e1-9e96-c7c384579b0d, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.154.221, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_10 = vmess, 168.119.154.221, 80, username=fca445fc-fcf5-48e1-9e96-c7c384579b0d, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.154.221, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_12 = vmess, 5.161.105.171, 3389, username=06d52c29-1230-49a7-8fa6-66dbc9749a95, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.161.105.171, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_13 = vmess, cdn1.parshost.site, 8443, username=21c4be1b-0713-4c76-e27b-411c5f396923, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.parshost.site, ws-headers=Host:cdn1.parshost.site, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_14 = vmess, 157.90.30.113, 80, username=025923dd-47e2-440f-a5e2-4186ea61d8dc, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=157.90.30.113, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_15 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false
+vpnclub  اینترنت بدون مرز_16 = ss, 38.91.102.72, 2376, encrypt-method=aes-256-gcm, password=faBAoD54k87UJG7, tfo=false
+vpnclub  اینترنت بدون مرز_21 = vmess, 157.90.30.113, 80, username=025923dd-47e2-440f-a5e2-4186ea61d8dc, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=157.90.30.113, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_22 = vmess, 15.235.192.195, 80, username=b5a9c7bc-8bdb-4ff3-b03f-96b941c414c6, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=15.235.192.195, ws-headers=Host:15.235.192.195, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_23 = vmess, 128.14.140.254, 443, username=5f64fa65-7b14-49c5-954d-aa15c6bfcacd, tls=true, vmess-aead=true, ws=true, ws-path=/dongtaiwang.com, sni=128.14.140.254, ws-headers=Host:clash6.ssr-free.xyz, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_24 = vmess, 51.75.160.126, 80, username=ed2c7ae0-e199-4f98-ada0-8f5fdc80ca8d, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.75.160.126, ws-headers=Host:51.75.160.126, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_25 = trojan, us2.trojanvh.xyz, 80, password=011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_26 = vmess, 168.119.111.180, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=168.119.111.180, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_28 = vmess, germany.radargoriz.fun, 17472, username=c0fefafc-2be5-410d-a903-e0448fb46089, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=germany.radargoriz.fun, ws-headers=Host:germany.radargoriz.fun, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_30 = vmess, 94.130.163.252, 443, username=37592fba-37f8-e4d4-7094-924106e305f2, tls=true, vmess-aead=true, ws=true, ws-path=/szzwvws, sni=94.130.163.252, ws-headers=Host:sadbro9.online, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_31 = vmess, join-bede.unlimiteddev.tk, 80, username=b003add4-7dfe-47ae-e4d1-56312e52c94e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=join-bede.unlimiteddev.tk, ws-headers=Host:join-bede.unlimiteddev.tk, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_32 = vmess, join-bede.unlimiteddev.tk, 80, username=b003add4-7dfe-47ae-e4d1-56312e52c94e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=join-bede.unlimiteddev.tk, ws-headers=Host:join-bede.unlimiteddev.tk, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_37 = vmess, 91.193.181.192, 8090, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=91.193.181.192, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_38 = vmess, germany.radargoriz.fun, 17472, username=c0fefafc-2be5-410d-a903-e0448fb46089, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=germany.radargoriz.fun, ws-headers=Host:germany.radargoriz.fun, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_39 = vmess, premium.radargoriz.fun, 39620, username=bcb26093-ec74-4609-9303-a7d07696137d, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=premium.radargoriz.fun, ws-headers=Host:premium.radargoriz.fun, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_40 = vmess, 182.16.1.194, 80, username=00a1da14-d55f-5f75-e346-79b985e1a723, tls=false, vmess-aead=true, ws=true, ws-path=/opt/video/images, sni=182.16.1.194, ws-headers=Host:182.16.1.194, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_43 = vmess, 13.125.5.159, 43417, username=b5b5209f-bcbd-4bac-b044-0d179698c62d, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=13.125.5.159, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_44 = vmess, v2ray.wefuckgfw.tk, 2096, username=ec1af151-9562-4fb2-919f-5506647aa5dc, tls=true, vmess-aead=true, ws=true, ws-path=/ezN9pvil/, sni=v2ray.wefuckgfw.tk, ws-headers=Host:v2ray.wefuckgfw.tk, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_45 = vmess, 157.90.30.113, 80, username=025923dd-47e2-440f-a5e2-4186ea61d8dc, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=157.90.30.113, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_48 = vmess, 5.75.250.163, 2096, username=e175ba8e-f3e8-4ec5-a350-f058537dca8e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.75.250.163, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_49 = vmess, 188.114.97.2, 443, username=1d7f97be-e0a9-4377-97eb-c05c45392509, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=188.114.97.2, ws-headers=Host:xvnp.de, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_50 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_51 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_53 = vmess, vsg1.0bad.com, 443, username=927094d3-d678-4763-8591-e240d0bcae87, tls=true, vmess-aead=true, ws=true, ws-path=/chat, sni=vsg1.0bad.com, ws-headers=Host:vsg1.0bad.com, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_54 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_55 = trojan, 20.210.237.81, 443, password=5623be5f-c9da-4511-81a9-b4b39b16edae, sni=glc.windowsupdate1.com, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_56 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_57 = vmess, cdn1.parshost.site, 8443, username=21c4be1b-0713-4c76-e27b-411c5f396923, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=cdn1.parshost.site, ws-headers=Host:cdn1.parshost.site, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_58 = trojan, sg-01.tiktokcdn.top, 443, password=bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_59 = vmess, 168.119.154.221, 80, username=fca445fc-fcf5-48e1-9e96-c7c384579b0d, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.154.221, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_60 = vmess, 157.90.30.113, 80, username=025923dd-47e2-440f-a5e2-4186ea61d8dc, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=157.90.30.113, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_61 = vmess, 188.114.96.14, 443, username=1d7f97be-e0a9-4377-97eb-c05c45392509, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=188.114.96.14, ws-headers=Host:xvnp.de, skip-cert-verify=true, tfo=false
+vpnclub  اینترنت بدون مرز_62 = vmess, 185.242.161.206, 25212, username=43a988d1-8c8c-4303-9e03-8d651de6f376, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=185.242.161.206, skip-cert-verify=true, tfo=false
 HK = direct
 SG = direct
 TW = direct
@@ -43,7 +62,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub_1,vpnclub_2,vpnclub_3,vpnclub_4,vpnclub_5,vpnclub_6,vpnclub_7,vpnclub_8,vpnclub_9,vpnclub_10,vpnclub_11,vpnclub_12,vpnclub_13,vpnclub_14,vpnclub_15,vpnclub_16,vpnclub_17,vpnclub_18,vpnclub_19,vpnclub_20,vpnclub_21,vpnclub_22,vpnclub_24,vpnclub_26,vpnclub_27
+Proxies = select,HK,SG,JP,US,TW,vpnclub  اینترنت بدون مرز_1,vpnclub  اینترنت بدون مرز_2,vpnclub  اینترنت بدون مرز_3,vpnclub  اینترنت بدون مرز_4,vpnclub  اینترنت بدون مرز_7,vpnclub  اینترنت بدون مرز_8,vpnclub  اینترنت بدون مرز_9,vpnclub  اینترنت بدون مرز_10,vpnclub  اینترنت بدون مرز_12,vpnclub  اینترنت بدون مرز_13,vpnclub  اینترنت بدون مرز_14,vpnclub  اینترنت بدون مرز_15,vpnclub  اینترنت بدون مرز_16,vpnclub  اینترنت بدون مرز_21,vpnclub  اینترنت بدون مرز_22,vpnclub  اینترنت بدون مرز_23,vpnclub  اینترنت بدون مرز_24,vpnclub  اینترنت بدون مرز_25,vpnclub  اینترنت بدون مرز_26,vpnclub  اینترنت بدون مرز_28,vpnclub  اینترنت بدون مرز_30,vpnclub  اینترنت بدون مرز_31,vpnclub  اینترنت بدون مرز_32,vpnclub  اینترنت بدون مرز_37,vpnclub  اینترنت بدون مرز_38,vpnclub  اینترنت بدون مرز_39,vpnclub  اینترنت بدون مرز_40,vpnclub  اینترنت بدون مرز_43,vpnclub  اینترنت بدون مرز_44,vpnclub  اینترنت بدون مرز_45,vpnclub  اینترنت بدون مرز_48,vpnclub  اینترنت بدون مرز_49,vpnclub  اینترنت بدون مرز_50,vpnclub  اینترنت بدون مرز_51,vpnclub  اینترنت بدون مرز_53,vpnclub  اینترنت بدون مرز_54,vpnclub  اینترنت بدون مرز_55,vpnclub  اینترنت بدون مرز_56,vpnclub  اینترنت بدون مرز_57,vpnclub  اینترنت بدون مرز_58,vpnclub  اینترنت بدون مرز_59,vpnclub  اینترنت بدون مرز_60,vpnclub  اینترنت بدون مرز_61,vpnclub  اینترنت بدون مرز_62
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
