@@ -15,413 +15,461 @@ dns:
     - 208.67.220.220
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: vpnclub_1, server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: vpnclub_2, server: 38.91.101.242, port: 1034, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: vpnclub_3, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: vpnclub_4, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_5, server: 20.210.237.81, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_6, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_7, server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: vpnclub_8, server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: vpnclub_9, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: vpnclub_10, server: 142.132.227.210, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_11, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_12, server: 5.75.250.163, port: 2096, type: vmess, uuid: e175ba8e-f3e8-4ec5-a350-f058537dca8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_13, server: 116.203.249.12, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
-  - {name: vpnclub_14, server: 206.81.31.184, port: 6245, type: vmess, uuid: 9d39cb34-5261-43fb-b0f8-4f8a22b10f15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_15, server: 116.203.249.12, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
-  - {name: vpnclub_16, server: 116.203.249.12, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
-  - {name: vpnclub_17, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_18, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_19, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_20, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_21, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_22, server: 168.138.206.141, port: 80, type: vmess, uuid: ad05e01f-c2c0-41da-e79c-ff68237317f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_23, server: 5.75.250.163, port: 2096, type: vmess, uuid: e175ba8e-f3e8-4ec5-a350-f058537dca8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_24, server: 51.75.160.126, port: 80, type: vmess, uuid: 2ed33a1b-5c47-4c4e-8473-eea30c2d337f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.75.160.126}}, udp: true}
-  - {name: vpnclub_25, server: 51.159.2.152, port: 80, type: vmess, uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 51.159.2.152}}, udp: true}
-  - {name: vpnclub_26, server: 51.159.2.152, port: 80, type: vmess, uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 51.159.2.152}}, udp: true}
-  - {name: vpnclub_27, server: sg1-v.sshmax.xyz, port: 443, type: vmess, uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
-  - {name: vpnclub_28, server: sg1-v.sshmax.xyz, port: 443, type: vmess, uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
-  - {name: vpnclub_29, server: fshop.vhdmht.store, port: 29671, type: trojan, password: 4wM7pzSLEj, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_30, server: 135.148.148.4, port: 80, type: trojan, password: 92346756-284e-4de6-904b-16510c38e8b7, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_31, server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_32, server: 20.210.237.81, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_33, server: 107.181.161.163, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_34, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
-  - {name: vpnclub_35, server: v2ray.wefuckgfw.tk, port: 2096, type: vmess, uuid: ec1af151-9562-4fb2-919f-5506647aa5dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ezN9pvil/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
-  - {name: vpnclub_36, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_37, server: xray.tawanaclub.tk, port: 18904, type: vmess, uuid: 33ca6d33-af3b-4e17-e6fb-92aa1e405ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/tawanaproxy], headers: {Host: [xray.tawanaclub.tk]}}, udp: true}
-  - {name: vpnclub_38, server: 188.114.96.14, port: 443, type: vmess, uuid: 1d7f97be-e0a9-4377-97eb-c05c45392509, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /in-vpn-majani-ast-vws, headers: {Host: xvnp.de}}, udp: true}
-  - {name: vpnclub_39, server: 142.132.227.210, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_40, server: sg1-v.sshmax.xyz, port: 443, type: vmess, uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
-  - {name: vpnclub_41, server: www.xvbu.de, port: 443, type: vmess, uuid: 213694e5-56e7-4987-96dc-839abdb8d461, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/1f213abcf6?ed=2048", headers: {Host: www.xvbu.de}}, udp: true}
-  - {name: vpnclub_42, server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_43, server: xray.tawanaclub.tk, port: 18904, type: vmess, uuid: 33ca6d33-af3b-4e17-e6fb-92aa1e405ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/tawanaproxy], headers: {Host: [xray.tawanaclub.tk]}}, udp: true}
-  - {name: vpnclub_44, server: 51.77.158.169, port: 2096, type: vmess, uuid: c92fd902-b5d3-4208-bb48-630b1c7babea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_45, server: 157.90.244.205, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_46, server: 167.235.198.95, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_1", server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_2", server: 38.91.101.242, port: 1034, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_3", server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_4", server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_5", server: 20.210.237.81, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_6", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_7", server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_8", server: 38.91.102.124, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_9", server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_10", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_11", server: 206.81.31.184, port: 6245, type: vmess, uuid: 9d39cb34-5261-43fb-b0f8-4f8a22b10f15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_12", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_13", server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_14", server: 5.75.250.163, port: 2096, type: vmess, uuid: e175ba8e-f3e8-4ec5-a350-f058537dca8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_15", server: 51.159.2.152, port: 80, type: vmess, uuid: 43587dc1-34f1-4254-ab90-56507e72d7a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 51.159.2.152}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_16", server: sg1-v.sshmax.xyz, port: 443, type: vmess, uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_17", server: 135.148.148.4, port: 80, type: trojan, password: 92346756-284e-4de6-904b-16510c38e8b7, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_18", server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_19", server: 20.210.237.81, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_20", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_21", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_22", server: 188.114.96.14, port: 443, type: vmess, uuid: 1d7f97be-e0a9-4377-97eb-c05c45392509, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /in-vpn-majani-ast-vws, headers: {Host: xvnp.de}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_23", server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_24", server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_25", server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_26", server: 135.148.148.4, port: 80, type: trojan, password: 800eb26c-cd0c-4269-aae7-e63d75de4edd, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_27", server: 5.75.250.163, port: 2096, type: vmess, uuid: e175ba8e-f3e8-4ec5-a350-f058537dca8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_28", server: 154.17.22.56, port: 8083, type: vmess, uuid: cb4489c7-a966-320c-9120-f17a7dfb4999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /game, headers: {Host: www.bing.com}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_29", server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_30", server: 206.81.31.184, port: 6245, type: vmess, uuid: 9d39cb34-5261-43fb-b0f8-4f8a22b10f15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_31", server: 94.130.184.57, port: 80, type: vmess, uuid: c5e523e7-da73-40af-a4a9-c638720c30e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_32", server: 138.2.49.230, port: 10021, type: vmess, uuid: a12e496e-f89a-434a-8011-108846f0e412, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_33", server: 138.197.136.62, port: 18076, type: vmess, uuid: a8a29f29-d6dc-4418-d647-9a8a980e986f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_34", server: 95.216.75.177, port: 443, type: vmess, uuid: 882f2b49-242c-2cff-ccdd-0ab0fcc826c2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qktevws, headers: {Host: sadday9.online}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_35", server: bia-to.vmessorg.ml, port: 80, type: vmess, uuid: c9ccc2ca-be1b-457a-e0be-04f9bae115bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bia-to.vmessorg.ml}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_36", server: 135.148.148.4, port: 80, type: trojan, password: 892c4f6e-732b-4f71-ad04-6e77344f2d0e, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_37", server: 135.148.148.4, port: 80, type: trojan, password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_38", server: 167.235.241.173, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_39", server: 135.148.148.4, port: 80, type: trojan, password: 92346756-284e-4de6-904b-16510c38e8b7, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_40", server: 51.159.2.152, port: 8880, type: vmess, uuid: a2ecce43-c6fb-4978-8b1d-8018ddd9faf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_41", server: 65.109.163.27, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_42", server: 65.109.161.166, port: 80, type: vmess, uuid: 7fd87ddb-ff61-4aca-a40c-73f5cd4d2178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_43", server: 65.109.163.27, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_44", server: 95.217.237.49, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_45", server: 95.217.237.49, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_46", server: 135.148.148.4, port: 80, type: trojan, password: 76fcac80-9943-4eab-8717-0ebebea94b70, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_47", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_48", server: join-bede.vmessorg.ml, port: 80, type: vmess, uuid: a946e15f-07d6-466b-9f48-a4e889ab7ed9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: join-bede.vmessorg.ml}}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_49", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_50", server: 146.59.92.219, port: 2096, type: vmess, uuid: aca71b13-ec8a-466d-c28f-43516d3cf246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_51", server: 65.109.161.166, port: 80, type: vmess, uuid: 7fd87ddb-ff61-4aca-a40c-73f5cd4d2178, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql}, udp: true}
+  - {name: "@wbnet اینترنت بدون مرز_52", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -444,52 +492,58 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnclub_1
-      - vpnclub_2
-      - vpnclub_3
-      - vpnclub_4
-      - vpnclub_5
-      - vpnclub_6
-      - vpnclub_7
-      - vpnclub_8
-      - vpnclub_9
-      - vpnclub_10
-      - vpnclub_11
-      - vpnclub_12
-      - vpnclub_13
-      - vpnclub_14
-      - vpnclub_15
-      - vpnclub_16
-      - vpnclub_17
-      - vpnclub_18
-      - vpnclub_19
-      - vpnclub_20
-      - vpnclub_21
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_24
-      - vpnclub_25
-      - vpnclub_26
-      - vpnclub_27
-      - vpnclub_28
-      - vpnclub_29
-      - vpnclub_30
-      - vpnclub_31
-      - vpnclub_32
-      - vpnclub_33
-      - vpnclub_34
-      - vpnclub_35
-      - vpnclub_36
-      - vpnclub_37
-      - vpnclub_38
-      - vpnclub_39
-      - vpnclub_40
-      - vpnclub_41
-      - vpnclub_42
-      - vpnclub_43
-      - vpnclub_44
-      - vpnclub_45
-      - vpnclub_46
+      - "@wbnet اینترنت بدون مرز_1"
+      - "@wbnet اینترنت بدون مرز_2"
+      - "@wbnet اینترنت بدون مرز_3"
+      - "@wbnet اینترنت بدون مرز_4"
+      - "@wbnet اینترنت بدون مرز_5"
+      - "@wbnet اینترنت بدون مرز_6"
+      - "@wbnet اینترنت بدون مرز_7"
+      - "@wbnet اینترنت بدون مرز_8"
+      - "@wbnet اینترنت بدون مرز_9"
+      - "@wbnet اینترنت بدون مرز_10"
+      - "@wbnet اینترنت بدون مرز_11"
+      - "@wbnet اینترنت بدون مرز_12"
+      - "@wbnet اینترنت بدون مرز_13"
+      - "@wbnet اینترنت بدون مرز_14"
+      - "@wbnet اینترنت بدون مرز_15"
+      - "@wbnet اینترنت بدون مرز_16"
+      - "@wbnet اینترنت بدون مرز_17"
+      - "@wbnet اینترنت بدون مرز_18"
+      - "@wbnet اینترنت بدون مرز_19"
+      - "@wbnet اینترنت بدون مرز_20"
+      - "@wbnet اینترنت بدون مرز_21"
+      - "@wbnet اینترنت بدون مرز_22"
+      - "@wbnet اینترنت بدون مرز_23"
+      - "@wbnet اینترنت بدون مرز_24"
+      - "@wbnet اینترنت بدون مرز_25"
+      - "@wbnet اینترنت بدون مرز_26"
+      - "@wbnet اینترنت بدون مرز_27"
+      - "@wbnet اینترنت بدون مرز_28"
+      - "@wbnet اینترنت بدون مرز_29"
+      - "@wbnet اینترنت بدون مرز_30"
+      - "@wbnet اینترنت بدون مرز_31"
+      - "@wbnet اینترنت بدون مرز_32"
+      - "@wbnet اینترنت بدون مرز_33"
+      - "@wbnet اینترنت بدون مرز_34"
+      - "@wbnet اینترنت بدون مرز_35"
+      - "@wbnet اینترنت بدون مرز_36"
+      - "@wbnet اینترنت بدون مرز_37"
+      - "@wbnet اینترنت بدون مرز_38"
+      - "@wbnet اینترنت بدون مرز_39"
+      - "@wbnet اینترنت بدون مرز_40"
+      - "@wbnet اینترنت بدون مرز_41"
+      - "@wbnet اینترنت بدون مرز_42"
+      - "@wbnet اینترنت بدون مرز_43"
+      - "@wbnet اینترنت بدون مرز_44"
+      - "@wbnet اینترنت بدون مرز_45"
+      - "@wbnet اینترنت بدون مرز_46"
+      - "@wbnet اینترنت بدون مرز_47"
+      - "@wbnet اینترنت بدون مرز_48"
+      - "@wbnet اینترنت بدون مرز_49"
+      - "@wbnet اینترنت بدون مرز_50"
+      - "@wbnet اینترنت بدون مرز_51"
+      - "@wbnet اینترنت بدون مرز_52"
 rule-providers:
   iran:
     type: http
