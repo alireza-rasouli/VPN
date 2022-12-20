@@ -11,45 +11,42 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub_1 = ss, 38.91.102.124, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false
-vpnclub_2 = ss, 38.91.101.242, 1034, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false
-vpnclub_3 = vmess, 128.14.140.254, 443, username=5f64fa65-7b14-49c5-954d-aa15c6bfcacd, tls=true, vmess-aead=true, ws=true, ws-path=/dongtaiwang.com, sni=128.14.140.254, ws-headers=Host:clash6.ssr-free.xyz, skip-cert-verify=true, tfo=false
-vpnclub_4 = trojan, us2.trojanvh.xyz, 80, password=011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify=true, tfo=false
-vpnclub_5 = trojan, 20.210.237.81, 443, password=5623be5f-c9da-4511-81a9-b4b39b16edae, sni=glc.windowsupdate1.com, skip-cert-verify=true, tfo=false
-vpnclub_6 = trojan, sg-01.tiktokcdn.top, 443, password=bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify=true, tfo=false
-vpnclub_7 = ss, 38.91.102.124, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false
-vpnclub_8 = ss, 38.91.102.124, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false
-vpnclub_9 = vmess, 128.14.140.254, 443, username=5f64fa65-7b14-49c5-954d-aa15c6bfcacd, tls=true, vmess-aead=true, ws=true, ws-path=/dongtaiwang.com, sni=128.14.140.254, ws-headers=Host:clash6.ssr-free.xyz, skip-cert-verify=true, tfo=false
-vpnclub_11 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=135.181.235.21, skip-cert-verify=true, tfo=false
-vpnclub_12 = vmess, 5.75.250.163, 2096, username=e175ba8e-f3e8-4ec5-a350-f058537dca8e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.75.250.163, skip-cert-verify=true, tfo=false
-vpnclub_13 = vmess, 116.203.249.12, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=116.203.249.12, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-vpnclub_14 = vmess, 206.81.31.184, 6245, username=9d39cb34-5261-43fb-b0f8-4f8a22b10f15, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=206.81.31.184, skip-cert-verify=true, tfo=false
-vpnclub_15 = vmess, 116.203.249.12, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=116.203.249.12, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-vpnclub_16 = vmess, 116.203.249.12, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=116.203.249.12, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
-vpnclub_17 = vmess, 91.193.181.192, 8090, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=91.193.181.192, skip-cert-verify=true, tfo=false
-vpnclub_18 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=135.181.235.21, skip-cert-verify=true, tfo=false
-vpnclub_19 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=135.181.235.21, skip-cert-verify=true, tfo=false
-vpnclub_20 = vmess, 91.193.181.192, 8090, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=91.193.181.192, skip-cert-verify=true, tfo=false
-vpnclub_21 = vmess, 91.193.181.192, 8090, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=91.193.181.192, skip-cert-verify=true, tfo=false
-vpnclub_23 = vmess, 5.75.250.163, 2096, username=e175ba8e-f3e8-4ec5-a350-f058537dca8e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.75.250.163, skip-cert-verify=true, tfo=false
-vpnclub_24 = vmess, 51.75.160.126, 80, username=2ed33a1b-5c47-4c4e-8473-eea30c2d337f, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.75.160.126, ws-headers=Host:51.75.160.126, skip-cert-verify=true, tfo=false
-vpnclub_25 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_26 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
-vpnclub_27 = vmess, sg1-v.sshmax.xyz, 443, username=b655be0e-4b1a-4e3e-b63f-22a928a6e808, tls=true, vmess-aead=true, ws=true, ws-path=/vmess, sni=sg1-v.sshmax.xyz, ws-headers=Host:sg1-v.sshmax.xyz, skip-cert-verify=true, tfo=false
-vpnclub_28 = vmess, sg1-v.sshmax.xyz, 443, username=b655be0e-4b1a-4e3e-b63f-22a928a6e808, tls=true, vmess-aead=true, ws=true, ws-path=/vmess, sni=sg1-v.sshmax.xyz, ws-headers=Host:sg1-v.sshmax.xyz, skip-cert-verify=true, tfo=false
-vpnclub_29 = trojan, fshop.vhdmht.store, 29671, password=4wM7pzSLEj, skip-cert-verify=true, tfo=false
-vpnclub_30 = trojan, 135.148.148.4, 80, password=92346756-284e-4de6-904b-16510c38e8b7, sni=us3.trojanvh.xyz, skip-cert-verify=true, tfo=false
-vpnclub_31 = trojan, 51.83.186.142, 80, password=2959e4f7-7589-4a40-9b96-1be750ac7845, sni=pl1.trojanvh.xyz, skip-cert-verify=true, tfo=false
-vpnclub_32 = trojan, 20.210.237.81, 443, password=5623be5f-c9da-4511-81a9-b4b39b16edae, sni=glc.windowsupdate1.com, skip-cert-verify=true, tfo=false
-vpnclub_33 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
-vpnclub_34 = vmess, cf-lt.sharecentre.online, 443, username=20e92881-5fb4-4b05-bc77-57929476dc69, tls=true, vmess-aead=true, ws=true, ws-path=/shirker, sni=cf-lt.sharecentre.online, ws-headers=Host:sg-gcore.sharecentre.online, skip-cert-verify=true, tfo=false
-vpnclub_35 = vmess, v2ray.wefuckgfw.tk, 2096, username=ec1af151-9562-4fb2-919f-5506647aa5dc, tls=true, vmess-aead=true, ws=true, ws-path=/ezN9pvil/, sni=v2ray.wefuckgfw.tk, ws-headers=Host:v2ray.wefuckgfw.tk, skip-cert-verify=true, tfo=false
-vpnclub_36 = trojan, sg-01.tiktokcdn.top, 443, password=bb5b1337-fa9e-4e00-b8c6-1110e626171d, skip-cert-verify=true, tfo=false
-vpnclub_38 = vmess, 188.114.96.14, 443, username=1d7f97be-e0a9-4377-97eb-c05c45392509, tls=true, vmess-aead=true, ws=true, ws-path=/in-vpn-majani-ast-vws, sni=188.114.96.14, ws-headers=Host:xvnp.de, skip-cert-verify=true, tfo=false
-vpnclub_40 = vmess, sg1-v.sshmax.xyz, 443, username=b655be0e-4b1a-4e3e-b63f-22a928a6e808, tls=true, vmess-aead=true, ws=true, ws-path=/vmess, sni=sg1-v.sshmax.xyz, ws-headers=Host:sg1-v.sshmax.xyz, skip-cert-verify=true, tfo=false
-vpnclub_41 = vmess, www.xvbu.de, 443, username=213694e5-56e7-4987-96dc-839abdb8d461, tls=true, vmess-aead=true, ws=true, ws-path=/1f213abcf6?ed=2048, sni=www.xvbu.de, ws-headers=Host:www.xvbu.de, skip-cert-verify=true, tfo=false
-vpnclub_42 = trojan, t2.teslacdn1.live, 443, password=4331812b-92ff-47b5-9f32-78b5150e625f, sni=t2.teslacdn1.live, skip-cert-verify=true, tfo=false
-vpnclub_44 = vmess, 51.77.158.169, 2096, username=c92fd902-b5d3-4208-bb48-630b1c7babea, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.77.158.169, skip-cert-verify=true, tfo=false
+vpnclub_1 = vmess, 138.2.49.230, 10021, username=a12e496e-f89a-434a-8011-108846f0e412, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=138.2.49.230, skip-cert-verify=true, tfo=false
+vpnclub_2 = vmess, 51.159.2.152, 8880, username=a2ecce43-c6fb-4978-8b1d-8018ddd9faf4, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub_3 = trojan, 135.148.148.4, 80, password=76fcac80-9943-4eab-8717-0ebebea94b70, sni=us3.trojanvh.xyz, skip-cert-verify=true, tfo=false
+vpnclub_4 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=135.181.235.21, skip-cert-verify=true, tfo=false
+vpnclub_5 = vmess, 146.59.92.219, 2096, username=aca71b13-ec8a-466d-c28f-43516d3cf246, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=146.59.92.219, skip-cert-verify=true, tfo=false
+vpnclub_6 = vmess, 51.159.2.152, 8880, username=a2ecce43-c6fb-4978-8b1d-8018ddd9faf4, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub_7 = vmess, 198.41.208.172, 443, username=20e92881-5fb4-4b05-bc77-57929476dc69, tls=true, vmess-aead=true, ws=true, ws-path=/shirker, sni=198.41.208.172, ws-headers=Host:sg-gcore-2.sharecentre.online, skip-cert-verify=true, tfo=false
+vpnclub_8 = ss, 172.99.188.99, 6379, encrypt-method=aes-256-gcm, password=zDNVedRFPQexG9v, tfo=false
+vpnclub_9 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
+vpnclub_10 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
+vpnclub_11 = vmess, 198.41.208.172, 443, username=20e92881-5fb4-4b05-bc77-57929476dc69, tls=true, vmess-aead=true, ws=true, ws-path=/shirker, sni=198.41.208.172, ws-headers=Host:sg-gcore-2.sharecentre.online, skip-cert-verify=true, tfo=false
+vpnclub_12 = ss, 172.99.188.99, 6379, encrypt-method=aes-256-gcm, password=zDNVedRFPQexG9v, tfo=false
+vpnclub_13 = trojan, 135.148.148.4, 80, password=ee2bccd3-0f30-42d4-86d6-3d393ad230bd, sni=us3.trojanvh.xyz, skip-cert-verify=true, tfo=false
+vpnclub_14 = ss, nl2-ss.sshstores.net, 8388, encrypt-method=chacha20-ietf-poly1305, password=q3a2v, tfo=false
+vpnclub_15 = ss, pl-ss.sshmax.xyz, 8139, encrypt-method=chacha20-ietf-poly1305, password=MDA3MTVm, tfo=false
+vpnclub_16 = ss, 185.162.125.91, 50004, encrypt-method=aes-256-cfb, password=4415934295, tfo=false
+vpnclub_17 = ss, 193.176.86.190, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+vpnclub_18 = ss, 185.104.184.78, 801, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+vpnclub_19 = ss, 185.104.184.78, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false
+vpnclub_20 = ss, 37.235.49.162, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+vpnclub_21 = ss, 119.59.127.144, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false
+vpnclub_22 = ss, 13.49.241.14, 27092, encrypt-method=chacha20-ietf-poly1305, password=pydQILh06AvJ, tfo=false
+vpnclub_23 = vmess, 152.228.217.34, 80, username=efb46cd3-870d-4386-a329-cdb05f03104f, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=152.228.217.34, ws-headers=Host:152.228.217.34, skip-cert-verify=true, tfo=false
+vpnclub_24 = trojan, 107.181.161.163, 443, password=d1478689-439c-4590-b7ce-36e786a02dc3, sni=youtube-bai-piao-wang-zhe-usa.98848.xyz, skip-cert-verify=true, tfo=false
+vpnclub_25 = vmess, 168.119.254.234, 80, username=41990bdc-da75-496d-bad3-ae822ad8be5f, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.254.234, skip-cert-verify=true, tfo=false
+vpnclub_26 = vmess, 65.109.166.220, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=65.109.166.220, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
+vpnclub_28 = vmess, 95.216.157.137, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=95.216.157.137, ws-headers=Host:google.com, skip-cert-verify=true, tfo=false
+vpnclub_29 = vmess, 168.119.254.234, 80, username=41990bdc-da75-496d-bad3-ae822ad8be5f, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=168.119.254.234, skip-cert-verify=true, tfo=false
+vpnclub_30 = vmess, 88.99.216.105, 443, username=aea1d13a-a00e-8469-a2ce-d729fa9f61e1, tls=true, vmess-aead=true, ws=true, ws-path=/pxslvws, sni=88.99.216.105, ws-headers=Host:funbro2.online, skip-cert-verify=true, tfo=false
+vpnclub_31 = vmess, 185.143.233.219, 80, username=5478eda1-42a5-4e51-b555-cba4aefc0665, tls=false, vmess-aead=true, ws=true, ws-path=/ray, sni=185.143.233.219, ws-headers=Host:83.zirogame-6.site, skip-cert-verify=true, tfo=false
+vpnclub_32 = vmess, 88.99.216.105, 443, username=aea1d13a-a00e-8469-a2ce-d729fa9f61e1, tls=true, vmess-aead=true, ws=true, ws-path=/pxslvws, sni=88.99.216.105, ws-headers=Host:funbro2.online, skip-cert-verify=true, tfo=false
+vpnclub_33 = vmess, 51.159.2.152, 80, username=43587dc1-34f1-4254-ab90-56507e72d7a8, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=51.159.2.152, ws-headers=Host:51.159.2.152, skip-cert-verify=true, tfo=false
+vpnclub_34 = vmess, sea.caspian.cf, 2053, username=f3072c34-08fd-422a-afd3-ec3f693cbdf9, tls=true, vmess-aead=true, ws=true, ws-path=/, sni=sea.caspian.cf, ws-headers=Host:sea.caspian.cf, skip-cert-verify=true, tfo=false
+vpnclub_35 = vmess, 5.75.250.163, 2096, username=e175ba8e-f3e8-4ec5-a350-f058537dca8e, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=5.75.250.163, skip-cert-verify=true, tfo=false
+vpnclub_36 = vmess, 162.55.174.135, 80, username=4d9aa6db-705a-4bfa-b05b-8f442c839557, tls=false, vmess-aead=true, ws=true, ws-path=/graphql, sni=162.55.174.135, skip-cert-verify=true, tfo=false
+vpnclub_38 = vmess, 135.181.195.57, 53402, username=85dd4549-5847-474d-e414-45249a97d076, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=135.181.195.57, skip-cert-verify=true, tfo=false
 HK = direct
 SG = direct
 TW = direct
@@ -57,7 +54,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub_1,vpnclub_2,vpnclub_3,vpnclub_4,vpnclub_5,vpnclub_6,vpnclub_7,vpnclub_8,vpnclub_9,vpnclub_11,vpnclub_12,vpnclub_13,vpnclub_14,vpnclub_15,vpnclub_16,vpnclub_17,vpnclub_18,vpnclub_19,vpnclub_20,vpnclub_21,vpnclub_23,vpnclub_24,vpnclub_25,vpnclub_26,vpnclub_27,vpnclub_28,vpnclub_29,vpnclub_30,vpnclub_31,vpnclub_32,vpnclub_33,vpnclub_34,vpnclub_35,vpnclub_36,vpnclub_38,vpnclub_40,vpnclub_41,vpnclub_42,vpnclub_44
+Proxies = select,HK,SG,JP,US,TW,vpnclub_1,vpnclub_2,vpnclub_3,vpnclub_4,vpnclub_5,vpnclub_6,vpnclub_7,vpnclub_8,vpnclub_9,vpnclub_10,vpnclub_11,vpnclub_12,vpnclub_13,vpnclub_14,vpnclub_15,vpnclub_16,vpnclub_17,vpnclub_18,vpnclub_19,vpnclub_20,vpnclub_21,vpnclub_22,vpnclub_23,vpnclub_24,vpnclub_25,vpnclub_26,vpnclub_28,vpnclub_29,vpnclub_30,vpnclub_31,vpnclub_32,vpnclub_33,vpnclub_34,vpnclub_35,vpnclub_36,vpnclub_38
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
