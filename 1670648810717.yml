@@ -18,349 +18,229 @@ dns:
     - 208.67.220.220
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: vpnclub_1, server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_106, server: freesaqqanet.xyz, port: 32625, type: vmess, uuid: eec9b35a-a2d3-4fa3-b402-a23e80fb8b37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [freesaqqanet.xyz]}}, udp: true}
-  - {name: vpnclub_90, server: 5.45.78.209, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_84, server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_99, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: vpnclub_53, server: upload.soft98.download, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, sni: upload.soft98.download, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_11, server: 47.242.146.123, port: 26237, type: vmess, uuid: c8f5a5fd-0a69-4cf6-8fa6-2ea02171d6a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_76, server: 47.243.23.80, port: 20256, type: vmess, uuid: f707fd08-f017-4b9b-aeae-da908b34e313, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_91, server: 8.218.86.59, port: 36536, type: vmess, uuid: ae3c56f1-c243-4373-bd65-07fd0569c455, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_22, server: 185.160.26.91, port: 1663, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: vpnclub_23, server: 185.160.26.91, port: 1662, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: vpnclub_88, server: 185.160.26.91, port: 1661, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
+  - {name: vpnclub_39, server: 139.99.133.225, port: 80, type: vmess, uuid: 625b51df-fc17-47f3-aea4-3bc5f882ed56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.133.225}}, udp: true}
+  - {name: vpnclub_2, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: false, udp: true}
+  - {name: vpnclub_28, server: 185.160.26.91, port: 1662, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
+  - {name: vpnclub_27, server: 185.160.26.91, port: 1663, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
+  - {name: vpnclub_29, server: 185.160.26.91, port: 1661, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
   - {name: vpnclub_30, server: 185.160.26.91, port: 1664, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: vpnclub_26, server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_31, server: 51.77.158.169, port: 2096, type: vmess, uuid: c92fd902-b5d3-4208-bb48-630b1c7babea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_85, server: 8.218.105.233, port: 46148, type: vmess, uuid: 5072f86c-2a3f-430e-861f-bfd965da9b79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_81, server: 47.242.17.241, port: 44207, type: vmess, uuid: 77c6c520-2d37-495a-a954-c8d056e89053, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_110, server: nl.gongyiyun.cf, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: nl.gongyiyun.cf}}, udp: true}
-  - {name: vpnclub_43, server: 5.75.250.163, port: 2096, type: vmess, uuid: e175ba8e-f3e8-4ec5-a350-f058537dca8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_102, server: 8.218.81.81, port: 37003, type: vmess, uuid: 61ef9730-05d4-435d-bdaf-a10c12c7e5c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_77, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: vpnclub_51, server: t1.teslacdn1.live, port: 443, type: trojan, password: dc21bdbf-04c0-4a7e-8cb4-3d5af39ddf13, sni: t1.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_108, server: v7germany.ronaghi.tk, port: 443, type: vmess, uuid: b6ed2bcb-b0da-4fca-a74e-4360b25bbfbc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v7germany.ronaghi.tk}}, udp: true}
-  - {name: vpnclub_92, server: 8.218.72.12, port: 64862, type: vmess, uuid: b9adc9e5-4821-4c9c-ac05-43b3a8fad445, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_103, server: 147.135.208.210, port: 80, type: vmess, uuid: 7e194a05-a9d8-42fa-a8ad-f867057fba74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 147.135.208.210}}, udp: true}
-  - {name: vpnclub_94, server: 8.210.104.101, port: 61898, type: vmess, uuid: d1b4c525-f298-4c8c-9f8f-dd87dc32df0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_66, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sg-01.tiktokcdn.top, skip-cert-verify: false, udp: true}
-  - {name: vpnclub_104, server: 188.116.22.171, port: 80, type: vmess, uuid: 3c6c608d-68c0-4782-86ac-98ea1ada3a25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 188.116.22.171}}, udp: true}
-  - {name: vpnclub_71, server: 65.109.166.126, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
-  - {name: vpnclub_72, server: wearestand.ddns.net, port: 443, type: vmess, uuid: 799aba83-7d70-4b60-8815-d3bb600309bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wearestandvws, headers: {Host: wearestand.ddns.net}}, udp: true}
-  - {name: vpnclub_107, server: 65.109.143.55, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_97, server: 54.36.162.144, port: 80, type: vmess, uuid: 6dc64bae-8821-4c94-a094-68bf5d1d28c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 54.36.162.144}}, udp: true}
-  - {name: vpnclub_83, server: 8.218.64.146, port: 61213, type: vmess, uuid: 22b0bc98-caf1-4519-9140-c26023df64d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: vpnclub_87, server: 139.99.135.182, port: 80, type: vmess, uuid: 8be7fd79-5920-4eae-9385-68a8d94bc1ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.135.182}}, udp: true}
-  - {name: vpnclub_95, server: jp02-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: 2cac25f2-8d71-39e3-af71-f8db0c83ff72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.srthdw.art}}, udp: true}
-  - {name: vpnclub_98, server: 45.128.53.169, port: 17800, type: vmess, uuid: 30297ab2-ceef-48ae-838f-9ca4bf625da8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnclub_100, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
-  - {name: vpnclub_105, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: vpnclub_32, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: vpnclub_33, server: t1.teslacdn1.live, port: 443, type: trojan, password: dc21bdbf-04c0-4a7e-8cb4-3d5af39ddf13, sni: t1.teslacdn1.live, skip-cert-verify: false, udp: true}
+  - {name: vpnclub_40, server: 38.91.102.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: vpnclub_10, server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: vpnclub_25, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: vpnclub_34, server: v7germany.ronaghi.tk, port: 443, type: vmess, uuid: b6ed2bcb-b0da-4fca-a74e-4360b25bbfbc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v7germany.ronaghi.tk}}, udp: true}
+  - {name: vpnclub_26, server: upload.soft98.download, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, sni: upload.soft98.download, skip-cert-verify: false, udp: true}
+  - {name: vpnclub_16, server: 162.55.223.141, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: vpnclub_21, server: 5.75.187.171, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: vpnclub_17, server: 38.91.102.30, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: vpnclub_18, server: 38.91.102.30, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: vpnclub_19, server: 38.91.102.30, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: vpnclub_20, server: 38.91.102.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: vpnclub_23, server: biatokanal.tell-jokardoband.space, port: 37594, type: vmess, uuid: d3115cf7-cb2a-4e62-dafe-9c19bf15522b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [biatokanal.tell-jokardoband.space]}}, udp: true}
+  - {name: vpnclub_24, server: 167.235.154.195, port: 51189, type: vmess, uuid: 4418df09-977e-4df3-8e41-a8259876c3a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: vpnclub_31, server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: vpnclub_38, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sg-01.tiktokcdn.top, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -383,44 +263,29 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnclub_1
-      - vpnclub_106
-      - vpnclub_90
-      - vpnclub_84
-      - vpnclub_99
-      - vpnclub_53
-      - vpnclub_11
-      - vpnclub_76
-      - vpnclub_91
-      - vpnclub_22
-      - vpnclub_23
-      - vpnclub_88
+      - vpnclub_39
+      - vpnclub_2
+      - vpnclub_28
+      - vpnclub_27
+      - vpnclub_29
       - vpnclub_30
+      - vpnclub_32
+      - vpnclub_33
+      - vpnclub_40
+      - vpnclub_10
+      - vpnclub_25
+      - vpnclub_34
       - vpnclub_26
+      - vpnclub_16
+      - vpnclub_21
+      - vpnclub_17
+      - vpnclub_18
+      - vpnclub_19
+      - vpnclub_20
+      - vpnclub_23
+      - vpnclub_24
       - vpnclub_31
-      - vpnclub_85
-      - vpnclub_81
-      - vpnclub_110
-      - vpnclub_43
-      - vpnclub_102
-      - vpnclub_77
-      - vpnclub_51
-      - vpnclub_108
-      - vpnclub_92
-      - vpnclub_103
-      - vpnclub_94
-      - vpnclub_66
-      - vpnclub_104
-      - vpnclub_71
-      - vpnclub_72
-      - vpnclub_107
-      - vpnclub_97
-      - vpnclub_83
-      - vpnclub_87
-      - vpnclub_95
-      - vpnclub_98
-      - vpnclub_100
-      - vpnclub_105
+      - vpnclub_38
 rule-providers:
   iran:
     type: http
