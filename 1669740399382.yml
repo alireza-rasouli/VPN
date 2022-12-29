@@ -18,341 +18,237 @@ dns:
     - 208.67.220.220
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: VPNCLUB_1, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: VPNCLUB_35, server: 5.45.78.209, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: VPNCLUB_45, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: VPNCLUB_42, server: 185.160.26.91, port: 1663, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: VPNCLUB_44, server: 185.160.26.91, port: 1664, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: VPNCLUB_41, server: 185.160.26.91, port: 1662, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: VPNCLUB_43, server: 185.160.26.91, port: 1661, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: VPNCLUB_8, server: 146.59.92.219, port: 2096, type: vmess, uuid: aca71b13-ec8a-466d-c28f-43516d3cf246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: VPNCLUB_55, server: 38.91.102.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: VPNCLUB_52, server: 38.91.102.30, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: VPNCLUB_29, server: nl.gongyiyun.cf, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: nl.gongyiyun.cf}}, udp: true}
-  - {name: VPNCLUB_50, server: v7germany.ronaghi.tk, port: 443, type: vmess, uuid: b6ed2bcb-b0da-4fca-a74e-4360b25bbfbc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v7germany.ronaghi.tk}}, udp: true}
-  - {name: VPNCLUB_48, server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: VPNCLUB_47, server: 38.91.102.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: VPNCLUB_15, server: 38.91.107.216, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: VPNCLUB_51, server: upload.soft98.download, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, sni: upload.soft98.download, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_49, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: VPNCLUB_46, server: t1.teslacdn1.live, port: 443, type: trojan, password: dc21bdbf-04c0-4a7e-8cb4-3d5af39ddf13, sni: t1.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_38, server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_20, server: 8.218.94.182, port: 24520, type: vmess, uuid: 3ae2a476-6929-4544-8037-1c79f0dfa701, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: VPNCLUB_21, server: 5.75.188.16, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
-  - {name: VPNCLUB_22, server: 45.82.139.230, port: 20703, type: vmess, uuid: 8e71e494-7b6c-4339-8b91-7d5e860bcc0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: VPNCLUB_37, server: freesaqqanet.xyz, port: 32625, type: vmess, uuid: eec9b35a-a2d3-4fa3-b402-a23e80fb8b37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [freesaqqanet.xyz]}}, udp: true}
-  - {name: VPNCLUB_25, server: wearestandgroup.ddns.net, port: 1428, type: trojan, password: rDmY0JDsCilS_W007s7SzCHCWJqFpkicfz66c0tv9-Qd7Eb7, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_26, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
-  - {name: VPNCLUB_27, server: join-bede.unlimiteddev.tk, port: 80, type: vmess, uuid: b2a356d3-5d3d-41f5-cebe-a560b460cd30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: join-bede.unlimiteddev.tk}}, udp: true}
-  - {name: VPNCLUB_28, server: resonance-vpn.net, port: 443, type: vmess, uuid: 3bfc99c0-a816-4286-813c-6731a1ba8c78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /in-vpn-majanist-vws, headers: {Host: resonance-vpn.net}}, udp: true}
-  - {name: VPNCLUB_31, server: 20.205.4.127, port: 443, type: trojan, password: 55f25339-8c91-43a0-85f8-4d27274f6ff7, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_32, server: 195.201.32.246, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: VPNCLUB_34, server: ap-northeast-1.openssl3.com, port: 443, type: trojan, password: tune7jerky7HAYRICK, sni: ap-northeast-1.openssl3.com, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_36, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: VPNCLUB_39, server: 116.202.29.201, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: VPNCLUB_40, server: eu-east-ruo.openssl3.com, port: 443, type: trojan, password: 9KogHwaY7hVD, sni: eu-east-ruo.openssl3.com, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_53, server: 38.91.102.30, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: VPNCLUB_54, server: 38.91.102.30, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: VPNCLUB_56, server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: VPNCLUB_57, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sg-01.tiktokcdn.top, skip-cert-verify: false, udp: true}
+  - {name: t.me/wbnet_1, server: 146.59.92.219, port: 2096, type: vmess, uuid: aca71b13-ec8a-466d-c28f-43516d3cf246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: t.me/wbnet_2, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: t.me/wbnet_3, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: t.me/wbnet_4, server: 38.91.102.30, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: t.me/wbnet_5, server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: t.me/wbnet_6, server: 116.202.14.239, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_7, server: 5.45.78.209, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: t.me/wbnet_8, server: join-bede.unlimiteddev.tk, port: 80, type: vmess, uuid: fe18279a-1b81-4582-ab0c-423249e59dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: join-bede.unlimiteddev.tk}}, udp: true}
+  - {name: t.me/wbnet_9, server: de-v.sshmax.xyz, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
+  - {name: t.me/wbnet_10, server: 167.235.154.195, port: 51189, type: vmess, uuid: 4418df09-977e-4df3-8e41-a8259876c3a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_11, server: 5.75.231.27, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_12, server: 88.99.33.233, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_13, server: 94.130.32.90, port: 443, type: vmess, uuid: 0e3a97f6-721f-028d-2406-12dd0b8f4eb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /gdckvws, headers: {Host: sadlife5.online}}, udp: true}
+  - {name: t.me/wbnet_14, server: 88.99.33.233, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_15, server: 162.55.167.209, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /telegram-id-@privatevpns, headers: {Host: google.com}}, udp: true}
+  - {name: t.me/wbnet_16, server: 191.101.91.61, port: 10121, type: vmess, uuid: b7a38bfd-7265-4746-967f-9a01ca631ee3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_17, server: 88.99.33.233, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_18, server: 88.99.33.233, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_19, server: 139.84.231.244, port: 80, type: vmess, uuid: 85c40719-6e1f-4d1c-9a6a-24586bdab299, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.84.231.244}}, udp: true}
+  - {name: t.me/wbnet_20, server: de-v.sshmax.xyz, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
+  - {name: t.me/wbnet_21, server: 20.205.4.127, port: 443, type: trojan, password: 55f25339-8c91-43a0-85f8-4d27274f6ff7, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: t.me/wbnet_22, server: free1.zero-group.ml, port: 2052, type: vmess, uuid: 6a149396-55a9-42cc-8c61-e7fefa303f90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: free1.zero-group.ml}}, udp: true}
+  - {name: t.me/wbnet_23, server: 78.47.93.40, port: 80, type: vmess, uuid: 2345e3aa-bbf8-47af-b6d4-e300a895c510, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: t.me/wbnet_24, server: sg.stablize.top, port: 443, type: trojan, password: 7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -375,43 +271,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VPNCLUB_1
-      - VPNCLUB_35
-      - VPNCLUB_45
-      - VPNCLUB_42
-      - VPNCLUB_44
-      - VPNCLUB_41
-      - VPNCLUB_43
-      - VPNCLUB_8
-      - VPNCLUB_55
-      - VPNCLUB_52
-      - VPNCLUB_29
-      - VPNCLUB_50
-      - VPNCLUB_48
-      - VPNCLUB_47
-      - VPNCLUB_15
-      - VPNCLUB_51
-      - VPNCLUB_49
-      - VPNCLUB_46
-      - VPNCLUB_38
-      - VPNCLUB_20
-      - VPNCLUB_21
-      - VPNCLUB_22
-      - VPNCLUB_37
-      - VPNCLUB_25
-      - VPNCLUB_26
-      - VPNCLUB_27
-      - VPNCLUB_28
-      - VPNCLUB_31
-      - VPNCLUB_32
-      - VPNCLUB_34
-      - VPNCLUB_36
-      - VPNCLUB_39
-      - VPNCLUB_40
-      - VPNCLUB_53
-      - VPNCLUB_54
-      - VPNCLUB_56
-      - VPNCLUB_57
+      - t.me/wbnet_1
+      - t.me/wbnet_2
+      - t.me/wbnet_3
+      - t.me/wbnet_4
+      - t.me/wbnet_5
+      - t.me/wbnet_6
+      - t.me/wbnet_7
+      - t.me/wbnet_8
+      - t.me/wbnet_9
+      - t.me/wbnet_10
+      - t.me/wbnet_11
+      - t.me/wbnet_12
+      - t.me/wbnet_13
+      - t.me/wbnet_14
+      - t.me/wbnet_15
+      - t.me/wbnet_16
+      - t.me/wbnet_17
+      - t.me/wbnet_18
+      - t.me/wbnet_19
+      - t.me/wbnet_20
+      - t.me/wbnet_21
+      - t.me/wbnet_22
+      - t.me/wbnet_23
+      - t.me/wbnet_24
 rule-providers:
   iran:
     type: http
