@@ -11,21 +11,26 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub_1 = trojan, 141.95.61.209, 1145, password=55e51cd3-cf98-4cb3-aaab-a72044437df3, sni=mci.ir, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_2 = vmess, vip.behnammobile.fun, 8080, username=23a4b032-c1eb-40bb-f79a-1d09ff73e327, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=vip.behnammobile.fun, ws-headers=Host:vip.behnammobile.fun, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_3 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_4 = ss, 38.91.102.30, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub_5 = vmess, join-bede.unlimiteddev.tk, 80, username=fe18279a-1b81-4582-ab0c-423249e59dbf, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=join-bede.unlimiteddev.tk, ws-headers=Host:join-bede.unlimiteddev.tk, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_6 = trojan, sg.stablize.top, 443, password=7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_7 = vmess, 95.217.234.12, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=google.com, ws-headers=Host:google.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_9 = vmess, 65.21.3.196, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=google.com, ws-headers=Host:google.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_10 = vmess, 146.59.92.219, 2096, username=aca71b13-ec8a-466d-c28f-43516d3cf246, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_12 = ss, s4.shadoshop.ga, 8090, encrypt-method=aes-256-gcm, password=PCnnH6SQSnfoS27, tfo=false, udp-relay=true
-vpnclub_16 = ss, series1.samanehha.co, 443, encrypt-method=chacha20-ietf-poly1305, password=OPIGHSeIZVBS7hDX, tfo=false, udp-relay=true
-vpnclub_18 = trojan, usa.stablize.top, 443, password=7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_20 = vmess, de-v.sshmax.xyz, 80, username=5668ff97-631f-4602-a13f-b56552c67abe, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=de-v.sshmax.xyz, ws-headers=Host:de-v.sshmax.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_21 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub_22 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
+@wbnet_1 = trojan, sg.stablize.top, 443, password=7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_5 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+@wbnet_6 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
+@wbnet_8 = ss, 38.91.107.72, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false, udp-relay=true
+@wbnet_9 = vmess, in-v2ray.freevmess.com, 8443, username=52d5e8b5-661b-440e-cd79-4bda8664d3f3, tls=true, vmess-aead=true, tls13=false, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_10 = trojan, 20.205.4.127, 443, password=ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni=freecloud.windowsupdate1.com, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_11 = trojan, sg-ovh.tjvpn.org, 443, password=f05aa2e0-886e-11ed-b132-225401db9d57, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_12 = vmess, 51.75.171.211, 80, username=989b7bb6-3734-4723-bebe-2c3ff7423e46, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.75.171.211, ws-headers=Host:51.75.171.211, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_13 = vmess, 5.45.78.209, 8080, username=e3dba91f-b31c-473a-8f17-92e1dedda38f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_18 = ss, s4.shadoshop.ga, 8090, encrypt-method=aes-256-gcm, password=PCnnH6SQSnfoS27, tfo=false, udp-relay=true
+@wbnet_19 = vmess, nl.gongyiyun.cf, 8080, username=e3dba91f-b31c-473a-8f17-92e1dedda38f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=nl.gongyiyun.cf, ws-headers=Host:nl.gongyiyun.cf, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_20 = trojan, hinet.mjt001.com, 443, password=500b1c7c-caf0-481c-8c7d-3eeb84e70ad4, sni=hinet.mjt001.com, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_21 = vmess, 159.69.55.190, 2209, username=41148bef-6693-4fa1-d74a-375846574b06, tls=false, vmess-aead=true, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_22 = vmess, down.gooddecisionforyou.best, 42922, username=b2515619-a06d-46f3-85ca-40a1d8b37a6d, tls=true, vmess-aead=true, tls13=false, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_23 = vmess, down.gooddecisionforyou.best, 59532, username=b7efe87a-f9ab-45b1-bf0b-a16ec65a00c7, tls=true, vmess-aead=true, tls13=false, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_24 = vmess, 135.181.35.169, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=google.com, ws-headers=Host:google.com, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_28 = vmess, 165.227.175.88, 28164, username=eba8ccf5-5ab9-4b6b-de4b-83ab920c1005, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=165.227.175.88, ws-headers=Host:165.227.175.88, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_29 = vmess, 95.216.188.45, 80, username=2aac77de-b3e4-4017-845c-ca1380f2e8d0, tls=false, vmess-aead=true, ws=true, ws-path=/telegram-id-@privatevpns, sni=google.com, ws-headers=Host:google.com, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_30 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+@wbnet_32 = ss, series1.samanehha.co, 443, encrypt-method=chacha20-ietf-poly1305, password=OPIGHSeIZVBS7hDX, tfo=false, udp-relay=true
 HK = direct
 SG = direct
 TW = direct
@@ -33,7 +38,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub_1,vpnclub_2,vpnclub_3,vpnclub_4,vpnclub_5,vpnclub_6,vpnclub_7,vpnclub_9,vpnclub_10,vpnclub_12,vpnclub_16,vpnclub_18,vpnclub_20,vpnclub_21,vpnclub_22
+Proxies = select,HK,SG,JP,US,TW,@wbnet_1,@wbnet_5,@wbnet_6,@wbnet_8,@wbnet_9,@wbnet_10,@wbnet_11,@wbnet_12,@wbnet_13,@wbnet_18,@wbnet_19,@wbnet_20,@wbnet_21,@wbnet_22,@wbnet_23,@wbnet_24,@wbnet_28,@wbnet_29,@wbnet_30,@wbnet_32
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
