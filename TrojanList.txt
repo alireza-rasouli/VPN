@@ -11,12 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub1/2_2 = trojan, sg.stablize.top, 443, password=7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/2_5 = trojan, 20.205.4.127, 443, password=ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni=freecloud.windowsupdate1.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/2_6 = ss, 38.91.102.30, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub1/2_7 = ss, 38.91.102.72, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
-vpnclub1/2_8 = ss, 38.91.107.216, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false, udp-relay=true
-vpnclub1/2_12 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+vpnclub_2 = ss, 38.91.101.242, 1034, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false, udp-relay=true
+vpnclub_5 = trojan, login.progbyrazyar.ir, 664, password=hmNgJsb8JR, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub_7 = trojan, 141.95.61.209, 1145, password=55e51cd3-cf98-4cb3-aaab-a72044437df3, sni=mci.ir, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub_14 = vmess, 51.89.138.147, 80, username=0f95cb36-4f7d-45be-b44d-d7a4f221ad49, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.89.138.147, ws-headers=Host:51.89.138.147, skip-cert-verify=false, tfo=false, udp-relay=true
 HK = direct
 SG = direct
 TW = direct
@@ -24,7 +22,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub1/2_2,vpnclub1/2_5,vpnclub1/2_6,vpnclub1/2_7,vpnclub1/2_8,vpnclub1/2_12
+Proxies = select,HK,SG,JP,US,TW,vpnclub_2,vpnclub_5,vpnclub_7,vpnclub_14
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
