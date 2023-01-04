@@ -18,213 +18,237 @@ dns:
     - 208.67.220.220
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "@wbnet_2", server: sg.stablize.top, port: 443, type: trojan, password: 7178ea83-2712-4707-8196-6868418467fd, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_5", server: 20.205.4.127, port: 443, type: trojan, password: ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni: freecloud.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_6", server: t2.teslacdn1.live, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_32", server: 185.160.26.91, port: 1663, type: ss, cipher: chacha20-ietf-poly1305, password: Xs9ORT4j65b8HreZrg0p, udp: true}
-  - {name: "@wbnet_34", server: s4.shadoshop.ga, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "@wbnet_9", server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "@wbnet_18", server: 38.91.102.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: "@wbnet_11", server: 38.91.107.216, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "@wbnet_12", server: 47.242.17.241, port: 44207, type: vmess, uuid: 77c6c520-2d37-495a-a954-c8d056e89053, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_16", server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, sni: mci.ir, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_22", server: 51.89.22.228, port: 443, type: trojan, password: dc21bdbf-04c0-4a7e-8cb4-3d5af39ddf13, sni: t1.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_26", server: 5.75.194.112, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_17", server: 47.242.146.123, port: 26237, type: vmess, uuid: c8f5a5fd-0a69-4cf6-8fa6-2ea02171d6a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_29", server: 51.75.77.146, port: 443, type: trojan, password: 4331812b-92ff-47b5-9f32-78b5150e625f, sni: t2.teslacdn1.live, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_21", server: 5.75.194.116, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_24", server: 135.148.148.4, port: 80, type: trojan, password: 76fcac80-9943-4eab-8717-0ebebea94b70, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_28", server: 5.75.194.113, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_27", server: 5.75.194.110, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@wbnet_30", server: us2.trojanvh.xyz, port: 80, type: trojan, password: aa6eb272-1d8d-4461-9687-85ddbab1adb0, sni: us2.trojanvh.xyz, skip-cert-verify: false, udp: true}
-  - {name: "@wbnet_36", server: 38.91.102.30, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "@wbnet_37", server: upload.soft98.download, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_1", server: 135.148.148.4, port: 80, type: trojan, password: 76fcac80-9943-4eab-8717-0ebebea94b70, sni: us3.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_2", server: 51.77.158.169, port: 2096, type: vmess, uuid: c92fd902-b5d3-4208-bb48-630b1c7babea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet2/4_11", server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_4", server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet2/4_5", server: 5.75.198.13, port: 8080, type: vmess, uuid: 15f397ed-1863-41dd-ccec-cb5113df08e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@wbnet2/4_6", server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, sni: mci.ir, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_7", server: 65.109.184.127, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_13", server: 168.119.246.88, port: 443, type: vmess, uuid: 2e7c2cce-fc24-4bc2-8e26-9603157430ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_9", server: ir.mimininim.site, port: 48294, type: vmess, uuid: e5690130-12b3-4f44-a4cd-ba983a936d69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [ir.mimininim.site]}}, udp: true}
+  - {name: "@wbnet2/4_10", server: 157.230.36.235, port: 80, type: vmess, uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: 157.230.36.235}}, udp: true}
+  - {name: "@wbnet2/4_12", server: 8.218.81.81, port: 37003, type: vmess, uuid: 61ef9730-05d4-435d-bdaf-a10c12c7e5c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_21", server: 47.243.23.80, port: 20256, type: vmess, uuid: f707fd08-f017-4b9b-aeae-da908b34e313, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_23", server: series1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: OPIGHSeIZVBS7hDX, udp: true}
+  - {name: "@wbnet2/4_16", server: gcorepl.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Falling42gcoreplnode, headers: {Host: gcorepl.sylu.cyou}}, udp: true}
+  - {name: "@wbnet2/4_17", server: 51.77.212.145, port: 80, type: vmess, uuid: 3e9cec54-c121-4584-b758-787388e2f792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
+  - {name: "@wbnet2/4_18", server: 47.242.146.123, port: 26237, type: vmess, uuid: c8f5a5fd-0a69-4cf6-8fa6-2ea02171d6a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_19", server: 168.138.206.141, port: 80, type: vmess, uuid: ad05e01f-c2c0-41da-e79c-ff68237317f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_25", server: ara-00d.click, port: 40196, type: vmess, uuid: ff775de8-3d8d-4847-dd51-4e15511d2553, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [ara-00d.click]}}, udp: true}
+  - {name: "@wbnet2/4_22", server: 5.78.56.48, port: 80, type: vmess, uuid: 6a657905-4461-4ad7-b43a-5da6c9b9a735, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_24", server: dark.viporg12345.info, port: 18535, type: trojan, password: cjmqh4iMef, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_26", server: 65.109.186.143, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "@wbnet2/4_27", server: 38.91.101.242, port: 1034, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
+  - {name: "@wbnet2/4_28", server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: "@wbnet2/4_30", server: 65.109.186.2, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -247,27 +271,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "@wbnet_2"
-      - "@wbnet_5"
-      - "@wbnet_6"
-      - "@wbnet_32"
-      - "@wbnet_34"
-      - "@wbnet_9"
-      - "@wbnet_18"
-      - "@wbnet_11"
-      - "@wbnet_12"
-      - "@wbnet_16"
-      - "@wbnet_22"
-      - "@wbnet_26"
-      - "@wbnet_17"
-      - "@wbnet_29"
-      - "@wbnet_21"
-      - "@wbnet_24"
-      - "@wbnet_28"
-      - "@wbnet_27"
-      - "@wbnet_30"
-      - "@wbnet_36"
-      - "@wbnet_37"
+      - "@wbnet2/4_1"
+      - "@wbnet2/4_2"
+      - "@wbnet2/4_11"
+      - "@wbnet2/4_4"
+      - "@wbnet2/4_5"
+      - "@wbnet2/4_6"
+      - "@wbnet2/4_7"
+      - "@wbnet2/4_13"
+      - "@wbnet2/4_9"
+      - "@wbnet2/4_10"
+      - "@wbnet2/4_12"
+      - "@wbnet2/4_21"
+      - "@wbnet2/4_23"
+      - "@wbnet2/4_16"
+      - "@wbnet2/4_17"
+      - "@wbnet2/4_18"
+      - "@wbnet2/4_19"
+      - "@wbnet2/4_25"
+      - "@wbnet2/4_22"
+      - "@wbnet2/4_24"
+      - "@wbnet2/4_26"
+      - "@wbnet2/4_27"
+      - "@wbnet2/4_28"
+      - "@wbnet2/4_30"
 rule-providers:
   iran:
     type: http
