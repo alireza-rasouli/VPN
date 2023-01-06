@@ -18,229 +18,237 @@ dns:
     - 208.67.220.220
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: wbnet2/5_1, server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, sni: mci.ir, skip-cert-verify: false, udp: true}
-  - {name: wbnet2/5_23, server: 193.70.85.191, port: 80, type: vmess, uuid: ed579687-5171-46ad-a89a-bd06af52705d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: Irancell.ir}}, udp: true}
-  - {name: wbnet2/5_40, server: 5.75.232.188, port: 80, type: vmess, uuid: 49693f67-7bed-40b4-9cd8-904d2fe49ef6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_30, server: kanal.tell-jokardoband.space, port: 37594, type: vmess, uuid: c6624688-1b2a-491c-aabe-239fbc0fa2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [kanal.tell-jokardoband.space]}}, udp: true}
-  - {name: wbnet2/5_5, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: wbnet2/5_6, server: 157.230.36.235, port: 80, type: vmess, uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: 157.230.36.235}}, udp: true}
-  - {name: wbnet2/5_22, server: jump.bungeejumpingistanbul.com, port: 443, type: trojan, password: !<str> 1672752854, sni: jump.bungeejumpingistanbul.com, skip-cert-verify: false, udp: true}
-  - {name: wbnet2/5_8, server: 198.244.232.39, port: 2096, type: vmess, uuid: df46384b-1ad5-40a6-812e-48d60fb80283, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: wbnet2/5_9, server: 159.203.18.119, port: 80, type: vmess, uuid: 7118fddb-3e01-4932-a01d-6fb6799d2876, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 159.203.18.119}}, udp: true}
-  - {name: wbnet2/5_11, server: 51.77.158.169, port: 2096, type: vmess, uuid: c92fd902-b5d3-4208-bb48-630b1c7babea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: wbnet2/5_12, server: 185.143.233.229, port: 80, type: vmess, uuid: b7480894-f02a-4152-a0d5-b18817dd4f66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 93.zirogame-50.site}}, udp: true}
-  - {name: wbnet2/5_13, server: 107.189.31.139, port: 80, type: vmess, uuid: 83ad9e30-7d98-42f3-b9ab-8ca17b35d51c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 107.189.31.139}}, udp: true}
-  - {name: wbnet2/5_14, server: 5.75.238.177, port: 40439, type: vmess, uuid: d5ee5dba-9efe-43ce-89e6-efc0ee41a8e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_35, server: 5.161.98.155, port: 50417, type: vmess, uuid: 3cefdbcf-c543-43e0-e4a5-825ea828ad2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_38, server: 65.109.186.149, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_34, server: 65.109.186.147, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_41, server: 65.109.186.141, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_31, server: 8.210.104.101, port: 61898, type: vmess, uuid: d1b4c525-f298-4c8c-9f8f-dd87dc32df0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_26, server: 5.75.129.202, port: 55039, type: vmess, uuid: 151e56df-edd0-43ef-ddc8-f0108a05a792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: wbnet2/5_27, server: codepen.io, port: 2087, type: vmess, uuid: 290f0561-c92a-42f4-b191-5ec2fa994ce3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: codepen.io, grpc-opts: {grpc-service-name: /}, udp: true}
-  - {name: wbnet2/5_28, server: 96.43.86.4, port: 80, type: vmess, uuid: 3fd6c07a-a946-4c3c-8565-3bb35d0096c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_33, server: 65.109.186.138, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: wbnet2/5_39, server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 vpnclub_🇭🇰_HK_香港_16, server: 20.205.4.127, port: 443, type: trojan, password: ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni: freecloud.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 vpnclub_🇺🇸_US_美国_2, server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4, server: xyz.outlawanonymouse.ml, port: 8080, type: trojan, password: 2QyiwBOzNF, sni: portfolio.outlawanonymouse.ml, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5, server: xyz.outlawanonymouse.ml, port: 60, type: vmess, uuid: cd1a1c65-ca5a-4792-8143-52523be6d545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [xyz.outlawanonymouse.ml]}}, udp: true}
+  - {name: 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6, server: 143.198.218.9, port: 60, type: vmess, uuid: 30b7937b-c03c-49e6-d384-f6a51233e9d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇺🇸 vpnclub_🇺🇸_US_美国_11, server: 38.91.102.30, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_21, server: jump.bungeejumpingistanbul.com, port: 443, type: trojan, password: !<str> 1672752854, sni: jump.bungeejumpingistanbul.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 vpnclub_🇺🇸_US_美国_9, server: 96.43.86.4, port: 80, type: vmess, uuid: 3fd6c07a-a946-4c3c-8565-3bb35d0096c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇭🇰 vpnclub_🇭🇰_HK_香港_10, server: 47.243.23.80, port: 20256, type: vmess, uuid: f707fd08-f017-4b9b-aeae-da908b34e313, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇭🇰 vpnclub_🇭🇰_HK_香港_12, server: hk01.trojanyyds.xyz, port: 443, type: trojan, password: ead8ca32-2d5a-4386-94c1-28255cbef252, sni: hk01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_24, server: 5.75.232.188, port: 80, type: vmess, uuid: 49693f67-7bed-40b4-9cd8-904d2fe49ef6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17, server: 149.56.132.41, port: 80, type: trojan, password: 89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni: ca1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18, server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, port: 7204, type: vmess, uuid: 9c52776b-4b01-4ae6-9f7d-25cd4725e13c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sg1, headers: {Host: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org}}, udp: true}
+  - {name: 🇭🇰 vpnclub_🇭🇰_HK_香港_19, server: 8.218.81.81, port: 37003, type: vmess, uuid: 61ef9730-05d4-435d-bdaf-a10c12c7e5c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇵🇱 vpnclub_🇵🇱_PL_波兰_20, server: 51.83.186.142, port: 80, type: trojan, password: 2959e4f7-7589-4a40-9b96-1be750ac7845, sni: pl1.trojanvh.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23, server: 135.181.235.21, port: 12951, type: vmess, uuid: 18827895-b647-4570-81e2-de3bd795fa04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 vpnclub_🇺🇸_US_美国_25, server: 3.133.13.247, port: 80, type: vmess, uuid: 4c57c4d8-1f3d-426f-a0c7-4ee8c7e6ec79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_26, server: blog.outlawanonymouse.ml, port: 8080, type: vmess, uuid: 30260da8-806e-4f57-acb5-be784c792f51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: blog.outlawanonymouse.ml}}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_35, server: 5.75.204.243, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_28, server: 5.75.192.131, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_30, server: 167.235.48.1, port: 42187, type: vmess, uuid: 7eeaca6a-91e8-4d43-c7a3-846f8b06348f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_36, server: 5.75.177.12, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_37, server: 195.201.123.60, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇩🇪 vpnclub_🇩🇪_DE_德国_38, server: 78.46.182.116, port: 443, type: vmess, uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -263,29 +271,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - wbnet2/5_1
-      - wbnet2/5_23
-      - wbnet2/5_40
-      - wbnet2/5_30
-      - wbnet2/5_5
-      - wbnet2/5_6
-      - wbnet2/5_22
-      - wbnet2/5_8
-      - wbnet2/5_9
-      - wbnet2/5_11
-      - wbnet2/5_12
-      - wbnet2/5_13
-      - wbnet2/5_14
-      - wbnet2/5_35
-      - wbnet2/5_38
-      - wbnet2/5_34
-      - wbnet2/5_41
-      - wbnet2/5_31
-      - wbnet2/5_26
-      - wbnet2/5_27
-      - wbnet2/5_28
-      - wbnet2/5_33
-      - wbnet2/5_39
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_16
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_2
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_4
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_5
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_6
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_11
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_21
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_9
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_10
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_12
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_24
+      - 🇨🇦 vpnclub_🇨🇦_CA_加拿大_17
+      - 🇸🇬 vpnclub_🇸🇬_SG_新加坡_18
+      - 🇭🇰 vpnclub_🇭🇰_HK_香港_19
+      - 🇵🇱 vpnclub_🇵🇱_PL_波兰_20
+      - 🇫🇮 vpnclub_🇫🇮_FI_芬兰_23
+      - 🇺🇸 vpnclub_🇺🇸_US_美国_25
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_26
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_35
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_28
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_30
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_36
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_37
+      - 🇩🇪 vpnclub_🇩🇪_DE_德国_38
 rule-providers:
   iran:
     type: http
