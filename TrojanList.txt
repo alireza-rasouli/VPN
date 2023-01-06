@@ -11,40 +11,30 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub_21 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub_36 = trojan, 20.205.4.127, 443, password=ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni=freecloud.windowsupdate1.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_39 = trojan, 149.56.132.41, 80, password=89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni=ca1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_6 = ss, 38.91.102.30, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub_9 = trojan, xyz.outlawanonymouse.ml, 8080, password=2QyiwBOzNF, sni=portfolio.outlawanonymouse.ml, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_49 = trojan, jump.bungeejumpingistanbul.com, 443, password=1672752854, sni=jump.bungeejumpingistanbul.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_22 = trojan, 49.212.204.123, 443, password=18844%40zxcvbn, sni=os-tr-5.cats22.net, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_27 = vmess, 91.193.181.192, 8090, username=08bc30e1-be39-4eb4-e887-e6579be15a45, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_28 = trojan, hk01.trojanyyds.xyz, 443, password=ead8ca32-2d5a-4386-94c1-28255cbef252, sni=hk01.trojanyyds.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_53 = vmess, 193.70.85.191, 80, username=ed579687-5171-46ad-a89a-bd06af52705d, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=Irancell.ir, ws-headers=Host:Irancell.ir, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_31 = ss, 38.91.101.242, 1036, encrypt-method=chacha20-ietf-poly1305, password=)1N1E6v0SU_rGTpg, tfo=false, udp-relay=true
-vpnclub_38 = vmess, gcorepl.sylu.cyou, 443, username=12e08256-da5d-4b1c-aeca-8c973ccceef8, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/Falling42gcoreplnode, sni=gcorepl.sylu.cyou, ws-headers=Host:gcorepl.sylu.cyou, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_40 = vmess, v10a.toddns.tk, 80, username=a25881f3-967f-3265-bc7f-9e66857b016b, tls=false, vmess-aead=true, ws=true, ws-path=/fr-unlimitxxx, sni=v10a.toddns.tk, ws-headers=Host:v10a.toddns.tk, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_42 = vmess, 198.244.232.39, 2096, username=df46384b-1ad5-40a6-812e-48d60fb80283, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_43 = vmess, sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, 7204, username=9c52776b-4b01-4ae6-9f7d-25cd4725e13c, tls=false, vmess-aead=true, ws=true, ws-path=/sg1, sni=sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, ws-headers=Host:sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_48 = trojan, 51.83.186.142, 80, password=2959e4f7-7589-4a40-9b96-1be750ac7845, sni=pl1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_50 = trojan, eu-east-ruo.openssl3.com, 443, password=9KogHwaY7hVD, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_52 = vmess, 135.181.235.21, 12951, username=18827895-b647-4570-81e2-de3bd795fa04, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_54 = vmess, 107.189.31.139, 80, username=83ad9e30-7d98-42f3-b9ab-8ca17b35d51c, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=107.189.31.139, ws-headers=Host:107.189.31.139, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_55 = ss, ak1602.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, 7307, encrypt-method=aes-256-gcm, password=FoOiGlkAA9yPEGP, tfo=false, udp-relay=true
-HK = direct
-SG = direct
+🇸🇬 _SG_新加坡_@wbnet_1 = trojan, 15.235.197.5, 80, password=bedae0a3-a7dc-4ff0-9013-be459839b5b7, sni=sg2.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
+🇺🇸 _US_美国_@wbnet_2 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+🇺🇸 _US_美国_@wbnet_3 = ss, 38.91.102.125, 8881, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
+🇺🇸 _US_美国_@wbnet_4 = ss, 38.91.102.30, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+🇵🇱 _PL_波兰_@wbnet_6 = trojan, customer.progbyrazyar.ir, 993, password=OuJxMViS4F, skip-cert-verify=false, tfo=false, udp-relay=true
+🇭🇰 _HK_香港_@wbnet_10 = trojan, 20.205.4.127, 443, password=ea4f96c2-6dcc-4990-90e1-893c7f39b224, sni=freecloud.windowsupdate1.com, skip-cert-verify=false, tfo=false, udp-relay=true
+🇸🇬 _SG_新加坡_@wbnet_11 = trojan, xyz.outlawanonymouse.ml, 8080, password=2QyiwBOzNF, sni=portfolio.outlawanonymouse.ml, skip-cert-verify=false, tfo=false, udp-relay=true
+🇺🇸 _US_美国_@wbnet_12 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+🇭🇰 _HK_香港_@wbnet_13 = trojan, hk01.trojanyyds.xyz, 443, password=ead8ca32-2d5a-4386-94c1-28255cbef252, sni=hk01.trojanyyds.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
+🇨🇦 _CA_加拿大_@wbnet_14 = trojan, 149.56.132.41, 80, password=89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni=ca1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
 TW = direct
 JP = direct
-US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub_21,vpnclub_36,vpnclub_39,vpnclub_6,vpnclub_9,vpnclub_49,vpnclub_22,vpnclub_27,vpnclub_28,vpnclub_53,vpnclub_31,vpnclub_38,vpnclub_40,vpnclub_42,vpnclub_43,vpnclub_48,vpnclub_50,vpnclub_52,vpnclub_54,vpnclub_55
+Proxies = select,HK,SG,JP,US,TW,🇸🇬 _SG_新加坡_@wbnet_1,🇺🇸 _US_美国_@wbnet_2,🇺🇸 _US_美国_@wbnet_3,🇺🇸 _US_美国_@wbnet_4,🇵🇱 _PL_波兰_@wbnet_6,🇭🇰 _HK_香港_@wbnet_10,🇸🇬 _SG_新加坡_@wbnet_11,🇺🇸 _US_美国_@wbnet_12,🇭🇰 _HK_香港_@wbnet_13,🇨🇦 _CA_加拿大_@wbnet_14
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
 Netflix = select,Proxies,HK,SG,JP,US,TW
 Netease = select,DIRECT,Proxies
 HKMTMedia = select,DIRECT,Proxies,HK,TW
+HK = select,🇭🇰 _HK_香港_@wbnet_10,🇭🇰 _HK_香港_@wbnet_13
+SG = select,🇸🇬 _SG_新加坡_@wbnet_1,🇸🇬 _SG_新加坡_@wbnet_11
+US = select,🇺🇸 _US_美国_@wbnet_2,🇺🇸 _US_美国_@wbnet_3,🇺🇸 _US_美国_@wbnet_4,🇺🇸 _US_美国_@wbnet_12
 
 [Rule]
 DOMAIN-SUFFIX,17gouwuba.com,REJECT
