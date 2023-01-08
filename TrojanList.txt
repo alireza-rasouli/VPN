@@ -11,15 +11,23 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub_8 = trojan, 141.95.61.209, 1145, password=414583b6-1d14-49f4-9988-9d6849efb420, sni=mci.ir, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_15 = trojan, 15.235.197.5, 80, password=bedae0a3-a7dc-4ff0-9013-be459839b5b7, sni=sg2.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_16 = ss, 38.91.102.30, 9101, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
-vpnclub_17 = ss, 38.91.102.125, 8881, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
-vpnclub_18 = trojan, hk01.trojanyyds.xyz, 443, password=ead8ca32-2d5a-4386-94c1-28255cbef252, sni=hk01.trojanyyds.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_19 = trojan, 149.56.132.41, 80, password=89d81c5f-3d75-42f7-8a23-1be9ac89f3fb, sni=ca1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_20 = vmess, onclouds.manihighy.ga, 443, username=c2f55a86-50d8-4e13-cc8a-e90ee37a1b78, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/, sni=onclouds.manihighy.ga, ws-headers=Host:onclouds.manihighy.ga, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_21 = trojan, 135.148.148.4, 80, password=76fcac80-9943-4eab-8717-0ebebea94b70, sni=us3.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub_22 = trojan, 51.83.186.142, 80, password=555034c8-6420-45d0-893c-905c02342150, sni=pl1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_1 = vmess, 193.70.85.191, 80, username=88bc28e5-c046-4b96-9c92-e9a75a4f6b92, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_31 = trojan, 51.83.186.142, 80, password=fa0e4e7a-db70-4aeb-8104-e3120d9259cd, sni=pl1.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_32 = vmess, 5.75.129.202, 55039, username=151e56df-edd0-43ef-ddc8-f0108a05a792, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_58 = trojan, 135.148.148.4, 80, password=ee2bccd3-0f30-42d4-86d6-3d393ad230bd, sni=us3.trojanvh.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_35 = trojan, s21.mynameismahsa.info, 2053, password=user, sni=s21.mynameismahsa.info, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_36 = trojan, 141.95.61.209, 1145, password=414583b6-1d14-49f4-9988-9d6849efb420, sni=mci.ir, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_37 = trojan, 138.124.183.222, 443, password=xxoo, sni=138.124.183.222, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_39 = trojan, sgt1.sshocean.net, 443, password=4c68fce6-2b72-4ab6-8dd4-8e07139e2b2e, sni=news.microsoft.com, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_43 = vmess, 135.181.235.21, 25034, username=e549fc8d-2416-46f7-aadc-8747553091b9, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_52 = trojan, s10.mynameismahsa.info, 2053, password=user, sni=s10.mynameismahsa.info, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_54 = vmess, portfolio.progbyrazyar.ir, 443, username=04e090c4-00a1-4740-b785-471e55230dfd, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/admin, sni=portfolio.progbyrazyar.ir, ws-headers=Host:portfolio.progbyrazyar.ir, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_55 = trojan, 15.235.163.25, 443, password=8eb63951-0286-4d33-98cd-f46007afa74e, sni=www.microsoft.com, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/7_61 = ss, 38.91.102.125, 8881, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
+vpnclub2/7_66 = ss, 139.144.51.80, 26068, encrypt-method=aes-256-gcm, password=yXaodR4XdB, tfo=false, udp-relay=true
+vpnclub2/7_67 = ss, 185.160.26.91, 1662, encrypt-method=chacha20-ietf-poly1305, password=Xs9ORT4j65b8HreZrg0p, tfo=false, udp-relay=true
+vpnclub2/7_68 = ss, 185.160.26.91, 1663, encrypt-method=chacha20-ietf-poly1305, password=Xs9ORT4j65b8HreZrg0p, tfo=false, udp-relay=true
+vpnclub2/7_69 = ss, 185.160.26.91, 1664, encrypt-method=chacha20-ietf-poly1305, password=Xs9ORT4j65b8HreZrg0p, tfo=false, udp-relay=true
 HK = direct
 SG = direct
 TW = direct
@@ -27,7 +35,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub_8,vpnclub_15,vpnclub_16,vpnclub_17,vpnclub_18,vpnclub_19,vpnclub_20,vpnclub_21,vpnclub_22
+Proxies = select,HK,SG,JP,US,TW,vpnclub2/7_1,vpnclub2/7_31,vpnclub2/7_32,vpnclub2/7_58,vpnclub2/7_35,vpnclub2/7_36,vpnclub2/7_37,vpnclub2/7_39,vpnclub2/7_43,vpnclub2/7_52,vpnclub2/7_54,vpnclub2/7_55,vpnclub2/7_61,vpnclub2/7_66,vpnclub2/7_67,vpnclub2/7_68,vpnclub2/7_69
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
