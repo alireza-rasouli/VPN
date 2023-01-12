@@ -11,23 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub 1/10_2 = ss, 139.162.5.19, 8099, encrypt-method=aes-256-cfb, password=eIW0Dnk69454e6nSwuspv9DmS201tQ0D, tfo=false, udp-relay=true
-vpnclub 1/10_3 = vmess, 139.99.61.154, 80, username=c4d7cd44-9adb-4a35-af03-4d1641f1eac7, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=139.99.61.154, ws-headers=Host:139.99.61.154, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_4 = vmess, 139.99.61.154, 80, username=6a620223-84f8-40f4-b6ba-ed6abfe4e4f2, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=139.99.61.154, ws-headers=Host:139.99.61.154, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_22 = vmess, 15.235.184.36, 80, username=7ce525f5-3a9b-4627-ae0e-3ca0b57519e3, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=15.235.184.36, ws-headers=Host:15.235.184.36, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_23 = vmess, 51.68.139.22, 80, username=51743351-cb07-439b-a3ba-8616c0ba7990, tls=false, vmess-aead=true, ws=true, ws-path=/vmess, sni=51.68.139.22, ws-headers=Host:51.68.139.22, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_24 = vmess, mtn.mrloo19866.top, 8443, username=f9ce2460-9cc9-4924-83f6-c2d5749f5373, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/, sni=b.mrloo19866.top, ws-headers=Host:b.mrloo19866.top, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_27 = vmess, mtn.mrloo19866.top, 8443, username=f9ce2460-9cc9-4924-83f6-c2d5749f5373, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/, sni=b.mrloo19866.top, ws-headers=Host:b.mrloo19866.top, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_29 = ss, 85.208.108.21, 5601, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false, udp-relay=true
-vpnclub 1/10_30 = trojan, 20.239.178.77, 443, password=b163c841-5acb-4bd5-838a-3c745685e3b2, sni=lin1krgv2tnadha.559xp5.cn, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_31 = trojan, 20.2.67.215, 443, password=500b1c7c-caf0-481c-8c7d-3eeb84e70ad4, sni=hinet.mjt001.com, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_32 = ss, 43.206.209.17, 443, encrypt-method=aes-256-cfb, password=amazonskr05, tfo=false, udp-relay=true
-vpnclub 1/10_33 = ss, 85.208.108.21, 8882, encrypt-method=aes-256-gcm, password=kDWvXYZoTBcGkC4, tfo=false, udp-relay=true
-vpnclub 1/10_34 = ss, 85.208.108.21, 443, encrypt-method=aes-256-gcm, password=pKEW8JPByTVTLtM, tfo=false, udp-relay=true
-vpnclub 1/10_35 = ss, 85.208.108.21, 8090, encrypt-method=aes-256-gcm, password=PCnnH6SQSnfoS27, tfo=false, udp-relay=true
-vpnclub 1/10_36 = trojan, 101.79.166.248, 443, password=4X1ebJpQWg, sni=sg.yydsdy.top, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_37 = trojan, 45.64.22.9, 443, password=4X1ebJpQWg, sni=sg.yydsdy.top, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub 1/10_38 = ss, 185.231.233.130, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false, udp-relay=true
+vpnclub2/12_13 = vmess, 1.ocean-digital.cf, 2087, username=b7b7d6b2-999a-409f-fbb0-f5bf6ec6c4b9, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/, sni=orca.ocean-digital.ml, ws-headers=Host:orca.ocean-digital.ml, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/12_14 = vmess, portfolio.progbyrazyar.ir, 664, username=e9f89f89-f738-418e-9f6e-90c3ee278649, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/graphql, sni=portfolio.progbyrazyar.ir, ws-headers=Host:portfolio.progbyrazyar.ir, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/12_20 = vmess, 5.75.237.55, 80, username=69d831bc-a759-4f06-d436-a2d692827162, tls=false, vmess-aead=true, ws=true, ws-path=/@hashmakvpn, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+vpnclub2/12_29 = ss, 38.91.102.30, 5004, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false, udp-relay=true
+vpnclub2/12_30 = ss, 38.91.102.30, 9102, encrypt-method=aes-256-gcm, password=e4FCWrgpkji3QY, tfo=false, udp-relay=true
+vpnclub2/12_31 = ss, 38.91.102.30, 7002, encrypt-method=aes-256-gcm, password=RexnBgU7EV5ADxG, tfo=false, udp-relay=true
+vpnclub2/12_32 = ss, 38.91.102.30, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false, udp-relay=true
+vpnclub2/12_33 = ss, 38.91.102.30, 5001, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false, udp-relay=true
 HK = direct
 SG = direct
 TW = direct
@@ -35,7 +26,7 @@ JP = direct
 US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub 1/10_2,vpnclub 1/10_3,vpnclub 1/10_4,vpnclub 1/10_22,vpnclub 1/10_23,vpnclub 1/10_24,vpnclub 1/10_27,vpnclub 1/10_29,vpnclub 1/10_30,vpnclub 1/10_31,vpnclub 1/10_32,vpnclub 1/10_33,vpnclub 1/10_34,vpnclub 1/10_35,vpnclub 1/10_36,vpnclub 1/10_37,vpnclub 1/10_38
+Proxies = select,HK,SG,JP,US,TW,vpnclub2/12_13,vpnclub2/12_14,vpnclub2/12_20,vpnclub2/12_29,vpnclub2/12_30,vpnclub2/12_31,vpnclub2/12_32,vpnclub2/12_33
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
