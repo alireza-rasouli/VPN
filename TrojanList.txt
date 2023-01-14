@@ -11,28 +11,42 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-vpnclub1/12_1 = vmess, 1.ocean-digital.cf, 2087, username=b7b7d6b2-999a-409f-fbb0-f5bf6ec6c4b9, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/, sni=orca.ocean-digital.ml, ws-headers=Host:orca.ocean-digital.ml, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_9 = vmess, v125a.toddns.tk, 80, username=a25881f3-967f-3265-bc7f-9e66857b016b, tls=false, vmess-aead=true, ws=true, ws-path=/usv125N93nz6Py, sni=v125a.toddns.tk, ws-headers=Host:v125a.toddns.tk, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_10 = vmess, v125.toddns.tk, 80, username=a25881f3-967f-3265-bc7f-9e66857b016b, tls=false, vmess-aead=true, ws=true, ws-path=/usv125N93nz6Py, sni=v125.toddns.tk, ws-headers=Host:v125.toddns.tk, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_12 = vmess, hucloud.tk, 443, username=2df3ed4a-4313-45f9-b742-2f02ce593a6e, tls=true, vmess-aead=true, tls13=false, ws=true, ws-path=/huhu, sni=hucloud.tk, ws-headers=Host:hucloud.tk, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_18 = ss, 139.162.5.19, 8099, encrypt-method=aes-256-cfb, password=eIW0Dnk69454e6nSwuspv9DmS201tQ0D, tfo=false, udp-relay=true
-vpnclub1/12_23 = vmess, 00000000000000000000000000000000000000000000000000000000000035a.node-for-bigairport.win, 12356, username=2100274e-55ae-4686-a380-a66ae8b0ef1b, tls=false, vmess-aead=true, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_26 = trojan, 34.201.34.116, 54416, password=2a9ba60d-10ce-4f79-97e7-817334456195, sni=tr9.tgcunzhang.xyz, skip-cert-verify=false, tfo=false, udp-relay=true
-vpnclub1/12_27 = vmess, 103.82.24.174, 80, username=ef919c67-6638-4416-91af-9a13ffe5b9ca, tls=false, vmess-aead=true, ws=true, ws-path=/tandung288.click, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
-HK = direct
-SG = direct
+🇸🇬 _SG_新加坡_vpnclub_1 = trojan, 20.212.29.220, 443, password=7ecd5702-c8d3-41af-98a3-d1346e6f2370, sni=vzwzasc.cn, skip-cert-verify=false, tfo=false, udp-relay=true
+_GT_危地马拉_vpnclub_2 = ss, 170.80.111.5, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false, udp-relay=true
+🇯🇵 _JP_日本_vpnclub_3 = vmess, 172.104.114.137, 7304, username=8b770a3a-7ad9-4573-bfd6-2b146bf93af7, tls=false, vmess-aead=true, skip-cert-verify=false, tfo=false, udp-relay=true
+🇯🇵 _JP_日本_vpnclub_4 = vmess, jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, 7304, username=9c52776b-4b01-4ae6-9f7d-25cd4725e13c, tls=false, vmess-aead=true, skip-cert-verify=false, tfo=false, udp-relay=true
+🇸🇬 _SG_新加坡_vpnclub_5 = vmess, sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, 7203, username=9c52776b-4b01-4ae6-9f7d-25cd4725e13c, tls=false, vmess-aead=true, ws=true, ws-path=/sg1, sni=sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, ws-headers=Host:sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org, skip-cert-verify=false, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_6 = ss, 97.64.26.63, 253, encrypt-method=aes-256-cfb, password=bwhskrskr03, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_7 = ss, 38.91.106.136, 5500, encrypt-method=aes-256-gcm, password=KixLvKzwjekG00rm, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_8 = ss, 38.91.107.216, 5003, encrypt-method=aes-256-gcm, password=g5MeD6Ft3CWlJId, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_9 = ss, 38.91.102.30, 7001, encrypt-method=aes-256-gcm, password=RexnBgU7EV5ADxG, tfo=false, udp-relay=true
+🇸🇬 _SG_新加坡_vpnclub_10 = vmess, 129.150.44.64, 46075, username=da257e73-f02b-45ab-9916-7baf154c47a3, tls=false, vmess-aead=true, ws=true, ws-path=/jhndsmlanj11223, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+🇨🇦 _CA_加拿大_vpnclub_11 = ss, 134.195.196.143, 805, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false, udp-relay=true
+🇨🇱 _CL_智利_vpnclub_12 = ss, 190.120.230.9, 989, encrypt-method=aes-256-cfb, password=f8f7aCzcPKbsF8p3, tfo=false, udp-relay=true
+🇨🇦 _CA_加拿大_vpnclub_13 = ss, 134.195.196.143, 811, encrypt-method=chacha20-ietf-poly1305, password=G!yBwPWH3Vao, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_14 = ss, 38.91.102.30, 5000, encrypt-method=aes-256-gcm, password=Y6R9pAtvxxzmGC, tfo=false, udp-relay=true
+🇭🇰 _HK_香港_vpnclub_15 = trojan, sg.stablize.top, 443, password=7d0f1f83-0f2f-4b90-930e-de44ac233fef, sni=sg.stablize.top, skip-cert-verify=false, tfo=false, udp-relay=true
+🇫🇷 _FR_法国_vpnclub_16 = vmess, 152.228.206.47, 43922, username=854c6449-c14a-4bf8-ed44-0a012f747a34, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=, ws-headers=Host:, skip-cert-verify=false, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_17 = ss, 38.91.102.30, 8008, encrypt-method=aes-256-gcm, password=XKFKl2rULjIp74, tfo=false, udp-relay=true
+🇭🇰 _HK_香港_vpnclub_18 = vmess, 43.154.34.49, 23183, username=b402a4af-285a-463e-c3a7-53f91efdec78, tls=false, vmess-aead=true, skip-cert-verify=false, tfo=false, udp-relay=true
+🇫🇮 _FI_芬兰_vpnclub_19 = trojan, come.wearestandtelegram.online, 443, password=wearestand, sni=come.wearestandtelegram.online, skip-cert-verify=false, tfo=false, udp-relay=true
+🇺🇸 _US_美国_vpnclub_20 = ss, 38.91.102.30, 8090, encrypt-method=aes-256-gcm, password=PCnnH6SQSnfoS27, tfo=false, udp-relay=true
+🇭🇰 _HK_香港_vpnclub_21 = trojan, de.stablize.top, 443, password=7d0f1f83-0f2f-4b90-930e-de44ac233fef, sni=de.stablize.top, skip-cert-verify=false, tfo=false, udp-relay=true
+🇲🇾 _MY_马来西亚_vpnclub_22 = vmess, Bia-to.vmessorg.fun, 80, username=62d46a20-e007-47a1-c749-410f8e8da66f, tls=false, vmess-aead=true, ws=true, ws-path=/, sni=Bia-to.vmessorg.fun, ws-headers=Host:Bia-to.vmessorg.fun, skip-cert-verify=false, tfo=false, udp-relay=true
 TW = direct
-JP = direct
-US = direct
 
 [Proxy Group]
-Proxies = select,HK,SG,JP,US,TW,vpnclub1/12_1,vpnclub1/12_9,vpnclub1/12_10,vpnclub1/12_12,vpnclub1/12_18,vpnclub1/12_23,vpnclub1/12_26,vpnclub1/12_27
+Proxies = select,HK,SG,JP,US,TW,🇸🇬 _SG_新加坡_vpnclub_1,_GT_危地马拉_vpnclub_2,🇯🇵 _JP_日本_vpnclub_3,🇯🇵 _JP_日本_vpnclub_4,🇸🇬 _SG_新加坡_vpnclub_5,🇺🇸 _US_美国_vpnclub_6,🇺🇸 _US_美国_vpnclub_7,🇺🇸 _US_美国_vpnclub_8,🇺🇸 _US_美国_vpnclub_9,🇸🇬 _SG_新加坡_vpnclub_10,🇨🇦 _CA_加拿大_vpnclub_11,🇨🇱 _CL_智利_vpnclub_12,🇨🇦 _CA_加拿大_vpnclub_13,🇺🇸 _US_美国_vpnclub_14,🇭🇰 _HK_香港_vpnclub_15,🇫🇷 _FR_法国_vpnclub_16,🇺🇸 _US_美国_vpnclub_17,🇭🇰 _HK_香港_vpnclub_18,🇫🇮 _FI_芬兰_vpnclub_19,🇺🇸 _US_美国_vpnclub_20,🇭🇰 _HK_香港_vpnclub_21,🇲🇾 _MY_马来西亚_vpnclub_22
 Apple = select,DIRECT,Proxies
 MicroSoft = select,DIRECT,Proxies
 Telegram = select,Proxies,HK,SG
 Netflix = select,Proxies,HK,SG,JP,US,TW
 Netease = select,DIRECT,Proxies
 HKMTMedia = select,DIRECT,Proxies,HK,TW
+HK = select,🇭🇰 _HK_香港_vpnclub_15,🇭🇰 _HK_香港_vpnclub_18,🇭🇰 _HK_香港_vpnclub_21
+SG = select,🇸🇬 _SG_新加坡_vpnclub_1,🇸🇬 _SG_新加坡_vpnclub_5,🇸🇬 _SG_新加坡_vpnclub_10
+JP = select,🇯🇵 _JP_日本_vpnclub_3,🇯🇵 _JP_日本_vpnclub_4
+US = select,🇺🇸 _US_美国_vpnclub_6,🇺🇸 _US_美国_vpnclub_7,🇺🇸 _US_美国_vpnclub_8,🇺🇸 _US_美国_vpnclub_9,🇺🇸 _US_美国_vpnclub_14,🇺🇸 _US_美国_vpnclub_17,🇺🇸 _US_美国_vpnclub_20
 
 [Rule]
 DOMAIN-SUFFIX,17gouwuba.com,REJECT
