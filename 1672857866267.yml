@@ -34,47 +34,47 @@ external-controller: 127.0.0.1:9090
 proxies:
 
 proxy-groups:
-  - name: Global Selection
+  - name: Mode Selection
     type: select
     proxies:
-      - Lowest latency
-      - Country
-      - Select
-      - Failover
-      - Load balancing
-  - name: Country
+      - Lowest Latency
+      - Country Selection
+      - Manual Selection
+      - Fallback
+      - Load balance
+  - name: Country Selection
     type: select
     proxies:
-      - 🇨🇳 CH
-      - 🇯🇵 JP
-      - 🇸🇬 SG
+      - 🇨🇳 China
+      - 🇯🇵 Japan
+      - 🇸🇬 Singapore
       - 🇺🇸 USA
-      - 🇨🇦 CA
-      - 🇷🇺 RU
-      - 🇦🇺 AU
-      - 🇨🇭 SW
-      - 🇩🇪 DE
-      - 🇫🇷 FR
-      - 🇬🇧 GB
-      - 🇳🇱 NL
-      - Other
-  - name: Select
+      - 🇨🇦 Canada
+      - 🇷🇺 Russia
+      - 🇦🇺 Austrailia
+      - 🇨🇭 Switzerland
+      - 🇩🇪 Germany
+      - 🇫🇷 France
+      - 🇬🇧 UK
+      - 🇳🇱 Netherlands
+      - Others
+  - name: Manual Selection
     type: select
     use:
       - all
-  - name: 🇨🇳 CH
+  - name: 🇨🇳 China
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - cn
-  - name: 🇯🇵 JP
+  - name: 🇯🇵 Japan
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - jp
-  - name: 🇸🇬 SG
+  - name: 🇸🇬 Singapore
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -86,73 +86,73 @@ proxy-groups:
     interval: 300
     use:
       - us
-  - name: 🇨🇦 CA
+  - name: 🇨🇦 Canada
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ca
-  - name: 🇷🇺 RU
+  - name: 🇷🇺 Russia
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ru
-  - name: 🇦🇺 AU
+  - name: 🇦🇺 Austrailia
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - au
-  - name: 🇨🇭 SW
+  - name: 🇨🇭 Switzerland
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - ch
-  - name: 🇩🇪 DE
+  - name: 🇩🇪 Germany
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - de
-  - name: 🇫🇷 FR
+  - name: 🇫🇷 France
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - fr
-  - name: 🇬🇧 GB
+  - name: 🇬🇧 UK
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - gb
-  - name: 🇳🇱 NL
+  - name: 🇳🇱 Netherlands
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - nl
-  - name: Other
+  - name: Others
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - others
-  - name: Lowest latency
+  - name: Lowest Latency
     type: url-test
     use:
       - all
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: Load balancing
+  - name: Load balance
     type: load-balance
     use:
       - all
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: Failover
+  - name: Fallback
     type: fallback
     use:
       - all
@@ -162,112 +162,112 @@ proxy-groups:
 proxy-providers:
   au:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=AU"
-    path: tihg.fun/provider-au.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=AU"
+    path: proxy.yiun.xyz/provider-au.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   cn:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=CN,HK,TW"
-    path: tihg.fun/provider-cn.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK,TW"
+    path: proxy.yiun.xyz/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   us:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=US"
-    path: tihg.fun/provider-us.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=US"
+    path: proxy.yiun.xyz/provider-us.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   ca:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=CA"
-    path: tihg.fun/provider-ca.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CA"
+    path: proxy.yiun.xyz/provider-ca.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   jp:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=JP"
-    path: tihg.fun/provider-jp.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=JP"
+    path: proxy.yiun.xyz/provider-jp.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   sg:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=SG"
-    path: tihg.fun/provider-sg.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=SG"
+    path: proxy.yiun.xyz/provider-sg.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   ru:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=RU"
-    path: tihg.fun/provider-ru.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=RU"
+    path: proxy.yiun.xyz/provider-ru.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   ch:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=CH"
-    path: tihg.fun/provider-ch.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=CH"
+    path: proxy.yiun.xyz/provider-ch.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   de:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=DE"
-    path: tihg.fun/provider-de.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=DE"
+    path: proxy.yiun.xyz/provider-de.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   fr:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=FR"
-    path: tihg.fun/provider-fr.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=FR"
+    path: proxy.yiun.xyz/provider-fr.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   gb:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=GB"
-    path: tihg.fun/provider-gb.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=GB"
+    path: proxy.yiun.xyz/provider-gb.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   nl:
     type: http
-    url: "https://tihg.fun/clash/proxies?c=NL"
-    path: tihg.fun/provider-nl.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=NL"
+    path: proxy.yiun.xyz/provider-nl.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   others:
     type: http
-    url: "https://tihg.fun/clash/proxies?nc=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"
-    path: tihg.fun/provider-others.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?nc=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"
+    path: proxy.yiun.xyz/provider-others.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
   all:
     type: http
-    url: "https://tihg.fun/clash/proxies"
-    path: tihg.fun/provider.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies"
+    path: proxy.yiun.xyz/provider.yaml
     health-check:
       enable: true
       interval: 600
@@ -285,549 +285,549 @@ rules:
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
 
-  - DOMAIN-SUFFIX,ampproject.org,Global Selection
-  - DOMAIN-SUFFIX,appspot.com,Global Selection
-  - DOMAIN-SUFFIX,blogger.com,Global Selection
-  - DOMAIN-SUFFIX,getoutline.org,Global Selection
-  - DOMAIN-SUFFIX,gvt0.com,Global Selection
-  - DOMAIN-SUFFIX,gvt1.com,Global Selection
-  - DOMAIN-SUFFIX,gvt3.com,Global Selection
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Global Selection
-  - DOMAIN-KEYWORD,google,Global Selection
-  - DOMAIN-KEYWORD,blogspot,Global Selection
-  - DOMAIN-SUFFIX,onedrive.live.com,Global Selection
-  - DOMAIN-SUFFIX,xboxlive.com,Global Selection
-  - DOMAIN-SUFFIX,cdninstagram.com,Global Selection
-  - DOMAIN-SUFFIX,fb.com,Global Selection
-  - DOMAIN-SUFFIX,fb.me,Global Selection
-  - DOMAIN-SUFFIX,fbaddins.com,Global Selection
-  - DOMAIN-SUFFIX,fbcdn.net,Global Selection
-  - DOMAIN-SUFFIX,fbsbx.com,Global Selection
-  - DOMAIN-SUFFIX,fbworkmail.com,Global Selection
-  - DOMAIN-SUFFIX,instagram.com,Global Selection
-  - DOMAIN-SUFFIX,m.me,Global Selection
-  - DOMAIN-SUFFIX,messenger.com,Global Selection
-  - DOMAIN-SUFFIX,oculus.com,Global Selection
-  - DOMAIN-SUFFIX,oculuscdn.com,Global Selection
-  - DOMAIN-SUFFIX,rocksdb.org,Global Selection
-  - DOMAIN-SUFFIX,whatsapp.com,Global Selection
-  - DOMAIN-SUFFIX,whatsapp.net,Global Selection
-  - DOMAIN-KEYWORD,facebook,Global Selection
-  - IP-CIDR,3.123.36.126/32,Global Selection,no-resolve
-  - IP-CIDR,35.157.215.84/32,Global Selection,no-resolve
-  - IP-CIDR,35.157.217.255/32,Global Selection,no-resolve
-  - IP-CIDR,52.58.209.134/32,Global Selection,no-resolve
-  - IP-CIDR,54.93.124.31/32,Global Selection,no-resolve
-  - IP-CIDR,54.162.243.80/32,Global Selection,no-resolve
-  - IP-CIDR,54.173.34.141/32,Global Selection,no-resolve
-  - IP-CIDR,54.235.23.242/32,Global Selection,no-resolve
-  - IP-CIDR,169.45.248.118/32,Global Selection,no-resolve
-  - DOMAIN-SUFFIX,pscp.tv,Global Selection
-  - DOMAIN-SUFFIX,periscope.tv,Global Selection
-  - DOMAIN-SUFFIX,t.co,Global Selection
-  - DOMAIN-SUFFIX,twimg.co,Global Selection
-  - DOMAIN-SUFFIX,twimg.com,Global Selection
-  - DOMAIN-SUFFIX,twitpic.com,Global Selection
-  - DOMAIN-SUFFIX,vine.co,Global Selection
-  - DOMAIN-KEYWORD,twitter,Global Selection
-  - DOMAIN-SUFFIX,t.me,Global Selection
-  - DOMAIN-SUFFIX,tdesktop.com,Global Selection
-  - DOMAIN-SUFFIX,telegra.ph,Global Selection
-  - DOMAIN-SUFFIX,telegram.me,Global Selection
-  - DOMAIN-SUFFIX,telegram.org,Global Selection
-  - IP-CIDR,91.108.4.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.8.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.12.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.16.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.56.0/22,Global Selection,no-resolve
-  - IP-CIDR,149.154.160.0/20,Global Selection,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,Global Selection,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,Global Selection,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,Global Selection,no-resolve
-  - DOMAIN-SUFFIX,line.me,Global Selection
-  - DOMAIN-SUFFIX,line-apps.com,Global Selection
-  - DOMAIN-SUFFIX,line-scdn.net,Global Selection
-  - DOMAIN-SUFFIX,naver.jp,Global Selection
-  - IP-CIDR,103.2.30.0/23,Global Selection,no-resolve
-  - IP-CIDR,125.209.208.0/20,Global Selection,no-resolve
-  - IP-CIDR,147.92.128.0/17,Global Selection,no-resolve
-  - IP-CIDR,203.104.144.0/21,Global Selection,no-resolve
-  - DOMAIN-SUFFIX,4shared.com,Global Selection
-  - DOMAIN-SUFFIX,520cc.cc,Global Selection
-  - DOMAIN-SUFFIX,881903.com,Global Selection
-  - DOMAIN-SUFFIX,9cache.com,Global Selection
-  - DOMAIN-SUFFIX,9gag.com,Global Selection
-  - DOMAIN-SUFFIX,abc.com,Global Selection
-  - DOMAIN-SUFFIX,abc.net.au,Global Selection
-  - DOMAIN-SUFFIX,abebooks.com,Global Selection
-  - DOMAIN-SUFFIX,amazon.co.jp,Global Selection
-  - DOMAIN-SUFFIX,apigee.com,Global Selection
-  - DOMAIN-SUFFIX,apk-dl.com,Global Selection
-  - DOMAIN-SUFFIX,apkfind.com,Global Selection
-  - DOMAIN-SUFFIX,apkmirror.com,Global Selection
-  - DOMAIN-SUFFIX,apkmonk.com,Global Selection
-  - DOMAIN-SUFFIX,apkpure.com,Global Selection
-  - DOMAIN-SUFFIX,aptoide.com,Global Selection
-  - DOMAIN-SUFFIX,archive.is,Global Selection
-  - DOMAIN-SUFFIX,archive.org,Global Selection
-  - DOMAIN-SUFFIX,arte.tv,Global Selection
-  - DOMAIN-SUFFIX,artstation.com,Global Selection
-  - DOMAIN-SUFFIX,arukas.io,Global Selection
-  - DOMAIN-SUFFIX,ask.com,Global Selection
-  - DOMAIN-SUFFIX,avg.com,Global Selection
-  - DOMAIN-SUFFIX,avgle.com,Global Selection
-  - DOMAIN-SUFFIX,badoo.com,Global Selection
-  - DOMAIN-SUFFIX,bandwagonhost.com,Global Selection
-  - DOMAIN-SUFFIX,bbc.com,Global Selection
-  - DOMAIN-SUFFIX,behance.net,Global Selection
-  - DOMAIN-SUFFIX,bibox.com,Global Selection
-  - DOMAIN-SUFFIX,biggo.com.tw,Global Selection
-  - DOMAIN-SUFFIX,binance.com,Global Selection
-  - DOMAIN-SUFFIX,bitcointalk.org,Global Selection
-  - DOMAIN-SUFFIX,bitfinex.com,Global Selection
-  - DOMAIN-SUFFIX,bitmex.com,Global Selection
-  - DOMAIN-SUFFIX,bit-z.com,Global Selection
-  - DOMAIN-SUFFIX,bloglovin.com,Global Selection
-  - DOMAIN-SUFFIX,bloomberg.cn,Global Selection
-  - DOMAIN-SUFFIX,bloomberg.com,Global Selection
-  - DOMAIN-SUFFIX,blubrry.com,Global Selection
-  - DOMAIN-SUFFIX,book.com.tw,Global Selection
-  - DOMAIN-SUFFIX,booklive.jp,Global Selection
-  - DOMAIN-SUFFIX,books.com.tw,Global Selection
-  - DOMAIN-SUFFIX,boslife.net,Global Selection
-  - DOMAIN-SUFFIX,box.com,Global Selection
-  - DOMAIN-SUFFIX,businessinsider.com,Global Selection
-  - DOMAIN-SUFFIX,bwh1.net,Global Selection
-  - DOMAIN-SUFFIX,castbox.fm,Global Selection
-  - DOMAIN-SUFFIX,cbc.ca,Global Selection
-  - DOMAIN-SUFFIX,cdw.com,Global Selection
-  - DOMAIN-SUFFIX,change.org,Global Selection
-  - DOMAIN-SUFFIX,channelnewsasia.com,Global Selection
-  - DOMAIN-SUFFIX,ck101.com,Global Selection
-  - DOMAIN-SUFFIX,clarionproject.org,Global Selection
-  - DOMAIN-SUFFIX,clyp.it,Global Selection
-  - DOMAIN-SUFFIX,cna.com.tw,Global Selection
-  - DOMAIN-SUFFIX,comparitech.com,Global Selection
-  - DOMAIN-SUFFIX,conoha.jp,Global Selection
-  - DOMAIN-SUFFIX,crucial.com,Global Selection
-  - DOMAIN-SUFFIX,cts.com.tw,Global Selection
-  - DOMAIN-SUFFIX,cw.com.tw,Global Selection
-  - DOMAIN-SUFFIX,cyberctm.com,Global Selection
-  - DOMAIN-SUFFIX,dailymotion.com,Global Selection
-  - DOMAIN-SUFFIX,dailyview.tw,Global Selection
-  - DOMAIN-SUFFIX,daum.net,Global Selection
-  - DOMAIN-SUFFIX,daumcdn.net,Global Selection
-  - DOMAIN-SUFFIX,dcard.tw,Global Selection
-  - DOMAIN-SUFFIX,deepdiscount.com,Global Selection
-  - DOMAIN-SUFFIX,depositphotos.com,Global Selection
-  - DOMAIN-SUFFIX,deviantart.com,Global Selection
-  - DOMAIN-SUFFIX,disconnect.me,Global Selection
-  - DOMAIN-SUFFIX,discordapp.com,Global Selection
-  - DOMAIN-SUFFIX,discordapp.net,Global Selection
-  - DOMAIN-SUFFIX,disqus.com,Global Selection
-  - DOMAIN-SUFFIX,dlercloud.com,Global Selection
-  - DOMAIN-SUFFIX,dns2go.com,Global Selection
-  - DOMAIN-SUFFIX,dowjones.com,Global Selection
-  - DOMAIN-SUFFIX,dropbox.com,Global Selection
-  - DOMAIN-SUFFIX,dropboxusercontent.com,Global Selection
-  - DOMAIN-SUFFIX,duckduckgo.com,Global Selection
-  - DOMAIN-SUFFIX,dw.com,Global Selection
-  - DOMAIN-SUFFIX,dynu.com,Global Selection
-  - DOMAIN-SUFFIX,earthcam.com,Global Selection
-  - DOMAIN-SUFFIX,ebookservice.tw,Global Selection
-  - DOMAIN-SUFFIX,economist.com,Global Selection
-  - DOMAIN-SUFFIX,edgecastcdn.net,Global Selection
-  - DOMAIN-SUFFIX,edu,Global Selection
-  - DOMAIN-SUFFIX,elpais.com,Global Selection
-  - DOMAIN-SUFFIX,enanyang.my,Global Selection
-  - DOMAIN-SUFFIX,encyclopedia.com,Global Selection
-  - DOMAIN-SUFFIX,esoir.be,Global Selection
-  - DOMAIN-SUFFIX,etherscan.io,Global Selection
-  - DOMAIN-SUFFIX,euronews.com,Global Selection
-  - DOMAIN-SUFFIX,evozi.com,Global Selection
-  - DOMAIN-SUFFIX,feedly.com,Global Selection
-  - DOMAIN-SUFFIX,firech.at,Global Selection
-  - DOMAIN-SUFFIX,flickr.com,Global Selection
-  - DOMAIN-SUFFIX,flitto.com,Global Selection
-  - DOMAIN-SUFFIX,foreignpolicy.com,Global Selection
-  - DOMAIN-SUFFIX,Global Selectionbrowser.org,Global Selection
-  - DOMAIN-SUFFIX,Global Selectionwechat.com,Global Selection
-  - DOMAIN-SUFFIX,Global Selectionweibo.com,Global Selection
-  - DOMAIN-SUFFIX,friday.tw,Global Selection
-  - DOMAIN-SUFFIX,ftchinese.com,Global Selection
-  - DOMAIN-SUFFIX,ftimg.net,Global Selection
-  - DOMAIN-SUFFIX,gate.io,Global Selection
-  - DOMAIN-SUFFIX,getlantern.org,Global Selection
-  - DOMAIN-SUFFIX,getsync.com,Global Selection
-  - DOMAIN-SUFFIX,globalvoices.org,Global Selection
-  - DOMAIN-SUFFIX,goo.ne.jp,Global Selection
-  - DOMAIN-SUFFIX,goodreads.com,Global Selection
-  - DOMAIN-SUFFIX,gov,Global Selection
-  - DOMAIN-SUFFIX,gov.tw,Global Selection
-  - DOMAIN-SUFFIX,greatfire.org,Global Selection
-  - DOMAIN-SUFFIX,gumroad.com,Global Selection
-  - DOMAIN-SUFFIX,hbg.com,Global Selection
-  - DOMAIN-SUFFIX,heroku.com,Global Selection
-  - DOMAIN-SUFFIX,hightail.com,Global Selection
-  - DOMAIN-SUFFIX,hk01.com,Global Selection
-  - DOMAIN-SUFFIX,hkbf.org,Global Selection
-  - DOMAIN-SUFFIX,hkbookcity.com,Global Selection
-  - DOMAIN-SUFFIX,hkej.com,Global Selection
-  - DOMAIN-SUFFIX,hket.com,Global Selection
-  - DOMAIN-SUFFIX,hkgolden.com,Global Selection
-  - DOMAIN-SUFFIX,hootsuite.com,Global Selection
-  - DOMAIN-SUFFIX,hudson.org,Global Selection
-  - DOMAIN-SUFFIX,hyread.com.tw,Global Selection
-  - DOMAIN-SUFFIX,ibtimes.com,Global Selection
-  - DOMAIN-SUFFIX,i-cable.com,Global Selection
-  - DOMAIN-SUFFIX,icij.org,Global Selection
-  - DOMAIN-SUFFIX,icoco.com,Global Selection
-  - DOMAIN-SUFFIX,imgur.com,Global Selection
-  - DOMAIN-SUFFIX,initiummall.com,Global Selection
-  - DOMAIN-SUFFIX,insecam.org,Global Selection
-  - DOMAIN-SUFFIX,ipfs.io,Global Selection
-  - DOMAIN-SUFFIX,issuu.com,Global Selection
-  - DOMAIN-SUFFIX,istockphoto.com,Global Selection
-  - DOMAIN-SUFFIX,japantimes.co.jp,Global Selection
-  - DOMAIN-SUFFIX,jiji.com,Global Selection
-  - DOMAIN-SUFFIX,jinx.com,Global Selection
-  - DOMAIN-SUFFIX,jkforum.net,Global Selection
-  - DOMAIN-SUFFIX,joinmastodon.org,Global Selection
-  - DOMAIN-SUFFIX,justmysocks.net,Global Selection
-  - DOMAIN-SUFFIX,justpaste.it,Global Selection
-  - DOMAIN-SUFFIX,kakao.com,Global Selection
-  - DOMAIN-SUFFIX,kakaocorp.com,Global Selection
-  - DOMAIN-SUFFIX,kik.com,Global Selection
-  - DOMAIN-SUFFIX,kobo.com,Global Selection
-  - DOMAIN-SUFFIX,kobobooks.com,Global Selection
-  - DOMAIN-SUFFIX,kodingen.com,Global Selection
-  - DOMAIN-SUFFIX,lemonde.fr,Global Selection
-  - DOMAIN-SUFFIX,lepoint.fr,Global Selection
-  - DOMAIN-SUFFIX,lihkg.com,Global Selection
-  - DOMAIN-SUFFIX,listennotes.com,Global Selection
-  - DOMAIN-SUFFIX,livestream.com,Global Selection
-  - DOMAIN-SUFFIX,logmein.com,Global Selection
-  - DOMAIN-SUFFIX,mail.ru,Global Selection
-  - DOMAIN-SUFFIX,mailchimp.com,Global Selection
-  - DOMAIN-SUFFIX,marc.info,Global Selection
-  - DOMAIN-SUFFIX,matters.news,Global Selection
-  - DOMAIN-SUFFIX,maying.co,Global Selection
-  - DOMAIN-SUFFIX,medium.com,Global Selection
-  - DOMAIN-SUFFIX,mega.nz,Global Selection
-  - DOMAIN-SUFFIX,mil,Global Selection
-  - DOMAIN-SUFFIX,mingpao.com,Global Selection
-  - DOMAIN-SUFFIX,mobile01.com,Global Selection
-  - DOMAIN-SUFFIX,myspace.com,Global Selection
-  - DOMAIN-SUFFIX,myspacecdn.com,Global Selection
-  - DOMAIN-SUFFIX,nanyang.com,Global Selection
-  - DOMAIN-SUFFIX,naver.com,Global Selection
-  - DOMAIN-SUFFIX,neowin.net,Global Selection
-  - DOMAIN-SUFFIX,newstapa.org,Global Selection
-  - DOMAIN-SUFFIX,nexitally.com,Global Selection
-  - DOMAIN-SUFFIX,nhk.or.jp,Global Selection
-  - DOMAIN-SUFFIX,nicovideo.jp,Global Selection
-  - DOMAIN-SUFFIX,nii.ac.jp,Global Selection
-  - DOMAIN-SUFFIX,nikkei.com,Global Selection
-  - DOMAIN-SUFFIX,nofile.io,Global Selection
-  - DOMAIN-SUFFIX,now.com,Global Selection
-  - DOMAIN-SUFFIX,nrk.no,Global Selection
-  - DOMAIN-SUFFIX,nyt.com,Global Selection
-  - DOMAIN-SUFFIX,nytchina.com,Global Selection
-  - DOMAIN-SUFFIX,nytcn.me,Global Selection
-  - DOMAIN-SUFFIX,nytco.com,Global Selection
-  - DOMAIN-SUFFIX,nytimes.com,Global Selection
-  - DOMAIN-SUFFIX,nytimg.com,Global Selection
-  - DOMAIN-SUFFIX,nytlog.com,Global Selection
-  - DOMAIN-SUFFIX,nytstyle.com,Global Selection
-  - DOMAIN-SUFFIX,ok.ru,Global Selection
-  - DOMAIN-SUFFIX,okex.com,Global Selection
-  - DOMAIN-SUFFIX,on.cc,Global Selection
-  - DOMAIN-SUFFIX,orientaldaily.com.my,Global Selection
-  - DOMAIN-SUFFIX,overcast.fm,Global Selection
-  - DOMAIN-SUFFIX,paltalk.com,Global Selection
-  - DOMAIN-SUFFIX,pao-pao.net,Global Selection
-  - DOMAIN-SUFFIX,parsevideo.com,Global Selection
-  - DOMAIN-SUFFIX,pbxes.com,Global Selection
-  - DOMAIN-SUFFIX,pcdvd.com.tw,Global Selection
-  - DOMAIN-SUFFIX,pchome.com.tw,Global Selection
-  - DOMAIN-SUFFIX,pcloud.com,Global Selection
-  - DOMAIN-SUFFIX,picacomic.com,Global Selection
-  - DOMAIN-SUFFIX,pinimg.com,Global Selection
-  - DOMAIN-SUFFIX,pixiv.net,Global Selection
-  - DOMAIN-SUFFIX,player.fm,Global Selection
-  - DOMAIN-SUFFIX,plurk.com,Global Selection
-  - DOMAIN-SUFFIX,po18.tw,Global Selection
-  - DOMAIN-SUFFIX,potato.im,Global Selection
-  - DOMAIN-SUFFIX,potatso.com,Global Selection
-  - DOMAIN-SUFFIX,prism-break.org,Global Selection
-  - DOMAIN-SUFFIX,proxifier.com,Global Selection
-  - DOMAIN-SUFFIX,pt.im,Global Selection
-  - DOMAIN-SUFFIX,pts.org.tw,Global Selection
-  - DOMAIN-SUFFIX,pubu.com.tw,Global Selection
-  - DOMAIN-SUFFIX,pubu.tw,Global Selection
-  - DOMAIN-SUFFIX,pureapk.com,Global Selection
-  - DOMAIN-SUFFIX,quora.com,Global Selection
-  - DOMAIN-SUFFIX,quoracdn.net,Global Selection
-  - DOMAIN-SUFFIX,rakuten.co.jp,Global Selection
-  - DOMAIN-SUFFIX,readingtimes.com.tw,Global Selection
-  - DOMAIN-SUFFIX,readmoo.com,Global Selection
-  - DOMAIN-SUFFIX,redbubble.com,Global Selection
-  - DOMAIN-SUFFIX,reddit.com,Global Selection
-  - DOMAIN-SUFFIX,redditmedia.com,Global Selection
-  - DOMAIN-SUFFIX,resilio.com,Global Selection
-  - DOMAIN-SUFFIX,reuters.com,Global Selection
-  - DOMAIN-SUFFIX,reutersmedia.net,Global Selection
-  - DOMAIN-SUFFIX,rfi.fr,Global Selection
-  - DOMAIN-SUFFIX,rixcloud.com,Global Selection
-  - DOMAIN-SUFFIX,roadshow.hk,Global Selection
-  - DOMAIN-SUFFIX,scmp.com,Global Selection
-  - DOMAIN-SUFFIX,scribd.com,Global Selection
-  - DOMAIN-SUFFIX,seatguru.com,Global Selection
-  - DOMAIN-SUFFIX,shadowsocks.org,Global Selection
-  - DOMAIN-SUFFIX,shopee.tw,Global Selection
-  - DOMAIN-SUFFIX,slideshare.net,Global Selection
-  - DOMAIN-SUFFIX,softfamous.com,Global Selection
-  - DOMAIN-SUFFIX,soundcloud.com,Global Selection
-  - DOMAIN-SUFFIX,ssrcloud.org,Global Selection
-  - DOMAIN-SUFFIX,startpage.com,Global Selection
-  - DOMAIN-SUFFIX,steamcommunity.com,Global Selection
-  - DOMAIN-SUFFIX,steemit.com,Global Selection
-  - DOMAIN-SUFFIX,steemitwallet.com,Global Selection
-  - DOMAIN-SUFFIX,t66y.com,Global Selection
-  - DOMAIN-SUFFIX,tapatalk.com,Global Selection
-  - DOMAIN-SUFFIX,teco-hk.org,Global Selection
-  - DOMAIN-SUFFIX,teco-mo.org,Global Selection
-  - DOMAIN-SUFFIX,teddysun.com,Global Selection
-  - DOMAIN-SUFFIX,textnow.me,Global Selection
-  - DOMAIN-SUFFIX,theguardian.com,Global Selection
-  - DOMAIN-SUFFIX,theinitium.com,Global Selection
-  - DOMAIN-SUFFIX,thetvdb.com,Global Selection
-  - DOMAIN-SUFFIX,tineye.com,Global Selection
-  - DOMAIN-SUFFIX,torproject.org,Global Selection
-  - DOMAIN-SUFFIX,tumblr.com,Global Selection
-  - DOMAIN-SUFFIX,turbobit.net,Global Selection
-  - DOMAIN-SUFFIX,tutanota.com,Global Selection
-  - DOMAIN-SUFFIX,tvboxnow.com,Global Selection
-  - DOMAIN-SUFFIX,udn.com,Global Selection
-  - DOMAIN-SUFFIX,unseen.is,Global Selection
-  - DOMAIN-SUFFIX,upmedia.mg,Global Selection
-  - DOMAIN-SUFFIX,uptodown.com,Global Selection
-  - DOMAIN-SUFFIX,urbandictionary.com,Global Selection
-  - DOMAIN-SUFFIX,ustream.tv,Global Selection
-  - DOMAIN-SUFFIX,uwants.com,Global Selection
-  - DOMAIN-SUFFIX,v2ray.com,Global Selection
-  - DOMAIN-SUFFIX,viber.com,Global Selection
-  - DOMAIN-SUFFIX,videopress.com,Global Selection
-  - DOMAIN-SUFFIX,vimeo.com,Global Selection
-  - DOMAIN-SUFFIX,voachinese.com,Global Selection
-  - DOMAIN-SUFFIX,voanews.com,Global Selection
-  - DOMAIN-SUFFIX,voxer.com,Global Selection
-  - DOMAIN-SUFFIX,vzw.com,Global Selection
-  - DOMAIN-SUFFIX,w3schools.com,Global Selection
-  - DOMAIN-SUFFIX,washingtonpost.com,Global Selection
-  - DOMAIN-SUFFIX,wattpad.com,Global Selection
-  - DOMAIN-SUFFIX,whoer.net,Global Selection
-  - DOMAIN-SUFFIX,wikimapia.org,Global Selection
-  - DOMAIN-SUFFIX,wikipedia.org,Global Selection
-  - DOMAIN-SUFFIX,wikiquote.org,Global Selection
-  - DOMAIN-SUFFIX,wikiwand.com,Global Selection
-  - DOMAIN-SUFFIX,winudf.com,Global Selection
-  - DOMAIN-SUFFIX,wire.com,Global Selection
-  - DOMAIN-SUFFIX,wordpress.com,Global Selection
-  - DOMAIN-SUFFIX,workflow.is,Global Selection
-  - DOMAIN-SUFFIX,worldcat.org,Global Selection
-  - DOMAIN-SUFFIX,wsj.com,Global Selection
-  - DOMAIN-SUFFIX,wsj.net,Global Selection
-  - DOMAIN-SUFFIX,xhamster.com,Global Selection
-  - DOMAIN-SUFFIX,xn--90wwvt03e.com,Global Selection
-  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,Global Selection
-  - DOMAIN-SUFFIX,xnxx.com,Global Selection
-  - DOMAIN-SUFFIX,xvideos.com,Global Selection
-  - DOMAIN-SUFFIX,yahoo.com,Global Selection
-  - DOMAIN-SUFFIX,yandex.ru,Global Selection
-  - DOMAIN-SUFFIX,ycombinator.com,Global Selection
-  - DOMAIN-SUFFIX,yesasia.com,Global Selection
-  - DOMAIN-SUFFIX,yes-news.com,Global Selection
-  - DOMAIN-SUFFIX,yomiuri.co.jp,Global Selection
-  - DOMAIN-SUFFIX,you-get.org,Global Selection
-  - DOMAIN-SUFFIX,zaobao.com,Global Selection
-  - DOMAIN-SUFFIX,zb.com,Global Selection
-  - DOMAIN-SUFFIX,zello.com,Global Selection
-  - DOMAIN-SUFFIX,zeronet.io,Global Selection
-  - DOMAIN-SUFFIX,zoom.us,Global Selection
-  - DOMAIN-KEYWORD,github,Global Selection
-  - DOMAIN-KEYWORD,jav,Global Selection
-  - DOMAIN-KEYWORD,pinterest,Global Selection
-  - DOMAIN-KEYWORD,porn,Global Selection
-  - DOMAIN-KEYWORD,wikileaks,Global Selection
-  - DOMAIN-SUFFIX,apartmentratings.com,Global Selection
-  - DOMAIN-SUFFIX,apartments.com,Global Selection
-  - DOMAIN-SUFFIX,bankmobilevibe.com,Global Selection
-  - DOMAIN-SUFFIX,bing.com,Global Selection
-  - DOMAIN-SUFFIX,booktopia.com.au,Global Selection
-  - DOMAIN-SUFFIX,cccat.io,Global Selection
-  - DOMAIN-SUFFIX,centauro.com.br,Global Selection
-  - DOMAIN-SUFFIX,clearsurance.com,Global Selection
-  - DOMAIN-SUFFIX,costco.com,Global Selection
-  - DOMAIN-SUFFIX,crackle.com,Global Selection
-  - DOMAIN-SUFFIX,depositphotos.cn,Global Selection
-  - DOMAIN-SUFFIX,dish.com,Global Selection
-  - DOMAIN-SUFFIX,dmm.co.jp,Global Selection
-  - DOMAIN-SUFFIX,dmm.com,Global Selection
-  - DOMAIN-SUFFIX,dnvod.tv,Global Selection
-  - DOMAIN-SUFFIX,esurance.com,Global Selection
-  - DOMAIN-SUFFIX,extmatrix.com,Global Selection
-  - DOMAIN-SUFFIX,fastpic.ru,Global Selection
-  - DOMAIN-SUFFIX,flipboard.com,Global Selection
-  - DOMAIN-SUFFIX,fnac.be,Global Selection
-  - DOMAIN-SUFFIX,fnac.com,Global Selection
-  - DOMAIN-SUFFIX,funkyimg.com,Global Selection
-  - DOMAIN-SUFFIX,fxnetworks.com,Global Selection
-  - DOMAIN-SUFFIX,gettyimages.com,Global Selection
-  - DOMAIN-SUFFIX,go.com,Global Selection
-  - DOMAIN-SUFFIX,here.com,Global Selection
-  - DOMAIN-SUFFIX,jcpenney.com,Global Selection
-  - DOMAIN-SUFFIX,jiehua.tv,Global Selection
-  - DOMAIN-SUFFIX,mailfence.com,Global Selection
-  - DOMAIN-SUFFIX,nationwide.com,Global Selection
-  - DOMAIN-SUFFIX,nbc.com,Global Selection
-  - DOMAIN-SUFFIX,nexon.com,Global Selection
-  - DOMAIN-SUFFIX,nordstrom.com,Global Selection
-  - DOMAIN-SUFFIX,nordstromimage.com,Global Selection
-  - DOMAIN-SUFFIX,nordstromrack.com,Global Selection
-  - DOMAIN-SUFFIX,superpages.com,Global Selection
-  - DOMAIN-SUFFIX,target.com,Global Selection
-  - DOMAIN-SUFFIX,thinkgeek.com,Global Selection
-  - DOMAIN-SUFFIX,tracfone.com,Global Selection
-  - DOMAIN-SUFFIX,unity3d.com,Global Selection
-  - DOMAIN-SUFFIX,uploader.jp,Global Selection
-  - DOMAIN-SUFFIX,vevo.com,Global Selection
-  - DOMAIN-SUFFIX,viu.tv,Global Selection
-  - DOMAIN-SUFFIX,vk.com,Global Selection
-  - DOMAIN-SUFFIX,vsco.co,Global Selection
-  - DOMAIN-SUFFIX,xfinity.com,Global Selection
-  - DOMAIN-SUFFIX,zattoo.com,Global Selection
-  - DOMAIN,testflight.apple.com,Global Selection
-  - DOMAIN-SUFFIX,appsto.re,Global Selection
-  - DOMAIN,books.itunes.apple.com,Global Selection
-  - DOMAIN,hls.itunes.apple.com,Global Selection
-  - DOMAIN,apps.apple.com,Global Selection
-  - DOMAIN,itunes.apple.com,Global Selection
-  - DOMAIN,api-glb-sea.smoot.apple.com,Global Selection
-  - DOMAIN,lookup-api.apple.com,Global Selection
-  - DOMAIN-SUFFIX,abc.xyz,Global Selection
-  - DOMAIN-SUFFIX,android.com,Global Selection
-  - DOMAIN-SUFFIX,androidify.com,Global Selection
-  - DOMAIN-SUFFIX,dialogflow.com,Global Selection
-  - DOMAIN-SUFFIX,autodraw.com,Global Selection
-  - DOMAIN-SUFFIX,capitalg.com,Global Selection
-  - DOMAIN-SUFFIX,certificate-transparency.org,Global Selection
-  - DOMAIN-SUFFIX,chrome.com,Global Selection
-  - DOMAIN-SUFFIX,chromeexperiments.com,Global Selection
-  - DOMAIN-SUFFIX,chromestatus.com,Global Selection
-  - DOMAIN-SUFFIX,chromium.org,Global Selection
-  - DOMAIN-SUFFIX,creativelab5.com,Global Selection
-  - DOMAIN-SUFFIX,debug.com,Global Selection
-  - DOMAIN-SUFFIX,deepmind.com,Global Selection
-  - DOMAIN-SUFFIX,firebaseio.com,Global Selection
-  - DOMAIN-SUFFIX,getmdl.io,Global Selection
-  - DOMAIN-SUFFIX,ggpht.com,Global Selection
-  - DOMAIN-SUFFIX,gmail.com,Global Selection
-  - DOMAIN-SUFFIX,gmodules.com,Global Selection
-  - DOMAIN-SUFFIX,godoc.org,Global Selection
-  - DOMAIN-SUFFIX,golang.org,Global Selection
-  - DOMAIN-SUFFIX,gstatic.com,Global Selection
-  - DOMAIN-SUFFIX,gv.com,Global Selection
-  - DOMAIN-SUFFIX,gwtproject.org,Global Selection
-  - DOMAIN-SUFFIX,itasoftware.com,Global Selection
-  - DOMAIN-SUFFIX,madewithcode.com,Global Selection
-  - DOMAIN-SUFFIX,material.io,Global Selection
-  - DOMAIN-SUFFIX,polymer-project.org,Global Selection
-  - DOMAIN-SUFFIX,admin.recaptcha.net,Global Selection
-  - DOMAIN-SUFFIX,recaptcha.net,Global Selection
-  - DOMAIN-SUFFIX,shattered.io,Global Selection
-  - DOMAIN-SUFFIX,synergyse.com,Global Selection
-  - DOMAIN-SUFFIX,tensorflow.org,Global Selection
-  - DOMAIN-SUFFIX,tfhub.dev,Global Selection
-  - DOMAIN-SUFFIX,tiltbrush.com,Global Selection
-  - DOMAIN-SUFFIX,waveprotocol.org,Global Selection
-  - DOMAIN-SUFFIX,waymo.com,Global Selection
-  - DOMAIN-SUFFIX,webmproject.org,Global Selection
-  - DOMAIN-SUFFIX,webrtc.org,Global Selection
-  - DOMAIN-SUFFIX,whatbrowser.org,Global Selection
-  - DOMAIN-SUFFIX,widevine.com,Global Selection
-  - DOMAIN-SUFFIX,x.company,Global Selection
-  - DOMAIN-SUFFIX,youtu.be,Global Selection
-  - DOMAIN-SUFFIX,yt.be,Global Selection
-  - DOMAIN-SUFFIX,ytimg.com,Global Selection
-  - DOMAIN-SUFFIX,1drv.com,Global Selection
-  - DOMAIN-SUFFIX,1drv.ms,Global Selection
-  - DOMAIN-SUFFIX,blob.core.windows.net,Global Selection
-  - DOMAIN-SUFFIX,livefilestore.com,Global Selection
-  - DOMAIN-SUFFIX,onedrive.com,Global Selection
-  - DOMAIN-SUFFIX,storage.live.com,Global Selection
-  - DOMAIN-SUFFIX,storage.msn.com,Global Selection
-  - DOMAIN,oneclient.sfx.ms,Global Selection
-  - DOMAIN-SUFFIX,0rz.tw,Global Selection
-  - DOMAIN-SUFFIX,4bluestones.biz,Global Selection
-  - DOMAIN-SUFFIX,9bis.net,Global Selection
-  - DOMAIN-SUFFIX,allconnected.co,Global Selection
-  - DOMAIN-SUFFIX,aol.com,Global Selection
-  - DOMAIN-SUFFIX,bcc.com.tw,Global Selection
-  - DOMAIN-SUFFIX,bit.ly,Global Selection
-  - DOMAIN-SUFFIX,bitshare.com,Global Selection
-  - DOMAIN-SUFFIX,blog.jp,Global Selection
-  - DOMAIN-SUFFIX,blogimg.jp,Global Selection
-  - DOMAIN-SUFFIX,blogtd.org,Global Selection
-  - DOMAIN-SUFFIX,broadcast.co.nz,Global Selection
-  - DOMAIN-SUFFIX,camfrog.com,Global Selection
-  - DOMAIN-SUFFIX,cfos.de,Global Selection
-  - DOMAIN-SUFFIX,citypopulation.de,Global Selection
-  - DOMAIN-SUFFIX,cloudfront.net,Global Selection
-  - DOMAIN-SUFFIX,ctitv.com.tw,Global Selection
-  - DOMAIN-SUFFIX,cuhk.edu.hk,Global Selection
-  - DOMAIN-SUFFIX,cusu.hk,Global Selection
-  - DOMAIN-SUFFIX,discord.gg,Global Selection
-  - DOMAIN-SUFFIX,discuss.com.hk,Global Selection
-  - DOMAIN-SUFFIX,dropboxapi.com,Global Selection
-  - DOMAIN-SUFFIX,duolingo.cn,Global Selection
-  - DOMAIN-SUFFIX,edditstatic.com,Global Selection
-  - DOMAIN-SUFFIX,flickriver.com,Global Selection
-  - DOMAIN-SUFFIX,focustaiwan.tw,Global Selection
-  - DOMAIN-SUFFIX,Global Selection.fr,Global Selection
-  - DOMAIN-SUFFIX,gigacircle.com,Global Selection
-  - DOMAIN-SUFFIX,hk-pub.com,Global Selection
-  - DOMAIN-SUFFIX,hosting.co.uk,Global Selection
-  - DOMAIN-SUFFIX,hwcdn.net,Global Selection
-  - DOMAIN-SUFFIX,ifixit.com,Global Selection
-  - DOMAIN-SUFFIX,iphone4hongkong.com,Global Selection
-  - DOMAIN-SUFFIX,iphonetaiwan.org,Global Selection
-  - DOMAIN-SUFFIX,iptvbin.com,Global Selection
-  - DOMAIN-SUFFIX,linksalpha.com,Global Selection
-  - DOMAIN-SUFFIX,manyvids.com,Global Selection
-  - DOMAIN-SUFFIX,myactimes.com,Global Selection
-  - DOMAIN-SUFFIX,newsblur.com,Global Selection
-  - DOMAIN-SUFFIX,now.im,Global Selection
-  - DOMAIN-SUFFIX,nowe.com,Global Selection
-  - DOMAIN-SUFFIX,redditlist.com,Global Selection
-  - DOMAIN-SUFFIX,s3.amazonaws.com,Global Selection
-  - DOMAIN-SUFFIX,signal.org,Global Selection
-  - DOMAIN-SUFFIX,smartmailcloud.com,Global Selection
-  - DOMAIN-SUFFIX,sparknotes.com,Global Selection
-  - DOMAIN-SUFFIX,streetvoice.com,Global Selection
-  - DOMAIN-SUFFIX,supertop.co,Global Selection
-  - DOMAIN-SUFFIX,tv.com,Global Selection
-  - DOMAIN-SUFFIX,typepad.com,Global Selection
-  - DOMAIN-SUFFIX,udnbkk.com,Global Selection
-  - DOMAIN-SUFFIX,urbanairship.com,Global Selection
-  - DOMAIN-SUFFIX,whispersystems.org,Global Selection
-  - DOMAIN-SUFFIX,wikia.com,Global Selection
-  - DOMAIN-SUFFIX,wn.com,Global Selection
-  - DOMAIN-SUFFIX,wolframalpha.com,Global Selection
-  - DOMAIN-SUFFIX,x-art.com,Global Selection
-  - DOMAIN-SUFFIX,yimg.com,Global Selection
-  - DOMAIN,api.steampowered.com,Global Selection
-  - DOMAIN,store.steampowered.com,Global Selection
+  - DOMAIN-SUFFIX,ampproject.org,Mode Selection
+  - DOMAIN-SUFFIX,appspot.com,Mode Selection
+  - DOMAIN-SUFFIX,blogger.com,Mode Selection
+  - DOMAIN-SUFFIX,getoutline.org,Mode Selection
+  - DOMAIN-SUFFIX,gvt0.com,Mode Selection
+  - DOMAIN-SUFFIX,gvt1.com,Mode Selection
+  - DOMAIN-SUFFIX,gvt3.com,Mode Selection
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Mode Selection
+  - DOMAIN-KEYWORD,google,Mode Selection
+  - DOMAIN-KEYWORD,blogspot,Mode Selection
+  - DOMAIN-SUFFIX,onedrive.live.com,Mode Selection
+  - DOMAIN-SUFFIX,xboxlive.com,Mode Selection
+  - DOMAIN-SUFFIX,cdninstagram.com,Mode Selection
+  - DOMAIN-SUFFIX,fb.com,Mode Selection
+  - DOMAIN-SUFFIX,fb.me,Mode Selection
+  - DOMAIN-SUFFIX,fbaddins.com,Mode Selection
+  - DOMAIN-SUFFIX,fbcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,fbsbx.com,Mode Selection
+  - DOMAIN-SUFFIX,fbworkmail.com,Mode Selection
+  - DOMAIN-SUFFIX,instagram.com,Mode Selection
+  - DOMAIN-SUFFIX,m.me,Mode Selection
+  - DOMAIN-SUFFIX,messenger.com,Mode Selection
+  - DOMAIN-SUFFIX,oculus.com,Mode Selection
+  - DOMAIN-SUFFIX,oculuscdn.com,Mode Selection
+  - DOMAIN-SUFFIX,rocksdb.org,Mode Selection
+  - DOMAIN-SUFFIX,whatsapp.com,Mode Selection
+  - DOMAIN-SUFFIX,whatsapp.net,Mode Selection
+  - DOMAIN-KEYWORD,facebook,Mode Selection
+  - IP-CIDR,3.123.36.126/32,Mode Selection,no-resolve
+  - IP-CIDR,35.157.215.84/32,Mode Selection,no-resolve
+  - IP-CIDR,35.157.217.255/32,Mode Selection,no-resolve
+  - IP-CIDR,52.58.209.134/32,Mode Selection,no-resolve
+  - IP-CIDR,54.93.124.31/32,Mode Selection,no-resolve
+  - IP-CIDR,54.162.243.80/32,Mode Selection,no-resolve
+  - IP-CIDR,54.173.34.141/32,Mode Selection,no-resolve
+  - IP-CIDR,54.235.23.242/32,Mode Selection,no-resolve
+  - IP-CIDR,169.45.248.118/32,Mode Selection,no-resolve
+  - DOMAIN-SUFFIX,pscp.tv,Mode Selection
+  - DOMAIN-SUFFIX,periscope.tv,Mode Selection
+  - DOMAIN-SUFFIX,t.co,Mode Selection
+  - DOMAIN-SUFFIX,twimg.co,Mode Selection
+  - DOMAIN-SUFFIX,twimg.com,Mode Selection
+  - DOMAIN-SUFFIX,twitpic.com,Mode Selection
+  - DOMAIN-SUFFIX,vine.co,Mode Selection
+  - DOMAIN-KEYWORD,twitter,Mode Selection
+  - DOMAIN-SUFFIX,t.me,Mode Selection
+  - DOMAIN-SUFFIX,tdesktop.com,Mode Selection
+  - DOMAIN-SUFFIX,telegra.ph,Mode Selection
+  - DOMAIN-SUFFIX,telegram.me,Mode Selection
+  - DOMAIN-SUFFIX,telegram.org,Mode Selection
+  - IP-CIDR,91.108.4.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.8.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.12.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.16.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.56.0/22,Mode Selection,no-resolve
+  - IP-CIDR,149.154.160.0/20,Mode Selection,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,Mode Selection,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,Mode Selection,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,Mode Selection,no-resolve
+  - DOMAIN-SUFFIX,line.me,Mode Selection
+  - DOMAIN-SUFFIX,line-apps.com,Mode Selection
+  - DOMAIN-SUFFIX,line-scdn.net,Mode Selection
+  - DOMAIN-SUFFIX,naver.jp,Mode Selection
+  - IP-CIDR,103.2.30.0/23,Mode Selection,no-resolve
+  - IP-CIDR,125.209.208.0/20,Mode Selection,no-resolve
+  - IP-CIDR,147.92.128.0/17,Mode Selection,no-resolve
+  - IP-CIDR,203.104.144.0/21,Mode Selection,no-resolve
+  - DOMAIN-SUFFIX,4shared.com,Mode Selection
+  - DOMAIN-SUFFIX,520cc.cc,Mode Selection
+  - DOMAIN-SUFFIX,881903.com,Mode Selection
+  - DOMAIN-SUFFIX,9cache.com,Mode Selection
+  - DOMAIN-SUFFIX,9gag.com,Mode Selection
+  - DOMAIN-SUFFIX,abc.com,Mode Selection
+  - DOMAIN-SUFFIX,abc.net.au,Mode Selection
+  - DOMAIN-SUFFIX,abebooks.com,Mode Selection
+  - DOMAIN-SUFFIX,amazon.co.jp,Mode Selection
+  - DOMAIN-SUFFIX,apigee.com,Mode Selection
+  - DOMAIN-SUFFIX,apk-dl.com,Mode Selection
+  - DOMAIN-SUFFIX,apkfind.com,Mode Selection
+  - DOMAIN-SUFFIX,apkmirror.com,Mode Selection
+  - DOMAIN-SUFFIX,apkmonk.com,Mode Selection
+  - DOMAIN-SUFFIX,apkpure.com,Mode Selection
+  - DOMAIN-SUFFIX,aptoide.com,Mode Selection
+  - DOMAIN-SUFFIX,archive.is,Mode Selection
+  - DOMAIN-SUFFIX,archive.org,Mode Selection
+  - DOMAIN-SUFFIX,arte.tv,Mode Selection
+  - DOMAIN-SUFFIX,artstation.com,Mode Selection
+  - DOMAIN-SUFFIX,arukas.io,Mode Selection
+  - DOMAIN-SUFFIX,ask.com,Mode Selection
+  - DOMAIN-SUFFIX,avg.com,Mode Selection
+  - DOMAIN-SUFFIX,avgle.com,Mode Selection
+  - DOMAIN-SUFFIX,badoo.com,Mode Selection
+  - DOMAIN-SUFFIX,bandwagonhost.com,Mode Selection
+  - DOMAIN-SUFFIX,bbc.com,Mode Selection
+  - DOMAIN-SUFFIX,behance.net,Mode Selection
+  - DOMAIN-SUFFIX,bibox.com,Mode Selection
+  - DOMAIN-SUFFIX,biggo.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,binance.com,Mode Selection
+  - DOMAIN-SUFFIX,bitcointalk.org,Mode Selection
+  - DOMAIN-SUFFIX,bitfinex.com,Mode Selection
+  - DOMAIN-SUFFIX,bitmex.com,Mode Selection
+  - DOMAIN-SUFFIX,bit-z.com,Mode Selection
+  - DOMAIN-SUFFIX,bloglovin.com,Mode Selection
+  - DOMAIN-SUFFIX,bloomberg.cn,Mode Selection
+  - DOMAIN-SUFFIX,bloomberg.com,Mode Selection
+  - DOMAIN-SUFFIX,blubrry.com,Mode Selection
+  - DOMAIN-SUFFIX,book.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,booklive.jp,Mode Selection
+  - DOMAIN-SUFFIX,books.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,boslife.net,Mode Selection
+  - DOMAIN-SUFFIX,box.com,Mode Selection
+  - DOMAIN-SUFFIX,businessinsider.com,Mode Selection
+  - DOMAIN-SUFFIX,bwh1.net,Mode Selection
+  - DOMAIN-SUFFIX,castbox.fm,Mode Selection
+  - DOMAIN-SUFFIX,cbc.ca,Mode Selection
+  - DOMAIN-SUFFIX,cdw.com,Mode Selection
+  - DOMAIN-SUFFIX,change.org,Mode Selection
+  - DOMAIN-SUFFIX,channelnewsasia.com,Mode Selection
+  - DOMAIN-SUFFIX,ck101.com,Mode Selection
+  - DOMAIN-SUFFIX,clarionproject.org,Mode Selection
+  - DOMAIN-SUFFIX,clyp.it,Mode Selection
+  - DOMAIN-SUFFIX,cna.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,comparitech.com,Mode Selection
+  - DOMAIN-SUFFIX,conoha.jp,Mode Selection
+  - DOMAIN-SUFFIX,crucial.com,Mode Selection
+  - DOMAIN-SUFFIX,cts.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,cw.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,cyberctm.com,Mode Selection
+  - DOMAIN-SUFFIX,dailymotion.com,Mode Selection
+  - DOMAIN-SUFFIX,dailyview.tw,Mode Selection
+  - DOMAIN-SUFFIX,daum.net,Mode Selection
+  - DOMAIN-SUFFIX,daumcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,dcard.tw,Mode Selection
+  - DOMAIN-SUFFIX,deepdiscount.com,Mode Selection
+  - DOMAIN-SUFFIX,depositphotos.com,Mode Selection
+  - DOMAIN-SUFFIX,deviantart.com,Mode Selection
+  - DOMAIN-SUFFIX,disconnect.me,Mode Selection
+  - DOMAIN-SUFFIX,discordapp.com,Mode Selection
+  - DOMAIN-SUFFIX,discordapp.net,Mode Selection
+  - DOMAIN-SUFFIX,disqus.com,Mode Selection
+  - DOMAIN-SUFFIX,dlercloud.com,Mode Selection
+  - DOMAIN-SUFFIX,dns2go.com,Mode Selection
+  - DOMAIN-SUFFIX,dowjones.com,Mode Selection
+  - DOMAIN-SUFFIX,dropbox.com,Mode Selection
+  - DOMAIN-SUFFIX,dropboxusercontent.com,Mode Selection
+  - DOMAIN-SUFFIX,duckduckgo.com,Mode Selection
+  - DOMAIN-SUFFIX,dw.com,Mode Selection
+  - DOMAIN-SUFFIX,dynu.com,Mode Selection
+  - DOMAIN-SUFFIX,earthcam.com,Mode Selection
+  - DOMAIN-SUFFIX,ebookservice.tw,Mode Selection
+  - DOMAIN-SUFFIX,economist.com,Mode Selection
+  - DOMAIN-SUFFIX,edgecastcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,edu,Mode Selection
+  - DOMAIN-SUFFIX,elpais.com,Mode Selection
+  - DOMAIN-SUFFIX,enanyang.my,Mode Selection
+  - DOMAIN-SUFFIX,encyclopedia.com,Mode Selection
+  - DOMAIN-SUFFIX,esoir.be,Mode Selection
+  - DOMAIN-SUFFIX,etherscan.io,Mode Selection
+  - DOMAIN-SUFFIX,euronews.com,Mode Selection
+  - DOMAIN-SUFFIX,evozi.com,Mode Selection
+  - DOMAIN-SUFFIX,feedly.com,Mode Selection
+  - DOMAIN-SUFFIX,firech.at,Mode Selection
+  - DOMAIN-SUFFIX,flickr.com,Mode Selection
+  - DOMAIN-SUFFIX,flitto.com,Mode Selection
+  - DOMAIN-SUFFIX,foreignpolicy.com,Mode Selection
+  - DOMAIN-SUFFIX,Mode Selectionbrowser.org,Mode Selection
+  - DOMAIN-SUFFIX,Mode Selectionwechat.com,Mode Selection
+  - DOMAIN-SUFFIX,Mode Selectionweibo.com,Mode Selection
+  - DOMAIN-SUFFIX,friday.tw,Mode Selection
+  - DOMAIN-SUFFIX,ftchinese.com,Mode Selection
+  - DOMAIN-SUFFIX,ftimg.net,Mode Selection
+  - DOMAIN-SUFFIX,gate.io,Mode Selection
+  - DOMAIN-SUFFIX,getlantern.org,Mode Selection
+  - DOMAIN-SUFFIX,getsync.com,Mode Selection
+  - DOMAIN-SUFFIX,globalvoices.org,Mode Selection
+  - DOMAIN-SUFFIX,goo.ne.jp,Mode Selection
+  - DOMAIN-SUFFIX,goodreads.com,Mode Selection
+  - DOMAIN-SUFFIX,gov,Mode Selection
+  - DOMAIN-SUFFIX,gov.tw,Mode Selection
+  - DOMAIN-SUFFIX,greatfire.org,Mode Selection
+  - DOMAIN-SUFFIX,gumroad.com,Mode Selection
+  - DOMAIN-SUFFIX,hbg.com,Mode Selection
+  - DOMAIN-SUFFIX,heroku.com,Mode Selection
+  - DOMAIN-SUFFIX,hightail.com,Mode Selection
+  - DOMAIN-SUFFIX,hk01.com,Mode Selection
+  - DOMAIN-SUFFIX,hkbf.org,Mode Selection
+  - DOMAIN-SUFFIX,hkbookcity.com,Mode Selection
+  - DOMAIN-SUFFIX,hkej.com,Mode Selection
+  - DOMAIN-SUFFIX,hket.com,Mode Selection
+  - DOMAIN-SUFFIX,hkgolden.com,Mode Selection
+  - DOMAIN-SUFFIX,hootsuite.com,Mode Selection
+  - DOMAIN-SUFFIX,hudson.org,Mode Selection
+  - DOMAIN-SUFFIX,hyread.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,ibtimes.com,Mode Selection
+  - DOMAIN-SUFFIX,i-cable.com,Mode Selection
+  - DOMAIN-SUFFIX,icij.org,Mode Selection
+  - DOMAIN-SUFFIX,icoco.com,Mode Selection
+  - DOMAIN-SUFFIX,imgur.com,Mode Selection
+  - DOMAIN-SUFFIX,initiummall.com,Mode Selection
+  - DOMAIN-SUFFIX,insecam.org,Mode Selection
+  - DOMAIN-SUFFIX,ipfs.io,Mode Selection
+  - DOMAIN-SUFFIX,issuu.com,Mode Selection
+  - DOMAIN-SUFFIX,istockphoto.com,Mode Selection
+  - DOMAIN-SUFFIX,japantimes.co.jp,Mode Selection
+  - DOMAIN-SUFFIX,jiji.com,Mode Selection
+  - DOMAIN-SUFFIX,jinx.com,Mode Selection
+  - DOMAIN-SUFFIX,jkforum.net,Mode Selection
+  - DOMAIN-SUFFIX,joinmastodon.org,Mode Selection
+  - DOMAIN-SUFFIX,justmysocks.net,Mode Selection
+  - DOMAIN-SUFFIX,justpaste.it,Mode Selection
+  - DOMAIN-SUFFIX,kakao.com,Mode Selection
+  - DOMAIN-SUFFIX,kakaocorp.com,Mode Selection
+  - DOMAIN-SUFFIX,kik.com,Mode Selection
+  - DOMAIN-SUFFIX,kobo.com,Mode Selection
+  - DOMAIN-SUFFIX,kobobooks.com,Mode Selection
+  - DOMAIN-SUFFIX,kodingen.com,Mode Selection
+  - DOMAIN-SUFFIX,lemonde.fr,Mode Selection
+  - DOMAIN-SUFFIX,lepoint.fr,Mode Selection
+  - DOMAIN-SUFFIX,lihkg.com,Mode Selection
+  - DOMAIN-SUFFIX,listennotes.com,Mode Selection
+  - DOMAIN-SUFFIX,livestream.com,Mode Selection
+  - DOMAIN-SUFFIX,logmein.com,Mode Selection
+  - DOMAIN-SUFFIX,mail.ru,Mode Selection
+  - DOMAIN-SUFFIX,mailchimp.com,Mode Selection
+  - DOMAIN-SUFFIX,marc.info,Mode Selection
+  - DOMAIN-SUFFIX,matters.news,Mode Selection
+  - DOMAIN-SUFFIX,maying.co,Mode Selection
+  - DOMAIN-SUFFIX,medium.com,Mode Selection
+  - DOMAIN-SUFFIX,mega.nz,Mode Selection
+  - DOMAIN-SUFFIX,mil,Mode Selection
+  - DOMAIN-SUFFIX,mingpao.com,Mode Selection
+  - DOMAIN-SUFFIX,mobile01.com,Mode Selection
+  - DOMAIN-SUFFIX,myspace.com,Mode Selection
+  - DOMAIN-SUFFIX,myspacecdn.com,Mode Selection
+  - DOMAIN-SUFFIX,nanyang.com,Mode Selection
+  - DOMAIN-SUFFIX,naver.com,Mode Selection
+  - DOMAIN-SUFFIX,neowin.net,Mode Selection
+  - DOMAIN-SUFFIX,newstapa.org,Mode Selection
+  - DOMAIN-SUFFIX,nexitally.com,Mode Selection
+  - DOMAIN-SUFFIX,nhk.or.jp,Mode Selection
+  - DOMAIN-SUFFIX,nicovideo.jp,Mode Selection
+  - DOMAIN-SUFFIX,nii.ac.jp,Mode Selection
+  - DOMAIN-SUFFIX,nikkei.com,Mode Selection
+  - DOMAIN-SUFFIX,nofile.io,Mode Selection
+  - DOMAIN-SUFFIX,now.com,Mode Selection
+  - DOMAIN-SUFFIX,nrk.no,Mode Selection
+  - DOMAIN-SUFFIX,nyt.com,Mode Selection
+  - DOMAIN-SUFFIX,nytchina.com,Mode Selection
+  - DOMAIN-SUFFIX,nytcn.me,Mode Selection
+  - DOMAIN-SUFFIX,nytco.com,Mode Selection
+  - DOMAIN-SUFFIX,nytimes.com,Mode Selection
+  - DOMAIN-SUFFIX,nytimg.com,Mode Selection
+  - DOMAIN-SUFFIX,nytlog.com,Mode Selection
+  - DOMAIN-SUFFIX,nytstyle.com,Mode Selection
+  - DOMAIN-SUFFIX,ok.ru,Mode Selection
+  - DOMAIN-SUFFIX,okex.com,Mode Selection
+  - DOMAIN-SUFFIX,on.cc,Mode Selection
+  - DOMAIN-SUFFIX,orientaldaily.com.my,Mode Selection
+  - DOMAIN-SUFFIX,overcast.fm,Mode Selection
+  - DOMAIN-SUFFIX,paltalk.com,Mode Selection
+  - DOMAIN-SUFFIX,pao-pao.net,Mode Selection
+  - DOMAIN-SUFFIX,parsevideo.com,Mode Selection
+  - DOMAIN-SUFFIX,pbxes.com,Mode Selection
+  - DOMAIN-SUFFIX,pcdvd.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,pchome.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,pcloud.com,Mode Selection
+  - DOMAIN-SUFFIX,picacomic.com,Mode Selection
+  - DOMAIN-SUFFIX,pinimg.com,Mode Selection
+  - DOMAIN-SUFFIX,pixiv.net,Mode Selection
+  - DOMAIN-SUFFIX,player.fm,Mode Selection
+  - DOMAIN-SUFFIX,plurk.com,Mode Selection
+  - DOMAIN-SUFFIX,po18.tw,Mode Selection
+  - DOMAIN-SUFFIX,potato.im,Mode Selection
+  - DOMAIN-SUFFIX,potatso.com,Mode Selection
+  - DOMAIN-SUFFIX,prism-break.org,Mode Selection
+  - DOMAIN-SUFFIX,proxifier.com,Mode Selection
+  - DOMAIN-SUFFIX,pt.im,Mode Selection
+  - DOMAIN-SUFFIX,pts.org.tw,Mode Selection
+  - DOMAIN-SUFFIX,pubu.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,pubu.tw,Mode Selection
+  - DOMAIN-SUFFIX,pureapk.com,Mode Selection
+  - DOMAIN-SUFFIX,quora.com,Mode Selection
+  - DOMAIN-SUFFIX,quoracdn.net,Mode Selection
+  - DOMAIN-SUFFIX,rakuten.co.jp,Mode Selection
+  - DOMAIN-SUFFIX,readingtimes.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,readmoo.com,Mode Selection
+  - DOMAIN-SUFFIX,redbubble.com,Mode Selection
+  - DOMAIN-SUFFIX,reddit.com,Mode Selection
+  - DOMAIN-SUFFIX,redditmedia.com,Mode Selection
+  - DOMAIN-SUFFIX,resilio.com,Mode Selection
+  - DOMAIN-SUFFIX,reuters.com,Mode Selection
+  - DOMAIN-SUFFIX,reutersmedia.net,Mode Selection
+  - DOMAIN-SUFFIX,rfi.fr,Mode Selection
+  - DOMAIN-SUFFIX,rixcloud.com,Mode Selection
+  - DOMAIN-SUFFIX,roadshow.hk,Mode Selection
+  - DOMAIN-SUFFIX,scmp.com,Mode Selection
+  - DOMAIN-SUFFIX,scribd.com,Mode Selection
+  - DOMAIN-SUFFIX,seatguru.com,Mode Selection
+  - DOMAIN-SUFFIX,shadowsocks.org,Mode Selection
+  - DOMAIN-SUFFIX,shopee.tw,Mode Selection
+  - DOMAIN-SUFFIX,slideshare.net,Mode Selection
+  - DOMAIN-SUFFIX,softfamous.com,Mode Selection
+  - DOMAIN-SUFFIX,soundcloud.com,Mode Selection
+  - DOMAIN-SUFFIX,ssrcloud.org,Mode Selection
+  - DOMAIN-SUFFIX,startpage.com,Mode Selection
+  - DOMAIN-SUFFIX,steamcommunity.com,Mode Selection
+  - DOMAIN-SUFFIX,steemit.com,Mode Selection
+  - DOMAIN-SUFFIX,steemitwallet.com,Mode Selection
+  - DOMAIN-SUFFIX,t66y.com,Mode Selection
+  - DOMAIN-SUFFIX,tapatalk.com,Mode Selection
+  - DOMAIN-SUFFIX,teco-hk.org,Mode Selection
+  - DOMAIN-SUFFIX,teco-mo.org,Mode Selection
+  - DOMAIN-SUFFIX,teddysun.com,Mode Selection
+  - DOMAIN-SUFFIX,textnow.me,Mode Selection
+  - DOMAIN-SUFFIX,theguardian.com,Mode Selection
+  - DOMAIN-SUFFIX,theinitium.com,Mode Selection
+  - DOMAIN-SUFFIX,thetvdb.com,Mode Selection
+  - DOMAIN-SUFFIX,tineye.com,Mode Selection
+  - DOMAIN-SUFFIX,torproject.org,Mode Selection
+  - DOMAIN-SUFFIX,tumblr.com,Mode Selection
+  - DOMAIN-SUFFIX,turbobit.net,Mode Selection
+  - DOMAIN-SUFFIX,tutanota.com,Mode Selection
+  - DOMAIN-SUFFIX,tvboxnow.com,Mode Selection
+  - DOMAIN-SUFFIX,udn.com,Mode Selection
+  - DOMAIN-SUFFIX,unseen.is,Mode Selection
+  - DOMAIN-SUFFIX,upmedia.mg,Mode Selection
+  - DOMAIN-SUFFIX,uptodown.com,Mode Selection
+  - DOMAIN-SUFFIX,urbandictionary.com,Mode Selection
+  - DOMAIN-SUFFIX,ustream.tv,Mode Selection
+  - DOMAIN-SUFFIX,uwants.com,Mode Selection
+  - DOMAIN-SUFFIX,v2ray.com,Mode Selection
+  - DOMAIN-SUFFIX,viber.com,Mode Selection
+  - DOMAIN-SUFFIX,videopress.com,Mode Selection
+  - DOMAIN-SUFFIX,vimeo.com,Mode Selection
+  - DOMAIN-SUFFIX,voachinese.com,Mode Selection
+  - DOMAIN-SUFFIX,voanews.com,Mode Selection
+  - DOMAIN-SUFFIX,voxer.com,Mode Selection
+  - DOMAIN-SUFFIX,vzw.com,Mode Selection
+  - DOMAIN-SUFFIX,w3schools.com,Mode Selection
+  - DOMAIN-SUFFIX,washingtonpost.com,Mode Selection
+  - DOMAIN-SUFFIX,wattpad.com,Mode Selection
+  - DOMAIN-SUFFIX,whoer.net,Mode Selection
+  - DOMAIN-SUFFIX,wikimapia.org,Mode Selection
+  - DOMAIN-SUFFIX,wikipedia.org,Mode Selection
+  - DOMAIN-SUFFIX,wikiquote.org,Mode Selection
+  - DOMAIN-SUFFIX,wikiwand.com,Mode Selection
+  - DOMAIN-SUFFIX,winudf.com,Mode Selection
+  - DOMAIN-SUFFIX,wire.com,Mode Selection
+  - DOMAIN-SUFFIX,wordpress.com,Mode Selection
+  - DOMAIN-SUFFIX,workflow.is,Mode Selection
+  - DOMAIN-SUFFIX,worldcat.org,Mode Selection
+  - DOMAIN-SUFFIX,wsj.com,Mode Selection
+  - DOMAIN-SUFFIX,wsj.net,Mode Selection
+  - DOMAIN-SUFFIX,xhamster.com,Mode Selection
+  - DOMAIN-SUFFIX,xn--90wwvt03e.com,Mode Selection
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,Mode Selection
+  - DOMAIN-SUFFIX,xnxx.com,Mode Selection
+  - DOMAIN-SUFFIX,xvideos.com,Mode Selection
+  - DOMAIN-SUFFIX,yahoo.com,Mode Selection
+  - DOMAIN-SUFFIX,yandex.ru,Mode Selection
+  - DOMAIN-SUFFIX,ycombinator.com,Mode Selection
+  - DOMAIN-SUFFIX,yesasia.com,Mode Selection
+  - DOMAIN-SUFFIX,yes-news.com,Mode Selection
+  - DOMAIN-SUFFIX,yomiuri.co.jp,Mode Selection
+  - DOMAIN-SUFFIX,you-get.org,Mode Selection
+  - DOMAIN-SUFFIX,zaobao.com,Mode Selection
+  - DOMAIN-SUFFIX,zb.com,Mode Selection
+  - DOMAIN-SUFFIX,zello.com,Mode Selection
+  - DOMAIN-SUFFIX,zeronet.io,Mode Selection
+  - DOMAIN-SUFFIX,zoom.us,Mode Selection
+  - DOMAIN-KEYWORD,github,Mode Selection
+  - DOMAIN-KEYWORD,jav,Mode Selection
+  - DOMAIN-KEYWORD,pinterest,Mode Selection
+  - DOMAIN-KEYWORD,porn,Mode Selection
+  - DOMAIN-KEYWORD,wikileaks,Mode Selection
+  - DOMAIN-SUFFIX,apartmentratings.com,Mode Selection
+  - DOMAIN-SUFFIX,apartments.com,Mode Selection
+  - DOMAIN-SUFFIX,bankmobilevibe.com,Mode Selection
+  - DOMAIN-SUFFIX,bing.com,Mode Selection
+  - DOMAIN-SUFFIX,booktopia.com.au,Mode Selection
+  - DOMAIN-SUFFIX,cccat.io,Mode Selection
+  - DOMAIN-SUFFIX,centauro.com.br,Mode Selection
+  - DOMAIN-SUFFIX,clearsurance.com,Mode Selection
+  - DOMAIN-SUFFIX,costco.com,Mode Selection
+  - DOMAIN-SUFFIX,crackle.com,Mode Selection
+  - DOMAIN-SUFFIX,depositphotos.cn,Mode Selection
+  - DOMAIN-SUFFIX,dish.com,Mode Selection
+  - DOMAIN-SUFFIX,dmm.co.jp,Mode Selection
+  - DOMAIN-SUFFIX,dmm.com,Mode Selection
+  - DOMAIN-SUFFIX,dnvod.tv,Mode Selection
+  - DOMAIN-SUFFIX,esurance.com,Mode Selection
+  - DOMAIN-SUFFIX,extmatrix.com,Mode Selection
+  - DOMAIN-SUFFIX,fastpic.ru,Mode Selection
+  - DOMAIN-SUFFIX,flipboard.com,Mode Selection
+  - DOMAIN-SUFFIX,fnac.be,Mode Selection
+  - DOMAIN-SUFFIX,fnac.com,Mode Selection
+  - DOMAIN-SUFFIX,funkyimg.com,Mode Selection
+  - DOMAIN-SUFFIX,fxnetworks.com,Mode Selection
+  - DOMAIN-SUFFIX,gettyimages.com,Mode Selection
+  - DOMAIN-SUFFIX,go.com,Mode Selection
+  - DOMAIN-SUFFIX,here.com,Mode Selection
+  - DOMAIN-SUFFIX,jcpenney.com,Mode Selection
+  - DOMAIN-SUFFIX,jiehua.tv,Mode Selection
+  - DOMAIN-SUFFIX,mailfence.com,Mode Selection
+  - DOMAIN-SUFFIX,nationwide.com,Mode Selection
+  - DOMAIN-SUFFIX,nbc.com,Mode Selection
+  - DOMAIN-SUFFIX,nexon.com,Mode Selection
+  - DOMAIN-SUFFIX,nordstrom.com,Mode Selection
+  - DOMAIN-SUFFIX,nordstromimage.com,Mode Selection
+  - DOMAIN-SUFFIX,nordstromrack.com,Mode Selection
+  - DOMAIN-SUFFIX,superpages.com,Mode Selection
+  - DOMAIN-SUFFIX,target.com,Mode Selection
+  - DOMAIN-SUFFIX,thinkgeek.com,Mode Selection
+  - DOMAIN-SUFFIX,tracfone.com,Mode Selection
+  - DOMAIN-SUFFIX,unity3d.com,Mode Selection
+  - DOMAIN-SUFFIX,uploader.jp,Mode Selection
+  - DOMAIN-SUFFIX,vevo.com,Mode Selection
+  - DOMAIN-SUFFIX,viu.tv,Mode Selection
+  - DOMAIN-SUFFIX,vk.com,Mode Selection
+  - DOMAIN-SUFFIX,vsco.co,Mode Selection
+  - DOMAIN-SUFFIX,xfinity.com,Mode Selection
+  - DOMAIN-SUFFIX,zattoo.com,Mode Selection
+  - DOMAIN,testflight.apple.com,Mode Selection
+  - DOMAIN-SUFFIX,appsto.re,Mode Selection
+  - DOMAIN,books.itunes.apple.com,Mode Selection
+  - DOMAIN,hls.itunes.apple.com,Mode Selection
+  - DOMAIN,apps.apple.com,Mode Selection
+  - DOMAIN,itunes.apple.com,Mode Selection
+  - DOMAIN,api-glb-sea.smoot.apple.com,Mode Selection
+  - DOMAIN,lookup-api.apple.com,Mode Selection
+  - DOMAIN-SUFFIX,abc.xyz,Mode Selection
+  - DOMAIN-SUFFIX,android.com,Mode Selection
+  - DOMAIN-SUFFIX,androidify.com,Mode Selection
+  - DOMAIN-SUFFIX,dialogflow.com,Mode Selection
+  - DOMAIN-SUFFIX,autodraw.com,Mode Selection
+  - DOMAIN-SUFFIX,capitalg.com,Mode Selection
+  - DOMAIN-SUFFIX,certificate-transparency.org,Mode Selection
+  - DOMAIN-SUFFIX,chrome.com,Mode Selection
+  - DOMAIN-SUFFIX,chromeexperiments.com,Mode Selection
+  - DOMAIN-SUFFIX,chromestatus.com,Mode Selection
+  - DOMAIN-SUFFIX,chromium.org,Mode Selection
+  - DOMAIN-SUFFIX,creativelab5.com,Mode Selection
+  - DOMAIN-SUFFIX,debug.com,Mode Selection
+  - DOMAIN-SUFFIX,deepmind.com,Mode Selection
+  - DOMAIN-SUFFIX,firebaseio.com,Mode Selection
+  - DOMAIN-SUFFIX,getmdl.io,Mode Selection
+  - DOMAIN-SUFFIX,ggpht.com,Mode Selection
+  - DOMAIN-SUFFIX,gmail.com,Mode Selection
+  - DOMAIN-SUFFIX,gmodules.com,Mode Selection
+  - DOMAIN-SUFFIX,godoc.org,Mode Selection
+  - DOMAIN-SUFFIX,golang.org,Mode Selection
+  - DOMAIN-SUFFIX,gstatic.com,Mode Selection
+  - DOMAIN-SUFFIX,gv.com,Mode Selection
+  - DOMAIN-SUFFIX,gwtproject.org,Mode Selection
+  - DOMAIN-SUFFIX,itasoftware.com,Mode Selection
+  - DOMAIN-SUFFIX,madewithcode.com,Mode Selection
+  - DOMAIN-SUFFIX,material.io,Mode Selection
+  - DOMAIN-SUFFIX,polymer-project.org,Mode Selection
+  - DOMAIN-SUFFIX,admin.recaptcha.net,Mode Selection
+  - DOMAIN-SUFFIX,recaptcha.net,Mode Selection
+  - DOMAIN-SUFFIX,shattered.io,Mode Selection
+  - DOMAIN-SUFFIX,synergyse.com,Mode Selection
+  - DOMAIN-SUFFIX,tensorflow.org,Mode Selection
+  - DOMAIN-SUFFIX,tfhub.dev,Mode Selection
+  - DOMAIN-SUFFIX,tiltbrush.com,Mode Selection
+  - DOMAIN-SUFFIX,waveprotocol.org,Mode Selection
+  - DOMAIN-SUFFIX,waymo.com,Mode Selection
+  - DOMAIN-SUFFIX,webmproject.org,Mode Selection
+  - DOMAIN-SUFFIX,webrtc.org,Mode Selection
+  - DOMAIN-SUFFIX,whatbrowser.org,Mode Selection
+  - DOMAIN-SUFFIX,widevine.com,Mode Selection
+  - DOMAIN-SUFFIX,x.company,Mode Selection
+  - DOMAIN-SUFFIX,youtu.be,Mode Selection
+  - DOMAIN-SUFFIX,yt.be,Mode Selection
+  - DOMAIN-SUFFIX,ytimg.com,Mode Selection
+  - DOMAIN-SUFFIX,1drv.com,Mode Selection
+  - DOMAIN-SUFFIX,1drv.ms,Mode Selection
+  - DOMAIN-SUFFIX,blob.core.windows.net,Mode Selection
+  - DOMAIN-SUFFIX,livefilestore.com,Mode Selection
+  - DOMAIN-SUFFIX,onedrive.com,Mode Selection
+  - DOMAIN-SUFFIX,storage.live.com,Mode Selection
+  - DOMAIN-SUFFIX,storage.msn.com,Mode Selection
+  - DOMAIN,oneclient.sfx.ms,Mode Selection
+  - DOMAIN-SUFFIX,0rz.tw,Mode Selection
+  - DOMAIN-SUFFIX,4bluestones.biz,Mode Selection
+  - DOMAIN-SUFFIX,9bis.net,Mode Selection
+  - DOMAIN-SUFFIX,allconnected.co,Mode Selection
+  - DOMAIN-SUFFIX,aol.com,Mode Selection
+  - DOMAIN-SUFFIX,bcc.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,bit.ly,Mode Selection
+  - DOMAIN-SUFFIX,bitshare.com,Mode Selection
+  - DOMAIN-SUFFIX,blog.jp,Mode Selection
+  - DOMAIN-SUFFIX,blogimg.jp,Mode Selection
+  - DOMAIN-SUFFIX,blogtd.org,Mode Selection
+  - DOMAIN-SUFFIX,broadcast.co.nz,Mode Selection
+  - DOMAIN-SUFFIX,camfrog.com,Mode Selection
+  - DOMAIN-SUFFIX,cfos.de,Mode Selection
+  - DOMAIN-SUFFIX,citypopulation.de,Mode Selection
+  - DOMAIN-SUFFIX,cloudfront.net,Mode Selection
+  - DOMAIN-SUFFIX,ctitv.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,cuhk.edu.hk,Mode Selection
+  - DOMAIN-SUFFIX,cusu.hk,Mode Selection
+  - DOMAIN-SUFFIX,discord.gg,Mode Selection
+  - DOMAIN-SUFFIX,discuss.com.hk,Mode Selection
+  - DOMAIN-SUFFIX,dropboxapi.com,Mode Selection
+  - DOMAIN-SUFFIX,duolingo.cn,Mode Selection
+  - DOMAIN-SUFFIX,edditstatic.com,Mode Selection
+  - DOMAIN-SUFFIX,flickriver.com,Mode Selection
+  - DOMAIN-SUFFIX,focustaiwan.tw,Mode Selection
+  - DOMAIN-SUFFIX,Mode Selection.fr,Mode Selection
+  - DOMAIN-SUFFIX,gigacircle.com,Mode Selection
+  - DOMAIN-SUFFIX,hk-pub.com,Mode Selection
+  - DOMAIN-SUFFIX,hosting.co.uk,Mode Selection
+  - DOMAIN-SUFFIX,hwcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,ifixit.com,Mode Selection
+  - DOMAIN-SUFFIX,iphone4hongkong.com,Mode Selection
+  - DOMAIN-SUFFIX,iphonetaiwan.org,Mode Selection
+  - DOMAIN-SUFFIX,iptvbin.com,Mode Selection
+  - DOMAIN-SUFFIX,linksalpha.com,Mode Selection
+  - DOMAIN-SUFFIX,manyvids.com,Mode Selection
+  - DOMAIN-SUFFIX,myactimes.com,Mode Selection
+  - DOMAIN-SUFFIX,newsblur.com,Mode Selection
+  - DOMAIN-SUFFIX,now.im,Mode Selection
+  - DOMAIN-SUFFIX,nowe.com,Mode Selection
+  - DOMAIN-SUFFIX,redditlist.com,Mode Selection
+  - DOMAIN-SUFFIX,s3.amazonaws.com,Mode Selection
+  - DOMAIN-SUFFIX,signal.org,Mode Selection
+  - DOMAIN-SUFFIX,smartmailcloud.com,Mode Selection
+  - DOMAIN-SUFFIX,sparknotes.com,Mode Selection
+  - DOMAIN-SUFFIX,streetvoice.com,Mode Selection
+  - DOMAIN-SUFFIX,supertop.co,Mode Selection
+  - DOMAIN-SUFFIX,tv.com,Mode Selection
+  - DOMAIN-SUFFIX,typepad.com,Mode Selection
+  - DOMAIN-SUFFIX,udnbkk.com,Mode Selection
+  - DOMAIN-SUFFIX,urbanairship.com,Mode Selection
+  - DOMAIN-SUFFIX,whispersystems.org,Mode Selection
+  - DOMAIN-SUFFIX,wikia.com,Mode Selection
+  - DOMAIN-SUFFIX,wn.com,Mode Selection
+  - DOMAIN-SUFFIX,wolframalpha.com,Mode Selection
+  - DOMAIN-SUFFIX,x-art.com,Mode Selection
+  - DOMAIN-SUFFIX,yimg.com,Mode Selection
+  - DOMAIN,api.steampowered.com,Mode Selection
+  - DOMAIN,store.steampowered.com,Mode Selection
 
   - DOMAIN-SUFFIX,aaplimg.com,DIRECT
   - DOMAIN-SUFFIX,apple.co,DIRECT
@@ -842,200 +842,200 @@ rules:
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
 
-  - DOMAIN-SUFFIX,t.me,Global Selection
-  - DOMAIN-SUFFIX,tdesktop.com,Global Selection
-  - DOMAIN-SUFFIX,telegra.ph,Global Selection
-  - DOMAIN-SUFFIX,telegram.me,Global Selection
-  - DOMAIN-SUFFIX,telegram.org,Global Selection
-  - IP-CIDR,91.108.4.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.8.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.12.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.16.0/22,Global Selection,no-resolve
-  - IP-CIDR,91.108.56.0/22,Global Selection,no-resolve
-  - IP-CIDR,149.154.160.0/20,Global Selection,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,Global Selection,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,Global Selection,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,Global Selection,no-resolve
+  - DOMAIN-SUFFIX,t.me,Mode Selection
+  - DOMAIN-SUFFIX,tdesktop.com,Mode Selection
+  - DOMAIN-SUFFIX,telegra.ph,Mode Selection
+  - DOMAIN-SUFFIX,telegram.me,Mode Selection
+  - DOMAIN-SUFFIX,telegram.org,Mode Selection
+  - IP-CIDR,91.108.4.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.8.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.12.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.16.0/22,Mode Selection,no-resolve
+  - IP-CIDR,91.108.56.0/22,Mode Selection,no-resolve
+  - IP-CIDR,149.154.160.0/20,Mode Selection,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,Mode Selection,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,Mode Selection,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,Mode Selection,no-resolve
 
-  - DOMAIN-SUFFIX,googlevideo.com,Global Selection
-  - DOMAIN-SUFFIX,youtube.com,Global Selection
-  - DOMAIN,youtubei.googleapis.com,Global Selection
+  - DOMAIN-SUFFIX,googlevideo.com,Mode Selection
+  - DOMAIN-SUFFIX,youtube.com,Mode Selection
+  - DOMAIN,youtubei.googleapis.com,Mode Selection
 
-  - DOMAIN-SUFFIX,netflix.com,Global Selection
-  - DOMAIN-SUFFIX,netflix.net,Global Selection
-  - DOMAIN-SUFFIX,nflxext.com,Global Selection
-  - DOMAIN-SUFFIX,nflximg.com,Global Selection
-  - DOMAIN-SUFFIX,nflximg.net,Global Selection
-  - DOMAIN-SUFFIX,nflxso.net,Global Selection
-  - DOMAIN-SUFFIX,nflxvideo.net,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest0.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest1.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest2.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest3.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest4.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest5.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest6.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest7.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest8.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest9.com,Global Selection
-  - IP-CIDR,23.246.0.0/18,Global Selection,no-resolve
-  - IP-CIDR,37.77.184.0/21,Global Selection,no-resolve
-  - IP-CIDR,45.57.0.0/17,Global Selection,no-resolve
-  - IP-CIDR,64.120.128.0/17,Global Selection,no-resolve
-  - IP-CIDR,66.197.128.0/17,Global Selection,no-resolve
-  - IP-CIDR,108.175.32.0/20,Global Selection,no-resolve
-  - IP-CIDR,192.173.64.0/18,Global Selection,no-resolve
-  - IP-CIDR,198.38.96.0/19,Global Selection,no-resolve
-  - IP-CIDR,198.45.48.0/20,Global Selection,no-resolve
+  - DOMAIN-SUFFIX,netflix.com,Mode Selection
+  - DOMAIN-SUFFIX,netflix.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxext.com,Mode Selection
+  - DOMAIN-SUFFIX,nflximg.com,Mode Selection
+  - DOMAIN-SUFFIX,nflximg.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxso.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxvideo.net,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest0.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest1.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest2.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest3.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest4.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest5.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest6.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest7.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest8.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest9.com,Mode Selection
+  - IP-CIDR,23.246.0.0/18,Mode Selection,no-resolve
+  - IP-CIDR,37.77.184.0/21,Mode Selection,no-resolve
+  - IP-CIDR,45.57.0.0/17,Mode Selection,no-resolve
+  - IP-CIDR,64.120.128.0/17,Mode Selection,no-resolve
+  - IP-CIDR,66.197.128.0/17,Mode Selection,no-resolve
+  - IP-CIDR,108.175.32.0/20,Mode Selection,no-resolve
+  - IP-CIDR,192.173.64.0/18,Mode Selection,no-resolve
+  - IP-CIDR,198.38.96.0/19,Mode Selection,no-resolve
+  - IP-CIDR,198.45.48.0/20,Mode Selection,no-resolve
 
-  - DOMAIN-SUFFIX,deezer.com,Global Selection
-  - DOMAIN-SUFFIX,dzcdn.net,Global Selection
-  - DOMAIN-SUFFIX,kkbox.com,Global Selection
-  - DOMAIN-SUFFIX,kkbox.com.tw,Global Selection
-  - DOMAIN-SUFFIX,kfs.io,Global Selection
-  - DOMAIN-SUFFIX,joox.com,Global Selection
-  - DOMAIN-SUFFIX,pandora.com,Global Selection
-  - DOMAIN-SUFFIX,p-cdn.us,Global Selection
-  - DOMAIN-SUFFIX,sndcdn.com,Global Selection
-  - DOMAIN-SUFFIX,soundcloud.com,Global Selection
-  - DOMAIN-SUFFIX,pscdn.co,Global Selection
-  - DOMAIN-SUFFIX,scdn.co,Global Selection
-  - DOMAIN-SUFFIX,spotify.com,Global Selection
-  - DOMAIN-SUFFIX,spoti.fi,Global Selection
-  - DOMAIN-KEYWORD,spotify.com,Global Selection
-  - DOMAIN-KEYWORD,-spotify-com,Global Selection
-  - DOMAIN-SUFFIX,tidal.com,Global Selection
-  - DOMAIN-SUFFIX,c4assets.com,Global Selection
-  - DOMAIN-SUFFIX,channel4.com,Global Selection
-  - DOMAIN-SUFFIX,abema.io,Global Selection
-  - DOMAIN-SUFFIX,ameba.jp,Global Selection
-  - DOMAIN-SUFFIX,abema.tv,Global Selection
-  - DOMAIN-SUFFIX,hayabusa.io,Global Selection
-  - DOMAIN,abematv.akamaized.net,Global Selection
-  - DOMAIN,ds-linear-abematv.akamaized.net,Global Selection
-  - DOMAIN,ds-vod-abematv.akamaized.net,Global Selection
-  - DOMAIN,linear-abematv.akamaized.net,Global Selection
-  - DOMAIN-SUFFIX,aiv-cdn.net,Global Selection
-  - DOMAIN-SUFFIX,aiv-delivery.net,Global Selection
-  - DOMAIN-SUFFIX,amazonvideo.com,Global Selection
-  - DOMAIN-SUFFIX,primevideo.com,Global Selection
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net,Global Selection
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,Global Selection
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,Global Selection
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,Global Selection
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,Global Selection
-  - DOMAIN-KEYWORD,avoddashs,Global Selection
-  - DOMAIN-SUFFIX,bahamut.com.tw,Global Selection
-  - DOMAIN-SUFFIX,gamer.com.tw,Global Selection
-  - DOMAIN,gamer-cds.cdn.hinet.net,Global Selection
-  - DOMAIN,gamer2-cds.cdn.hinet.net,Global Selection
-  - DOMAIN-SUFFIX,bbc.co.uk,Global Selection
-  - DOMAIN-SUFFIX,bbci.co.uk,Global Selection
-  - DOMAIN-KEYWORD,bbcfmt,Global Selection
-  - DOMAIN-KEYWORD,uk-live,Global Selection
-  - DOMAIN-SUFFIX,dazn.com,Global Selection
-  - DOMAIN-SUFFIX,dazn-api.com,Global Selection
-  - DOMAIN,d151l6v8er5bdm.cloudfront.net,Global Selection
-  - DOMAIN-KEYWORD,voddazn,Global Selection
-  - DOMAIN-SUFFIX,bamgrid.com,Global Selection
-  - DOMAIN-SUFFIX,disney-plus.net,Global Selection
-  - DOMAIN-SUFFIX,disneyplus.com,Global Selection
-  - DOMAIN-SUFFIX,dssott.com,Global Selection
-  - DOMAIN,cdn.registerdisney.go.com,Global Selection
-  - DOMAIN-SUFFIX,encoretvb.com,Global Selection
-  - DOMAIN,edge.api.brightcove.com,Global Selection
-  - DOMAIN,bcbolt446c5271-a.akamaihd.net,Global Selection
-  - DOMAIN-SUFFIX,fox.com,Global Selection
-  - DOMAIN-SUFFIX,foxdcg.com,Global Selection
-  - DOMAIN-SUFFIX,theplatform.com,Global Selection
-  - DOMAIN-SUFFIX,uplynk.com,Global Selection
-  - DOMAIN-SUFFIX,hbo.com,Global Selection
-  - DOMAIN-SUFFIX,hbogo.com,Global Selection
-  - DOMAIN-SUFFIX,hbonow.com,Global Selection
-  - DOMAIN-SUFFIX,hbogoasia.com,Global Selection
-  - DOMAIN-SUFFIX,hbogoasia.hk,Global Selection
-  - DOMAIN,bcbolthboa-a.akamaihd.net,Global Selection
-  - DOMAIN,players.brightcove.net,Global Selection
-  - DOMAIN,s3-ap-southeast-1.amazonaws.com,Global Selection
-  - DOMAIN,dai3fd1oh325y.cloudfront.net,Global Selection
-  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,Global Selection
-  - DOMAIN,hboasia1-i.akamaihd.net,Global Selection
-  - DOMAIN,hboasia2-i.akamaihd.net,Global Selection
-  - DOMAIN,hboasia3-i.akamaihd.net,Global Selection
-  - DOMAIN,hboasia4-i.akamaihd.net,Global Selection
-  - DOMAIN,hboasia5-i.akamaihd.net,Global Selection
-  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,Global Selection
-  - DOMAIN-SUFFIX,5itv.tv,Global Selection
-  - DOMAIN-SUFFIX,ocnttv.com,Global Selection
-  - DOMAIN-SUFFIX,hulu.com,Global Selection
-  - DOMAIN-SUFFIX,huluim.com,Global Selection
-  - DOMAIN-SUFFIX,hulustream.com,Global Selection
-  - DOMAIN-SUFFIX,happyon.jp,Global Selection
-  - DOMAIN-SUFFIX,hulu.jp,Global Selection
-  - DOMAIN-SUFFIX,itv.com,Global Selection
-  - DOMAIN-SUFFIX,itvstatic.com,Global Selection
-  - DOMAIN,itvpnpmobile-a.akamaihd.net,Global Selection
-  - DOMAIN-SUFFIX,kktv.com.tw,Global Selection
-  - DOMAIN-SUFFIX,kktv.me,Global Selection
-  - DOMAIN,kktv-theater.kk.stream,Global Selection
-  - DOMAIN-SUFFIX,linetv.tw,Global Selection
-  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,Global Selection
-  - DOMAIN-SUFFIX,litv.tv,Global Selection
-  - DOMAIN,litvGlobal Selectionmobile-hichannel.cdn.hinet.net,Global Selection
-  - DOMAIN-SUFFIX,channel5.com,Global Selection
-  - DOMAIN-SUFFIX,my5.tv,Global Selection
-  - DOMAIN,d349g9zuie06uo.cloudfront.net,Global Selection
-  - DOMAIN-SUFFIX,mytvsuper.com,Global Selection
-  - DOMAIN-SUFFIX,tvb.com,Global Selection
-  - DOMAIN-SUFFIX,netflix.com,Global Selection
-  - DOMAIN-SUFFIX,netflix.net,Global Selection
-  - DOMAIN-SUFFIX,nflxext.com,Global Selection
-  - DOMAIN-SUFFIX,nflximg.com,Global Selection
-  - DOMAIN-SUFFIX,nflximg.net,Global Selection
-  - DOMAIN-SUFFIX,nflxso.net,Global Selection
-  - DOMAIN-SUFFIX,nflxvideo.net,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest0.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest1.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest2.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest3.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest4.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest5.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest6.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest7.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest8.com,Global Selection
-  - DOMAIN-SUFFIX,netflixdnstest9.com,Global Selection
-  - IP-CIDR,23.246.0.0/18,Global Selection,no-resolve
-  - IP-CIDR,37.77.184.0/21,Global Selection,no-resolve
-  - IP-CIDR,45.57.0.0/17,Global Selection,no-resolve
-  - IP-CIDR,64.120.128.0/17,Global Selection,no-resolve
-  - IP-CIDR,66.197.128.0/17,Global Selection,no-resolve
-  - IP-CIDR,108.175.32.0/20,Global Selection,no-resolve
-  - IP-CIDR,192.173.64.0/18,Global Selection,no-resolve
-  - IP-CIDR,198.38.96.0/19,Global Selection,no-resolve
-  - IP-CIDR,198.45.48.0/20,Global Selection,no-resolve
-  - DOMAIN-SUFFIX,dmc.nico,Global Selection
-  - DOMAIN-SUFFIX,nicovideo.jp,Global Selection
-  - DOMAIN-SUFFIX,nimg.jp,Global Selection
-  - DOMAIN-SUFFIX,socdm.com,Global Selection
-  - DOMAIN-SUFFIX,pbs.org,Global Selection
-  - DOMAIN-SUFFIX,phncdn.com,Global Selection
-  - DOMAIN-SUFFIX,pornhub.com,Global Selection
-  - DOMAIN-SUFFIX,pornhubpremium.com,Global Selection
-  - DOMAIN-SUFFIX,skyking.com.tw,Global Selection
-  - DOMAIN,hamifans.emome.net,Global Selection
-  - DOMAIN-SUFFIX,twitch.tv,Global Selection
-  - DOMAIN-SUFFIX,twitchcdn.net,Global Selection
-  - DOMAIN-SUFFIX,ttvnw.net,Global Selection
-  - DOMAIN-SUFFIX,jtvnw.net,Global Selection
-  - DOMAIN-SUFFIX,viu.com,Global Selection
-  - DOMAIN-SUFFIX,viu.tv,Global Selection
-  - DOMAIN,api.viu.now.com,Global Selection
-  - DOMAIN,d1k2us671qcoau.cloudfront.net,Global Selection
-  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,Global Selection
-  - DOMAIN,dfp6rglgjqszk.cloudfront.net,Global Selection
-  - DOMAIN-SUFFIX,googlevideo.com,Global Selection
-  - DOMAIN-SUFFIX,youtube.com,Global Selection
-  - DOMAIN,youtubei.googleapis.com,Global Selection
+  - DOMAIN-SUFFIX,deezer.com,Mode Selection
+  - DOMAIN-SUFFIX,dzcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,kkbox.com,Mode Selection
+  - DOMAIN-SUFFIX,kkbox.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,kfs.io,Mode Selection
+  - DOMAIN-SUFFIX,joox.com,Mode Selection
+  - DOMAIN-SUFFIX,pandora.com,Mode Selection
+  - DOMAIN-SUFFIX,p-cdn.us,Mode Selection
+  - DOMAIN-SUFFIX,sndcdn.com,Mode Selection
+  - DOMAIN-SUFFIX,soundcloud.com,Mode Selection
+  - DOMAIN-SUFFIX,pscdn.co,Mode Selection
+  - DOMAIN-SUFFIX,scdn.co,Mode Selection
+  - DOMAIN-SUFFIX,spotify.com,Mode Selection
+  - DOMAIN-SUFFIX,spoti.fi,Mode Selection
+  - DOMAIN-KEYWORD,spotify.com,Mode Selection
+  - DOMAIN-KEYWORD,-spotify-com,Mode Selection
+  - DOMAIN-SUFFIX,tidal.com,Mode Selection
+  - DOMAIN-SUFFIX,c4assets.com,Mode Selection
+  - DOMAIN-SUFFIX,channel4.com,Mode Selection
+  - DOMAIN-SUFFIX,abema.io,Mode Selection
+  - DOMAIN-SUFFIX,ameba.jp,Mode Selection
+  - DOMAIN-SUFFIX,abema.tv,Mode Selection
+  - DOMAIN-SUFFIX,hayabusa.io,Mode Selection
+  - DOMAIN,abematv.akamaized.net,Mode Selection
+  - DOMAIN,ds-linear-abematv.akamaized.net,Mode Selection
+  - DOMAIN,ds-vod-abematv.akamaized.net,Mode Selection
+  - DOMAIN,linear-abematv.akamaized.net,Mode Selection
+  - DOMAIN-SUFFIX,aiv-cdn.net,Mode Selection
+  - DOMAIN-SUFFIX,aiv-delivery.net,Mode Selection
+  - DOMAIN-SUFFIX,amazonvideo.com,Mode Selection
+  - DOMAIN-SUFFIX,primevideo.com,Mode Selection
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,Mode Selection
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,Mode Selection
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,Mode Selection
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,Mode Selection
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,Mode Selection
+  - DOMAIN-KEYWORD,avoddashs,Mode Selection
+  - DOMAIN-SUFFIX,bahamut.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,gamer.com.tw,Mode Selection
+  - DOMAIN,gamer-cds.cdn.hinet.net,Mode Selection
+  - DOMAIN,gamer2-cds.cdn.hinet.net,Mode Selection
+  - DOMAIN-SUFFIX,bbc.co.uk,Mode Selection
+  - DOMAIN-SUFFIX,bbci.co.uk,Mode Selection
+  - DOMAIN-KEYWORD,bbcfmt,Mode Selection
+  - DOMAIN-KEYWORD,uk-live,Mode Selection
+  - DOMAIN-SUFFIX,dazn.com,Mode Selection
+  - DOMAIN-SUFFIX,dazn-api.com,Mode Selection
+  - DOMAIN,d151l6v8er5bdm.cloudfront.net,Mode Selection
+  - DOMAIN-KEYWORD,voddazn,Mode Selection
+  - DOMAIN-SUFFIX,bamgrid.com,Mode Selection
+  - DOMAIN-SUFFIX,disney-plus.net,Mode Selection
+  - DOMAIN-SUFFIX,disneyplus.com,Mode Selection
+  - DOMAIN-SUFFIX,dssott.com,Mode Selection
+  - DOMAIN,cdn.registerdisney.go.com,Mode Selection
+  - DOMAIN-SUFFIX,encoretvb.com,Mode Selection
+  - DOMAIN,edge.api.brightcove.com,Mode Selection
+  - DOMAIN,bcbolt446c5271-a.akamaihd.net,Mode Selection
+  - DOMAIN-SUFFIX,fox.com,Mode Selection
+  - DOMAIN-SUFFIX,foxdcg.com,Mode Selection
+  - DOMAIN-SUFFIX,theplatform.com,Mode Selection
+  - DOMAIN-SUFFIX,uplynk.com,Mode Selection
+  - DOMAIN-SUFFIX,hbo.com,Mode Selection
+  - DOMAIN-SUFFIX,hbogo.com,Mode Selection
+  - DOMAIN-SUFFIX,hbonow.com,Mode Selection
+  - DOMAIN-SUFFIX,hbogoasia.com,Mode Selection
+  - DOMAIN-SUFFIX,hbogoasia.hk,Mode Selection
+  - DOMAIN,bcbolthboa-a.akamaihd.net,Mode Selection
+  - DOMAIN,players.brightcove.net,Mode Selection
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,Mode Selection
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,Mode Selection
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,Mode Selection
+  - DOMAIN,hboasia1-i.akamaihd.net,Mode Selection
+  - DOMAIN,hboasia2-i.akamaihd.net,Mode Selection
+  - DOMAIN,hboasia3-i.akamaihd.net,Mode Selection
+  - DOMAIN,hboasia4-i.akamaihd.net,Mode Selection
+  - DOMAIN,hboasia5-i.akamaihd.net,Mode Selection
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,Mode Selection
+  - DOMAIN-SUFFIX,5itv.tv,Mode Selection
+  - DOMAIN-SUFFIX,ocnttv.com,Mode Selection
+  - DOMAIN-SUFFIX,hulu.com,Mode Selection
+  - DOMAIN-SUFFIX,huluim.com,Mode Selection
+  - DOMAIN-SUFFIX,hulustream.com,Mode Selection
+  - DOMAIN-SUFFIX,happyon.jp,Mode Selection
+  - DOMAIN-SUFFIX,hulu.jp,Mode Selection
+  - DOMAIN-SUFFIX,itv.com,Mode Selection
+  - DOMAIN-SUFFIX,itvstatic.com,Mode Selection
+  - DOMAIN,itvpnpmobile-a.akamaihd.net,Mode Selection
+  - DOMAIN-SUFFIX,kktv.com.tw,Mode Selection
+  - DOMAIN-SUFFIX,kktv.me,Mode Selection
+  - DOMAIN,kktv-theater.kk.stream,Mode Selection
+  - DOMAIN-SUFFIX,linetv.tw,Mode Selection
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,Mode Selection
+  - DOMAIN-SUFFIX,litv.tv,Mode Selection
+  - DOMAIN,litvMode Selectionmobile-hichannel.cdn.hinet.net,Mode Selection
+  - DOMAIN-SUFFIX,channel5.com,Mode Selection
+  - DOMAIN-SUFFIX,my5.tv,Mode Selection
+  - DOMAIN,d349g9zuie06uo.cloudfront.net,Mode Selection
+  - DOMAIN-SUFFIX,mytvsuper.com,Mode Selection
+  - DOMAIN-SUFFIX,tvb.com,Mode Selection
+  - DOMAIN-SUFFIX,netflix.com,Mode Selection
+  - DOMAIN-SUFFIX,netflix.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxext.com,Mode Selection
+  - DOMAIN-SUFFIX,nflximg.com,Mode Selection
+  - DOMAIN-SUFFIX,nflximg.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxso.net,Mode Selection
+  - DOMAIN-SUFFIX,nflxvideo.net,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest0.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest1.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest2.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest3.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest4.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest5.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest6.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest7.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest8.com,Mode Selection
+  - DOMAIN-SUFFIX,netflixdnstest9.com,Mode Selection
+  - IP-CIDR,23.246.0.0/18,Mode Selection,no-resolve
+  - IP-CIDR,37.77.184.0/21,Mode Selection,no-resolve
+  - IP-CIDR,45.57.0.0/17,Mode Selection,no-resolve
+  - IP-CIDR,64.120.128.0/17,Mode Selection,no-resolve
+  - IP-CIDR,66.197.128.0/17,Mode Selection,no-resolve
+  - IP-CIDR,108.175.32.0/20,Mode Selection,no-resolve
+  - IP-CIDR,192.173.64.0/18,Mode Selection,no-resolve
+  - IP-CIDR,198.38.96.0/19,Mode Selection,no-resolve
+  - IP-CIDR,198.45.48.0/20,Mode Selection,no-resolve
+  - DOMAIN-SUFFIX,dmc.nico,Mode Selection
+  - DOMAIN-SUFFIX,nicovideo.jp,Mode Selection
+  - DOMAIN-SUFFIX,nimg.jp,Mode Selection
+  - DOMAIN-SUFFIX,socdm.com,Mode Selection
+  - DOMAIN-SUFFIX,pbs.org,Mode Selection
+  - DOMAIN-SUFFIX,phncdn.com,Mode Selection
+  - DOMAIN-SUFFIX,pornhub.com,Mode Selection
+  - DOMAIN-SUFFIX,pornhubpremium.com,Mode Selection
+  - DOMAIN-SUFFIX,skyking.com.tw,Mode Selection
+  - DOMAIN,hamifans.emome.net,Mode Selection
+  - DOMAIN-SUFFIX,twitch.tv,Mode Selection
+  - DOMAIN-SUFFIX,twitchcdn.net,Mode Selection
+  - DOMAIN-SUFFIX,ttvnw.net,Mode Selection
+  - DOMAIN-SUFFIX,jtvnw.net,Mode Selection
+  - DOMAIN-SUFFIX,viu.com,Mode Selection
+  - DOMAIN-SUFFIX,viu.tv,Mode Selection
+  - DOMAIN,api.viu.now.com,Mode Selection
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,Mode Selection
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,Mode Selection
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,Mode Selection
+  - DOMAIN-SUFFIX,googlevideo.com,Mode Selection
+  - DOMAIN-SUFFIX,youtube.com,Mode Selection
+  - DOMAIN,youtubei.googleapis.com,Mode Selection
   - DOMAIN-SUFFIX,biliapi.com,DIRECT
   - DOMAIN-SUFFIX,biliapi.net,DIRECT
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
@@ -1398,4 +1398,4 @@ rules:
   - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
 
-  - MATCH,Global Selection
+  - MATCH,Mode Selection
