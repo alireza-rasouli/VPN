@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/alireza-rasouli/VPN/main/Surfboard.txt interval=86400 strict=false
+#!MANAGED-CONFIG https://raw.githubusercontent.com/alireza-rasouli/VPN/main/TrojanList.txt interval=86400 strict=false
 
 [General]
 loglevel = notify
