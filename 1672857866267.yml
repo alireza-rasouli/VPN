@@ -45,7 +45,6 @@ proxy-groups:
   - name: Country Selection
     type: select
     proxies:
-      - 🇨🇳 China
       - 🇯🇵 Japan
       - 🇸🇬 Singapore
       - 🇺🇸 USA
@@ -57,17 +56,12 @@ proxy-groups:
       - 🇫🇷 France
       - 🇬🇧 UK
       - 🇳🇱 Netherlands
+      - 🇭🇰 China
       - Others
   - name: Manual Selection
     type: select
     use:
       - all
-  - name: 🇨🇳 China
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - cn
   - name: 🇯🇵 Japan
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -134,6 +128,12 @@ proxy-groups:
     interval: 300
     use:
       - nl
+  - name: 🇭🇰 China
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - hk
   - name: Others
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -168,10 +168,10 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  cn:
+  hk:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies?c=CN,HK,TW"
-    path: proxy.yiun.xyz/provider-cn.yaml
+    url: "https://proxy.yiun.xyz/clash/proxies?c=HK,TW"
+    path: proxy.yiun.xyz/provider-hk.yaml
     health-check:
       enable: true
       interval: 600
@@ -266,7 +266,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   all:
     type: http
-    url: "https://proxy.yiun.xyz/clash/proxies"
+    url: "https://proxy.yiun.xyz/clash/proxies?nc=CN,HK,TW"
     path: proxy.yiun.xyz/provider.yaml
     health-check:
       enable: true
