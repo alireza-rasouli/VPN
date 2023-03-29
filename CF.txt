@@ -1,8 +1,11 @@
+Cloudflare
+
+
 Worker code
 
 https://getafreenode.com/blog/index.php/tutorial/32.html
 
-https://pastebin.com/pH5SBwYu
+https://pastebin.com/XSLJDX1V
 
 Cloudflare workers
 
