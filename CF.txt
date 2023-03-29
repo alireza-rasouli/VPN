@@ -1,10 +1,18 @@
-
+Worker code
 
 https://getafreenode.com/blog/index.php/tutorial/32.html
+
+https://pastebin.com/pH5SBwYu
+
+Cloudflare workers
 
 https://jolly-star-83dc.ali-airlord.workers.dev/sub/
 
 https://fancy-bush-186e.vgeedlwqbqo.workers.dev/sub/
+
+Cloudflare IP
+
+https://cloudflare-v2ray.vercel.app/
 
 https://vfarid.github.io/cf-ip-scanner/?max=30
 
