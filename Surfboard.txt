@@ -1,17 +1,13 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Surfboard
-# 创建时间：07-04-2023 14:57:35
-# 使用模版：V2RaySE 默认模版
-# 节点数量：545
-####################################
+#!MANAGED-CONFIG https://raw.githubusercontent.com/alireza-rasouli/VPN/main/Surfboard.txt interval=86400 strict=false
 
 [General]
 loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 ipv6 = false
-dns-server = system, 223.5.5.5
+dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953, 1.1.1.1, 1.0.0.1
+doh-server = https://9.9.9.9/dns-query
+udp-policy-not-supported-behaviour = DIRECT
 exclude-simple-hostnames = true
 enhanced-mode-by-rule = true
 
