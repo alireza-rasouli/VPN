@@ -5,13 +5,15 @@ Worker code
 
 https://getafreenode.com/blog/index.php/tutorial/32.html
 
-https://pastebin.com/XSLJDX1V
+https://raw.githubusercontent.com/vfarid/v2ray-worker-sub/main/dist/index.js
 
 Cloudflare workers
 
 https://jolly-star-83dc.ali-airlord.workers.dev/sub/
 
 https://fancy-bush-186e.vgeedlwqbqo.workers.dev/sub/
+
+https://morning-brook-55cb.vgeedlwqbqo.workers.dev/sub/
 
 Cloudflare IP
 
