@@ -7,13 +7,15 @@ https://getafreenode.com/blog/index.php/tutorial/32.html
 
 https://raw.githubusercontent.com/vfarid/v2ray-worker-sub/main/dist/index.js
 
+https://raw.githubusercontent.com/ircfspace/v2ray-worker-sub/main/worker.js
+
 Cloudflare workers
 
-https://jolly-star-83dc.ali-airlord.workers.dev/sub/
+https://jolly-star-85dc.ali-airlord.workers.dev/sub/
 
 https://fancy-bush-186e.vgeedlwqbqo.workers.dev/sub/
 
-https://morning-brook-55cb.vgeedlwqbqo.workers.dev/sub/
+https://morning-brook-56cb.vgeedlwqbqo.workers.dev/sub/
 
 Cloudflare IP
 
@@ -22,3 +24,4 @@ https://cloudflare-v2ray.vercel.app/
 https://vfarid.github.io/cf-ip-scanner/?max=30
 
 https://ircf.space/list.php
+
