@@ -37,12 +37,12 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/clash.config.yaml"
+    url: "https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/clash.yaml"
     path: ./all.yaml
     health-check:
       enable: true
       interval: 600
-      url: http://clients3.google.com/generate_204
+      url: https://cp.cloudflare.com/
   
 rule-providers:
   iran:
