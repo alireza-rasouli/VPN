@@ -46,15 +46,24 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   
 rule-providers:
-  iran:
+  iran_other:
     type: http
     format: text
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules.txt"
-    path: ./ruleset/iran.txt
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt"
+    path: ./ruleset/iran_other.txt
+    interval: 432000
+  iran_ads:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_ads.txt"
+    path: ./ruleset/iran_ads.txt
     interval: 432000
 rules:
-  - RULE-SET,iran,DIRECT
+  - RULE-SET,iran_ads,REJECT
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - RULE-SET,iran_other,DIRECT
   - GEOIP,IR,DIRECT
   - MATCH,Mode
 
