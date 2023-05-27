@@ -1,6 +1,6 @@
 **CLASH** :
 
-[Etrnity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
+[Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
 [Peasoft](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 
