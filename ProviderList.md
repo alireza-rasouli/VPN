@@ -8,6 +8,8 @@
 
 [Auto 1](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml)
 
+[V2rayCollector](https://github.com/yebekhe/TelegramV2rayCollector/raw/main/clash/mix.yml)
+
 V2ray
 
 
