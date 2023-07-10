@@ -27,8 +27,7 @@ https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/nodefree4clash.txt
 
 https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1
 
-https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2
+https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/mix
 
-https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3
 
 
