@@ -10,7 +10,7 @@
 
 [V2rayCollector](https://github.com/yebekhe/TelegramV2rayCollector/raw/main/clash/mix.yml)
 
-V2ray
+**V2ray** :
 
 
 https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
