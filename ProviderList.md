@@ -1,4 +1,4 @@
-**CLASH** :
+kir**CLASH** :
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
@@ -21,10 +21,6 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt
 
 https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
-
-https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/clashnode4clash.txt
-
-https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/nodefree4clash.txt
 
 https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1
 
