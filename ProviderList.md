@@ -1,4 +1,4 @@
-kir**CLASH** :
+**CLASH** :
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
@@ -8,7 +8,7 @@ kir**CLASH** :
 
 [Auto 1](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml)
 
-[V2rayCollector](https://yebekhe.link/api/toClash/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyebekhe%2FTelegramV2rayCollector%2Fmain%2Fsub%2Fbase64%2Fmix&type=clash&process=full)
+[V2rayCollector](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/mix)
 
 **V2ray** :
 
