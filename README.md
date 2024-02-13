@@ -10,6 +10,10 @@
 
 [V2rayCollector](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/mix)
 
+[Bingo](https://raw.githubusercontent.com/bingoYB/node_processing/main/dist/all.yaml)
+
+[Speednodes](https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml)
+
 **V2ray** :
 
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_iOS.txt
@@ -20,9 +24,8 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
 
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt
 
-https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
-
 https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1
 
-https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/mix
+https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix
 
+https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config
