@@ -31,3 +31,5 @@ https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix
 https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config
 
 https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
+
+https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_TLS_google.com_base64.txt
