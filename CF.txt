@@ -11,14 +11,7 @@ https://raw.githubusercontent.com/ircfspace/v2ray-worker-sub/main/worker.js
 
 Cloudflare workers
 
-https://jolly-star-86dc.ali-airlord.workers.dev/sub/
-
-https://fancy-bush-186e.vgeedlwqbqo.workers.dev/sub/
-
-https://morning-brook-56cb.vgeedlwqbqo.workers.dev/sub/
-
-https://noisy-breeze-b293.ali-airlord.workers.dev/sub/
-
+https://subworker.ali-airlord.workers.dev/
 
 Cloudflare IP
 
