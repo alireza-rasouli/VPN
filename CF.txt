@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/ircfspace/v2ray-worker-sub/main/worker.js
 
 Cloudflare workers
 
-https://subworker.ali-airlord.workers.dev/
+https://bpb-worker-panel-b7l.pages.dev/panel
 
 Cloudflare IP
 
