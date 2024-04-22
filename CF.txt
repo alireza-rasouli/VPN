@@ -13,6 +13,8 @@ Cloudflare workers
 
 https://bpb-worker-panel-b7l.pages.dev/panel
 
+https://bpb-worker-panel-cu8.pages.dev/panel
+
 Cloudflare IP
 
 https://cloudflare-v2ray.vercel.app/
