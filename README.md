@@ -1,8 +1,8 @@
-**CloudFlare** :
+**CloudFlare:**
 
 [CF](CF.md)
 
-**CLASH** :
+**CLASH:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
@@ -18,7 +18,7 @@
 
 [Speednodes](https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml)
 
-**V2ray** :
+**V2ray:**
 
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_iOS.txt
 
