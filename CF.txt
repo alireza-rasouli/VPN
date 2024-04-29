@@ -2,7 +2,7 @@ Cloudflare
 
 Cloudflare Pages
 
-[Main]:(https://bpb-worker-panel-b7l.pages.dev/panel)
+[Main](https://bpb-worker-panel-b7l.pages.dev/panel)
 
 [Testt](https://bpb-worker-panel-cu8.pages.dev/panel)
 
