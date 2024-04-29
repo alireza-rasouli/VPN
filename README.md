@@ -1,3 +1,7 @@
+**CloudFlare**
+
+[CF](CF.md)
+
 **CLASH** :
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
