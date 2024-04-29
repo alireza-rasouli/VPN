@@ -1,24 +1,11 @@
 Cloudflare
 
+Cloudflare Pages
 
-Worker code
+[Main]:(https://bpb-worker-panel-b7l.pages.dev/panel)
 
-https://getafreenode.com/blog/index.php/tutorial/32.html
-
-https://raw.githubusercontent.com/vfarid/v2ray-worker-sub/main/dist/index.js
-
-https://raw.githubusercontent.com/ircfspace/v2ray-worker-sub/main/worker.js
-
-Cloudflare workers
-
-https://bpb-worker-panel-b7l.pages.dev/panel
-
-https://bpb-worker-panel-cu8.pages.dev/panel
+[Testt](https://bpb-worker-panel-cu8.pages.dev/panel)
 
 Cloudflare IP
 
-https://cloudflare-v2ray.vercel.app/
-
-https://vfarid.github.io/cf-ip-scanner/?max=30
-
-https://ircf.space/list.php
+https://scanner.github1.cloud/
