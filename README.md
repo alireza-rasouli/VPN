@@ -36,6 +36,6 @@ https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config
 
 https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
 
-https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_TLS_google.com_base64.txt
+https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
 
 https://bpb-worker-panel-5ox.pages.dev/sub/89b3cbba-e6ac-485a-9481-976a0415eab9?app=singbox#BPB-Normal
