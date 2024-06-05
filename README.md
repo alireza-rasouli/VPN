@@ -34,6 +34,4 @@ https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
 
 https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
 
-https://github.com/resasanian/Mirza/blob/main/best
-
-https://bpb-worker-panel-5ox.pages.dev/sub/89b3cbba-e6ac-485a-9481-976a0415eab9?app=singbox#BPB-Normal
+https://raw.githubusercontent.com/resasanian/Mirza/main/best
