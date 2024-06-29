@@ -1,0 +1,38 @@
+{
+  "outbounds": 
+  [      {
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8fa3:cf42:4227:5e28:b3b9/128"
+            ],
+            "mtu": 1280,
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "pre_shared_key": "",
+            "private_key": "oJpz5owSZOP6ViuRe3fr1slKLDUZb7jW3dOH8pk7d2M=",
+            "reserved": "sPjM",
+            "server": "188.114.96.217",
+            "server_port": 4500,
+            "type": "wireguard",
+            "domain_strategy": "prefer_ipv6",
+            "detour": "💦 Warp-ir",
+            "tag": "💦 WoW 🌍"
+        },
+
+     {
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:80f0:c73:19fc:3ef4:4be6/128"
+            ],
+            "mtu": 1280,
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "pre_shared_key": "",
+            "private_key": "GIaEcFQW6usy2ac2ctKFblNfsitClMdRX1BqfzgYHk4=",
+            "reserved": "iGZe",
+            "server": "188.114.96.217",
+            "server_port": 4500,
+            "type": "wireguard",
+            "domain_strategy": "prefer_ipv6",
+            "tag": "💦 Warp-ir"
+        }
+  ]
+}
