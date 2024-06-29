@@ -27,7 +27,7 @@
       
       "local_address": [
           "172.16.0.2/32",
-          "2606:4700:110:8c70:3022:5217:1309:dc1f/128"
+          "2606:4700:110:8fa3:cf42:4227:5e28:b3b9/128"
       ],
       "private_key": "oJpz5owSZOP6ViuRe3fr1slKLDUZb7jW3dOH8pk7d2M=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
@@ -36,33 +36,40 @@
       "mtu": 1280,
       "fake_packets": "5-10"
     },
- {
-            "local_address": [
-                "172.16.0.2/32",
-                "2606:4700:110:80f0:c73:19fc:3ef4:4be6/128"
-            ],
-            "mtu": 1280,
-            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-            "private_key": "GIaEcFQW6usy2ac2ctKFblNfsitClMdRX1BqfzgYHk4=",
-            "reserved": "iGZe",
-            "server": "engage.cloudflareclient.com",
-            "server_port": 2408,
-            "type": "wireguard",
-            "tag": "💦 Warp 1 🇮🇷"
-        },
-        {
-            "local_address": [
-                "172.16.0.2/32",
-                "2606:4700:110:80f0:c73:19fc:3ef4:4be6/128"
-            ],
-            "mtu": 1280,
-            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-            "private_key": "GIaEcFQW6usy2ac2ctKFblNfsitClMdRX1BqfzgYHk4=",
-            "reserved": "iGZe",
-            "server": "188.114.99.166",
-            "server_port": 8854,
-            "type": "wireguard",
-            "tag": "💦 Warp 2 🇮🇷"
-        }
+{
+      "type": "wireguard",
+      "tag": "💦 Warp 1 🇮🇷",
+      "server": "engage.cloudflareclient.com",
+      "server_port": 2408,
+
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:80f0:c73:19fc:3ef4:4be6/128"
+      ],
+      "private_key": "GIaEcFQW6usy2ac2ctKFblNfsitClMdRX1BqfzgYHk4=",
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "iGZe",
+
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    },
+    {
+      "type": "wireguard",
+      "tag": "💦 Warp 2 🇮🇷",
+      "server": "188.114.99.166",
+      "server_port": 8854,
+      
+      "local_address": [
+          "172.16.0.2/32",
+          "2606:4700:110:80f0:c73:19fc:3ef4:4be6/128"
+      ],
+      "private_key": "GIaEcFQW6usy2ac2ctKFblNfsitClMdRX1BqfzgYHk4=",
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "iGZe",  
+
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    }
+
   ]
 }
