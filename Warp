@@ -4,14 +4,14 @@
     {
       "type": "wireguard",
       "tag": "Warp-IR",
-      "server": "188.114.97.180",
-      "server_port": 1387,
+      "server": "188.114.96.217",
+      "server_port": 4500,
 
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:81ce:ac8:6185:22b4:2e93/128"
       ],
-      "private_key": "uLBTdzXp+H7QY87d6CQsDZH23Dclqm758GAn49tPQkY=",
+      "private_key": "oJpz5owSZOP6ViuRe3fr1slKLDUZb7jW3dOH8pk7d2M=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": [ 158, 228, 254 ],
 
