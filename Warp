@@ -3,7 +3,7 @@
   [
     {
       "type": "wireguard",
-      "tag": "💦 Warp-ir",
+      "tag": "Warp-ir",
       "server": "188.114.96.217",
       "server_port": 1387,
 
