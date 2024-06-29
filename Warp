@@ -13,7 +13,7 @@
       ],
       "private_key": "oJpz5owSZOP6ViuRe3fr1slKLDUZb7jW3dOH8pk7d2M=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [ 158, 228, 254 ],
+      "reserved": iGZe,
 
       "mtu": 1280,
       "fake_packets": "5-10"
