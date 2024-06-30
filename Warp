@@ -12,6 +12,5 @@ proxies:
   reserved: "9aQ+"
   udp: true
   mtu: 1280
-  dialer-proxy: "ss1"  # 一个出站代理的标识。当值不为空时，将使用指定的 proxy/proxy-group 发出连接
   remote-dns-resolve: true
   dns: [ https://94.140.14.14/dns-query , 8.8.8.8 ]
