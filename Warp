@@ -1,15 +1,15 @@
 proxies:
 - name: "💦 Warp-ir"
   type: wireguard
-  private-key: UERKrtOZ4fGTp45C4L2ZaGdc6nKdlNXSa6cHnFVw3mA=
-  server: engage.cloudflareclient.com
-  port: 2408
+  private-key: aLnCdpHNjUa2Ua3m2Wl8vUl1Q56hyiyRdaiK8WAI3EU=
+  server: 188.114.96.217
+  port: 4500
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8d40:98cc:825e:7a85:40f3/128
+  ipv6: 2606:4700:110:8e7f:10ce:f32d:ee65:4e21/128
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  allowed-ips: ['0.0.0.0/0']
+  allowed-ips: ['172.16.0.2/32']
   
-  reserved: "UC8D"
+  reserved: "eLxs"
   udp: true
   mtu: 1280
   remote-dns-resolve: true
