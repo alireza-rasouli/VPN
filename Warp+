@@ -32,6 +32,7 @@
                     ".ir"
                 ],
                 "server": "dns-direct",
+                "domain": "engage.cloudflareclient.com"
             },
             {
                 "outbound": "direct",
@@ -121,6 +122,7 @@
         {
         "type": "wireguard",
         "tag": "💦 WoW 🌍",
+        "detour": "💦 Warp-ir",
         "server": "188.114.96.217",
         "server_port": 4500,
       
