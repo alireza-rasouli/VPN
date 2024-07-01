@@ -1,3 +1,4 @@
+{    
     "outbounds": [
         {
             "type": "selector",
@@ -99,3 +100,4 @@
         "fake_packets": "5-10"
         }
     ]
+}
