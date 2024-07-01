@@ -69,7 +69,7 @@
         {
         "type": "wireguard",
         "tag": "💦 Warp 1 🇮🇷",
-        "server": "engage.cloudflareclient.com",
+        "server": "188.114.99.166",
         "server_port": 2408,
 
         "local_address": [
