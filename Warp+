@@ -32,7 +32,6 @@
                     ".ir"
                 ],
                 "server": "dns-direct",
-                "domain": "engage.cloudflareclient.com"
             },
             {
                 "outbound": "direct",
