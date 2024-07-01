@@ -1,5 +1,6 @@
-{    
-    "outbounds": [
+{
+  "outbounds": 
+  [
         {
             "type": "selector",
             "tag": "proxy",
