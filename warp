@@ -29,46 +29,8 @@
             "sniff_override_destination": true
         }
     ],
-    "outbounds": [
-        {
-            "type": "selector",
-            "tag": "proxy",
-            "outbounds": [
-                "💦 Warp Best Ping 🚀",
-                "💦 WoW 🌍",
-                "💦 Warp 1 🇮🇷",
-                "💦 Warp 2 🇮🇷",
-                "💦 Warp 3 🇮🇷"
-            ]
-        },
-        {
-            "type": "urltest",
-            "tag": "💦 Warp Best Ping 🚀",
-            "outbounds": [
-                "💦 Warp 1 🇮🇷",
-                "💦 Warp 2 🇮🇷",
-                "💦 Warp 3 🇮🇷"
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": "30s",
-            "tolerance": 50
-        },
-        {
-            "type": "wireguard",
-            "tag": "💦 WoW 🌍",
-            "server": "188.114.97.109",
-            "server_port": 3476,
-            "local_address": [
-                "172.16.0.2/32",
-                "2606:4700:110:8782:1a3c:1ed8:f565:7bc/128"
-            ],
-            "private_key": "cMo7gDC8S7ERKMivz2uGoTD20sQ9mYz1fxN5gtBWFnQ=",
-            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-            "pre_shared_key": "",
-            "reserved": "hCYC",
-            "mtu": 1280,
-            "detour": "💦 Warp-ir"
-        },
+    "outbounds": 
+      [ 
         {
             "type": "wireguard",
             "tag": "💦 Warp-ir",
