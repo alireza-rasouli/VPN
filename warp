@@ -54,18 +54,6 @@
             "tolerance": 50
         },
         {
-            "type": "direct",
-            "tag": "direct"
-        },
-        {
-            "type": "block",
-            "tag": "block"
-        },
-        {
-            "type": "dns",
-            "tag": "dns-out"
-        },
-        {
             "type": "wireguard",
             "tag": "💦 WoW 🌍",
             "server": "188.114.97.109",
