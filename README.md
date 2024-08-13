@@ -8,10 +8,6 @@
 
 [Peasoft](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 
-[Ermaozi](https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml)
-
-[V2rayCollector](https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/clash/mix)
-
 [Ripaojiedian](https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash)
 
 **V2ray:**
