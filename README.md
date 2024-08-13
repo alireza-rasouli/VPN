@@ -33,3 +33,5 @@ https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
 https://raw.githubusercontent.com/resasanian/Mirza/main/best
 
 https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt
+
+https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt
