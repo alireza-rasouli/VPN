@@ -2,13 +2,15 @@
 
 [CF](CF.md)
 
-**CLASH:**
+**CLASH-Meta:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
 [Peasoft](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 
 [Ripaojiedian](https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash)
+
+[Mr.Mohebi](https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml)
 
 **V2ray:**
 
