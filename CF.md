@@ -7,9 +7,9 @@ Cloudflare Worker
 
 Cloudflare Pages
 
-[Main](https://bpb-worker-panel-b7l.pages.dev/panel)
+[Main](https://main-river.pages.dev/panel)
 
-[Test](https://bpb-worker-panel-cu8.pages.dev/panel)
+[Test](https://home-dasher.pages.dev/login)
 
 Cloudflare IP
 
