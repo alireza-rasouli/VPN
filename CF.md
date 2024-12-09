@@ -2,8 +2,7 @@
 
 Cloudflare Worker
 
-[Purple](https://purple-snowflake-283c.ali-airlord.workers.dev/panel)
-[Young](https://young-fog-34a6.vgeedlwqbqo.workers.dev/panel)
+**
 
 Cloudflare Pages
 
