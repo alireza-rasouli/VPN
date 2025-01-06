@@ -2,6 +2,8 @@
 
 [CF](CF.md)
 
+[Warp-Generator](https://4n0nymou3.github.io/WARP/Generator)
+
 **CLASH-Meta:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
@@ -33,3 +35,5 @@ https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt
 https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt
 
 https://raw.githubusercontent.com/HakurouKen/free-node/main/public
+
+https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt#Anonymous-Multi
