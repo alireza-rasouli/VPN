@@ -4,6 +4,8 @@
 
 [Warp-Generator](https://4n0nymou3.github.io/WARP/Generator)
 
+[PROXYIP](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md#Test-proxyIPs)
+
 **CLASH-Meta:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
