@@ -2,7 +2,7 @@
 
 [CF](CF.md)
 
-[Warp-Generator](https://4n0nymou3.github.io/WARP/Generator)
+[Warp-Generator](https://4n0nymou3.github.io/WARP/)
 
 [PROXYIP](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md#Test-proxyIPs)
 
