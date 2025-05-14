@@ -6,6 +6,8 @@ Cloudflare Worker
 
 [SparklingSalad](https://sparkling-salad-9ec7.vgeedl.workers.dev/e277a86d-d719-4c12-acc4-f0b45ea9d28e)
 
+[BPB](https://8b0ezktt4rx4o-njpeukw-ecr8hrsdot.vgeedl.workers.dev/panel)
+
 Cloudflare Pages
 
 ****
