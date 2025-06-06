@@ -25,7 +25,7 @@
 
 **V2ray:**
 
-https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_iOS.txt
+https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
 
 https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
 
