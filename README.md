@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
 
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt
 
-https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
+https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt
 
 https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
 
@@ -48,3 +48,5 @@ https://raw.githubusercontent.com/HakurouKen/free-node/main/public
 https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_Trinity.txt
 
 https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt#Anonymous-Multi
+
+https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.txt
