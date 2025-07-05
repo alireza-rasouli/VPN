@@ -50,3 +50,9 @@ https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_Trinity.txt
 https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt#Anonymous-Multi
 
 https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.txt
+
+https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html
+
+https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria
+
+https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gb/mixed
