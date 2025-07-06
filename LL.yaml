@@ -1,0 +1,104 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+  - {name: zula.ir, server: zula.ir, port: 443, type: vless, uuid: 23fba8cf-9222-4a42-bc4a-dc4988e6f0a1, tls: true, tfo: false, skip-cert-verify: true, servername: late-firefly-9653.aliairlord.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-firefly-9653.aliairlord.workers.dev}}}
+  - {name: 190.93.246.247, server: 190.93.246.247, port: 443, type: vless, uuid: 23fba8cf-9222-4a42-bc4a-dc4988e6f0a1, tls: true, tfo: false, skip-cert-verify: true, servername: late-firefly-9653.aliairlord.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-firefly-9653.aliairlord.workers.dev}}}
+  - {name: 172.67.132.72, server: 172.67.132.72, port: 443, type: vless, uuid: 23fba8cf-9222-4a42-bc4a-dc4988e6f0a1, tls: true, tfo: false, skip-cert-verify: true, servername: late-firefly-9653.aliairlord.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-firefly-9653.aliairlord.workers.dev}}}
+proxy-groups:
+  - name: 🚀 Selector
+    type: select
+    proxies:
+      - ♻️ Auto
+      - DIRECT
+      - zula.ir
+      - 190.93.246.247
+      - 172.67.132.72
+  - name: ♻️ Auto
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - zula.ir
+      - 190.93.246.247
+      - 172.67.132.72
+rule-providers:
+  ir:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
+    path: ./ruleset/ir.txt
+    interval: 86400
+  ads:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
+    path: ./ruleset/ads.txt
+    interval: 86400
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
+    path: ./ruleset/malware.txt
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
+    path: ./ruleset/phishing.txt
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
+    path: ./ruleset/cryptominers.txt
+    interval: 86400
+  apps:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/apps.txt"
+    path: ./ruleset/apps.txt
+    interval: 86400
+  ircidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
+    path: ./ruleset/ircidr.txt
+    interval: 86400
+  private:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/private.txt"
+    path: ./ruleset/private.txt
+    interval: 86400
+  irasn:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/irasn.txt"
+    path: ./ruleset/irasn.txt
+    interval: 86400
+
+rules :
+  - RULE-SET,private,DIRECT,no-resolve
+  - RULE-SET,apps,DIRECT
+  - RULE-SET,ads,REJECT
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ircidr,DIRECT
+  - RULE-SET,irasn,DIRECT
+  - MATCH,🚀 Selector
