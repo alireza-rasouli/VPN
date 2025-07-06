@@ -23,6 +23,8 @@
 
 [Snakem982](https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml)
 
+[LateFirefly](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml)
+
 **V2ray:**
 
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
