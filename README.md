@@ -25,6 +25,8 @@
 
 [LateFirefly](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml)
 
+[SparklingSalad](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SparkS.yaml)
+
 **V2ray:**
 
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
