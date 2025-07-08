@@ -9,8 +9,7 @@ dns:
   listen: :53
   enhanced-mode: fake-ip
   default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
+    - https://8.8.8.8/dns-query
   nameserver:
     - 208.67.222.222
   fallback:
@@ -48,24 +47,78 @@ proxy-providers:
       url: http://clients3.google.com/generate_204
   
 rule-providers:
-  iran_other:
+  ir:
     type: http
     format: text
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt"
-    path: ./ruleset/iran_other.txt
-    interval: 432000
-  iran_ads:
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
+    path: ./ruleset/ir.txt
+    interval: 86400
+  ads:
     type: http
     format: text
     behavior: domain
-    url: "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_ads.txt"
-    path: ./ruleset/iran_ads.txt
-    interval: 432000
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
+    path: ./ruleset/ads.txt
+    interval: 86400
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
+    path: ./ruleset/malware.txt
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
+    path: ./ruleset/phishing.txt
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
+    path: ./ruleset/cryptominers.txt
+    interval: 86400
+  apps:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/apps.txt"
+    path: ./ruleset/apps.txt
+    interval: 86400
+  ircidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
+    path: ./ruleset/ircidr.txt
+    interval: 86400
+  private:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/private.txt"
+    path: ./ruleset/private.txt
+    interval: 86400
+  irasn:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/irasn.txt"
+    path: ./ruleset/irasn.txt
+    interval: 86400
 
-rules:
-  - RULE-SET,iran_ads,REJECT
-  - DOMAIN-SUFFIX,ir,DIRECT
-  - RULE-SET,iran_other,DIRECT
-  - GEOIP,IR,DIRECT
+rules :
+  - RULE-SET,private,DIRECT,no-resolve
+  - RULE-SET,apps,DIRECT
+  - RULE-SET,ads,REJECT
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ircidr,DIRECT
+  - RULE-SET,irasn,DIRECT
   - MATCH,Mode
