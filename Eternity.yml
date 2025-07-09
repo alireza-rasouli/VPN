@@ -11,9 +11,9 @@ dns:
   default-nameserver:
     - https://8.8.8.8/dns-query
   nameserver:
-    - 208.67.222.222
+    - 8.8.8.8
   fallback:
-    - 208.67.220.220
+    - 8.8.4.4
 external-controller: 127.0.0.1:9090
 proxies:
 
@@ -27,25 +27,45 @@ proxy-groups:
   - name: Manual Selection
     type: select
     use:
-      - all
+      - LL
+      - SparkS
+      - BPB
   - name: Auto
     type: url-test
     url: http://cp.cloudflare.com
     interval: 3600
     tolerance: 100
     use:
-      - all
+      - LL
+      - SparkS
+      - BPB
 
 proxy-providers:
-  all:
+  SparkS:
     type: http
-    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
-    path: ./all.yaml
+    url: "https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SparkS.yaml"
+    path: ./SparkS.yaml
     health-check:
       enable: true
       interval: 600
       url: http://clients3.google.com/generate_204
-  
+  LL:
+    type: http
+    url: "https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml"
+    path: ./LL.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://clients3.google.com/generate_204
+  BPB:
+    type: http
+    url: "https://8b0ezktt4rx4o-njpeukw-ecr8hrsdot.vgeedl.workers.dev/sub/full-normal/%2CzSmll.1AgQCT..J?app=clash#%F0%9F%92%A6%20BPB%20Full%20Normal"
+    path: ./BPB.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://clients3.google.com/generate_204
+
 rule-providers:
   ir:
     type: http
