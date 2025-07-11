@@ -56,7 +56,3 @@ https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/head
 https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.txt
 
 https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html
-
-https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria
-
-https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gb/mixed
