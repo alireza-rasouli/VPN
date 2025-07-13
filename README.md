@@ -27,6 +27,12 @@
 
 [SparklingSalad](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SparkS.yaml)
 
+[LLF](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
+
+[LLF Pro](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
+
+
+
 **V2ray:**
 
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
@@ -52,6 +58,8 @@ https://raw.githubusercontent.com/HakurouKen/free-node/main/public
 https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_Trinity.txt
 
 https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt#Anonymous-Multi
+
+https://raw.githubusercontent.com/youfoundamin/V2rayCollector/main/mixed_iran.txt
 
 https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.txt
 
