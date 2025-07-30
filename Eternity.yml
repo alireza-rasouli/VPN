@@ -29,7 +29,6 @@ proxy-groups:
     use:
       - LL
       - SparkS
-      - BPB
   - name: Auto
     type: url-test
     url: http://cp.cloudflare.com
@@ -38,7 +37,6 @@ proxy-groups:
     use:
       - LL
       - SparkS
-      - BPB
 
 proxy-providers:
   SparkS:
@@ -53,14 +51,6 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml"
     path: ./LL.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://clients3.google.com/generate_204
-  BPB:
-    type: http
-    url: "https://8b0ezktt4rx4o-njpeukw-ecr8hrsdot.vgeedl.workers.dev/sub/full-normal/%2CzSmll.1AgQCT..J?app=clash#%F0%9F%92%A6%20BPB%20Full%20Normal"
-    path: ./BPB.yaml
     health-check:
       enable: true
       interval: 600
