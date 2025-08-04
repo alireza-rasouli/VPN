@@ -132,6 +132,7 @@ rule-providers:
 
 rules :
   - RULE-SET,private,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,gemini.google.com,🚀 Selector
   - GEOSITE,github,DIRECT
   - GEOSITE,apple,DIRECT
   - GEOSITE,whatsapp,DIRECT
