@@ -31,7 +31,7 @@ proxy-groups:
       - SparkS
   - name: Auto
     type: url-test
-    url: http://cp.cloudflare.com
+    url: http://clients3.google.com/generate_204
     interval: 3600
     tolerance: 100
     use:
