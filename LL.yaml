@@ -19,7 +19,7 @@ proxy-groups:
       - 172.67.132.72
   - name: ♻️ Auto
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://clients3.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
