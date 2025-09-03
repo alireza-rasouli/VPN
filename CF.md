@@ -8,6 +8,6 @@ Cloudflare CMliu
 
 Cloudflare BPB
 
-[BPB](-)
+[BPB](https://qohpe5zgf38yhfz43272hqyfhdvmfoaw.aliairlord.workers.dev/panel)
 
 ****
