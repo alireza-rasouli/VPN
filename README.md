@@ -8,7 +8,7 @@
 
 <details>
 <summary>Clean IPS</summary>
-sky.rethinkdns.com
+'''sky.rethinkdns.com
 fbi.gov
 time.is
 time.cloudflare.com
@@ -129,7 +129,7 @@ cdnjs.com
 104.18.250.227
 104.19.97.193
 104.21.48.196
-104.25.188.85
+104.25.188.85'''
 </details>
 
 **CLASH-Meta:**
