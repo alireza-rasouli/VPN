@@ -143,7 +143,7 @@ cdnjs.com
 </details>
 <details>
 <summary>SUBAPI</summary>
-  https://vihhtxpqnrfb.eu-central-1.clawcloudrun.com/
+  vihhtxpqnrfb.eu-central-1.clawcloudrun.com
 </details>
 **CLASH-Meta:**
 
