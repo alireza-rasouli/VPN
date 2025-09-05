@@ -134,6 +134,10 @@ cdnjs.com
 </pre>
 </details>
 
+<details>
+<summary>SUBAPI</summary>
+  https://vihhtxpqnrfb.eu-central-1.clawcloudrun.com/
+</details>
 **CLASH-Meta:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
