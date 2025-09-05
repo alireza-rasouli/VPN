@@ -145,6 +145,9 @@ cdnjs.com
 <summary>SUBAPI</summary>
   vihhtxpqnrfb.eu-central-1.clawcloudrun.com
 </details>
+<summary>SUBCONFIG</summary>
+  raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
+</details>
 **CLASH-Meta:**
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
