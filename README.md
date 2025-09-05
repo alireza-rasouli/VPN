@@ -145,6 +145,7 @@ cdnjs.com
 <summary>SUBAPI</summary>
   vihhtxpqnrfb.eu-central-1.clawcloudrun.com
 </details>
+<details>
 <summary>SUBCONFIG</summary>
   raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
 </details>
