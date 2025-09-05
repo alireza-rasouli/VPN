@@ -1,9 +1,6 @@
 **CloudFlare:**
 
 [CF](CF.md)
-
-[PROXYIP](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md#Test-proxyIPs)
-
 <details>
 <summary>Clean IPS</summary>
 <pre>
