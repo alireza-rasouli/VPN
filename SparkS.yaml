@@ -26,7 +26,7 @@ proxy-providers:
   SparkS:
     type: http
     url: "https://coopdelegate.zkitefly.eu.org/bitter-sound-ddb4.a3-valanides.workers.dev/5df20d0b-6f3e-47ed-930b-dc852f2833e8?clash"
-    path: ./Sps.yaml
+    path: ./SparkS.yaml
     health-check:
       enable: true
       interval: 600
