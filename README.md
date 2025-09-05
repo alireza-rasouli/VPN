@@ -141,7 +141,6 @@ cdnjs.com
     nima.nscl.ir
   </pre>
 </details>
-  
 <details>
 <summary>SUBAPI</summary>
   https://vihhtxpqnrfb.eu-central-1.clawcloudrun.com/
