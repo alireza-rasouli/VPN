@@ -5,32 +5,48 @@ mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
-
+  - {name: zula.ir, server: zula.ir, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 190.93.246.247, server: 190.93.246.247, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 172.67.198.111, server: 172.67.198.111, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 23.227.39.183, server: 23.227.39.183, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 172.67.132.72, server: 172.67.132.72, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 172.67.73.163, server: 172.67.73.163, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 188.114.97.24, server: 188.114.97.24, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 104.17.107.1, server: 104.17.107.1, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 172.67.68.157, server: 172.67.68.157, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
+  - {name: 151.101.3.1, server: 151.101.3.1, port: 443, type: vless, uuid: 5df20d0b-6f3e-47ed-930b-dc852f2833e8, tls: true, tfo: false, skip-cert-verify: true, servername: bitter-sound-ddb4.a3-valanides.workers.dev, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bitter-sound-ddb4.a3-valanides.workers.dev}}}
 proxy-groups:
   - name: 🚀 Selector
     type: select
     proxies:
       - ♻️ Auto
       - DIRECT
-    use:
-        - SparkS
+      - zula.ir
+      - 190.93.246.247
+      - 172.67.198.111
+      - 23.227.39.183
+      - 172.67.132.72
+      - 172.67.73.163
+      - 188.114.97.24
+      - 104.17.107.1
+      - 172.67.68.157
+      - 151.101.3.1
   - name: ♻️ Auto
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-    use:
-      - SparkS
-proxy-providers:
-  SparkS:
-    type: http
-    url: "https://coopdelegate.zkitefly.eu.org/bitter-sound-ddb4.a3-valanides.workers.dev/5df20d0b-6f3e-47ed-930b-dc852f2833e8?clash"
-    path: ./SparkS.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204
+      - zula.ir
+      - 190.93.246.247
+      - 172.67.198.111
+      - 23.227.39.183
+      - 172.67.132.72
+      - 172.67.73.163
+      - 188.114.97.24
+      - 104.17.107.1
+      - 172.67.68.157
+      - 151.101.3.1
 rule-providers:
   ir:
     type: http
@@ -110,4 +126,4 @@ rules :
   - RULE-SET,ir,DIRECT
   - RULE-SET,ircidr,DIRECT
   - RULE-SET,irasn,DIRECT
-  - MATCH,🚀 Selector 
+  - MATCH,🚀 Selector
