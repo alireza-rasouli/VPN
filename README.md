@@ -135,6 +135,14 @@ cdnjs.com
 </details>
 
 <details>
+<summary>PROXYIP</summary>
+  <pre>
+    bpb.yousef.isegaro.com
+    nima.nscl.ir
+  </pre>
+</details>
+  
+<details>
 <summary>SUBAPI</summary>
   https://vihhtxpqnrfb.eu-central-1.clawcloudrun.com/
 </details>
