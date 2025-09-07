@@ -148,6 +148,8 @@ https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.
 
 [Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
 
+[Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
+
 [Peasoft](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 
 [Ripaojiedian](https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash)
