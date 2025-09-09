@@ -203,3 +203,11 @@ https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.t
 https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html
 
 https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/Subscriptions/Sub1.txt
+
+https://raw.githubusercontent.com/iPsycho1/Proxy-update/refs/heads/main/configs/proxy_configs.txt
+
+https://raw.githubusercontent.com/Kolandone/v2raycollector/main/config_lite.txt
+
+https://raw.githubusercontent.com/Kwinshadow/TelegramV2rayCollector/main/sublinks/mix.txt
+
+
