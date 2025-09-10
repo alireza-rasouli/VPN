@@ -2,6 +2,10 @@
 
 [CF](CF.md)
 <details>
+<summary>ADDAPI</summary>
+https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
+</details>
+<details>
 <summary>Clean IPS</summary>
 <pre>
 sky.rethinkdns.com
