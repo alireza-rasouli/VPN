@@ -20,7 +20,7 @@ proxy-groups:
       - MrM
       - Snake
       - 10ium
-      - CFXR
+      - LLF
   - name: Auto
     type: url-test
     url: http://www.google.com/generate_204
@@ -31,7 +31,7 @@ proxy-groups:
       - MrM
       - Snake
       - 10ium
-      - CFXR
+      - LLF
   - name: Syavar
     type: select
     use:
@@ -44,10 +44,10 @@ proxy-groups:
     type: select
     use:
       - 10ium
-  - name: CFXR
+  - name: LLF
     type: select
     use:
-      - CFXR
+      - LLF
   - name: Snake
     type: select
     use:
@@ -86,10 +86,10 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  CFXR:
+  LLF:
     type: http
-    url: "https://cfxr.eu.org/autoconvert"
-    path: ./CFXR.yaml
+    url: "https://raw.githubusercontent.com/liketolivefree/kobabi/main/prov_clash.yaml"
+    path: ./LLF.yaml
     health-check:
       enable: true
       interval: 600
