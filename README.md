@@ -170,9 +170,6 @@ https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.
 
 [LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
 
-[CFXR](https://cfxr.eu.org/autoconvert)
-
-
 
 **V2ray:**
 
