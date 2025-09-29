@@ -211,4 +211,5 @@ https://raw.githubusercontent.com/Kolandone/v2raycollector/main/config_lite.txt
 
 https://raw.githubusercontent.com/Kwinshadow/TelegramV2rayCollector/main/sublinks/mix.txt
 
+https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub1.txt
 
