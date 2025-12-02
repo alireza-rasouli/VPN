@@ -448,6 +448,7 @@ rule-providers:
     interval: 86400
 
 rules :
+  - GEOSITE,samsung,DIRECT
   - GEOSITE,google-deepmind,🚀 Selector
   - RULE-SET,private,DIRECT,no-resolve
   - GEOSITE,github,DIRECT
