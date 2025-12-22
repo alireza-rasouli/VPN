@@ -11,20 +11,16 @@ dns:
   use-system-hosts: false
   respect-rules: true
   enhanced-mode: redir-host
-  default-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
   namesaver:
     - https://8.8.8.8/dns-query
   proxy-server-nameserver:
-    - 8.8.8.8
-    - https://8.8.8.8/dns-query
+    - 8.8.8.8#DIRECT
   direct-nameserver:
-    - 8.8.8.8
+    - 8.8.8.8#DIRECT
   direct-nameserver-follow-policy: true
   nameserver-policy:
     'rule-set:ir':
-    - 8.8.8.8
+    - 8.8.8.8#DIRECT
 tun:
   enable: true
   stack: mixed
