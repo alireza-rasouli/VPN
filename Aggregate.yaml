@@ -55,6 +55,9 @@ proxy-groups:
       - Snake
       - 10ium
       - LLF
+      - Peasoft
+      - Ripa
+      - Eternity
   - name: Auto
     type: url-test
     url: http://www.google.com/generate_204
@@ -66,6 +69,9 @@ proxy-groups:
       - Snake
       - 10ium
       - LLF
+      - Peasoft
+      - Ripa
+      - Eternity
   - name: Syavar
     type: select
     use:
@@ -85,8 +91,20 @@ proxy-groups:
   - name: Snake
     type: select
     use:
-      - Snake  
-  
+      - Snake 
+  - name: Peasoft
+    type: select
+    use:
+      - Peasoft 
+  - name: Ripa
+    type: select
+    use:
+      - Ripa
+  - name: Eternity
+    type: select
+    use:
+      - Eternity
+
 proxy-providers:
   Syavar:
     type: http
@@ -128,7 +146,31 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-
+  Peasoft:
+    type:  http
+    url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
+    path: ./Peasoft.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Ripa:
+    type:  http
+    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+    path: ./Ripa.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Eternity:
+    type:  http
+    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
+    path: ./Eternity.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204    
+  
 rule-providers:
   ir:
     type: http
