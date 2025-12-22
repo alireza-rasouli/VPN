@@ -150,7 +150,7 @@ proxy-providers:
     type:  http
     url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
     path: ./Peasoft.yaml
-      health-check:
+    health-check:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
@@ -158,7 +158,7 @@ proxy-providers:
     type:  http
     url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
     path: ./Ripa.yaml
-      health-check:
+    health-check:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
@@ -166,12 +166,12 @@ proxy-providers:
     type:  http
     url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
     path: ./Eternity.yaml
-      health-check:
+    health-check:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204    
   
-  rule-providers:
+rule-providers:
   ir:
     type: http
     format: text
