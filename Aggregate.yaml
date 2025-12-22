@@ -196,6 +196,7 @@ rule-providers:
 
 rules :
   - RULE-SET,private,DIRECT,no-resolve
+  - GEOSITE,samsung,DIRECT
   - DOMAIN-SUFFIX,gemini.google.com,Mode
   - GEOSITE,github,DIRECT
   - GEOSITE,apple,DIRECT
