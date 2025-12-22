@@ -7,8 +7,8 @@ unified-delay: true
 external-controller: 127.0.0.1:9090
 dns:
   enable: true
-  listen: 0.0.0.0:53
-  use-hosts: false
+  listen: 127.0.0.1:1053
+  use-system-hosts: false
   respect-rules: true
   enhanced-mode: redir-host
   default-nameserver:
@@ -17,22 +17,27 @@ dns:
   namesaver:
     - https://8.8.8.8/dns-query
   proxy-server-nameserver:
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://8.8.8.8/dns-query
     - 8.8.8.8
-  fallback-filter:
-    geoip: true
-    geoip-code: IR
-    ip-cidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-    domain:
-      - google.com
-      - facebook.com
-      - youtube.com
+    - https://8.8.8.8/dns-query
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  strict-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+    - tcp://any:53
 sniffer:
   enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080, 8880, 2052, 2082, 2086, 2095]
+    TLS:
+      ports: [443, 8443 , 2053, 2083, 2087, 2096]
 proxies:
   - {name: sky.rethinkdns.com, server: sky.rethinkdns.com, port: 443, type: vless, uuid: 25be1054-e3ed-4872-8bd4-977683ad24ef, tls: true, skip-cert-verify: true, servername: wandering-lab-5e55.a4-valanides.workers.dev, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: wandering-lab-5e55.a4-valanides.workers.dev}}}
   - {name: fbi.gov, server: fbi.gov, port: 443, type: vless, uuid: 25be1054-e3ed-4872-8bd4-977683ad24ef, tls: true, skip-cert-verify: true, servername: wandering-lab-5e55.a4-valanides.workers.dev, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: wandering-lab-5e55.a4-valanides.workers.dev}}}
