@@ -1,0 +1,254 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: silent
+unified-delay: true
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  use-system-hosts: false
+  respect-rules: true
+  enhanced-mode: redir-host
+  default-nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+  namesaver:
+    - https://8.8.8.8/dns-query
+  proxy-server-nameserver:
+    - 8.8.8.8
+    - https://8.8.8.8/dns-query
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  strict-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080, 8880, 2052, 2082, 2086, 2095]
+    TLS:
+      ports: [443, 8443 , 2053, 2083, 2087, 2096]
+proxies:
+
+proxy-groups:
+  - name: Mode
+    type: select
+    proxies:
+      - DIRECT
+      - Manual Selection
+      - Auto
+  - name: Manual Selection
+    type: select
+    proxies:
+      - Syavar
+      - MrM
+      - Snake
+      - 10ium
+      - LLF
+      - Peasoft
+      - Ripa
+      - Eternity
+  - name: Auto
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 3600
+    tolerance: 100
+    use:
+      - Syavar
+      - MrM
+      - Snake
+      - 10ium
+      - LLF
+      - Peasoft
+      - Ripa
+      - Eternity
+  - name: Syavar
+    type: select
+    use:
+      - Syavar
+  - name: MrM
+    type: select
+    use:
+      - MrM
+  - name: 10ium
+    type: select
+    use:
+      - 10ium
+  - name: LLF
+    type: select
+    use:
+      - LLF
+  - name: Snake
+    type: select
+    use:
+      - Snake 
+  - name: Peasoft
+    type: select
+    use:
+      - Peasoft 
+  - name: Ripa
+    type: select
+    use:
+      - Ripa
+  - name: Eternity
+    type: select
+    use:
+      - Eternity
+
+proxy-providers:
+  Syavar:
+    type: http
+    url: "https://raw.githubusercontent.com/Syavar/V2ray-Configs/refs/heads/main/OK_TLS_google.com.txt"
+    path: ./Syavar.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  MrM:
+    type: http
+    url: "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml"
+    path: ./MrM.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Snake:
+    type: http
+    url: "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml"
+    path: ./Snake.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  10ium:
+     type: http
+     url: "https://raw.githubusercontent.com/10ium/V2Hub3/main/Split/Normal/reality"
+     path: ./10ium.yaml
+     health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  LLF:
+    type: http
+    url: "https://raw.githubusercontent.com/liketolivefree/kobabi/main/prov_clash.yaml"
+    path: ./LLF.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Peasoft:
+    type:  http
+    url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
+    path: ./Peasoft.yaml
+      health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Ripa:
+    type:  http
+    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+    path: ./Ripa.yaml
+      health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204
+  Eternity:
+    type:  http
+    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
+    path: ./Eternity.yaml
+      health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204    
+  
+  rule-providers:
+  ir:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
+    path: ./ruleset/ir.txt
+    interval: 86400
+  ads:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
+    path: ./ruleset/ads.txt
+    interval: 86400
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
+    path: ./ruleset/malware.txt
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
+    path: ./ruleset/phishing.txt
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
+    path: ./ruleset/cryptominers.txt
+    interval: 86400
+  apps:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/apps.txt"
+    path: ./ruleset/apps.txt
+    interval: 86400
+  ircidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
+    path: ./ruleset/ircidr.txt
+    interval: 86400
+  private:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/private.txt"
+    path: ./ruleset/private.txt
+    interval: 86400
+  irasn:
+    type: http
+    format: text
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/irasn.txt"
+    path: ./ruleset/irasn.txt
+    interval: 86400
+
+rules :
+  - RULE-SET,private,DIRECT,no-resolve
+  - GEOSITE,samsung,DIRECT
+  - DOMAIN-SUFFIX,gemini.google.com,Mode
+  - GEOSITE,github,DIRECT
+  - GEOSITE,apple,DIRECT
+  - GEOSITE,whatsapp,DIRECT
+  - RULE-SET,apps,DIRECT
+  - RULE-SET,ads,REJECT
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ircidr,DIRECT
+  - RULE-SET,irasn,DIRECT
+  - MATCH,Mode
