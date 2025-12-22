@@ -1,4 +1,4 @@
-[**CloudFlare:**](CF.md)
+[**CloudFlare**](CF.md)
 
 <details>
 <summary>ADDAPI</summary>
