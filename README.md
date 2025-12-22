@@ -203,3 +203,4 @@ https://raw.githubusercontent.com/Kwinshadow/TelegramV2rayCollector/main/sublink
 
 https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub1.txt
 
+https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless
