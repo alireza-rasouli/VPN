@@ -8,7 +8,7 @@ external-controller: 127.0.0.1:9090
 dns:
   enable: true
   listen: 0.0.0.0:53
-  use-hosts: true
+  use-hosts: false
   respect-rules: true
   enhanced-mode: redir-host
   default-nameserver:
@@ -24,6 +24,13 @@ dns:
   fallback-filter:
     geoip: true
     geoip-code: IR
+    ip-cidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+    domain:
+      - google.com
+      - facebook.com
+      - youtube.com
 sniffer:
   enable: true
 proxies:
