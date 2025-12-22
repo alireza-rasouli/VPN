@@ -150,17 +150,7 @@ https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.
 
 # CLASH-Meta:
 
-[Eternity](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
-
 [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
-
-[Peasoft](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
-
-[Ripaojiedian](https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash)
-
-[Mr.Mohebi](https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml)
-
-[Snakem982](https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml)
 
 [LateFirefly](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml)
 
