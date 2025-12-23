@@ -1,7 +1,7 @@
 name: Sync Nodes to Test Config
 on:
   schedule:
-    - cron: '0 0 * * 0' # Automatically runs every 12 hours
+    - cron: '0 0 * * 0'   # Time--> minute hour day month day-of-the-week
   workflow_dispatch:      # Allows you to click "Run" manually
 
 permissions:
