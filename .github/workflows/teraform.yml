@@ -1,31 +1,31 @@
-name: Auto Update Nodes
+name: Sync Nodes to Test Config
 on:
   schedule:
-    - cron: '0 */6 * * *' # Runs every 6 hours
+    - cron: '0 */12 * * *' # Runs every 12 hours
   workflow_dispatch:      # Manual run button
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-          
-      - name: Install PyYAML
+          python-version: '3.9'
+
+      - name: Install dependencies
         run: pip install pyyaml requests
 
-      - name: Run Script
-        run: python update.py
+      - name: Run Update
+        run: python automate.py
 
-      - name: Commit Changes
+      - name: Push Changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add LL.yaml
-          git commit -m "Updated nodes while preserving custom DNS/Rules" || exit 0
+          git config --local user.email "bot@github.com"
+          git config --local user.name "ConfigBot"
+          git add test.yaml
+          git commit -m "Auto-update test.yaml nodes" || exit 0
           git push
