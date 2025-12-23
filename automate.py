@@ -3,7 +3,8 @@ import yaml
 
 # 1. Add all your subscription links here
 SOURCE_URLS = [
-    "https://cdn.akaere.online/snowy-dew-50ba.latefirefly.workers.dev/0f48c62b-7e0d-43ee-9c15-8a5b8f77b82d?clash",
+   # "https://cdn.akaere.online/snowy-dew-50ba.latefirefly.workers.dev/0f48c62b-7e0d-43ee-9c15-8a5b8f77b82d?clash",
+    "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
     # "https://another-link.com/clash",  <-- Add more links like this
 ]
 
