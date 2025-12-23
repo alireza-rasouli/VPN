@@ -1,15 +1,18 @@
 name: Sync Nodes to Test Config
 on:
   schedule:
-    - cron: '0 */12 * * *'
-  workflow_dispatch: 
+    - cron: '0 */12 * * *' # Automatically runs every 12 hours
+  workflow_dispatch:      # Allows you to click "Run" manually
+
+permissions:
+  contents: write         # Crucial: Allows the bot to save test.yaml
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # This "downloads" your files into the runner
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -19,16 +22,14 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml requests
 
-      - name: Verify Files
-        run: ls -R # This will print all files to the log so we can debug
-
       - name: Run Update
-        run: python automate.py # This should now find the file in the root
+        run: python automate.py
 
-      - name: Push Changes
+      - name: Commit and Push
         run: |
           git config --local user.email "bot@github.com"
           git config --local user.name "ConfigBot"
           git add test.yaml
-          git commit -m "Auto-update test.yaml nodes" || exit 0
+          # If nothing changed, this won't error out
+          git commit -m "Auto-update test.yaml" || exit 0
           git push
