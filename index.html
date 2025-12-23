@@ -1,34 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>VPN Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Control Center</title>
     <style>
-        body { font-family: sans-serif; padding: 30px; background: #f4f7f6; color: #333; }
-        .card { max-width: 500px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .badge-container { margin-bottom: 15px; }
-        .url-display { background: #f1f1f1; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 13px; margin: 15px 0; border: 1px solid #ddd; overflow-wrap: break-word; }
-        .btn { display: block; text-align: center; background: #0366d6; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 10px; }
-        .btn-edit { background: #24292e; }
-        .btn:hover { opacity: 0.9; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        :root {
+            --primary: #4f46e5;
+            --glass: rgba(255, 255, 255, 0.7);
+            --text: #1f2937;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text);
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+            padding: 40px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 0 0 10px 0; font-size: 28px; }
+
+        .copy-container {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            font-family: monospace;
+            font-size: 14px;
+            color: var(--text);
+            outline: none;
+        }
+
+        .btn {
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            width: 100%;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary { background: var(--primary); color: white; margin-bottom: 12px; }
+        .btn-secondary { background: #24292e; color: white; }
+        .btn:active { transform: scale(0.98); }
+
+        #copyBtn {
+            background: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        .success-msg { color: #059669; font-size: 13px; display: none; margin-top: -10px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h2>🛰️ VPN Control Center</h2>
-        
-        <div class="badge-container">
-            <img src="https://github.com/alireza-rasouli/VPN/actions/workflows/sync.yml/badge.svg" alt="Sync Status">
-        </div>
-        
-        <p><strong>Clash Subscription Link:</strong></p>
-        <div class="url-display">https://alireza-rasouli.github.io/VPN/test.yaml</div>
 
-        <a href="clash://install-config?url=https://alireza-rasouli.github.io/VPN/test.yaml" class="btn">Import to Clash</a>
-        
-        <hr>
-        <p><small>To add/remove links, click below. Add the link to <code>SOURCE_URLS</code> in the code and click <b>Commit</b>.</small></p>
-        <a href="https://github.com/alireza-rasouli/VPN/edit/main/automate.py" class="btn btn-edit">Manage Source Links</a>
+<div class="glass-card">
+    <div class="status-badge">
+        <img src="https://github.com/alireza-rasouli/VPN/actions/workflows/sync.yml/badge.svg" alt="Status">
     </div>
+    
+    <h1>VPN Manager</h1>
+    <p>Your unified Clash configuration is live.</p>
+
+    <div class="copy-container">
+        <input type="text" id="configUrl" value="https://alireza-rasouli.github.io/VPN/test.yaml" readonly>
+        <button id="copyBtn" onclick="copyText()">Copy</button>
+    </div>
+    <div id="success" class="success-msg">Copied to clipboard!</div>
+
+    <a href="clash://install-config?url=https://alireza-rasouli.github.io/VPN/test.yaml" class="btn btn-primary">Open in Clash</a>
+    <a href="https://github.com/alireza-rasouli/VPN/edit/main/automate.py" class="btn btn-secondary">Manage Links</a>
+</div>
+
+<script>
+    function copyText() {
+        const copyText = document.getElementById("configUrl");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+        
+        const btn = document.getElementById("copyBtn");
+        const msg = document.getElementById("success");
+        
+        btn.innerText = "Done!";
+        msg.style.display = "block";
+        
+        setTimeout(() => {
+            btn.innerText = "Copy";
+            msg.style.display = "none";
+        }, 2000);
+    }
+</script>
+
 </body>
 </html>
