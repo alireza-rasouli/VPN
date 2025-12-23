@@ -1,12 +1,26 @@
 port: 7890
 socks-port: 7891
-allow-lan: true
+allow-lan: false
+ipv6: true
 mode: rule
 log-level: silent
 unified-delay: true
+tcp-concurrent: true
+geo-auto-update: true
+geo-update-interval: 168
 external-controller: 127.0.0.1:9090
+external-controller-cors:
+  allow-origins:
+    - '*'
+  allow-private-network: true
+external-ui: "ui"
+external-ui-url: "<https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip>"
+profile:
+  store-selected: true
+  store-fake-ip: true
 dns:
   enable: true
+  ipv6: true
   listen: 127.0.0.1:1053
   use-system-hosts: false
   respect-rules: true
