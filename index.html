@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPN Config Manager</title>
+    <title>VPN Manager</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 600px; margin: auto; background: #f4f4f9; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        code { background: #eee; padding: 2px 5px; border-radius: 4px; word-break: break-all; }
-        .btn { display: inline-block; background: #24292e; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        h2 { color: #333; }
+        body { font-family: sans-serif; padding: 30px; background: #f4f7f6; color: #333; }
+        .card { max-width: 500px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .badge-container { margin-bottom: 15px; }
+        .url-display { background: #f1f1f1; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 13px; margin: 15px 0; border: 1px solid #ddd; overflow-wrap: break-word; }
+        .btn { display: block; text-align: center; background: #0366d6; color: white; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 10px; }
+        .btn-edit { background: #24292e; }
+        .btn:hover { opacity: 0.9; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
     </style>
 </head>
 <body>
     <div class="card">
-        <h2>🔗 Your Config Links</h2>
-        <p><strong>Input Master:</strong> <code>LL.yaml</code></p>
-        <p><strong>Generated Output:</strong><br>
-           <code>https://alireza-rasouli.github.io/VPN/test.yaml</code>
-        </p>
-        <a href="https://github.com/alireza-rasouli/VPN/blob/main/automate.py" class="btn">Edit Source Links</a>
+        <h2>🛰️ VPN Control Center</h2>
+        
+        <div class="badge-container">
+            <img src="https://github.com/alireza-rasouli/VPN/actions/workflows/sync.yml/badge.svg" alt="Sync Status">
+        </div>
+        
+        <p><strong>Clash Subscription Link:</strong></p>
+        <div class="url-display">https://alireza-rasouli.github.io/VPN/test.yaml</div>
+
+        <a href="clash://install-config?url=https://alireza-rasouli.github.io/VPN/test.yaml" class="btn">Import to Clash</a>
+        
         <hr>
-        <p><small>Note: To change which links are merged, click the button above and edit the <code>SOURCE_URLS</code> list in the Python file.</small></p>
+        <p><small>To add/remove links, click below. Add the link to <code>SOURCE_URLS</code> in the code and click <b>Commit</b>.</small></p>
+        <a href="https://github.com/alireza-rasouli/VPN/edit/main/automate.py" class="btn btn-edit">Manage Source Links</a>
     </div>
 </body>
 </html>
