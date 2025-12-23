@@ -1,49 +1,62 @@
 import requests
 import yaml
 
-# Configuration
-SOURCE_URL = "https://cdn.akaere.online/snowy-dew-50ba.latefirefly.workers.dev/0f48c62b-7e0d-43ee-9c15-8a5b8f77b82d?clash"
-INPUT_FILE = "LL.yaml"   # Your original "Master" file
-OUTPUT_FILE = "test.yaml" # The new automated file
+# 1. Add all your subscription links here
+SOURCE_URLS = [
+    "https://cdn.akaere.online/snowy-dew-50ba.latefirefly.workers.dev/0f48c62b-7e0d-43ee-9c15-8a5b8f77b82d?clash",
+    # "https://another-link.com/clash",  <-- Add more links like this
+]
+
+INPUT_FILE = "LL.yaml"
+OUTPUT_FILE = "test.yaml"
 
 def main():
-    print(f"Fetching fresh nodes from source...")
-    try:
-        response = requests.get(SOURCE_URL)
-        source_data = yaml.safe_load(response.text)
-        
-        new_proxies = source_data.get('proxies', [])
-        new_names = [p['name'] for p in new_proxies]
+    all_new_proxies = []
+    seen_names = set()
 
-        print(f"Loading template from {INPUT_FILE}...")
-        with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-            my_config = yaml.safe_load(f)
+    # 2. Fetch from every link in the list
+    for url in SOURCE_URLS:
+        print(f"Fetching nodes from: {url}")
+        try:
+            response = requests.get(url, timeout=10)
+            source_data = yaml.safe_load(response.text)
+            proxies = source_data.get('proxies', [])
+            
+            for p in proxies:
+                if p['name'] not in seen_names:
+                    all_new_proxies.append(p)
+                    seen_names.add(p['name'])
+        except Exception as e:
+            print(f"Error fetching {url}: {e}")
 
-        # 1. Replace global proxies section
-        my_config['proxies'] = new_proxies
+    if not all_new_proxies:
+        print("No proxies found. Skipping update.")
+        return
 
-        # 2. Update Group memberships
-        # This keeps your custom groups and rules intact
-        if 'proxy-groups' in my_config:
-            # Get names of all groups to avoid filtering out nested groups
-            group_names = [g['name'] for g in my_config['proxy-groups']]
-            special_tags = ['DIRECT', 'REJECT', 'GLOBAL']
-            valid_static = special_tags + group_names
+    # 3. Load your template
+    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+        my_config = yaml.safe_load(f)
 
-            for group in my_config['proxy-groups']:
-                if 'proxies' in group:
-                    # Keep only the static/group names, then append new node names
-                    preserved = [p for p in group['proxies'] if p in valid_static]
-                    group['proxies'] = preserved + new_names
+    # 4. Inject all gathered proxies
+    my_config['proxies'] = all_new_proxies
+    new_names = list(seen_names)
 
-        # 3. Save to the new test.yaml file
-        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            yaml.dump(my_config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
-        
-        print(f"Success! Created {OUTPUT_FILE} with {len(new_proxies)} nodes.")
+    # 5. Update Groups
+    if 'proxy-groups' in my_config:
+        group_names = [g['name'] for g in my_config['proxy-groups']]
+        special_tags = ['DIRECT', 'REJECT', 'GLOBAL']
+        valid_static = special_tags + group_names
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        for group in my_config['proxy-groups']:
+            if 'proxies' in group:
+                preserved = [p for p in group['proxies'] if p in valid_static]
+                group['proxies'] = preserved + new_names
+
+    # 6. Save result
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        yaml.dump(my_config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+    
+    print(f"Done! Combined {len(all_new_proxies)} unique nodes into {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
