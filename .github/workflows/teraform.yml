@@ -1,26 +1,29 @@
 name: Sync Nodes to Test Config
 on:
   schedule:
-    - cron: '0 */12 * * *' # Runs every 12 hours
-  workflow_dispatch:      # Manual run button
+    - cron: '0 */12 * * *'
+  workflow_dispatch: 
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # This "downloads" your files into the runner
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
       - name: Install dependencies
         run: pip install pyyaml requests
 
+      - name: Verify Files
+        run: ls -R # This will print all files to the log so we can debug
+
       - name: Run Update
-        run: python automate.py
+        run: python automate.py # This should now find the file in the root
 
       - name: Push Changes
         run: |
