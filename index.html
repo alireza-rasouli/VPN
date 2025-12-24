@@ -2,245 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>VPN Control Center</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Control Panel</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    
     <style>
-        :root {
-            --primary: #6366f1;
-            --bg: #0f172a;
-            --card-bg: rgba(15, 23, 42, 0.6);
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Essential Centering Logic */
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100svh; /* Smallest Viewport Height to fix mobile shifting */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--bg);
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
-            font-family: 'Outfit', sans-serif;
-            color: white;
-            overflow: hidden;
-        }
-
-        .glass-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--border);
-            border-radius: 32px;
-            padding: 40px 30px;
-            width: 90%;
-            max-width: 420px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        h1 { font-size: 32px; margin: 0 0 10px 0; font-weight: 600; letter-spacing: -1px; }
-        p { color: rgba(255,255,255,0.5); margin-bottom: 30px; font-size: 16px; }
-
-        .input-group {
-            background: rgba(0,0,0,0.3);
-            border-radius: 20px;
-            padding: 8px;
-            display: flex;
-            align-items: center;
-            border: 1px solid var(--border);
-            margin-bottom: 25px;
-        }
-
-        input {
-            flex: 1;
-            background: transparent;
-            border: none;
-            color: white;
-            padding: 10px;
-            font-family: monospace;
-            outline: none;
-            font-size: 13px;
-            opacity: 0.8;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            padding: 16px;
-            border-radius: 18px;
-            font-weight: 600;
-            font-size: 15px;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 12px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); }
-        .btn-clash { background: white; color: black; }
-        .btn-manage { background: rgba(255,255,255,0.05); color: white; border: 1px solid var(--border); }
-        
-        .btn:hover { transform: scale(1.02); opacity: 0.9; }
-        .btn:active { transform: scale(0.98); }
-
-        /* QR Modal */
-        #qrModal {
-            display: none;
-            position: fixed;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 25px;
-            border-radius: 30px;
-            z-index: 100;
-            box-shadow: 0 0 100px rgba(0,0,0,0.5);
-        }
-        #overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(5px);
-            z-index: 90;
-        }
+        :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
+        .input-group { display: flex; gap: 0.5rem; margin: 1.5rem 0; }
+        input { flex: 1; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; outline: none; }
+        button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; font-weight: 600; transition: 0.2s; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-secondary { background: #64748b; color: white; margin-top: 10px; width: 100%; }
+        .btn-primary:hover { opacity: 0.9; }
+        #qrModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: 1rem; z-index: 100; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); }
+        #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 50; }
+        .icon-btn { background: none; color: #64748b; padding: 0.5rem; }
     </style>
 </head>
 <body>
 
+<div class="card">
+    <i data-lucide="shield-check" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto;"></i>
+    <h1>VPN Panel</h1>
+    <p style="color: #64748b;">Paste your link below to get the result</p>
+
+    <div class="input-group">
+        <input type="text" id="subUrl" placeholder="Enter link here...">
+        <button class="btn-primary" onclick="copyUrl()">Copy</button>
+    </div>
+
+    <button class="btn-secondary" onclick="getOutputResult()" id="processBtn">
+        <span id="btnText">Process Link</span>
+    </button>
+
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem;">
+        <button class="icon-btn" onclick="showQR()"><i data-lucide="qr-code"></i></button>
+    </div>
+</div>
+
 <div id="overlay" onclick="closeQR()"></div>
 <div id="qrModal">
     <div id="qrcode"></div>
-    <p style="color: #64748b; margin-top: 15px; font-size: 14px; text-align: center; font-weight: 600;">Scan to Import</p>
-</div>
-
-<div class="glass-card">
-    <div style="margin-bottom: 24px; opacity: 0.8;">
-        <img src="https://github.com/alireza-rasouli/VPN/actions/workflows/sync.yml/badge.svg" alt="Status">
-    </div>
-    
-    <h1>VPN Manager</h1>
-    <p>Unified nodes for your devices</p>
-
-    <div class="input-group">
-        <input type="text" id="subUrl" value="https://alireza-rasouli.github.io/VPN/test.yaml" readonly>
-        <button class="btn-primary" style="padding: 10px 18px; border-radius: 14px; font-size: 12px; width: auto; margin: 0; cursor: pointer;" onclick="copyUrl()">Copy</button>
-    </div>
-
-    <button onclick="showQR()" class="btn btn-manage">
-        <i data-lucide="qr-code" size="20"></i> Show QR Code
-    </button>
-
-    <a href="clash://install-config?url=https://alireza-rasouli.github.io/VPN/test.yaml" class="btn btn-clash">
-        <i data-lucide="zap" size="20"></i> Open in Clash
-    </a>
-
-    <a href="https://github.com/alireza-rasouli/VPN/edit/main/automate.py" class="btn btn-manage">
-        <i data-lucide="sliders" size="20"></i> Manage Links
-    </a>
-
-    <a href="https://github.com/alireza-rasouli/VPN/actions/workflows/sync.yml" class="btn btn-manage" style="background: rgba(99, 102, 241, 0.1); border: 1px solid var(--primary);">
-        <i data-lucide="play-circle" size="20"></i> Run Automation Now
-    </a>
+    <button class="btn-secondary" onclick="closeQR()" style="margin-top: 1rem;">Close</button>
 </div>
 
 <script>
- lucide.createIcons();
+    lucide.createIcons();
 
-// --- CONFIGURATION ---
-const RENDER_BACKEND_URL = "https://backend-bclt.onrender.com/process";
+    // Change this to your actual Render URL
+    const RENDER_BACKEND_URL = "https://backend-bclt.onrender.com/process";
 
-// 1. YOUR EXISTING UI FUNCTIONS (Keep these)
-function copyUrl() {
-    const input = document.getElementById("subUrl");
-    input.select();
-    navigator.clipboard.writeText(input.value);
-    const btn = document.querySelector('.btn-primary');
-    btn.innerText = "Copied!";
-    setTimeout(() => { btn.innerText = "Copy"; }, 2000);
-}
-
-// QR Code Setup
-const qrcode = new QRCode(document.getElementById("qrcode"), {
-    text: "https://alireza-rasouli.github.io/VPN/test.yaml", // You can update this dynamically later
-    width: 200, height: 200,
-    colorDark : "#0f172a", colorLight : "#ffffff",
-    correctLevel : QRCode.CorrectLevel.H
-});
-
-function showQR() {
-    document.getElementById("qrModal").style.display = "block";
-    document.getElementById("overlay").style.display = "block";
-}
-
-function closeQR() {
-    document.getElementById("qrModal").style.display = "none";
-    document.getElementById("overlay").style.display = "none";
-}
-
-// 2. NEW: THE "PROCESS" LOGIC (What you wanted)
-// This function sends the link to Render and gets the result back
-async function getOutputResult() {
-    const inputField = document.getElementById("subUrl");
-    const resultDisplay = document.getElementById("resultDisplay"); // Make sure this ID exists in your HTML
-    
-    if (!inputField.value) {
-        alert("Please enter a link first!");
-        return;
+    // 1. Copy Function
+    function copyUrl() {
+        const input = document.getElementById("subUrl");
+        input.select();
+        navigator.clipboard.writeText(input.value);
+        const btn = document.querySelector('.btn-primary');
+        btn.innerText = "Copied!";
+        setTimeout(() => { btn.innerText = "Copy"; }, 2000);
     }
 
-    // Visual feedback so you know it's working
-    const originalValue = inputField.value;
-    inputField.value = "Processing link... please wait.";
-    inputField.disabled = true;
+    // 2. QR Code Setup
+    const qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "https://alireza-rasouli.github.io/VPN/",
+        width: 200, height: 200,
+        colorDark : "#0f172a", colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
 
-    try {
-        const response = await fetch(RENDER_BACKEND_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ url: originalValue })
-        });
-
-        if (!response.ok) throw new Error("Backend error");
-
-        const data = await response.json();
-        
-        // Show the result in the input field OR a dedicated result area
-        inputField.value = data.output; 
-        
-        // Update the QR code to point to the new result
-        qrcode.clear();
-        qrcode.makeCode(data.output);
-
-    } catch (error) {
-        console.error("Error:", error);
-        inputField.value = originalValue;
-        alert("Could not connect to Render. Check if your backend is live.");
-    } finally {
-        inputField.disabled = false;
+    function showQR() {
+        document.getElementById("qrModal").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
     }
-}
-</script>
 
-</body>
-</html>
+    function closeQR()
