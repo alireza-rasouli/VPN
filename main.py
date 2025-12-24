@@ -37,3 +37,6 @@ def add_link(request: LinkRequest):
         return {"status": "success", "link_added": request.url}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+# No 'if __name__ == "__main__":' block needed
+# Just make sure 'app' is defined at the top level
+app = FastAPI()
