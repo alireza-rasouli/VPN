@@ -1,8 +1,0 @@
-name = "backend"
-main = "main.py"
-compatibility_date = "2024-12-01"
-compatibility_flags = ["python_workers"]
-
-# This tells Cloudflare to ignore extra files during the build
-[build]
-upload_include = ["main.py", "requirements.txt"]
