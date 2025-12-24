@@ -165,9 +165,12 @@
 </div>
 
 <script>
-   lucide.createIcons();
+ lucide.createIcons();
 
-// --- KEEP YOUR EXISTING UI LOGIC ---
+// --- CONFIGURATION ---
+const RENDER_BACKEND_URL = "https://backend-bclt.onrender.com/process";
+
+// 1. YOUR EXISTING UI FUNCTIONS (Keep these)
 function copyUrl() {
     const input = document.getElementById("subUrl");
     input.select();
@@ -177,8 +180,9 @@ function copyUrl() {
     setTimeout(() => { btn.innerText = "Copy"; }, 2000);
 }
 
+// QR Code Setup
 const qrcode = new QRCode(document.getElementById("qrcode"), {
-    text: "https://alireza-rasouli.github.io/VPN/test.yaml",
+    text: "https://alireza-rasouli.github.io/VPN/test.yaml", // You can update this dynamically later
     width: 200, height: 200,
     colorDark : "#0f172a", colorLight : "#ffffff",
     correctLevel : QRCode.CorrectLevel.H
@@ -194,27 +198,46 @@ function closeQR() {
     document.getElementById("overlay").style.display = "none";
 }
 
-// --- ADD THE NEW BACKEND LOGIC HERE ---
-const RENDER_BACKEND = "https://backend-bclt.onrender.com";
-
-async function getResult() {
-    const inputLink = document.getElementById("subUrl").value;
+// 2. NEW: THE "PROCESS" LOGIC (What you wanted)
+// This function sends the link to Render and gets the result back
+async function getOutputResult() {
+    const inputField = document.getElementById("subUrl");
+    const resultDisplay = document.getElementById("resultDisplay"); // Make sure this ID exists in your HTML
     
+    if (!inputField.value) {
+        alert("Please enter a link first!");
+        return;
+    }
+
+    // Visual feedback so you know it's working
+    const originalValue = inputField.value;
+    inputField.value = "Processing link... please wait.";
+    inputField.disabled = true;
+
     try {
-        const response = await fetch(`${RENDER_BACKEND}/process`, {
+        const response = await fetch(RENDER_BACKEND_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ url: inputLink })
+            body: JSON.stringify({ url: originalValue })
         });
+
+        if (!response.ok) throw new Error("Backend error");
 
         const data = await response.json();
         
-        // This takes the output from Render and puts it in your panel
-        // Ensure you have an element with id="output" in your HTML
-        document.getElementById("output").innerText = data.output;
+        // Show the result in the input field OR a dedicated result area
+        inputField.value = data.output; 
+        
+        // Update the QR code to point to the new result
+        qrcode.clear();
+        qrcode.makeCode(data.output);
+
     } catch (error) {
-        console.error("Backend Error:", error);
-        alert("Could not connect to Render backend.");
+        console.error("Error:", error);
+        inputField.value = originalValue;
+        alert("Could not connect to Render. Check if your backend is live.");
+    } finally {
+        inputField.disabled = false;
     }
 }
 </script>
