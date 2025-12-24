@@ -1,16 +1,5 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+# A standard Cloudflare Python Worker (No FastAPI)
+from js import Response
 
-app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-@app.get("/")
-def root():
-    return {"message": "Success! Backend is running from the CF subfolder."}
-##cm
+async def on_fetch(request, env):
+    return Response.new("Native Python Backend is Live!")
