@@ -1,4 +1,4 @@
 name = "backend"
 main = "main.py"
 compatibility_date = "2024-12-01"
-compatibility_flags = ["python_workers"]
+compatibility_flags = ["python_workers", "disable_python_no_global_handlers"]
