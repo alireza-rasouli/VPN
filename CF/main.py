@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from workers import WorkerEntrypoint
 import asgi
 
-# 1. Create your FastAPI app as usual
+# Create the FastAPI app
 app = FastAPI()
 
 app.add_middleware(
@@ -15,10 +15,10 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "FastAPI is now live on Cloudflare!"}
+    return {"message": "FastAPI is now live using the WorkerEntrypoint bridge!"}
 
-# 2. This is the 'bridge' Cloudflare needs
+# The required bridge for Cloudflare Python Workers
 class Default(WorkerEntrypoint):
     async def fetch(self, request):
-        # This connects the incoming request to the FastAPI app
+        # This connects the incoming worker request to the FastAPI app
         return await asgi.fetch(app, request, self.env)
