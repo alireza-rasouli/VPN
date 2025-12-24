@@ -1,0 +1,3 @@
+fastapi
+PyGithub
+pydantic
