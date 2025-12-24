@@ -28,4 +28,124 @@
 <div class="card">
     <i data-lucide="shield-check" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto;"></i>
     <h1>VPN Panel</h1>
-    <p style="color: #64748b;">Paste your link to process</
+    <p style="color: #64748b;">Paste your link to process</p>
+
+    <div class="input-group">
+        <input type="text" id="subUrl" placeholder="Enter link here...">
+        <button class="btn-primary" onclick="copyUrl()">Copy</button>
+    </div>
+
+    <button class="btn-secondary" onclick="getOutputResult()" id="processBtn">
+        <span id="btnText">Process Link</span>
+    </button>
+    <div id="statusInfo" class="loader">Server is waking up...</div>
+
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem;">
+        <button class="icon-btn" onclick="showQR()"><i data-lucide="qr-code"></i></button>
+    </div>
+</div>
+
+<div id="overlay" onclick="closeQR()"></div>
+<div id="qrModal">
+    <div id="qrcode"></div>
+    <button class="btn-secondary" onclick="closeQR()" style="margin-top: 1rem;">Close</button>
+</div>
+
+<script>
+    lucide.createIcons();
+
+    const RENDER_URL = "https://backend-bclt.onrender.com";
+
+    // --- WAKE UP ON LOAD ---
+    // Start the server boot process as soon as the user opens the page
+    window.onload = () => {
+        console.log("Sending pre-emptive wake-up signal...");
+        fetch(RENDER_URL).catch(() => {}); 
+    };
+
+    function copyUrl() {
+        const input = document.getElementById("subUrl");
+        input.select();
+        navigator.clipboard.writeText(input.value);
+        const btn = document.querySelector('.btn-primary');
+        btn.innerText = "Copied!";
+        setTimeout(() => { btn.innerText = "Copy"; }, 2000);
+    }
+
+    const qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "https://alireza-rasouli.github.io/VPN/",
+        width: 200, height: 200,
+        colorDark : "#0f172a", colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+
+    function showQR() {
+        document.getElementById("qrModal").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeQR() {
+        document.getElementById("qrModal").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+
+    // --- HEAVY DUTY PROCESS LOGIC ---
+    async function getOutputResult() {
+        const inputField = document.getElementById("subUrl");
+        const btnText = document.getElementById("btnText");
+        const statusInfo = document.getElementById("statusInfo");
+        const url = inputField.value;
+
+        if (!url || url.includes("Processing")) {
+            alert("Please enter a valid link.");
+            return;
+        }
+
+        inputField.disabled = true;
+        statusInfo.style.display = "block";
+        btnText.innerText = "Connecting...";
+
+        // Retry loop: attempts 5 times with a 15-second gap
+        for (let i = 0; i < 5; i++) {
+            try {
+                const response = await fetch(`${RENDER_URL}/process`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url: url }),
+                    // Set a timeout for the fetch itself
+                    signal: AbortSignal.timeout(20000) 
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    inputField.value = data.output;
+                    inputField.disabled = false;
+                    btnText.innerText = "Success!";
+                    statusInfo.style.display = "none";
+                    
+                    // Update QR
+                    qrcode.clear();
+                    qrcode.makeCode(data.output);
+
+                    setTimeout(() => { btnText.innerText = "Process Link"; }, 3000);
+                    return; 
+                }
+            } catch (e) {
+                console.log(`Attempt ${i+1} failed. Server is likely booting.`);
+                btnText.innerText = `Starting Server... (${i+1}/5)`;
+            }
+            
+            // Wait before next retry
+            await new Promise(res => setTimeout(res, 10000));
+        }
+
+        // If we get here, all retries failed
+        alert("Server is still waking up. Please wait 30 seconds and try again.");
+        btnText.innerText = "Retry Process";
+        inputField.disabled = false;
+        statusInfo.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
