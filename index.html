@@ -3,80 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPN Control Panel</title>
+    <title>VPN Proxy Merger</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
-        :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; }
-        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .card { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
-        .input-group { display: flex; gap: 0.5rem; margin: 1.5rem 0; }
-        input { flex: 1; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; outline: none; transition: 0.3s; }
-        input:disabled { background: #f1f5f9; cursor: not-allowed; }
-        button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; font-weight: 600; transition: 0.2s; }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-secondary { background: #64748b; color: white; margin-top: 10px; width: 100%; }
-        .btn-primary:hover { opacity: 0.9; }
+        :root { --primary: #2563eb; --success: #059669; --bg: #f8fafc; --text: #1e293b; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .card { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: center; }
+        .input-group { display: flex; gap: 0.5rem; margin: 1.5rem 0 0.5rem 0; }
+        input { flex: 1; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; outline: none; }
+        button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; font-weight: 600; transition: 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-primary { background: var(--primary); color: white; width: 100%; }
+        .btn-success { background: var(--success); color: white; width: 100%; margin-top: 10px; display: none; }
+        .btn-copy { background: #e2e8f0; color: var(--text); padding: 0.75rem; }
+        button:hover { opacity: 0.9; }
+        button:disabled { background: #cbd5e1; cursor: not-allowed; }
+        
+        /* Results Area */
+        #resultContainer { margin-top: 1.5rem; display: none; text-align: left; }
+        textarea { width: 100%; height: 200px; border-radius: 0.5rem; border: 1px solid #e2e8f0; font-family: monospace; font-size: 12px; padding: 10px; resize: vertical; background: #f1f5f9; }
+        
+        /* Modal for QR */
         #qrModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: 1rem; z-index: 100; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); }
         #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 50; }
-        .icon-btn { background: none; color: #64748b; padding: 0.5rem; }
-        .loader { font-size: 0.8rem; color: #3b82f6; margin-top: 5px; display: none; }
+        .status-msg { font-size: 0.85rem; color: var(--primary); margin-top: 5px; min-height: 20px; }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <i data-lucide="shield-check" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto;"></i>
-    <h1>VPN Panel</h1>
-    <p style="color: #64748b;">Paste your link to process</p>
+    <i data-lucide="refresh-cw" style="width: 40px; height: 40px; color: var(--primary); margin: 0 auto;"></i>
+    <h1 style="margin: 10px 0;">Proxy Merger</h1>
+    <p style="color: #64748b; margin-bottom: 20px;">Paste source YAML link to merge with LL.yaml</p>
 
     <div class="input-group">
-        <input type="text" id="subUrl" placeholder="Enter link here...">
-        <button class="btn-primary" onclick="copyUrl()">Copy</button>
+        <input type="text" id="subUrl" placeholder="https://raw.githubusercontent.com/.../nodes.yaml">
+        <button class="btn-copy" onclick="copyInput()" title="Copy Input"><i data-lucide="copy"></i></button>
     </div>
 
-    <button class="btn-secondary" onclick="getOutputResult()" id="processBtn">
-        <span id="btnText">Process Link</span>
+    <button class="btn-primary" onclick="processYaml()" id="processBtn">
+        <i data-lucide="zap"></i> <span id="btnText">Process & Merge</span>
     </button>
-    <div id="statusInfo" class="loader">Server is waking up...</div>
+    <div id="statusMsg" class="status-msg"></div>
 
-    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem;">
-        <button class="icon-btn" onclick="showQR()"><i data-lucide="qr-code"></i></button>
+    <div id="resultContainer">
+        <label style="font-size: 0.8rem; font-weight: bold; color: #64748b;">Result Preview:</label>
+        <textarea id="resultPreview" readonly></textarea>
+        
+        <button class="btn-success" id="downloadBtn" onclick="downloadFile()">
+            <i data-lucide="download"></i> Download test.yaml
+        </button>
+        
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+            <button class="btn-copy" onclick="showQR()"><i data-lucide="qr-code"></i> View QR</button>
+        </div>
     </div>
 </div>
 
 <div id="overlay" onclick="closeQR()"></div>
 <div id="qrModal">
     <div id="qrcode"></div>
-    <button class="btn-secondary" onclick="closeQR()" style="margin-top: 1rem;">Close</button>
+    <button class="btn-primary" onclick="closeQR()" style="margin-top: 1rem; background: #64748b;">Close</button>
 </div>
 
 <script>
     lucide.createIcons();
 
-    const RENDER_URL = "https://backend-bclt.onrender.com";
+    const RENDER_API = "https://backend-bclt.onrender.com/process";
+    let processedYamlData = "";
 
-    // --- WAKE UP ON LOAD ---
-    // Start the server boot process as soon as the user opens the page
+    // 1. Wake up server on page load
     window.onload = () => {
-        console.log("Sending pre-emptive wake-up signal...");
-        fetch(RENDER_URL).catch(() => {}); 
+        fetch("https://backend-bclt.onrender.com/").catch(() => {});
     };
 
-    function copyUrl() {
+    // 2. Main Process Function
+    async function processYaml() {
+        const urlInput = document.getElementById("subUrl").value;
+        const btnText = document.getElementById("btnText");
+        const statusMsg = document.getElementById("statusMsg");
+        const btn = document.getElementById("processBtn");
+
+        if (!urlInput) return alert("Please paste a source URL first!");
+
+        btn.disabled = true;
+        statusMsg.innerText = "Waking up Render server (30-60s)...";
+        btnText.innerText = "Processing...";
+
+        try {
+            const response = await fetch(RENDER_API, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: urlInput })
+            });
+
+            if (!response.ok) throw new Error("Server Error");
+
+            const data = await response.json();
+            
+            if (data.output.startsWith("Error") || data.output.startsWith("Backend Error")) {
+                alert(data.output);
+                statusMsg.innerText = "Processing failed.";
+            } else {
+                processedYamlData = data.output;
+                document.getElementById("resultPreview").value = processedYamlData;
+                document.getElementById("resultContainer").style.display = "block";
+                document.getElementById("downloadBtn").style.display = "flex";
+                statusMsg.innerText = "Merge Successful!";
+                
+                // Update QR Code
+                qrcode.clear();
+                qrcode.makeCode(processedYamlData.substring(0, 1000)); // Limit size for QR
+            }
+
+        } catch (error) {
+            console.error(error);
+            statusMsg.innerText = "Error. Server may still be starting up. Try again.";
+        } finally {
+            btn.disabled = false;
+            btnText.innerText = "Process & Merge";
+        }
+    }
+
+    // 3. Download Logic
+    function downloadFile() {
+        if (!processedYamlData) return;
+        const blob = new Blob([processedYamlData], { type: 'text/yaml' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "test.yaml";
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+    }
+
+    // 4. Utility Functions
+    function copyInput() {
         const input = document.getElementById("subUrl");
         input.select();
         navigator.clipboard.writeText(input.value);
-        const btn = document.querySelector('.btn-primary');
-        btn.innerText = "Copied!";
-        setTimeout(() => { btn.innerText = "Copy"; }, 2000);
     }
 
     const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "https://alireza-rasouli.github.io/VPN/",
-        width: 200, height: 200,
-        colorDark : "#0f172a", colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
+        text: "Waiting for data...",
+        width: 256, height: 256
     });
 
     function showQR() {
@@ -87,63 +159,6 @@
     function closeQR() {
         document.getElementById("qrModal").style.display = "none";
         document.getElementById("overlay").style.display = "none";
-    }
-
-    // --- HEAVY DUTY PROCESS LOGIC ---
-    async function getOutputResult() {
-        const inputField = document.getElementById("subUrl");
-        const btnText = document.getElementById("btnText");
-        const statusInfo = document.getElementById("statusInfo");
-        const url = inputField.value;
-
-        if (!url || url.includes("Processing")) {
-            alert("Please enter a valid link.");
-            return;
-        }
-
-        inputField.disabled = true;
-        statusInfo.style.display = "block";
-        btnText.innerText = "Connecting...";
-
-        // Retry loop: attempts 5 times with a 15-second gap
-        for (let i = 0; i < 5; i++) {
-            try {
-                const response = await fetch(`${RENDER_URL}/process`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ url: url }),
-                    // Set a timeout for the fetch itself
-                    signal: AbortSignal.timeout(20000) 
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-                    inputField.value = data.output;
-                    inputField.disabled = false;
-                    btnText.innerText = "Success!";
-                    statusInfo.style.display = "none";
-                    
-                    // Update QR
-                    qrcode.clear();
-                    qrcode.makeCode(data.output);
-
-                    setTimeout(() => { btnText.innerText = "Process Link"; }, 3000);
-                    return; 
-                }
-            } catch (e) {
-                console.log(`Attempt ${i+1} failed. Server is likely booting.`);
-                btnText.innerText = `Starting Server... (${i+1}/5)`;
-            }
-            
-            // Wait before next retry
-            await new Promise(res => setTimeout(res, 10000));
-        }
-
-        // If we get here, all retries failed
-        alert("Server is still waking up. Please wait 30 seconds and try again.");
-        btnText.innerText = "Retry Process";
-        inputField.disabled = false;
-        statusInfo.style.display = "none";
     }
 </script>
 
