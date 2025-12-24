@@ -49,6 +49,12 @@
 </div>
 
 <script>
+    // This wakes up the server as soon as the page loads
+window.onload = function() {
+    fetch("https://backend-bclt.onrender.com/")
+        .then(() => console.log("Wake-up signal sent to Render"))
+        .catch(() => console.log("Server is starting up..."));
+};
     lucide.createIcons();
 
     // Change this to your actual Render URL
