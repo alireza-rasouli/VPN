@@ -165,33 +165,58 @@
 </div>
 
 <script>
-    lucide.createIcons();
+   lucide.createIcons();
 
-    function copyUrl() {
-        const input = document.getElementById("subUrl");
-        input.select();
-        navigator.clipboard.writeText(input.value);
-        const btn = document.querySelector('.btn-primary');
-        btn.innerText = "Copied!";
-        setTimeout(() => { btn.innerText = "Copy"; }, 2000);
+// --- KEEP YOUR EXISTING UI LOGIC ---
+function copyUrl() {
+    const input = document.getElementById("subUrl");
+    input.select();
+    navigator.clipboard.writeText(input.value);
+    const btn = document.querySelector('.btn-primary');
+    btn.innerText = "Copied!";
+    setTimeout(() => { btn.innerText = "Copy"; }, 2000);
+}
+
+const qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: "https://alireza-rasouli.github.io/VPN/test.yaml",
+    width: 200, height: 200,
+    colorDark : "#0f172a", colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+
+function showQR() {
+    document.getElementById("qrModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeQR() {
+    document.getElementById("qrModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+// --- ADD THE NEW BACKEND LOGIC HERE ---
+const RENDER_BACKEND = "https://backend-bclt.onrender.com";
+
+async function getResult() {
+    const inputLink = document.getElementById("subUrl").value;
+    
+    try {
+        const response = await fetch(`${RENDER_BACKEND}/process`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url: inputLink })
+        });
+
+        const data = await response.json();
+        
+        // This takes the output from Render and puts it in your panel
+        // Ensure you have an element with id="output" in your HTML
+        document.getElementById("output").innerText = data.output;
+    } catch (error) {
+        console.error("Backend Error:", error);
+        alert("Could not connect to Render backend.");
     }
-
-    const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "https://alireza-rasouli.github.io/VPN/test.yaml",
-        width: 200, height: 200,
-        colorDark : "#0f172a", colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
-
-    function showQR() {
-        document.getElementById("qrModal").style.display = "block";
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    function closeQR() {
-        document.getElementById("qrModal").style.display = "none";
-        document.getElementById("overlay").style.display = "none";
-    }
+}
 </script>
 
 </body>
