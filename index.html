@@ -11,7 +11,8 @@
         body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
         .card { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
         .input-group { display: flex; gap: 0.5rem; margin: 1.5rem 0; }
-        input { flex: 1; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; outline: none; }
+        input { flex: 1; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; outline: none; transition: 0.3s; }
+        input:disabled { background: #f1f5f9; cursor: not-allowed; }
         button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; font-weight: 600; transition: 0.2s; }
         .btn-primary { background: var(--primary); color: white; }
         .btn-secondary { background: #64748b; color: white; margin-top: 10px; width: 100%; }
@@ -19,6 +20,7 @@
         #qrModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: 1rem; z-index: 100; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); }
         #overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 50; }
         .icon-btn { background: none; color: #64748b; padding: 0.5rem; }
+        .loader { font-size: 0.8rem; color: #3b82f6; margin-top: 5px; display: none; }
     </style>
 </head>
 <body>
@@ -26,61 +28,4 @@
 <div class="card">
     <i data-lucide="shield-check" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto;"></i>
     <h1>VPN Panel</h1>
-    <p style="color: #64748b;">Paste your link below to get the result</p>
-
-    <div class="input-group">
-        <input type="text" id="subUrl" placeholder="Enter link here...">
-        <button class="btn-primary" onclick="copyUrl()">Copy</button>
-    </div>
-
-    <button class="btn-secondary" onclick="getOutputResult()" id="processBtn">
-        <span id="btnText">Process Link</span>
-    </button>
-
-    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem;">
-        <button class="icon-btn" onclick="showQR()"><i data-lucide="qr-code"></i></button>
-    </div>
-</div>
-
-<div id="overlay" onclick="closeQR()"></div>
-<div id="qrModal">
-    <div id="qrcode"></div>
-    <button class="btn-secondary" onclick="closeQR()" style="margin-top: 1rem;">Close</button>
-</div>
-
-<script>
-    // This wakes up the server as soon as the page loads
-window.onload = function() {
-    fetch("https://backend-bclt.onrender.com/")
-        .then(() => console.log("Wake-up signal sent to Render"))
-        .catch(() => console.log("Server is starting up..."));
-};
-    lucide.createIcons();
-
-    // Change this to your actual Render URL
-    const RENDER_BACKEND_URL = "https://backend-bclt.onrender.com/process";
-
-    // 1. Copy Function
-    function copyUrl() {
-        const input = document.getElementById("subUrl");
-        input.select();
-        navigator.clipboard.writeText(input.value);
-        const btn = document.querySelector('.btn-primary');
-        btn.innerText = "Copied!";
-        setTimeout(() => { btn.innerText = "Copy"; }, 2000);
-    }
-
-    // 2. QR Code Setup
-    const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "https://alireza-rasouli.github.io/VPN/",
-        width: 200, height: 200,
-        colorDark : "#0f172a", colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
-
-    function showQR() {
-        document.getElementById("qrModal").style.display = "block";
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    function closeQR()
+    <p style="color: #64748b;">Paste your link to process</
