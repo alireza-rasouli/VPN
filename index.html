@@ -37,11 +37,6 @@
         }
 
         .glass-card {
-            <div class="input-group" style="flex-direction: column; gap: 10px; background: none; border: none;">
-                <input type="text" id="newUrl" placeholder="Paste new config URL here" style="background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid var(--border); width: 100%;">
-                <input type="password" id="pass" placeholder="Password" style="background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid var(--border); width: 100%;">
-                <button onclick="submitLink()" class="btn btn-primary">Submit to Cloud</button>
-            </div>
             background: var(--card-bg);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -201,16 +196,3 @@
 
 </body>
 </html>
-async function submitLink() {
-    const url = document.getElementById('newUrl').value;
-    const password = document.getElementById('pass').value;
-    
-    const response = await fetch('https://ewzvhgyazgsz.eu-central-1.clawcloudrun.com', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ url: url, password: password })
-    });
-    
-    const result = await response.json();
-    alert(result.message);
-}
