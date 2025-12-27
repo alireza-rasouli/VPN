@@ -74,6 +74,7 @@ proxy-groups:
       - Peasoft
       - Ripa
       - Eternity
+      - PSG
   - name: Auto
     type: url-test
     url: http://www.google.com/generate_204
@@ -88,6 +89,7 @@ proxy-groups:
       - Peasoft
       - Ripa
       - Eternity
+      - PSG
   - name: Syavar
     type: select
     use:
@@ -120,6 +122,10 @@ proxy-groups:
     type: select
     use:
       - Eternity
+  - name: PSG
+    type: select
+    use:
+      - PSG
 
 proxy-providers:
   Syavar:
@@ -186,7 +192,14 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204    
-  
+  PSG:
+    type:  http
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/clash/mix"
+    path: ./PSG.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204 
 rule-providers:
   ir:
     type: http
