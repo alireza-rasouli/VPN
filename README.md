@@ -141,7 +141,7 @@ nima.nscl.ir
 </details>
 <details>
 <summary>SUBAPI</summary>
-[API](vihhtxpqnrfb.eu-central-1.clawcloudrun.com)
+vihhtxpqnrfb.eu-central-1.clawcloudrun.com
 </details>
 <details>
 <summary>SUBCONFIG</summary>
