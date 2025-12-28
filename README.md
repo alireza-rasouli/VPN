@@ -141,7 +141,7 @@ nima.nscl.ir
 </details>
 <details>
 <summary>SUBAPI</summary>
-vihhtxpqnrfb.eu-central-1.clawcloudrun.com
+my-sub.onrender.com
 </details>
 <details>
 <summary>SUBCONFIG</summary>
