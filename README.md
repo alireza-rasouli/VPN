@@ -137,6 +137,8 @@ cdnjs.com
   <pre>
 bpb.yousef.isegaro.com
 nima.nscl.ir
+turk.radicalization.ir
+proxyip.cmliussss.net
   </pre>
 </details>
 <details>
