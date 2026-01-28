@@ -271,7 +271,6 @@ rules :
   - DOMAIN-SUFFIX,gemini.google.com,Mode
   - GEOSITE,github,DIRECT
   - GEOSITE,apple,DIRECT
-  - GEOSITE,whatsapp,DIRECT
   - RULE-SET,apps,DIRECT
   - RULE-SET,ads,REJECT
   - RULE-SET,malware,REJECT
