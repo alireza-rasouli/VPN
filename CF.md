@@ -1,6 +1,6 @@
   # Cloudflare *CMliu*
 
-[LF](https://snowy-dew-50ba.latefirefly.workers.dev/admin)
+[LF](https://shiny-recipe-f2ab.latefirefly.workers.dev/login)
 
 [SpS](https://wandering-lab-5e55.a4-valanides.workers.dev/login)
 
