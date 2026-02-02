@@ -266,17 +266,17 @@ rule-providers:
     interval: 86400
 
 rules :
-  - RULE-SET,private,DIRECT,no-resolve
-  - GEOSITE,samsung,DIRECT
-  - DOMAIN-SUFFIX,gemini.google.com,Mode
-  - GEOSITE,github,DIRECT
-  - GEOSITE,apple,DIRECT
-  - RULE-SET,apps,DIRECT
-  - RULE-SET,ads,REJECT
-  - RULE-SET,malware,REJECT
-  - RULE-SET,phishing,REJECT
-  - RULE-SET,cryptominers,REJECT
-  - RULE-SET,ir,DIRECT
-  - RULE-SET,ircidr,DIRECT
-  - RULE-SET,irasn,DIRECT
-  - MATCH,Mode
+- RULE-SET,private,DIRECT,no-resolve
+- RULE-SET,ads,REJECT
+- RULE-SET,malware,REJECT
+- RULE-SET,phishing,REJECT
+- RULE-SET,cryptominers,REJECT
+- GEOSITE,samsung,DIRECT
+- GEOSITE,google-deepmind,Mode
+- GEOSITE,github,DIRECT
+- GEOSITE,apple,DIRECT
+- RULE-SET,apps,DIRECT
+- RULE-SET,ir,DIRECT
+- RULE-SET,ircidr,DIRECT
+- RULE-SET,irasn,DIRECT
+- MATCH,Mode
