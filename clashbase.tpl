@@ -140,10 +140,10 @@ rules:
   - RULE-SET,malware,REJECT
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
-  - GEOSITE,samsung,DIRECT
+  - GEOSITE,samsung,🌎 Conditional
   - GEOSITE,google-deepmind,🚀 Selector
-  - GEOSITE,github,DIRECT
-  - GEOSITE,apple,DIRECT
+  - GEOSITE,github,🌎 Conditional
+  - GEOSITE,apple,🌎 Conditional
   - RULE-SET,apps,DIRECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ircidr,DIRECT
