@@ -134,4 +134,18 @@ rule-providers:
     interval: 86400
 proxies: []
 proxy-groups: []
-rules: []
+rules:
+  - RULE-SET,private,DIRECT,no-resolve
+  - RULE-SET,ads,REJECT
+  - RULE-SET,malware,REJECT
+  - RULE-SET,phishing,REJECT
+  - RULE-SET,cryptominers,REJECT
+  - GEOSITE,samsung,DIRECT
+  - GEOSITE,google-deepmind,🚀 Selector
+  - GEOSITE,github,DIRECT
+  - GEOSITE,apple,DIRECT
+  - RULE-SET,apps,DIRECT
+  - RULE-SET,ir,DIRECT
+  - RULE-SET,ircidr,DIRECT
+  - RULE-SET,irasn,DIRECT
+  - MATCH,🚀 Selector
