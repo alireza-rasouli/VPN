@@ -2097,16 +2097,16 @@ rule-providers:
     path: ./ruleset/irasn.txt
     interval: 86400
 rules:
-- GEOSITE,samsung,DIRECT
-- GEOSITE,google-deepmind,🚀 Selector
 - RULE-SET,private,DIRECT,no-resolve
-- GEOSITE,github,DIRECT
-- GEOSITE,apple,DIRECT
-- RULE-SET,apps,DIRECT
 - RULE-SET,ads,REJECT
 - RULE-SET,malware,REJECT
 - RULE-SET,phishing,REJECT
 - RULE-SET,cryptominers,REJECT
+- GEOSITE,samsung,DIRECT
+- GEOSITE,google-deepmind,🚀 Selector
+- GEOSITE,github,DIRECT
+- GEOSITE,apple,DIRECT
+- RULE-SET,apps,DIRECT
 - RULE-SET,ir,DIRECT
 - RULE-SET,ircidr,DIRECT
 - RULE-SET,irasn,DIRECT
