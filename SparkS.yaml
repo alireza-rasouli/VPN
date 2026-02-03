@@ -80,7 +80,7 @@ rule-providers:
     format: text
     behavior: domain
     url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt
-    path: ./category-ads-all.txt
+    path: ./ruleset/category-ads-all.txt
     interval: 86400
   malware:
     type: http
