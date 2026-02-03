@@ -11,7 +11,7 @@ geo-update-interval: 168
 external-controller: 127.0.0.1:9090
 external-controller-cors:
   allow-origins:
-    - '*'
+    - "*"
   allow-private-network: true
 external-ui: "ui"
 external-ui-url: "<https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip>"
@@ -76,7 +76,11 @@ proxy-groups:
     use:
       - LL
       - SparkS
-
+  - name: Conditional
+    type: select
+    proxies:
+      - DIRECT
+      - Manual Selection
 proxy-providers:
   SparkS:
     type: http
@@ -107,12 +111,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
     path: ./ruleset/ir.txt
     interval: 86400
-  ads:
+  category-ads-all:
     type: http
     format: text
     behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
-    path: ./ruleset/ads.txt
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
+    path: ./ruleset/category-ads-all.txt
     interval: 86400
   malware:
     type: http
@@ -166,14 +170,14 @@ rule-providers:
 
 rules :
   - RULE-SET,private,DIRECT,no-resolve
-  - RULE-SET,ads,REJECT
+  - RULE-SET,category-ads-all,REJECT
   - RULE-SET,malware,REJECT
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
-  - GEOSITE,samsung,DIRECT
+  - GEOSITE,samsung,Conditional
   - GEOSITE,google-deepmind,Mode
-  - GEOSITE,github,DIRECT
-  - GEOSITE,apple,DIRECT
+  - GEOSITE,github,Conditional
+  - GEOSITE,apple,Conditional
   - RULE-SET,apps,DIRECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ircidr,DIRECT
