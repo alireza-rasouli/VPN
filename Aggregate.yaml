@@ -11,7 +11,7 @@ geo-update-interval: 168
 external-controller: 127.0.0.1:9090
 external-controller-cors:
   allow-origins:
-    - '*'
+    - "*"
   allow-private-network: true
 external-ui: "ui"
 external-ui-url: "<https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip>"
