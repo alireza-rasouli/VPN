@@ -92,9 +92,9 @@ proxy-groups:
       - PSG
   - name: Conditional
     type: select
-    use:
+    proxies:
       - DIRECT
-      - Mode
+      - Manual Selection
   - name: Syavar
     type: select
     use:
