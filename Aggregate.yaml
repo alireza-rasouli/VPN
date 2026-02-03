@@ -90,6 +90,11 @@ proxy-groups:
       - Ripa
       - Eternity
       - PSG
+  - name: Conditional
+    type: select
+    use:
+      - DIRECT
+      - Mode
   - name: Syavar
     type: select
     use:
@@ -271,10 +276,10 @@ rules :
 - RULE-SET,malware,REJECT
 - RULE-SET,phishing,REJECT
 - RULE-SET,cryptominers,REJECT
-- GEOSITE,samsung,DIRECT
+- GEOSITE,samsung,Conditional
 - GEOSITE,google-deepmind,Mode
-- GEOSITE,github,DIRECT
-- GEOSITE,apple,DIRECT
+- GEOSITE,github,Conditional
+- GEOSITE,apple,Conditional
 - RULE-SET,apps,DIRECT
 - RULE-SET,ir,DIRECT
 - RULE-SET,ircidr,DIRECT
