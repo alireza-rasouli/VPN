@@ -213,12 +213,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
     path: ./ruleset/ir.txt
     interval: 86400
-  ads:
+  category-ads-all:
     type: http
     format: text
     behavior: domain
-    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt"
-    path: ./ruleset/ads.txt
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
+    path: ./ruleset/category-ads-all.txt
     interval: 86400
   malware:
     type: http
@@ -272,7 +272,7 @@ rule-providers:
 
 rules :
 - RULE-SET,private,DIRECT,no-resolve
-- RULE-SET,ads,REJECT
+- RULE-SET,category-ads-all,REJECT
 - RULE-SET,malware,REJECT
 - RULE-SET,phishing,REJECT
 - RULE-SET,cryptominers,REJECT
