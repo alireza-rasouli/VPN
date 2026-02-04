@@ -60,7 +60,6 @@ proxy-groups:
   - name: Mode
     type: select
     proxies:
-      - DIRECT
       - Manual Selection
       - Auto
   - name: Manual Selection
