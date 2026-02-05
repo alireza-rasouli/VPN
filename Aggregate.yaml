@@ -69,10 +69,9 @@ proxy-groups:
       - MrM
       - Snake
       - 10ium
-      - LLF
       - Peasoft
       - Ripa
-      - Eternity
+      - 4n0nymou3
       - PSG
   - name: Auto
     type: url-test
@@ -84,10 +83,9 @@ proxy-groups:
       - MrM
       - Snake
       - 10ium
-      - LLF
       - Peasoft
       - Ripa
-      - Eternity
+      - 4n0nymou3
       - PSG
   - name: Conditional
     type: select
@@ -106,10 +104,6 @@ proxy-groups:
     type: select
     use:
       - 10ium
-  - name: LLF
-    type: select
-    use:
-      - LLF
   - name: Snake
     type: select
     use:
@@ -122,10 +116,10 @@ proxy-groups:
     type: select
     use:
       - Ripa
-  - name: Eternity
+  - name: 4n0nymou3
     type: select
     use:
-      - Eternity
+      - 4n0nymou3
   - name: PSG
     type: select
     use:
@@ -164,14 +158,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  LLF:
-    type: http
-    url: "https://raw.githubusercontent.com/liketolivefree/kobabi/main/prov_clash.yaml"
-    path: ./LLF.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204
   Peasoft:
     type:  http
     url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
@@ -188,10 +174,10 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  Eternity:
+  4n0nymou3:
     type:  http
-    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
-    path: ./Eternity.yaml
+    url: "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs_tested.txt"
+    path: ./4n0nymou3.yaml
     health-check:
       enable: true
       interval: 600
