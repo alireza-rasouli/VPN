@@ -61,24 +61,10 @@ proxy-groups:
     type: select
     proxies:
       - Manual Selection
-      - Auto
+      - DIRECT
   - name: Manual Selection
     type: select
     proxies:
-      - Syavar
-      - MrM
-      - Snake
-      - 10ium
-      - Peasoft
-      - Ripa
-      - 4n0nymou3
-      - PSG
-  - name: Auto
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 3600
-    tolerance: 100
-    use:
       - Syavar
       - MrM
       - Snake
