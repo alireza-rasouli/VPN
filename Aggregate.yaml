@@ -138,7 +138,7 @@ proxy-providers:
       url: http://www.google.com/generate_204
   10ium:
      type: http
-     url: "https://raw.githubusercontent.com/10ium/V2Hub3/main/merged"
+     url: https://raw.githubusercontent.com/10ium/ClashFactory/main/providers/10ium-HiN-VPN.txt"
      path: ./10ium.yaml
      health-check:
       enable: true
