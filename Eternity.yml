@@ -67,6 +67,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - Manual Selection
+  - name: Gist
+    type: select
+    use: 
+      - Gist
 proxy-providers:
   Gist:
     type: http
