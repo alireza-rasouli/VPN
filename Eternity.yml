@@ -59,18 +59,15 @@ proxies:
 proxy-groups:
   - name: Manual Selection
     type: select
-    proxies:
+    use:
       - Gist
+    proxies:
       - DIRECT
   - name: Conditional
     type: select
     proxies:
       - DIRECT
       - Manual Selection
-  - name: Gist
-    type: select
-    use: 
-      - Gist
 proxy-providers:
   Gist:
     type: http
