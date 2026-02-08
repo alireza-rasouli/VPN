@@ -57,52 +57,25 @@ sniffer:
 proxies:
 
 proxy-groups:
-  - name: Mode
-    type: select
-    proxies:
-      - DIRECT
-      - Manual Selection
-      - Auto
   - name: Manual Selection
     type: select
     use:
-      - LL
-      - SparkS
-  - name: Auto
-    type: url-test
-    url: http://clients3.google.com/generate_204
-    interval: 3600
-    tolerance: 100
-    use:
-      - LL
-      - SparkS
+      - Gist
+      - DIRECT
   - name: Conditional
     type: select
     proxies:
       - DIRECT
       - Manual Selection
 proxy-providers:
-  SparkS:
+  Gist:
     type: http
-    url: "https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SparkS.yaml"
-    path: ./SparkS.yaml
+    url: "https://gist.githubusercontent.com/alireza-rasouli/64f592e7b2f266a13e9903adc3e0465f/raw/c7bc4178bad19477bc9f74d7151b1459ccc99853/Alireza-Aggregator"
+    path: ./Gist.yaml
     health-check:
       enable: true
       interval: 600
       url: http://clients3.google.com/generate_204
-    override:
-      additional-prefix: "SS|"
-  LL:
-    type: http
-    url: "https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/LL.yaml"
-    path: ./LL.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://clients3.google.com/generate_204
-    override:
-      additional-prefix: "LL|"
-
 rule-providers:
   ir:
     type: http
@@ -175,11 +148,11 @@ rules :
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
   - GEOSITE,samsung,Conditional
-  - GEOSITE,google-deepmind,Mode
+  - GEOSITE,google-deepmind,Manual Selection
   - GEOSITE,github,Conditional
   - GEOSITE,apple,Conditional
   - RULE-SET,apps,DIRECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ircidr,DIRECT
   - RULE-SET,irasn,DIRECT
-  - MATCH,Mode
+  - MATCH,Manual Selection
