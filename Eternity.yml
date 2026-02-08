@@ -59,7 +59,7 @@ proxies:
 proxy-groups:
   - name: Manual Selection
     type: select
-    use:
+    proxies:
       - Gist
       - DIRECT
   - name: Conditional
