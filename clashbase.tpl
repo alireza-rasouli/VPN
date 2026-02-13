@@ -32,7 +32,7 @@ dns:
             "rule-set:category-ads-all": "rcode://refused"
   }
   namesaver:
-  - https://8.8.8.8/dns-query
+  - https://8.8.8.8/dns-query#🚀 Selector
   proxy-server-nameserver:
   - 8.8.8.8#DIRECT
   direct-nameserver:
