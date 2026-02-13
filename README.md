@@ -26,6 +26,8 @@ https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.
 
 [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
 
+[Eternity](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Eternity.yml)
+
 [LLF](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
 
 [LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
