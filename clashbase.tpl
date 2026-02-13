@@ -25,6 +25,12 @@ dns:
   use-system-hosts: false
   respect-rules: true
   enhanced-mode: redir-host
+  hosts: {
+            "rule-set:malware": "rcode://refused",
+            "rule-set:phishing": "rcode://refused",
+            "rule-set:cryptominers": "rcode://refused",
+            "rule-set:category-ads-all": "rcode://refused"
+  }
   namesaver:
   - https://8.8.8.8/dns-query
   proxy-server-nameserver:
