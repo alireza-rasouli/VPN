@@ -71,7 +71,7 @@ proxy-groups:
 proxy-providers:
   Gist:
     type: http
-    url: "https://gist.githubusercontent.com/alireza-rasouli/64f592e7b2f266a13e9903adc3e0465f/raw/c7bc4178bad19477bc9f74d7151b1459ccc99853/Alireza-Aggregator"
+    url: "https://gist.githubusercontent.com/alireza-rasouli/64f592e7b2f266a13e9903adc3e0465f/raw/Alireza-Aggregator"
     path: ./Gist.yaml
     health-check:
       enable: true
