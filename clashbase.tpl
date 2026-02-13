@@ -96,12 +96,26 @@ rule-providers:
     url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt
     path: ./ruleset/malware.txt
     interval: 86400
+  malware-cidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt
+    path: ./ruleset/malware-cidr.txt
+    interval: 86400
   phishing:
     type: http
     format: text
     behavior: domain
     url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt
     path: ./ruleset/phishing.txt
+    interval: 86400
+  phishing-cidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt
+    path: ./ruleset/phishing-cidr.txt
     interval: 86400
   cryptominers:
     type: http
@@ -144,7 +158,9 @@ rules:
   - RULE-SET,private,DIRECT,no-resolve
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,malware,REJECT
+  - RULE-SET,malware-cidr,REJECT
   - RULE-SET,phishing,REJECT
+  - RULE-SET,phishing-cidr,REJECT
   - RULE-SET,cryptominers,REJECT
   - GEOSITE,samsung,🌎 Conditional
   - GEOSITE,google-deepmind,🚀 Selector
