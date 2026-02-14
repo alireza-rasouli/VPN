@@ -7,4 +7,3 @@
   # Cloudflare *BPB*
 
 [BPB](https://proud-heart-9a95.aliairlord.workers.dev/panel)
-****
