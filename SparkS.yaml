@@ -398,10 +398,9 @@ proxy-groups:
       - 104.21.48.196
       - 104.25.188.85
   - name: ♻️ Auto
-    type: url-test
+    type: fallback
     url: http://www.google.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - sky.rethinkdns.com
       - fbi.gov
