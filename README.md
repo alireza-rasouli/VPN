@@ -15,7 +15,7 @@ proxyip.cmliussss.net
 </details>
 <details>
 <summary>SUBAPI</summary>
-my-sub.onrender.com
+subconverter-qvff.onrender.com
 </details>
 <details>
 <summary>SUBCONFIG</summary>
