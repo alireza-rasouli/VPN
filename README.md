@@ -1,11 +1,11 @@
 Cloudflare     |    Panel
----------------|---------------
+:-------------:|:-------------:
 CMliu(LF)      | [🦋](https://shiny-recipe-f2ab.latefirefly.workers.dev/login)
 CMliu(SPS)     | [⚡️](https://cool-paper-8a41.a4-valanides.workers.dev/login)
 BPB            | [💦](https://proud-heart-9a95.aliairlord.workers.dev/panel)
 
 DESCRIPTION    |    LINK
----------------|---------------
+:-------------:|:-------------:
 ADDAPI         |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
 SUBCONFIG      |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
 SUBAPI         |    subconverter-qvff.onrender.com
@@ -21,14 +21,14 @@ proxyip.cmliussss.net
 
 <details>
 <summary><b>CLASH-Meta:</b></summary>
+  
+* [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
 
-[Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
+* [Eternity](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Eternity.yml)
 
-[Eternity](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Eternity.yml)
+* [LLF](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
 
-[LLF](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
-
-[LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
+* [LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
 </details>
 
 <details>
