@@ -1,28 +1,26 @@
-[**CloudFlare**](CF.md)
+Cloudflare     |    Panel
+---------------|---------------
+CMliu(LF)      | [🦋](https://shiny-recipe-f2ab.latefirefly.workers.dev/login)
+CMliu(SPS)     | [⚡️](https://cool-paper-8a41.a4-valanides.workers.dev/login)
+BPB            | [💦](https://proud-heart-9a95.aliairlord.workers.dev/panel)
 
+DESCRIPTION    |    LINK
+---------------|---------------
+ADDAPI         |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
+SUBCONFIG      |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
+SUBAPI         |    subconverter-qvff.onrender.com
 <details>
-<summary>ADDAPI</summary>
-https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
-</details>
-<details>
-<summary>PROXYIP</summary>
-  <pre>
+<summary><b>PROXYIP</b></summary>
+<pre>
 bpb.yousef.isegaro.com
 nima.nscl.ir
 turk.radicalization.ir
 proxyip.cmliussss.net
-  </pre>
-</details>
-<details>
-<summary>SUBAPI</summary>
-subconverter-qvff.onrender.com
-</details>
-<details>
-<summary>SUBCONFIG</summary>
-https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
+</pre>
 </details>
 
-# CLASH-Meta:
+<details>
+<summary><b>CLASH-Meta:</b></summary>
 
 [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
 
@@ -31,10 +29,10 @@ https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.
 [LLF](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f.yaml)
 
 [LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
+</details>
 
-
-# V2ray:
-
+<details>
+<summary><b>V2ray Subscription Links</b></summary>  
 https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
 
 https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
@@ -57,7 +55,7 @@ https://raw.githubusercontent.com/HakurouKen/free-node/main/public
 
 https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_Trinity.txt
 
-https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt#Anonymous-Multi
+https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt
 
 https://raw.githubusercontent.com/youfoundamin/V2rayCollector/main/mixed_iran.txt
 
@@ -76,3 +74,4 @@ https://raw.githubusercontent.com/Kwinshadow/TelegramV2rayCollector/main/sublink
 https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub1.txt
 
 https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless
+</details>
