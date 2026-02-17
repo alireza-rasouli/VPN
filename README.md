@@ -91,9 +91,9 @@
     </td>
   </tr>
 </table>
-
+<hr>
 <details>
-<summary><b>CLASH-Meta:</b></summary>
+<summary><b>Clash-Meta Subscription Links:</b></summary>
   
 * [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
 
@@ -105,7 +105,7 @@
 </details>
 
 <details>
-<summary><b>V2ray Subscription Links</b></summary>
+<summary><b>V2ray Subscription Links:</b></summary>
   
   * https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
 
