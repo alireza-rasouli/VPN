@@ -11,15 +11,15 @@
         </thead>
         <tbody>
           <tr>
-            <td>CMliu(LF)</td>
+            <td align="center">CMliu(LF)</td>
             <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🦋</a></td>
           </tr>
           <tr>
-            <td>CMliu(SPS)</td>
+            <td align="center">CMliu(SPS)</td>
             <td align="center"><a href="https://cool-paper-8a41.a4-valanides.workers.dev/login">⚡️</a></td>
           </tr>
           <tr>
-            <td>BPB</td>
+            <td align="center">BPB</td>
             <td align="center"><a href="https://proud-heart-9a95.aliairlord.workers.dev/panel">💦</a></td>
           </tr>
         </tbody>
