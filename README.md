@@ -59,9 +59,10 @@
 
 DESCRIPTION    |    LINK
 :-------------:|:-------------:
-ADDAPI         |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
-SUBCONFIG      |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
-SUBAPI         |    subconverter-qvff.onrender.com
+ADDAPI         |    [📄](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt)
+SUBCONFIG      |    [🛠](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini)
+SUBCONVERTER   |    [⚙️](https://sub-web-modify-afs.pages.dev/)
+SUBAPI         |    <code>subconverter-qvff.onrender.com</code>
 
 <details>
 <summary><b>CLASH-Meta:</b></summary>
