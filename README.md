@@ -1,8 +1,8 @@
-<table border="0">
+<table border="0" width="100%">
   <tr>
-    <td valign="top" width="45%">
-      <h3>☁️ Cloudflare Panels</h3>
-      <table>
+    <td valign="top" width="45%" align="center">
+      <div style="font-family: inherit; font-size: 1.17em; font-weight: bold; margin-bottom: 8px; width: 100%; text-align: center;">☁️ Cloudflare Panels</div>
+      <table width="100%">
         <thead>
           <tr>
             <th align="center">Cloudflare</th>
@@ -25,13 +25,13 @@
         </tbody>
       </table>
     </td>
-    <td valign="top" width="55%">
-      <h3>🌐 Proxy IP List</h3>
-      <table>
+    <td valign="top" width="55%" align="center">
+      <div style="font-family: inherit; font-size: 1.17em; font-weight: bold; margin-bottom: 8px; width: 100%; text-align: center;">🌐 Proxy IP List</div>
+      <table width="100%">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Address (Triple-Click)</th>
+            <th align="left">Name</th>
+            <th align="left">Address (Triple-Click)</th>
           </tr>
         </thead>
         <tbody>
