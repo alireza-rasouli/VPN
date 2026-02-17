@@ -1,23 +1,67 @@
-Cloudflare     |    Panel
-:-------------:|:-------------:
-CMliu(LF)      | [🦋](https://shiny-recipe-f2ab.latefirefly.workers.dev/login)
-CMliu(SPS)     | [⚡️](https://cool-paper-8a41.a4-valanides.workers.dev/login)
-BPB            | [💦](https://proud-heart-9a95.aliairlord.workers.dev/panel)
+<table border="0">
+  <tr>
+    <td valign="top" width="45%">
+      <h3>☁️ Cloudflare Panels</h3>
+      <table>
+        <thead>
+          <tr>
+            <th align="center">Cloudflare</th>
+            <th align="center">Panel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CMliu(LF)</td>
+            <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🦋</a></td>
+          </tr>
+          <tr>
+            <td>CMliu(SPS)</td>
+            <td align="center"><a href="https://cool-paper-8a41.a4-valanides.workers.dev/login">⚡️</a></td>
+          </tr>
+          <tr>
+            <td>BPB</td>
+            <td align="center"><a href="https://proud-heart-9a95.aliairlord.workers.dev/panel">💦</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td valign="top" width="55%">
+      <h3>🌐 Proxy IP List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address (Triple-Click)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>BPB</b></td>
+            <td><code>bpb.yousef.isegaro.com</code></td>
+          </tr>
+          <tr>
+            <td><b>Nima</b></td>
+            <td><code>nima.nscl.ir</code></td>
+          </tr>
+          <tr>
+            <td><b>Turk</b></td>
+            <td><code>turk.radicalization.ir</code></td>
+          </tr>
+          <tr>
+            <td><b>CMliu</b></td>
+            <td><code>proxyip.cmliussss.net</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
 
 DESCRIPTION    |    LINK
 :-------------:|:-------------:
 ADDAPI         |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt
 SUBCONFIG      |    https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini
-SUBAPI         |    subconverter-qvff.onrender.com [![Backend Status](https://img.shields.io/website?url=https%3A%2F%2Fsubconverter-qvff.onrender.com%2Fversion&up_message=online&up_color=brightgreen&down_message=offline&down_color=red&style=for-the-badge&logo=render)](https://subconverter-qvff.onrender.com/version)
-<details>
-<summary><b>PROXYIP</b></summary>
-<pre>
-bpb.yousef.isegaro.com
-nima.nscl.ir
-turk.radicalization.ir
-proxyip.cmliussss.net
-</pre>
-</details>
+SUBAPI         |    subconverter-qvff.onrender.com
 
 <details>
 <summary><b>CLASH-Meta:</b></summary>
