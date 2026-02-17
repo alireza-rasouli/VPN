@@ -1,3 +1,4 @@
+<div align="center">
 <table border="0" width="100%">
   <tr>
     <td align="center">
@@ -91,6 +92,7 @@
     </td>
   </tr>
 </table>
+</div>
 <hr>
 <details>
 <summary><b>Clash-Meta Subscription Links:</b></summary>
