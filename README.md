@@ -1,9 +1,8 @@
 <table border="0" width="100%">
   <tr>
-    <td valign="top" width="45%" align="center">
+    <td align="center">
       <div style="font-family: inherit; font-size: 1.17em; font-weight: bold; margin-bottom: 8px; width: 100%; text-align: center;">☁️ Cloudflare Panels</div>
-      <table width="100%">
-        <thead>
+      <table width="60%"> <thead>
           <tr>
             <th align="center">Cloudflare</th>
             <th align="center">Panel</th>
@@ -25,7 +24,14 @@
         </tbody>
       </table>
     </td>
-    <td valign="top" width="55%" align="center">
+  </tr>
+</table>
+
+<br>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%" align="center">
       <div style="font-family: inherit; font-size: 1.17em; font-weight: bold; margin-bottom: 8px; width: 100%; text-align: center;">🌐 Proxy IP List</div>
       <table width="100%">
         <thead>
@@ -54,15 +60,37 @@
         </tbody>
       </table>
     </td>
+    <td valign="top" width="50%" align="center">
+      <div style="font-family: inherit; font-size: 1.17em; font-weight: bold; margin-bottom: 8px; width: 100%; text-align: center;">🧰 System Tools</div>
+      <table width="100%">
+        <thead>
+          <tr>
+            <th align="center">Description</th>
+            <th align="center">Link / API</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">ADDAPI</td>
+            <td align="center"><a href="https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt">📄</a></td>
+          </tr>
+          <tr>
+            <td align="center">SUBCONFIG</td>
+            <td align="center"><a href="https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini">🛠️</a></td>
+          </tr>
+          <tr>
+            <td align="center">SUBCONVERTER</td>
+            <td align="center"><a href="https://sub-web-modify-afs.pages.dev/">⚙️</a></td>
+          </tr>
+          <tr>
+            <td align="center">SUBAPI</td>
+            <td align="center"><code>subconverter-qvff.onrender.com</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
   </tr>
 </table>
-
-DESCRIPTION    |    LINK
-:-------------:|:-------------:
-ADDAPI         |    [📄](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/AddressesAPI.txt)
-SUBCONFIG      |    [🛠](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/SUBCONFIG.ini)
-SUBCONVERTER   |    [⚙️](https://sub-web-modify-afs.pages.dev/)
-SUBAPI         |    <code>subconverter-qvff.onrender.com</code>
 
 <details>
 <summary><b>CLASH-Meta:</b></summary>
