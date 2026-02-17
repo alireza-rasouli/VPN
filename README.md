@@ -11,7 +11,7 @@
         <tbody>
           <tr>
             <td align="center">CMliu(LF)</td>
-            <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🦋</a></td>
+            <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🪰</a></td>
           </tr>
           <tr>
             <td align="center">CMliu(SPS)</td>
