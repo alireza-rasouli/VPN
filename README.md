@@ -93,9 +93,12 @@
   </tr>
 </table>
 </div>
-<hr>
+<p align="center"> ════════════════════════════════════════════════ </p>
 <details>
-<summary><b>Clash-Meta Subscription Links:</b></summary>
+<summary style="list-style: none; cursor: pointer;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Clash_Meta_LOGO.jpg" width="25" height="25" style="vertical-align: middle; margin-right: 10px; border-radius: 6px;">
+      <span style="font-size: 3.0em;"><b>Clash-Meta Subscription Links</b></span>
+    </summary>
   
 * [Aggregate](https://raw.githubusercontent.com/alireza-rasouli/VPN/refs/heads/main/Aggregate.yaml)
 
@@ -105,9 +108,12 @@
 
 * [LLF2](https://raw.githubusercontent.com/liketolivefree/kobabi/main/clash_mt_ir_prov_f2.yaml)
 </details>
-
+<p align="left"> ◈━━━━━━━━━━━━━━◈ </p>
 <details>
-<summary><b>V2ray Subscription Links:</b></summary>
+<summary style="list-style: none; cursor: pointer;">
+      <img src="https://www.v2ray.com/en/resources/v2ray_1024.png" width="25" height="25" style="vertical-align: middle; margin-right: 10px; border-radius: 4px; background-color: #ffffff; padding: 2px;">
+      <span style="font-size: 2.2em; font-weight: 900; vertical-align: middle;"><b>V2ray Subscription Links</b></span>
+    </summary>
   
   * https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.txt#(AzadNet.t.me)
 
