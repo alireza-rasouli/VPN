@@ -125,7 +125,7 @@
 
   * https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt
 
-  * https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
+  * https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_TLS_google.com.txt
 
   * https://raw.githubusercontent.com/resasanian/Mirza/main/best
 
