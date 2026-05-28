@@ -67,7 +67,7 @@ proxy-groups:
     type: select
     proxies:
       - Syavar
-      - MrM
+      - MahdiBland
       - Snake
       - 10ium
       - Peasoft
@@ -84,10 +84,10 @@ proxy-groups:
     type: select
     use:
       - Syavar
-  - name: MrM
+  - name: MahdiBland
     type: select
     use:
-      - MrM
+      - MahdiBland
   - name: 10ium
     type: select
     use:
@@ -122,10 +122,10 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  MrM:
+  MahdiBland:
     type: http
-    url: "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml"
-    path: ./MrM.yaml
+    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
+    path: ./MahdiBland.yaml
     health-check:
       enable: true
       interval: 600
