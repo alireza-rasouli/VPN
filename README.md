@@ -11,11 +11,11 @@
         </thead>
         <tbody>
           <tr>
-            <td align="center">CMliu(LF)</td>
+            <td align="center">CMliu(SR)</td>
             <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🪰</a></td>
           </tr>
           <tr>
-            <td align="center">CMliu(SPS)</td>
+            <td align="center">CMliu(CP)</td>
             <td align="center"><a href="https://cool-paper-8a41.a4-valanides.workers.dev/login">⚡️</a></td>
           </tr>
           <tr>
