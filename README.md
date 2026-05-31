@@ -51,10 +51,6 @@
             <td><code>nima.nscl.ir</code></td>
           </tr>
           <tr>
-            <td><b>Turk</b></td>
-            <td><code>turk.radicalization.ir</code></td>
-          </tr>
-          <tr>
             <td><b>CMliu</b></td>
             <td><code>proxyip.cmliussss.net</code></td>
           </tr>
