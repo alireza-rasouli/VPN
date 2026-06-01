@@ -66,7 +66,6 @@ proxy-groups:
   - name: Manual Selection
     type: select
     proxies:
-      - Syavar
       - MahdiBland
       - Snake
       - 10ium
@@ -80,10 +79,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - Manual Selection
-  - name: Syavar
-    type: select
-    use:
-      - Syavar
   - name: MahdiBland
     type: select
     use:
@@ -114,14 +109,6 @@ proxy-groups:
       - Delta
 
 proxy-providers:
-  Syavar:
-    type: http
-    url: "https://raw.githubusercontent.com/Syavar/V2ray-Configs/refs/heads/main/OK_TLS_google.com.txt"
-    path: ./Syavar.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204
   MahdiBland:
     type: http
     url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml"
@@ -164,7 +151,7 @@ proxy-providers:
       url: http://www.google.com/generate_204
   4n0nymou3:
     type:  http
-    url: "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs_tested.txt"
+    url: "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/singbox_configs_tested.json"
     path: ./4n0nymou3.yaml
     health-check:
       enable: true
