@@ -162,6 +162,8 @@ rules:
   - RULE-SET,phishing,REJECT
   - RULE-SET,phishing-cidr,REJECT
   - RULE-SET,cryptominers,REJECT
+  - GEOSITE,openai,DIRECT
+  - GEOSITE,deepseek,DIRECT
   - GEOSITE,samsung,🌎 Conditional
   - GEOSITE,google-deepmind,🚀 Selector
   - GEOSITE,github,🌎 Conditional
