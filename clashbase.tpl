@@ -31,7 +31,7 @@ dns:
             "rule-set:cryptominers": "rcode://refused",
             "rule-set:category-ads-all": "rcode://refused"
   }
-  namesaver:
+  nameserver:
   - https://8.8.8.8/dns-query#🚀 Selector
   proxy-server-nameserver:
   - 8.8.8.8#DIRECT
