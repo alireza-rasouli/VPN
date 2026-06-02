@@ -68,7 +68,7 @@ proxy-groups:
     proxies:
       - MahdiBland
       - Snake
-      - Barabama
+      - Hamed
       - Peasoft
       - Ripa
       - MS
@@ -83,10 +83,10 @@ proxy-groups:
     type: select
     use:
       - MahdiBland
-  - name: Barabama
+  - name: Hamed
     type: select
     use:
-      - Barabama
+      - Hamed
   - name: Snake
     type: select
     use:
@@ -125,10 +125,10 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  Barabama:
+  Hamed:
      type: http
-     url: "https://raw.githubusercontent.com/Barabama/FreeNodes/refs/heads/main/nodes/clashmeta.yaml"
-     path: ./Barabama.yaml
+     url: "https://raw.githubusercontent.com/hamedp-71/N_sub_cheker/refs/heads/patch-1/final.txt"
+     path: ./Hamed.yaml
      health-check:
       enable: true
       interval: 600
