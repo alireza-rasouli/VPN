@@ -159,7 +159,7 @@ proxy-providers:
       url: http://www.google.com/generate_204    
   Delta:
     type:  http
-    url: "https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/refs/heads/main/config/batches/clash/batch_001.yaml"
+    url: "https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/refs/heads/main/config/batches/sni_clash/batch_001.yaml"
     path: ./Delta.yaml
     health-check:
       enable: true
