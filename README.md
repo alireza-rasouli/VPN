@@ -156,7 +156,20 @@
 
 <p align="center"> ════════════════════════════════════════════════ </p>
 
-https://www.oldtowns.top/
-https://serialblog1.top/
-https://persianboxx.com/
-https://farsiland.com/?swcfpc=1
+<p align="center">
+  <a href="https://www.oldtowns.top/" target="_blank">
+    <img src="https://www.google.com/s2/favicons?domain=oldtowns.top&sz=64" alt="oldtowns" />
+  </a>
+
+  <a href="https://serialblog1.top/" target="_blank">
+    <img src="https://www.google.com/s2/favicons?domain=serialblog1.top&sz=64" alt="serialblog1" />
+  </a>
+
+  <a href="https://persianboxx.com/" target="_blank">
+    <img src="https://www.google.com/s2/favicons?domain=persianboxx.com&sz=64" alt="persianboxx" />
+  </a>
+
+  <a href="https://farsiland.com/?swcfpc=1" target="_blank">
+    <img src="https://www.google.com/s2/favicons?domain=farsiland.com&sz=64" alt="farsiland" />
+  </a>
+</p>
