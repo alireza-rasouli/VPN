@@ -153,3 +153,8 @@
 
 * https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless
 </details>
+
+<p align="center"> ════════════════════════════════════════════════ </p>
+
+https://www.oldtowns.top/
+https://serialblog1.top/
