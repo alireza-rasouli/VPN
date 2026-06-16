@@ -157,19 +157,23 @@
 <p align="center"> ════════════════════════════════════════════════ </p>
 
 <p align="center">
-  <a href="https://www.oldtowns.top/" target="_blank">
-    <img src="https://www.google.com/s2/favicons?domain=oldtowns.top&sz=64" alt="oldtowns" />
+  <a href="https://www.oldtowns.top/">
+    <img src="https://www.google.com/s2/favicons?domain=oldtowns.top&sz=64"
+         width="32" height="32" alt="OldTowns">
   </a>
 
-  <a href="https://serialblog1.top/" target="_blank">
-    <img src="https://www.google.com/s2/favicons?domain=serialblog1.top&sz=64" alt="serialblog1" />
+  <a href="https://serialblog1.top/">
+    <img src="https://www.google.com/s2/favicons?domain=serialblog1.top&sz=64"
+         width="32" height="32" alt="SerialBlog">
   </a>
 
-  <a href="https://persianboxx.com/" target="_blank">
-    <img src="https://www.google.com/s2/favicons?domain=persianboxx.com&sz=64" alt="persianboxx" />
+  <a href="https://persianboxx.com/">
+    <img src="https://persiamovbox.com/wp-content/uploads/2020/04/cropped-images-32x32.png"
+         width="32" height="32" alt="PersianBoxx">
   </a>
 
-  <a href="https://farsiland.com/?swcfpc=1" target="_blank">
-    <img src="https://www.google.com/s2/favicons?domain=farsiland.com&sz=64" alt="farsiland" />
+  <a href="https://farsiland.com/">
+    <img src="https://www.google.com/s2/favicons?domain=farsiland.com&sz=64"
+         width="32" height="32" alt="FarsiLand">
   </a>
 </p>
