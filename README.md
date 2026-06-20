@@ -79,10 +79,6 @@
             <td align="center">SUBCONVERTER</td>
             <td align="center"><a href="https://sub-web-modify-afs.pages.dev/">⚙️</a></td>
           </tr>
-          <tr>
-            <td align="center">SUBAPI</td>
-            <td align="center"><code>aliairlord-my-subconverter.hf.space</code></td>
-          </tr>
         </tbody>
       </table>
     </td>
