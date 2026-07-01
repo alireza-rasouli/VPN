@@ -172,7 +172,7 @@ proxy-providers:
       url: http://www.google.com/generate_204 
   Ewecrow:
     type:  http
-    url: "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml"
+    url: "https://raw.githubusercontent.com/ewecrow78-gif/whitelist1/main/list.txt"
     path: ./Ewecrow.yaml
     health-check:
       enable: true
