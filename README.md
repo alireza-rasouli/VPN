@@ -148,6 +148,9 @@
 * https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub1.txt
 
 * https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless
+
+* https://raw.githubusercontent.com/ewecrow78-gif/whitelist1/main/list.txt
+
 </details>
 
 <p align="center"> ════════════════════════════════════════════════ </p>
