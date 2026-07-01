@@ -73,6 +73,7 @@ proxy-groups:
       - Ripa
       - MS
       - Delta
+      - Ewecrow
       - DIRECT
   - name: Conditional
     type: select
@@ -107,7 +108,11 @@ proxy-groups:
     type: select
     use:
       - Delta
-
+  - name: Ewecrow
+    type: select
+    use:
+      - Ewecrow
+      
 proxy-providers:
   MahdiBland:
     type: http
@@ -161,6 +166,14 @@ proxy-providers:
     type:  http
     url: "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml"
     path: ./Delta.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.google.com/generate_204 
+  Ewecrow:
+    type:  http
+    url: "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml"
+    path: ./Ewecrow.yaml
     health-check:
       enable: true
       interval: 600
