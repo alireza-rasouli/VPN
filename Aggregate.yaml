@@ -124,7 +124,7 @@ proxy-providers:
       url: http://www.google.com/generate_204
   Snake:
     type: http
-    url: "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml"
+    url: "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml"
     path: ./Snake.yaml
     health-check:
       enable: true
