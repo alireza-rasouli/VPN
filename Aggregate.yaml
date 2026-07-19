@@ -70,7 +70,6 @@ proxy-groups:
       - Snake
       - Hamed
       - Peasoft
-      - Ripa
       - MS
       - Delta
       - Ewecrow
@@ -96,10 +95,6 @@ proxy-groups:
     type: select
     use:
       - Peasoft 
-  - name: Ripa
-    type: select
-    use:
-      - Ripa
   - name: MS
     type: select
     use:
@@ -142,14 +137,6 @@ proxy-providers:
     type:  http
     url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
     path: ./Peasoft.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204
-  Ripa:
-    type:  http
-    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
-    path: ./Ripa.yaml
     health-check:
       enable: true
       interval: 600
