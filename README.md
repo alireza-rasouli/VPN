@@ -20,7 +20,7 @@
           </tr>
           <tr>
             <td align="center">BPB</td>
-            <td align="center"><a href="https://proud-heart-9a95.aliairlord.workers.dev/panel">💦</a></td>
+            <td align="center"><a href="https://z9622kzvb3-ddddi0i.aliairlord.workers.dev/wSBLMtTUPxqWNdbl/panel">💦</a></td>
           </tr>
         </tbody>
       </table>
