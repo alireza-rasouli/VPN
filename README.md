@@ -15,8 +15,8 @@
             <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🪰</a></td>
           </tr>
           <tr>
-            <td align="center">CMliu(SK)</td>
-            <td align="center"><a href="https://super-king-e2e7.a4-valanides.workers.dev/admin">⚡️</a></td>
+            <td align="center">CMliu(SB)</td>
+            <td align="center"><a href="https://shy-band-15.pages.dev/admin">⚡️</a></td>
           </tr>
           <tr>
             <td align="center">BPB</td>
