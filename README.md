@@ -11,8 +11,8 @@
         </thead>
         <tbody>
           <tr>
-            <td align="center">CMliu(SR)</td>
-            <td align="center"><a href="https://shiny-recipe-f2ab.latefirefly.workers.dev/login">🪰</a></td>
+            <td align="center">CMliu(LW)</td>
+            <td align="center"><a href="https://long-waterfall-ec0f.latefirefly.workers.dev/admin">🪰</a></td>
           </tr>
           <tr>
             <td align="center">CMliu(SB)</td>
