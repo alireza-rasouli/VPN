@@ -70,7 +70,6 @@ proxy-groups:
       - Snake
       - Hamed
       - Peasoft
-      - MS
       - Delta
       - Ewecrow
       - DIRECT
@@ -94,11 +93,7 @@ proxy-groups:
   - name: Peasoft
     type: select
     use:
-      - Peasoft 
-  - name: MS
-    type: select
-    use:
-      - MS
+      - Peasoft
   - name: Delta
     type: select
     use:
@@ -141,14 +136,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.google.com/generate_204
-  MS:
-    type:  http
-    url: "https://raw.githubusercontent.com/masir-sefid/Sub/refs/heads/main/%40Masir_Sefid.txt"
-    path: ./MS.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.google.com/generate_204    
   Delta:
     type:  http
     url: "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/batches/clash/batch_001.yaml"
