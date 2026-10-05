@@ -48,7 +48,7 @@
           </tr>
           <tr>
             <td><b>Nima</b></td>
-            <td><code>nima.nscl.ir</code></td>
+            <td><code>di.nscl.ir</code></td>
           </tr>
           <tr>
             <td><b>CMliu</b></td>
