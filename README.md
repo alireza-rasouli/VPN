@@ -12,7 +12,7 @@
         <tbody>
           <tr>
             <td align="center">CMliu(LF)</td>
-            <td align="center"><a href="https://nameless-forest-0189.latefirefly.workers.dev/admin">🪰</a></td>
+            <td align="center"><a href="https://cold-butterfly-72b4.late-firefly.workers.dev/admin">🪰</a></td>
           </tr>
           <tr>
             <td align="center">CMliu(SB)</td>
