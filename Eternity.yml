@@ -77,7 +77,7 @@ proxy-groups:
 proxy-providers:
   Gist:
     type: http
-    url: "https://gist.githubusercontent.com/alireza-rasouli/64f592e7b2f266a13e9903adc3e0465f/raw/Alireza-Aggregator"
+    url: "https://github.com/Au1rxx/free-vpn-subscriptions"
     path: ./Gist.yaml
     health-check:
       enable: true
