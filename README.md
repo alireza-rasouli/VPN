@@ -151,6 +151,8 @@
 
 * https://raw.githubusercontent.com/ewecrow78-gif/whitelist1/main/list.txt
 
+* https://raw.githubusercontent.com/AyhanMansur/ayhan-meli-shecan/refs/heads/main/sub.txt
+
 </details>
 
 <p align="center"> ════════════════════════════════════════════════ </p>
